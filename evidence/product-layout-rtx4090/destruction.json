@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-23T16:54:19.002239+00:00",
+  "instance_id": 52263043,
+  "reason": "Complete archive downloaded and hash-verified; GPU no longer needed for local numerical replay",
+  "success": true,
+  "message": null
+}

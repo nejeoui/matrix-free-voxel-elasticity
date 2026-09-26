@@ -1,0 +1,14 @@
+{
+  "utc": "2026-09-23T16:39:16.634876+00:00",
+  "status": "failed-before-GPU-launch",
+  "gpu_measurements": 0,
+  "products_executed": 0,
+  "physical_solves_executed": 0,
+  "timing_blocks": 0,
+  "scientific_gate": "unexecuted",
+  "performance_claim": false,
+  "novelty_claim": false,
+  "publication_goal_achieved": false,
+  "instance_destroyed": true,
+  "failure_receipt": "results/rescope/hex-modal-layout-20260923/rental-01/launch-failure.json"
+}

@@ -1,0 +1,234 @@
+{
+  "question": "Does modal8 retain its fixed-work product advantage against a symmetric-half storage control, and can a one-warp modal layout improve it against both equal-layout dense and all declared controls?",
+  "scope": "Separate prospective execution after sealed deployment failure with zero GPU measurements. User explicitly requested a different instance. All numerical kernels, cases, thresholds and measurement rules are unchanged.",
+  "cases": [
+    {
+      "id": "partial-3x2x4",
+      "shape": [
+        3,
+        2,
+        4
+      ],
+      "source": "random",
+      "nu": 0.2,
+      "primary": false,
+      "timed": false,
+      "solve": false
+    },
+    {
+      "id": "partial-5x3x3",
+      "shape": [
+        5,
+        3,
+        3
+      ],
+      "source": "random",
+      "nu": 0.45,
+      "primary": false,
+      "timed": false,
+      "solve": false
+    },
+    {
+      "id": "smoke-q4",
+      "q": 4,
+      "shape": [
+        8,
+        4,
+        4
+      ],
+      "source": "physical-v2",
+      "primary": false,
+      "timed": false,
+      "solve": true
+    },
+    {
+      "id": "optimized-q64",
+      "q": 64,
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "source": "physical-v2",
+      "primary": true,
+      "timed": true,
+      "solve": true
+    },
+    {
+      "id": "optimized-q96",
+      "q": 96,
+      "shape": [
+        192,
+        96,
+        96
+      ],
+      "source": "physical-v2",
+      "primary": true,
+      "timed": true,
+      "solve": true
+    },
+    {
+      "id": "uniform-q64",
+      "q": 64,
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "source": "physical-v2",
+      "primary": false,
+      "timed": true,
+      "solve": false
+    }
+  ],
+  "paths": [
+    "three_stage_fp64",
+    "fused_fp64",
+    "fused_ai_fp64",
+    "node_fp64",
+    "dense8",
+    "modal8",
+    "sym8",
+    "dense32",
+    "modal32"
+  ],
+  "new_paths": [
+    "sym8",
+    "dense32",
+    "modal32"
+  ],
+  "candidates": [
+    "modal8",
+    "modal32"
+  ],
+  "baselines": [
+    "three_stage_fp64",
+    "fused_fp64",
+    "fused_ai_fp64",
+    "node_fp64",
+    "dense8",
+    "sym8",
+    "dense32"
+  ],
+  "material": {
+    "Emin": 1e-06,
+    "Emax": 1.0,
+    "penal": 3.0,
+    "nu": 0.3
+  },
+  "solver": {
+    "requested_rtol": 1e-08,
+    "true_residual_limit": 1e-07,
+    "energy_force_relative_limit": 1e-06,
+    "cross_state_limit": 5e-05,
+    "cross_compliance_limit": 1e-05,
+    "maximum_iterations": 20000,
+    "check_every": 50,
+    "maximum_state_seconds": 300
+  },
+  "correctness": {
+    "relative_l2": 1e-11,
+    "absolute_per_sqrt_dof": 1e-12,
+    "fixed_identity": "exact",
+    "zero_after_nonzero": "exact"
+  },
+  "benchmarks": {
+    "rounds": 11,
+    "calls_per_round": 20,
+    "warm_calls": 5,
+    "thermal_seconds": 20,
+    "bootstrap_seed": 2026092417,
+    "bootstrap_resamples": 10000,
+    "paired_median_minimum": 1.15,
+    "lower_one_sided_95_minimum": 1.05,
+    "modal32_over_modal8_median_minimum": 1.1
+  },
+  "order_seed": 2026092318,
+  "measurement": {
+    "timed": "CUDA events around 20 complete constrained products, plus synchronized host elapsed timer. Every path uses the identical fixed input, modulus and mask. Every product includes input masking, output initialization, numerical kernels, accumulation and fixed-DOF identity restoration.",
+    "excluded": "Imports, JIT, context, coefficient/index/array preparation, all host transfers, CPU audits, warmups and state solves; none are represented as a charged solve or optimizer time.",
+    "blocking": "Path order shuffled within each of 11 rounds; matched round paired ratios; fixed case order; retain every raw sample.",
+    "inference": "One-sided paired bootstrap over rounds is a within-rental development diagnostic; no independent-machine or family-wise coverage claim. Both candidates and all baselines reported, no selecting a post-hoc primary winner."
+  },
+  "gate": "All 108 product records (216 actions including zeros), nine normal solves, nine correctly rejected capped states and 297 timing blocks must be complete and independently valid. Each candidate must meet all baseline ratios at both primary sizes; modal32 additionally beats modal8 by the separate 1.10 threshold. One failed primary comparison fails that candidate. No replacement cases or rental retries in this iteration.",
+  "controls": {
+    "sym8": "Local ordinary symmetric-half storage implementation, 24 diagonal plus 276 strict-lower coefficients, eight threads per element, same binary-corner mapping as dense8. Shuffled gathered vectors and local index arithmetic. Not a replication of inaccessible author source or a claim that this is the fastest published symmetric implementation.",
+    "modal32": "One warp per element, 24 active lanes for component/mode pairs and eight idle lanes; same 72 parity coefficients and full-precision atomic assembly as modal8.",
+    "dense32": "Same one-warp ownership, one scalar output per active lane, all 576 element coefficients.",
+    "physical": "Unmodified donor zero-start Jacobi PCG at rtol1e-8, independent reference assembly and cross-state checks against sealed fused_ai plain-0 states; state wall times retained but not performance samples."
+  },
+  "hardware": {
+    "gpu": "RTX 4090",
+    "gpu_full_name": "NVIDIA GeForce RTX 4090",
+    "minimum_cpu_ram_mb": 128000,
+    "minimum_gpu_ram_mb": 24000,
+    "disk_gb": 80,
+    "maximum_total_usd_per_hour": 0.7
+  },
+  "limits": {
+    "suite_seconds": 1800,
+    "maximum_job_seconds": 2700,
+    "maximum_rental_seconds": 5400,
+    "one_rental": true,
+    "destroy_after_verified_collection": true
+  },
+  "on_failure": "Stop on numerical failure or time cap, archive complete and partial data, destroy after byte-verified collection and before local replay. Do not change thresholds, vectors, kernels or paths after observing GPU data.",
+  "prior_work": [
+    {
+      "key": "ratnakar2022synopsis",
+      "read_scope": "Sections 3\u20134, eight threads and symmetric-half storage; synopsis is not final journal paper",
+      "path": "biblio/rescope_ratnakar_gpu-topopt-synopsis_2022.pdf"
+    },
+    {
+      "key": "ratnakar2022symmetry",
+      "read_scope": "Author list and Crossref abstract only; full-text access gap"
+    }
+  ],
+  "prior_profile_manifest": "results/rescope/hex-modal-profile-v2-20260923/MANIFEST.json",
+  "prior_profile_gate": "advance_to_charged_campaign=false; unchanged",
+  "performance_claim": false,
+  "novelty_claim": false,
+  "publication_goal_achieved": false,
+  "revision": 2,
+  "deployment_parent": {
+    "manifest": "results/rescope/hex-modal-layout-20260923/MANIFEST.json",
+    "sha256": "ec50136adfdffcac394198b38f131f7ed6357d2db8090f7a7af9860b216adfa6",
+    "instance_id": 52261001,
+    "gpu_measurements": 0,
+    "closed": true
+  },
+  "lifecycle_revision": "Use a different physical machine from 10577 and legacy SCP with connection keepalives. Still one rental in this separate execution, no silent retry or replacement, 300-second upload timeout, independent destruction watchdog.",
+  "declared_utc": "2026-09-23T16:43:54.294047+00:00",
+  "package_source_pins": {
+    "analysis.py": "c4bee2f8217db29d2cc6bf00990217d447ff7a8317092237942f154dc42944a1",
+    "bootstrap.sh": "c653b71e9ccd63c17e02a55c7a2f180e351555a4e24e30ed74dba62470b19c9d",
+    "collect.py": "e642ce9d467a8a6e1788ef8821a081690abf96fa0e38b639f65ba4e0d2c8cc5d",
+    "dependencies/common.py": "a4f9075f5f8fcbd2a2aec9be966174ed43dd220741d30cd0b970860a15717216",
+    "dependencies/cuda.py": "ab3352097f6b96f4ad9852fb9c20f65a553cbce9297b74fb31f62b2d7187dd53",
+    "dependencies/modal.py": "63a18941f6390d2dd1f54520d6589bf7c4118deda52ab8d6cefd460f2e90f4b8",
+    "donor/LICENSE": "2cbf0d0aeb3004fb99958b857f6a7bcc05c512d2a97d514c23ac1ec15dd8b15f",
+    "donor/src/gpu_fem/__init__.py": "fb18a505323cb9e0f771ccf75be3d1a678f7851cf739a03b58c701e016c7f06d",
+    "donor/src/gpu_fem/cuda_fused_matvec.py": "7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f",
+    "donor/src/gpu_fem/cuda_operators.py": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f",
+    "donor/src/gpu_fem/filter_r2.py": "2fc74c7a0d0da47adf9ee8154d20682b95c3fd5292f008dbf32cff41a124b88b",
+    "donor/src/gpu_fem/pub_simp_solver.py": "37263bd5e6dcfee2ab3469bfd4172dcad7208433bf7cd0af6cab392deaf1073d",
+    "donor/src/gpu_fem/simp_r2.py": "c29840e8739c4e992587794c4b9a009f9a5453a3e8b2c551f870a2e3abf6ca3d",
+    "export_results.py": "01e6d47c97864541881a2c40073fac4e83fdcfa9c8f8f602f7c1d996cbe9101e",
+    "job.py": "43b3440565cf937d046709878e06065abb9d0091b68b82031decfc77625c21bb",
+    "launch.py": "caeb514a340c3c16a2619db7016c8499a598f2565146c1b6f7e09ac5415e0334",
+    "launch_attempt_02.py": "9ebbadd535a7634e73426a92a3e4217e9485d373b1162913748cb9a3300f57fd",
+    "monitor.py": "c6c991763fd9a5786e1f836fed953acdad11d9a7b598b6b1e9b3f0c1a13b2aa5",
+    "physical.py": "f6224eabf2656c103a49daca19c3087daaca91b9bc817895608bca95e58ec607",
+    "prepare.py": "7b3f728876683c0d6638e07dd59629bb2f656dcd8335ea9693574d1e46cbdef3",
+    "provider.py": "bd9492c9bcc818753a7555643c83c0374c721a2125e8c49654d1d37b5d132ff9",
+    "run_gpu.py": "29ab336fb262d9849940834db965dfb47daf429aa36af1e1a60a86864512b9cc",
+    "test_layout.py": "7c5df57e63971d15a4329153bb342cafdd11a0819bf3b929b4bcb3963805e428",
+    "variants.py": "c73ea570ec1a134ad0561fe9956e2f48560670b743af3d8e10d1ee1860ef1f9a",
+    "verify.py": "af2cc79ba136eb879e176fcab1afeab027c09f808acaef584932e3fb9d08ef28"
+  },
+  "resource_amendment": {
+    "reason": "No currently available different host satisfied the prior USD 0.60 total cap. Raise prospective rental quote cap to USD 0.70 before any accepted contract or GPU execution; no numerical or timing rule changes.",
+    "previous_protocol_sha256": "16d6570435e4fb39a64904803d4d1b3373add513031bcf6fad46218cde3444d2",
+    "user_authorization": "User explicitly requested destruction and a different instance; broader research rental authorization remains active."
+  }
+}
