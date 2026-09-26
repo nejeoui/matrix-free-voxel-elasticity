@@ -1,0 +1,1 @@
+Linux ubuntu 5.15.0-1067-kvm #72-Ubuntu SMP Fri Aug 30 13:52:03 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux

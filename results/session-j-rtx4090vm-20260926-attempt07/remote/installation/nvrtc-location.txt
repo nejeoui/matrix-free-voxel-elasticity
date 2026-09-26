@@ -1,0 +1,8 @@
+lrwxrwxrwx 1 root root       25 Aug 16  2023 /usr/local/cuda-12.2/lib64/libnvrtc-builtins.so -> libnvrtc-builtins.so.12.2
+lrwxrwxrwx 1 root root       29 Aug 16  2023 /usr/local/cuda-12.2/lib64/libnvrtc-builtins.so.12.2 -> libnvrtc-builtins.so.12.2.140
+-rw-r--r-- 1 root root  2434952 Aug 16  2023 /usr/local/cuda-12.2/lib64/libnvrtc-builtins.so.12.2.140
+-rw-r--r-- 1 root root  2453996 Aug 16  2023 /usr/local/cuda-12.2/lib64/libnvrtc-builtins_static.a
+lrwxrwxrwx 1 root root       14 Aug 16  2023 /usr/local/cuda-12.2/lib64/libnvrtc.so -> libnvrtc.so.12
+lrwxrwxrwx 1 root root       20 Aug 16  2023 /usr/local/cuda-12.2/lib64/libnvrtc.so.12 -> libnvrtc.so.12.2.140
+-rw-r--r-- 1 root root 58041000 Aug 16  2023 /usr/local/cuda-12.2/lib64/libnvrtc.so.12.2.140
+-rw-r--r-- 1 root root 74423956 Aug 16  2023 /usr/local/cuda-12.2/lib64/libnvrtc_static.a

@@ -1,0 +1,7 @@
+-rwxr-xr-x 1 root root 3826 Aug 23  2023 /usr/local/cuda-12.2/bin/ncu
+
+/opt/nvidia/nsight-compute:
+total 12
+drwxr-xr-x 3 root root 4096 Sep 26 05:17 .
+drwxr-xr-x 3 root root 4096 Sep 26 05:17 ..
+drwxr-xr-x 7 root root 4096 Sep 26 05:18 2023.2.2

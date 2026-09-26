@@ -1,0 +1,4 @@
+Source: https://github.com/nbbllxx0/Mixed-Precision-GMG-SIMP
+Commit: fd9ddecda039fdfb7ffb8cf49c58f602318ed2ef
+License: BSD-3-Clause (LICENSE, copyright 2026 Shaoliang Yang, Jun Wang, Yunsheng Wang)
+Imported unmodified on 2026-09-26 for the combined-paper W1 integration. Do not edit; adapters live outside this directory.

@@ -1,0 +1,104 @@
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:4 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [3580 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [3858 kB]
+Get:7 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [501 kB]
+Get:8 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [14.7 kB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [6390 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [570 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [20.1 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [6639 kB]
+Get:13 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [1229 kB]
+Get:14 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [600 B]
+Get:15 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1052 kB]
+Get:16 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [236 kB]
+Get:17 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [23.2 kB]
+Get:18 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [69.4 kB]
+Get:19 http://security.ubuntu.com/ubuntu jammy-security/multiverse Translation-en [12.9 kB]
+Get:20 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [544 B]
+Get:21 http://archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [1274 kB]
+Get:22 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [584 B]
+Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1285 kB]
+Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [324 kB]
+Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [30.8 kB]
+Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [76.8 kB]
+Get:27 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse Translation-en [15.9 kB]
+Get:28 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [756 B]
+Get:29 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [70.2 kB]
+Get:30 http://archive.ubuntu.com/ubuntu jammy-backports/main Translation-en [11.4 kB]
+Get:31 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [412 B]
+Get:32 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [30.8 kB]
+Get:33 http://archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16.9 kB]
+Get:34 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [676 B]
+Fetched 27.7 MB in 6s (4623 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+g++ is already the newest version (4:11.2.0-1ubuntu1).
+g++ set to manually installed.
+The following additional packages will be installed:
+  libpython3.10 libpython3.10-minimal libpython3.10-stdlib python3-pip-whl
+  python3-setuptools-whl python3.10 python3.10-minimal python3.10-venv
+Suggested packages:
+  python3.10-doc binfmt-support
+The following NEW packages will be installed:
+  python3-pip-whl python3-setuptools-whl python3-venv python3.10-venv
+The following packages will be upgraded:
+  libpython3.10 libpython3.10-minimal libpython3.10-stdlib python3.10
+  python3.10-minimal
+5 upgraded, 4 newly installed, 0 to remove and 315 not upgraded.
+Need to get 9881 kB of archives.
+After this operation, 2951 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10 amd64 3.10.12-1~22.04.18 [1950 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10 amd64 3.10.12-1~22.04.18 [508 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-stdlib amd64 3.10.12-1~22.04.18 [1850 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10-minimal amd64 3.10.12-1~22.04.18 [2277 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-minimal amd64 3.10.12-1~22.04.18 [817 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-pip-whl all 22.0.2+dfsg-1ubuntu0.7 [1683 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-setuptools-whl all 59.6.0-1.2ubuntu0.22.04.3 [789 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3.10-venv amd64 3.10.12-1~22.04.18 [5724 B]
+Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-venv amd64 3.10.6-1~22.04.1 [1042 B]
+Fetched 9881 kB in 3s (3210 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 79200 files and directories currently installed.)
+Preparing to unpack .../0-libpython3.10_3.10.12-1~22.04.18_amd64.deb ...
+Unpacking libpython3.10:amd64 (3.10.12-1~22.04.18) over (3.10.12-1~22.04.6) ...
+Preparing to unpack .../1-python3.10_3.10.12-1~22.04.18_amd64.deb ...
+Unpacking python3.10 (3.10.12-1~22.04.18) over (3.10.12-1~22.04.6) ...
+Preparing to unpack .../2-libpython3.10-stdlib_3.10.12-1~22.04.18_amd64.deb ...
+Unpacking libpython3.10-stdlib:amd64 (3.10.12-1~22.04.18) over (3.10.12-1~22.04.6) ...
+Preparing to unpack .../3-python3.10-minimal_3.10.12-1~22.04.18_amd64.deb ...
+Unpacking python3.10-minimal (3.10.12-1~22.04.18) over (3.10.12-1~22.04.6) ...
+Preparing to unpack .../4-libpython3.10-minimal_3.10.12-1~22.04.18_amd64.deb ...
+Unpacking libpython3.10-minimal:amd64 (3.10.12-1~22.04.18) over (3.10.12-1~22.04.6) ...
+Selecting previously unselected package python3-pip-whl.
+Preparing to unpack .../5-python3-pip-whl_22.0.2+dfsg-1ubuntu0.7_all.deb ...
+Unpacking python3-pip-whl (22.0.2+dfsg-1ubuntu0.7) ...
+Selecting previously unselected package python3-setuptools-whl.
+Preparing to unpack .../6-python3-setuptools-whl_59.6.0-1.2ubuntu0.22.04.3_all.deb ...
+Unpacking python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.3) ...
+Selecting previously unselected package python3.10-venv.
+Preparing to unpack .../7-python3.10-venv_3.10.12-1~22.04.18_amd64.deb ...
+Unpacking python3.10-venv (3.10.12-1~22.04.18) ...
+Selecting previously unselected package python3-venv.
+Preparing to unpack .../8-python3-venv_3.10.6-1~22.04.1_amd64.deb ...
+Unpacking python3-venv (3.10.6-1~22.04.1) ...
+Setting up python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.3) ...
+Setting up python3-pip-whl (22.0.2+dfsg-1ubuntu0.7) ...
+Setting up libpython3.10-minimal:amd64 (3.10.12-1~22.04.18) ...
+Setting up python3.10-minimal (3.10.12-1~22.04.18) ...
+Setting up libpython3.10-stdlib:amd64 (3.10.12-1~22.04.18) ...
+Setting up libpython3.10:amd64 (3.10.12-1~22.04.18) ...
+Setting up python3.10 (3.10.12-1~22.04.18) ...
+Setting up python3.10-venv (3.10.12-1~22.04.18) ...
+Setting up python3-venv (3.10.6-1~22.04.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.8) ...
+NEEDRESTART-VER: 3.5
+NEEDRESTART-KCUR: 5.15.0-1067-kvm
+NEEDRESTART-KEXP: 5.15.0-1067-kvm
+NEEDRESTART-KSTA: 1
+NEEDRESTART-SVC: networkd-dispatcher.service
+NEEDRESTART-SVC: unattended-upgrades.service

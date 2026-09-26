@@ -1,0 +1,35 @@
+==PROF== Connected to process 3717 (/usr/bin/python3.10)
+Traceback (most recent call last):
+  File "cupy_backends/cuda/_softlink.pyx", line 25, in cupy_backends.cuda._softlink.SoftLink.__init__
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libnvrtc.so.12: cannot open shared object file: No such file or directory
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/voxel-session_j/source/experiments/session_j/ncu_target.py", line 45, in <module>
+    main()
+  File "/root/voxel-session_j/source/experiments/session_j/ncu_target.py", line 33, in main
+    modal = CudaModal(shape, ke, Modal(ke).blocks)
+  File "/root/voxel-session_j/source/experiments/session_e/dependencies/cuda.py", line 122, in __init__
+    self.kernels = {name: self.module.get_function(name) for name in MODAL_PATHS + ('dense8',)}
+  File "/root/voxel-session_j/source/experiments/session_e/dependencies/cuda.py", line 122, in <dictcomp>
+    self.kernels = {name: self.module.get_function(name) for name in MODAL_PATHS + ('dense8',)}
+  File "cupy/_core/raw.pyx", line 487, in cupy._core.raw.RawModule.get_function
+  File "cupy/_core/raw.pyx", line 100, in cupy._core.raw.RawKernel.kernel.__get__
+  File "cupy/_core/raw.pyx", line 117, in cupy._core.raw.RawKernel._kernel
+  File "cupy/_util.pyx", line 67, in cupy._util.memoize.decorator.ret
+  File "cupy/_core/raw.pyx", line 538, in cupy._core.raw._get_raw_module
+  File "cupy/_core/core.pyx", line 2359, in cupy._core.core.compile_with_cache
+  File "cupy/_core/core.pyx", line 2375, in cupy._core.core.compile_with_cache
+  File "cupy/_core/core.pyx", line 2320, in cupy._core.core.assemble_cupy_compiler_options
+  File "cupy_backends/cuda/libs/nvrtc.pyx", line 57, in cupy_backends.cuda.libs.nvrtc.getVersion
+  File "cupy_backends/cuda/libs/_cnvrtc.pxi", line 72, in cupy_backends.cuda.libs.nvrtc.initialize
+  File "cupy_backends/cuda/libs/_cnvrtc.pxi", line 75, in cupy_backends.cuda.libs.nvrtc._initialize
+  File "cupy_backends/cuda/libs/_cnvrtc.pxi", line 153, in cupy_backends.cuda.libs.nvrtc._get_softlink
+  File "cupy_backends/cuda/_softlink.pyx", line 32, in cupy_backends.cuda._softlink.SoftLink.__init__
+RuntimeError: CuPy failed to load libnvrtc.so.12: OSError: libnvrtc.so.12: cannot open shared object file: No such file or directory
+==PROF== Disconnected from process 3717
+==ERROR== The application returned an error code (1).
+==WARNING== No kernels were profiled.

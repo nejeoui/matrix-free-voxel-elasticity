@@ -1,0 +1,21 @@
+{
+  "actual_status": "created",
+  "status_msg": "success, running docker.io/vastai/kvm:ubuntu_terminal",
+  "ssh_host": "ssh6.vast.ai",
+  "ssh_port": 21252,
+  "public_ipaddr": "64.64.224.51",
+  "ports": {
+    "22/tcp": [
+      {
+        "HostIp": "0.0.0.0",
+        "HostPort": "30120"
+      },
+      {
+        "HostIp": "::",
+        "HostPort": "30120"
+      }
+    ]
+  },
+  "image_uuid": "docker.io/vastai/kvm:ubuntu_terminal",
+  "vmem_usage": null
+}

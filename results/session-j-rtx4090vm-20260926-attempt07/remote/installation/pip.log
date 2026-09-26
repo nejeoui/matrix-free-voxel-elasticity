@@ -1,0 +1,11 @@
+Collecting numpy==2.2.6
+  Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 11.1 MB/s eta 0:00:00
+Collecting cupy-cuda12x==13.6.0
+  Downloading cupy_cuda12x-13.6.0-cp310-cp310-manylinux2014_x86_64.whl (112.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 112.2/112.2 MB 11.3 MB/s eta 0:00:00
+Collecting fastrlock>=0.5
+  Downloading fastrlock-0.8.3-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_28_x86_64.whl (53 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.3/53.3 KB 595.1 kB/s eta 0:00:00
+Installing collected packages: fastrlock, numpy, cupy-cuda12x
+Successfully installed cupy-cuda12x-13.6.0 fastrlock-0.8.3 numpy-2.2.6

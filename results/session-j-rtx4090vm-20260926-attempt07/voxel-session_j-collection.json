@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/voxel-session_j-venv/bin/python",
+    "/root/voxel-session_j/source/experiments/session_e/collect.py",
+    "--root",
+    "/root/voxel-session_j",
+    "--out",
+    "/root/voxel-session_j-evidence.tar.gz"
+  ],
+  "returncode": 0,
+  "timeout": false,
+  "elapsed_seconds": 0.2150248519999991,
+  "log": "voxel-session_j-collection.log"
+}

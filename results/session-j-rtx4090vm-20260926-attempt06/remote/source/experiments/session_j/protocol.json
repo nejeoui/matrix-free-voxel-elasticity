@@ -1,0 +1,114 @@
+{
+ "experiment": "Voxel session J (combined paper W3): Nsight Compute counters for the FP64 element-product kernels on an RTX 4090 inside a vast.ai KVM virtual machine",
+ "status_at_declaration": "Declared before any session J rental. Containers refused counters on every host in session F; this probes a full VM, where root owns the driver.",
+ "questions": [
+  "Q1: are counters readable in a VM (no ERR_NVGPUCTRPERM)?",
+  "H15: on the RTX 4090, do dense8, modal8 and modal8_muladd each run at >= 70 % of FP64 pipe peak (sm__pipe_fp64_cycles_active, pct of peak sustained active), and do issued FP64 thread instructions (DADD+DMUL+DFMA) scale 78:52:34 within 5 % (ratios dense8/modal8_muladd and modal8/modal8_muladd)?",
+  "Descriptive: the same counters for fused_ai_fp64 and node_fp64, DRAM throughput and L2 reduction (atomic) sectors."
+ ],
+ "hardware": {
+  "gpu_full_names": [
+   "NVIDIA GeForce RTX 4090"
+  ],
+  "vm_image": "docker.io/vastai/kvm:ubuntu_terminal",
+  "minimum_cpu_ram_mb": 16000,
+  "minimum_gpu_ram_mb": 23000,
+  "disk_gb": 60,
+  "maximum_total_usd_per_hour": 0.7
+ },
+ "limits": {
+  "maximum_job_seconds": 3000,
+  "maximum_rental_seconds": 5400,
+  "rentals": 1,
+  "destroy_after_verified_collection": true
+ },
+ "ncu": {
+  "grid": [
+   128,
+   64,
+   64
+  ],
+  "kernels": [
+   "dense8",
+   "modal8",
+   "modal8_muladd",
+   "fused_matvec_ai_fp64",
+   "node_matvec_fp64"
+  ],
+  "launch_skip": 2,
+  "launch_count": 1,
+  "sections": [
+   "SpeedOfLight",
+   "ComputeWorkloadAnalysis",
+   "MemoryWorkloadAnalysis",
+   "Occupancy",
+   "InstructionStats"
+  ],
+  "metrics": [
+   "smsp__sass_thread_inst_executed_op_dadd_pred_on.sum",
+   "smsp__sass_thread_inst_executed_op_dfma_pred_on.sum",
+   "smsp__sass_thread_inst_executed_op_dmul_pred_on.sum",
+   "sm__inst_executed_pipe_fp64.sum",
+   "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active",
+   "dram__throughput.avg.pct_of_peak_sustained_elapsed",
+   "lts__t_sectors_op_red.sum",
+   "sm__warps_active.avg.pct_of_peak_sustained_active",
+   "gpu__time_duration.sum"
+  ],
+  "metric_filter": "metrics absent from `ncu --query-metrics` are dropped and recorded; H15 needs the FP64 pipe and op-count metrics"
+ },
+ "decision": {
+  "counters_available": "every kernel profiled with exit 0 and no ERR_NVGPUCTRPERM",
+  "H15": "pipe utilization >= 70 % for dense8, modal8 and modal8_muladd, and |measured/static - 1| <= 0.05 for dense8/modal8_muladd (static 78/34) and modal8/modal8_muladd (static 52/34), using issued FP64 thread instructions",
+  "if_unavailable": "W3 is closed as unavailable on the providers tried; the paper states that the FP64-issue mechanism is inferred from static counts and timing"
+ },
+ "not_claimed": [
+  "Counter values describe one launch per kernel on one host and grid; they explain mechanism, not speed."
+ ],
+ "declared_utc": "2026-09-26T05:21:23.315679+00:00",
+ "package_source_pins": {
+  "experiments/session_j/ncu_target.py": "7c34923c6da7f3596c1250252e0b14275a20bb636c4565a8bb49315822933864",
+  "experiments/session_j/job.py": "313d7899465494da6d84050d19ff810f196fbd1aa8b801ff5cadcb392ab3c6f0",
+  "experiments/session_j/ke_unit_3d.npy": "9db9e572e69bdf93095183f1fe1d9363e209607544b77cf42bd1592cd31eb62a",
+  "experiments/combined/kff_adapters.py": "f0d513798019c10e1563ac55876eac5b26b6d0aae4551353de1203f70807b2c7",
+  "experiments/session_e/collect.py": "e642ce9d467a8a6e1788ef8821a081690abf96fa0e38b639f65ba4e0d2c8cc5d",
+  "experiments/session_e/dependencies/common.py": "a4f9075f5f8fcbd2a2aec9be966174ed43dd220741d30cd0b970860a15717216",
+  "experiments/session_e/dependencies/cuda.py": "57b05dd89254f8770b9c0cdc5a2081589ca35f1a0a730503399147626ebbbf30",
+  "experiments/session_e/dependencies/modal.py": "63a18941f6390d2dd1f54520d6589bf7c4118deda52ab8d6cefd460f2e90f4b8",
+  "experiments/session_e/dependencies/ATTRIBUTION.md": "931f3463612e67da98433ae1461016a9dc566272aa10f314820e4e6cb90efb6f",
+  "experiments/session_e/dependencies/DAO-LICENSE": "8c9ccb96c065e706135b6cbad279b721da6156e51f3a5f27c6b3329af9416d73",
+  "experiments/combined/donor_yang_gmg/.gitignore": "a5fa21ac1e138c01564ba29858411786d2381dcff44019da615961a7765c03a5",
+  "experiments/combined/donor_yang_gmg/CITATION.cff": "c61bfc8f008d664f269cd68cc3a8ce10dff08f7650508c318c7fdd453c494257",
+  "experiments/combined/donor_yang_gmg/LICENSE": "526c170b0ed4e89f85203566fd8717a8bbe2316e1f48be48851a91f851b1e13d",
+  "experiments/combined/donor_yang_gmg/PINNED.txt": "3f66174f4d350f24fda7d4ad92b6966820934674cfd596bf1ce0b5c5c5c8045f",
+  "experiments/combined/donor_yang_gmg/README.md": "2cb9e634c8c17d2dd15fc546f1f9a902cb63ec82a7a9cb255024f28bc9eca620",
+  "experiments/combined/donor_yang_gmg/ci/smoke_test.py": "06acf9cd41f2e4d5e1db8b41c41e9603dd1d8c1a49ab51990385bf42447c8645",
+  "experiments/combined/donor_yang_gmg/docs/ARTIFACT_MAP.md": "47a96ef6e22fd00548fe2323e8da94f51804572a6a5cc0dcd7542c0a412d6a3c",
+  "experiments/combined/donor_yang_gmg/environment.yml": "623fbe486b48c80dc909c6f0729029ad46b192a7bfb7a608725480bf9a67604e",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/README.md": "5ceeb7d0b6a3d296a499ef9df2b6ab6ca18a1f01c25e95cd99f56a3b462dda3c",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/estimate_preconditioned_kappa.py": "e46efa0e49b37f7fffe9ae27f4fadcca116e8096d40eae78d0b5bd1449fd3d33",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/run_experiments_e1_e10.py": "2140befc86d779d92ae9336d43c4c5fee3fcae983b131f0fa214930ec5526fad",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/validate_phase1.py": "a5a9f616bf166baaf26b4185e343afce9f427abdb69d01ebafea3823840b9a87",
+  "experiments/combined/donor_yang_gmg/figures/make_3d_renders.py": "7a3919c668c21b7030568263b0ca2417b4216eba8959d1d8e0a604f751e5eb25",
+  "experiments/combined/donor_yang_gmg/figures/plot_figures.py": "308284f914e61dcc91d341c80c211fd9d9fbba104baf141d99a14cbc94bb911f",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/__init__.py": "0b90de85f742ff79e8a7061f252d4b38635874333c37d78627ced49fbe9661ac",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/bc_generator.py": "b5efae6aaab402c810f91c2fa7c21c55d1bc515f2eba0f66210b046d26c2a752",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/cuda_fused_matvec.py": "616c9a21e2e102f6c015fa1369d8e898e927f22b7ab6f40dc41d6ac9328f5a83",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/fem_gpu.py": "381f27971f12607093a2fa56837ffb3455dcca89709d5b94623b8d3e8136474c",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py": "5b3df2081017a7395245ad7c8781da6acb4dae4feced0c2e018730353946b15c",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/paths.py": "106acbb2978079e8aaa098b4ad0e62883491b55a747f664aa3fa23c47fb3225b",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/presets.py": "7e463855c3bc2ded8de427195c9d796d3a6ccc13eedeff17e2ba81f4c2bc5d88",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/problem_spec.py": "1819c4079dd253d022ae33719825505dd46fd3232684b2a5156f01a85c310501",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/pub_simp_solver.py": "aefb98dbbcfdf7a1ae0d474c8d0c79d231dca8c40edfc6bfb639b1a45205fdb5",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/solver_v2.py": "11d5985354db65a14348028cc7014caad18977bc10067dc11c861d922a624abd",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/solver_v4.py": "bc78bcf31c52fa08bdd401516570393fd2345380cd3593ad97de17b0467b9eb8",
+  "experiments/session_e/donor/LICENSE": "2cbf0d0aeb3004fb99958b857f6a7bcc05c512d2a97d514c23ac1ec15dd8b15f",
+  "experiments/session_e/donor/src/gpu_fem/__init__.py": "fb18a505323cb9e0f771ccf75be3d1a678f7851cf739a03b58c701e016c7f06d",
+  "experiments/session_e/donor/src/gpu_fem/cuda_fused_matvec.py": "7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f",
+  "experiments/session_e/donor/src/gpu_fem/cuda_operators.py": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f",
+  "experiments/session_e/donor/src/gpu_fem/filter_r2.py": "2fc74c7a0d0da47adf9ee8154d20682b95c3fd5292f008dbf32cff41a124b88b",
+  "experiments/session_e/donor/src/gpu_fem/pub_simp_solver.py": "37263bd5e6dcfee2ab3469bfd4172dcad7208433bf7cd0af6cab392deaf1073d",
+  "experiments/session_e/donor/src/gpu_fem/simp_r2.py": "c29840e8739c4e992587794c4b9a009f9a5453a3e8b2c551f870a2e3abf6ca3d",
+  "experiments/session_j/bootstrap.sh": "05ce5d8a31fd3ca398a67a333b78d173bbd4487581bfadfd0831e3691e646bd6"
+ }
+}

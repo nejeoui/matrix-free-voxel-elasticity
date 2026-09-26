@@ -1,0 +1,86 @@
+{
+ "kernels": {
+  "dense8": {
+   "fp64_thread_instructions": 314572800.0,
+   "per_thread": 75.0,
+   "pipe_pct": 93.48,
+   "dram_pct": 5.19,
+   "time_ns": 594688.0,
+   "model": 336513478.8189987
+  },
+  "modal8": {
+   "fp64_thread_instructions": 201326592.0,
+   "per_thread": 48.0,
+   "pipe_pct": 83.0,
+   "dram_pct": 7.21,
+   "time_ns": 429152.0,
+   "model": 242562159.03614458
+  },
+  "modal8_muladd": {
+   "fp64_thread_instructions": 125829120.0,
+   "per_thread": 30.0,
+   "pipe_pct": 88.01,
+   "dram_pct": 12.14,
+   "time_ns": 254304.0,
+   "model": 142971389.6148165
+  },
+  "fused_matvec_ai_fp64": {
+   "fp64_thread_instructions": 314572800.0,
+   "per_thread": 75.0,
+   "pipe_pct": 97.47,
+   "dram_pct": 5.42,
+   "time_ns": 569888.0,
+   "model": 322738073.2533087
+  },
+  "node_matvec_fp64": {
+   "fp64_thread_instructions": 402653184.0,
+   "per_thread": 96.0,
+   "pipe_pct": 94.74,
+   "dram_pct": 2.26,
+   "time_ns": 769568.0,
+   "model": 425008638.37872076
+  }
+ },
+ "ratios_vs_muladd": {
+  "dense8": {
+   "time": 2.338492512897949,
+   "instructions": 2.5,
+   "model": 2.353712023962345,
+   "static": 2.2941176470588234
+  },
+  "modal8": {
+   "time": 1.687555052220964,
+   "instructions": 1.6,
+   "model": 1.6965783132530121,
+   "static": 1.5294117647058822
+  },
+  "modal8_muladd": {
+   "time": 1.0,
+   "instructions": 1.0,
+   "model": 1.0,
+   "static": 1.0
+  },
+  "fused_matvec_ai_fp64": {
+   "time": 2.2409714357619226,
+   "instructions": 2.5,
+   "model": 2.257361239355699,
+   "static": null
+  },
+  "node_matvec_fp64": {
+   "time": 3.0261733987668302,
+   "instructions": 3.2,
+   "model": 2.9726831327844634,
+   "static": null
+  }
+ },
+ "H15": {
+  "utilization_part": true,
+  "count_deviation": {
+   "dense8": 0.08974358974358987,
+   "modal8": 0.04615384615384621
+  },
+  "count_part": false,
+  "passed": false
+ },
+ "model_max_error": 0.017675876076421848
+}

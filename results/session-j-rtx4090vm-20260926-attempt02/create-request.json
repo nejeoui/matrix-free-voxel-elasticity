@@ -1,0 +1,9 @@
+{
+  "client_id": "me",
+  "image": "docker.io/vastai/kvm:ubuntu_terminal",
+  "disk": 60,
+  "label": "voxel-session_j",
+  "runtype": "ssh",
+  "force": false,
+  "cancel_unavail": true
+}

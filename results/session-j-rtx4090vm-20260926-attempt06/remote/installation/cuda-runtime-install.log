@@ -1,0 +1,49 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  cuda-toolkit-12-2-config-common cuda-toolkit-12-config-common
+  cuda-toolkit-config-common
+The following NEW packages will be installed:
+  cuda-cudart-12-2 cuda-nvrtc-12-2 cuda-toolkit-12-2-config-common
+  cuda-toolkit-12-config-common cuda-toolkit-config-common
+0 upgraded, 5 newly installed, 0 to remove and 315 not upgraded.
+Need to get 17.5 MB of archives.
+After this operation, 61.5 MB of additional disk space will be used.
+Get:1 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  cuda-toolkit-config-common 13.4.92-1 [17.4 kB]
+Get:2 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  cuda-toolkit-12-config-common 12.9.79-1 [16.6 kB]
+Get:3 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  cuda-toolkit-12-2-config-common 12.2.140-1 [16.3 kB]
+Get:4 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  cuda-cudart-12-2 12.2.140-1 [161 kB]
+Get:5 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64  cuda-nvrtc-12-2 12.2.140-1 [17.3 MB]
+Fetched 17.5 MB in 8s (2103 kB/s)
+Selecting previously unselected package cuda-toolkit-config-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 80168 files and directories currently installed.)
+Preparing to unpack .../cuda-toolkit-config-common_13.4.92-1_all.deb ...
+Unpacking cuda-toolkit-config-common (13.4.92-1) ...
+Selecting previously unselected package cuda-toolkit-12-config-common.
+Preparing to unpack .../cuda-toolkit-12-config-common_12.9.79-1_all.deb ...
+Unpacking cuda-toolkit-12-config-common (12.9.79-1) ...
+Selecting previously unselected package cuda-toolkit-12-2-config-common.
+Preparing to unpack .../cuda-toolkit-12-2-config-common_12.2.140-1_all.deb ...
+Unpacking cuda-toolkit-12-2-config-common (12.2.140-1) ...
+Selecting previously unselected package cuda-cudart-12-2.
+Preparing to unpack .../cuda-cudart-12-2_12.2.140-1_amd64.deb ...
+Unpacking cuda-cudart-12-2 (12.2.140-1) ...
+Selecting previously unselected package cuda-nvrtc-12-2.
+Preparing to unpack .../cuda-nvrtc-12-2_12.2.140-1_amd64.deb ...
+Unpacking cuda-nvrtc-12-2 (12.2.140-1) ...
+Setting up cuda-toolkit-config-common (13.4.92-1) ...
+Setting up cuda-toolkit-12-2-config-common (12.2.140-1) ...
+Setting alternatives
+update-alternatives: using /usr/local/cuda-12.2 to provide /usr/local/cuda (cuda) in auto mode
+update-alternatives: using /usr/local/cuda-12.2 to provide /usr/local/cuda-12 (cuda-12) in auto mode
+Setting up cuda-nvrtc-12-2 (12.2.140-1) ...
+Setting up cuda-toolkit-12-config-common (12.9.79-1) ...
+Setting up cuda-cudart-12-2 (12.2.140-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.8) ...
+NEEDRESTART-VER: 3.5
+NEEDRESTART-KCUR: 5.15.0-1067-kvm
+NEEDRESTART-KEXP: 5.15.0-1067-kvm
+NEEDRESTART-KSTA: 1
+NEEDRESTART-SVC: networkd-dispatcher.service
+NEEDRESTART-SVC: unattended-upgrades.service

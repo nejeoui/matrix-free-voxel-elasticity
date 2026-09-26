@@ -1,0 +1,46 @@
+==PROF== Connected to process 3458 (/usr/bin/python3.10)
+Traceback (most recent call last):
+  File "/opt/voxel-session_j-venv/lib/python3.10/site-packages/cupy/cuda/compiler.py", line 731, in compile
+    nvrtc.compileProgram(self.ptr, options)
+  File "cupy_backends/cuda/libs/nvrtc.pyx", line 125, in cupy_backends.cuda.libs.nvrtc.compileProgram
+  File "cupy_backends/cuda/libs/nvrtc.pyx", line 138, in cupy_backends.cuda.libs.nvrtc.compileProgram
+  File "cupy_backends/cuda/libs/nvrtc.pyx", line 53, in cupy_backends.cuda.libs.nvrtc.check_status
+cupy_backends.cuda.libs.nvrtc.NVRTCError: NVRTC_ERROR_COMPILATION (6)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/voxel-session_j/source/experiments/session_j/ncu_target.py", line 45, in <module>
+    main()
+  File "/root/voxel-session_j/source/experiments/session_j/ncu_target.py", line 34, in main
+    fused = kff_adapters._fused_operators().OperatorSuite(*shape, ke, build_edof=False)
+  File "/root/voxel-session_j/source/experiments/session_e/donor/src/gpu_fem/cuda_operators.py", line 576, in __init__
+    self.KE32 = self.KE64.astype(cp.float32)
+  File "cupy/_core/core.pyx", line 618, in cupy._core.core._ndarray_base.astype
+  File "cupy/_core/core.pyx", line 686, in cupy._core.core._ndarray_base.astype
+  File "cupy/_core/_kernel.pyx", line 1374, in cupy._core._kernel.ufunc.__call__
+  File "cupy/_core/_kernel.pyx", line 1401, in cupy._core._kernel.ufunc._get_ufunc_kernel
+  File "cupy/_core/_kernel.pyx", line 1082, in cupy._core._kernel._get_ufunc_kernel
+  File "cupy/_core/_kernel.pyx", line 94, in cupy._core._kernel._get_simple_elementwise_kernel
+  File "cupy/_core/_kernel.pyx", line 82, in cupy._core._kernel._get_simple_elementwise_kernel_from_code
+  File "cupy/_core/core.pyx", line 2377, in cupy._core.core.compile_with_cache
+  File "/opt/voxel-session_j-venv/lib/python3.10/site-packages/cupy/cuda/compiler.py", line 536, in _compile_module_with_cache
+    return _compile_with_cache_cuda(
+  File "/opt/voxel-session_j-venv/lib/python3.10/site-packages/cupy/cuda/compiler.py", line 616, in _compile_with_cache_cuda
+    ptx, mapping = compile_using_nvrtc(
+  File "/opt/voxel-session_j-venv/lib/python3.10/site-packages/cupy/cuda/compiler.py", line 370, in compile_using_nvrtc
+    return _compile(source, options, cu_path,
+  File "/opt/voxel-session_j-venv/lib/python3.10/site-packages/cupy/cuda/compiler.py", line 354, in _compile
+    compiled_obj, mapping = prog.compile(options, log_stream)
+  File "/opt/voxel-session_j-venv/lib/python3.10/site-packages/cupy/cuda/compiler.py", line 750, in compile
+    raise CompileException(log, self.src, self.name, options,
+cupy.cuda.compiler.CompileException: /opt/voxel-session_j-venv/lib/python3.10/site-packages/cupy/_core/include/cupy/carray.cuh(57): catastrophic error: cannot open source file "cuda_fp16.h"
+  #include <cuda_fp16.h>
+                        ^
+
+1 catastrophic error detected in the compilation of "/tmp/tmp_14u87gb/a41053a442cd4fad972785a115fd7a3f1b08e248.cubin.cu".
+Compilation terminated.
+
+==PROF== Disconnected from process 3458
+==ERROR== The application returned an error code (1).
+==WARNING== No kernels were profiled.

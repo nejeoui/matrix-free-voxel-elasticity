@@ -1,0 +1,68 @@
+{
+ "experiment": "Voxel session J (combined paper W3): Nsight Compute counters for the FP64 element-product kernels on an RTX 4090 inside a vast.ai KVM virtual machine",
+ "status_at_declaration": "Declared before any session J rental. Containers refused counters on every host in session F; this probes a full VM, where root owns the driver.",
+ "questions": [
+  "Q1: are counters readable in a VM (no ERR_NVGPUCTRPERM)?",
+  "H15: on the RTX 4090, do dense8, modal8 and modal8_muladd each run at >= 70 % of FP64 pipe peak (sm__pipe_fp64_cycles_active, pct of peak sustained active), and do issued FP64 thread instructions (DADD+DMUL+DFMA) scale 78:52:34 within 5 % (ratios dense8/modal8_muladd and modal8/modal8_muladd)?",
+  "Descriptive: the same counters for fused_ai_fp64 and node_fp64, DRAM throughput and L2 reduction (atomic) sectors."
+ ],
+ "hardware": {
+  "gpu_full_names": [
+   "NVIDIA GeForce RTX 4090"
+  ],
+  "vm_image": "docker.io/vastai/kvm:ubuntu_terminal",
+  "minimum_cpu_ram_mb": 16000,
+  "minimum_gpu_ram_mb": 23000,
+  "disk_gb": 60,
+  "maximum_total_usd_per_hour": 0.7
+ },
+ "limits": {
+  "maximum_job_seconds": 3000,
+  "maximum_rental_seconds": 5400,
+  "rentals": 1,
+  "destroy_after_verified_collection": true
+ },
+ "ncu": {
+  "grid": [
+   128,
+   64,
+   64
+  ],
+  "kernels": [
+   "dense8",
+   "modal8",
+   "modal8_muladd",
+   "fused_matvec_ai_fp64",
+   "node_matvec_fp64"
+  ],
+  "launch_skip": 2,
+  "launch_count": 1,
+  "sections": [
+   "SpeedOfLight",
+   "ComputeWorkloadAnalysis",
+   "MemoryWorkloadAnalysis",
+   "Occupancy",
+   "InstructionStats"
+  ],
+  "metrics": [
+   "smsp__sass_thread_inst_executed_op_dadd_pred_on.sum",
+   "smsp__sass_thread_inst_executed_op_dfma_pred_on.sum",
+   "smsp__sass_thread_inst_executed_op_dmul_pred_on.sum",
+   "sm__inst_executed_pipe_fp64.sum",
+   "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active",
+   "dram__throughput.avg.pct_of_peak_sustained_elapsed",
+   "lts__t_sectors_op_red.sum",
+   "sm__warps_active.avg.pct_of_peak_sustained_active",
+   "gpu__time_duration.sum"
+  ],
+  "metric_filter": "metrics absent from `ncu --query-metrics` are dropped and recorded; H15 needs the FP64 pipe and op-count metrics"
+ },
+ "decision": {
+  "counters_available": "every kernel profiled with exit 0 and no ERR_NVGPUCTRPERM",
+  "H15": "pipe utilization >= 70 % for dense8, modal8 and modal8_muladd, and |measured/static - 1| <= 0.05 for dense8/modal8_muladd (static 78/34) and modal8/modal8_muladd (static 52/34), using issued FP64 thread instructions",
+  "if_unavailable": "W3 is closed as unavailable on the providers tried; the paper states that the FP64-issue mechanism is inferred from static counts and timing"
+ },
+ "not_claimed": [
+  "Counter values describe one launch per kernel on one host and grid; they explain mechanism, not speed."
+ ]
+}

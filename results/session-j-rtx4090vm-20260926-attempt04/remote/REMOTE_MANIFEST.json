@@ -1,0 +1,218 @@
+{
+  "created_utc": "2026-09-26T05:10:11.543312+00:00",
+  "root": "/root/voxel-session_j",
+  "files": {
+    "installation/apt.log": {
+      "bytes": 10636,
+      "sha256": "8baabf0dcbeeff23a04ad975af1794c0ac13d2c7269b30b0b45d3702409769db"
+    },
+    "installation/driver-params.txt": {
+      "bytes": 900,
+      "sha256": "d20b99985e3057332b177e6c39dc044c9c148d7be676cc62ac87d8bb5b5e3a13"
+    },
+    "installation/nsight-install.log": {
+      "bytes": 2000,
+      "sha256": "200770e6f5f39b97977ec03564e1e9d7b6fe8ba21d0bb64021a3ea99512ed41d"
+    },
+    "installation/nsight-location.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "installation/nvidia-smi.txt": {
+      "bytes": 9303,
+      "sha256": "b0b34df11115b1a9310a1184159ab8116777dee0e7cf881110d775dcf99f9d61"
+    },
+    "installation/pip-freeze.txt": {
+      "bytes": 51,
+      "sha256": "8ddcbb332825939eb1e091d87a6f73459de707defedb93654727662a0d4e2f0e"
+    },
+    "installation/pip.log": {
+      "bytes": 986,
+      "sha256": "5769d5315aed8ec9b1deece743261a3319242c15c87b0a99dc28f0866f6f7925"
+    },
+    "installation/uname.txt": {
+      "bytes": 104,
+      "sha256": "12c3249491bb475533625b2910f1f301c73c0af71daf17fcc7fce3ce9e708fe7"
+    },
+    "job.json": {
+      "bytes": 322,
+      "sha256": "64cadf6371d6cc31e716f3cf024948c453fd82f088fa6c3e1822bc793499bb09"
+    },
+    "source/bootstrap.sh": {
+      "bytes": 2661,
+      "sha256": "31c4df331de281340285db6a51cbd1326ca3e3e4ad4427bd742a78546c8d4ab6"
+    },
+    "source/experiments/combined/donor_yang_gmg/.gitignore": {
+      "bytes": 578,
+      "sha256": "a5fa21ac1e138c01564ba29858411786d2381dcff44019da615961a7765c03a5"
+    },
+    "source/experiments/combined/donor_yang_gmg/CITATION.cff": {
+      "bytes": 1230,
+      "sha256": "c61bfc8f008d664f269cd68cc3a8ce10dff08f7650508c318c7fdd453c494257"
+    },
+    "source/experiments/combined/donor_yang_gmg/LICENSE": {
+      "bytes": 1548,
+      "sha256": "526c170b0ed4e89f85203566fd8717a8bbe2316e1f48be48851a91f851b1e13d"
+    },
+    "source/experiments/combined/donor_yang_gmg/PINNED.txt": {
+      "bytes": 322,
+      "sha256": "3f66174f4d350f24fda7d4ad92b6966820934674cfd596bf1ce0b5c5c5c8045f"
+    },
+    "source/experiments/combined/donor_yang_gmg/README.md": {
+      "bytes": 9923,
+      "sha256": "2cb9e634c8c17d2dd15fc546f1f9a902cb63ec82a7a9cb255024f28bc9eca620"
+    },
+    "source/experiments/combined/donor_yang_gmg/ci/smoke_test.py": {
+      "bytes": 3861,
+      "sha256": "06acf9cd41f2e4d5e1db8b41c41e9603dd1d8c1a49ab51990385bf42447c8645"
+    },
+    "source/experiments/combined/donor_yang_gmg/docs/ARTIFACT_MAP.md": {
+      "bytes": 6394,
+      "sha256": "47a96ef6e22fd00548fe2323e8da94f51804572a6a5cc0dcd7542c0a412d6a3c"
+    },
+    "source/experiments/combined/donor_yang_gmg/environment.yml": {
+      "bytes": 365,
+      "sha256": "623fbe486b48c80dc909c6f0729029ad46b192a7bfb7a608725480bf9a67604e"
+    },
+    "source/experiments/combined/donor_yang_gmg/experiments/paper4/README.md": {
+      "bytes": 1241,
+      "sha256": "5ceeb7d0b6a3d296a499ef9df2b6ab6ca18a1f01c25e95cd99f56a3b462dda3c"
+    },
+    "source/experiments/combined/donor_yang_gmg/experiments/paper4/estimate_preconditioned_kappa.py": {
+      "bytes": 4767,
+      "sha256": "e46efa0e49b37f7fffe9ae27f4fadcca116e8096d40eae78d0b5bd1449fd3d33"
+    },
+    "source/experiments/combined/donor_yang_gmg/experiments/paper4/run_experiments_e1_e10.py": {
+      "bytes": 76382,
+      "sha256": "2140befc86d779d92ae9336d43c4c5fee3fcae983b131f0fa214930ec5526fad"
+    },
+    "source/experiments/combined/donor_yang_gmg/experiments/paper4/validate_phase1.py": {
+      "bytes": 26886,
+      "sha256": "a5a9f616bf166baaf26b4185e343afce9f427abdb69d01ebafea3823840b9a87"
+    },
+    "source/experiments/combined/donor_yang_gmg/figures/make_3d_renders.py": {
+      "bytes": 10484,
+      "sha256": "7a3919c668c21b7030568263b0ca2417b4216eba8959d1d8e0a604f751e5eb25"
+    },
+    "source/experiments/combined/donor_yang_gmg/figures/plot_figures.py": {
+      "bytes": 47388,
+      "sha256": "308284f914e61dcc91d341c80c211fd9d9fbba104baf141d99a14cbc94bb911f"
+    },
+    "source/experiments/combined/donor_yang_gmg/src/gpu_fem/__init__.py": {
+      "bytes": 948,
+      "sha256": "0b90de85f742ff79e8a7061f252d4b38635874333c37d78627ced49fbe9661ac"
+    },
+    "source/experiments/combined/donor_yang_gmg/src/gpu_fem/bc_generator.py": {
+      "bytes": 24341,
+      "sha256": "b5efae6aaab402c810f91c2fa7c21c55d1bc515f2eba0f66210b046d26c2a752"
+    },
+    "source/experiments/combined/donor_yang_gmg/src/gpu_fem/cuda_fused_matvec.py": {
+      "bytes": 18500,
+      "sha256": "616c9a21e2e102f6c015fa1369d8e898e927f22b7ab6f40dc41d6ac9328f5a83"
+    },
+    "source/experiments/combined/donor_yang_gmg/src/gpu_fem/fem_gpu.py": {
+      "bytes": 27220,
+      "sha256": "381f27971f12607093a2fa56837ffb3455dcca89709d5b94623b8d3e8136474c"
+    },
+    "source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py": {
+      "bytes": 39201,
+      "sha256": "5b3df2081017a7395245ad7c8781da6acb4dae4feced0c2e018730353946b15c"
+    },
+    "source/experiments/combined/donor_yang_gmg/src/gpu_fem/paths.py": {
+      "bytes": 1244,
+      "sha256": "106acbb2978079e8aaa098b4ad0e62883491b55a747f664aa3fa23c47fb3225b"
+    },
+    "source/experiments/combined/donor_yang_gmg/src/gpu_fem/presets.py": {
+      "bytes": 19334,
+      "sha256": "7e463855c3bc2ded8de427195c9d796d3a6ccc13eedeff17e2ba81f4c2bc5d88"
+    },
+    "source/experiments/combined/donor_yang_gmg/src/gpu_fem/problem_spec.py": {
+      "bytes": 12046,
+      "sha256": "1819c4079dd253d022ae33719825505dd46fd3232684b2a5156f01a85c310501"
+    },
+    "source/experiments/combined/donor_yang_gmg/src/gpu_fem/pub_simp_solver.py": {
+      "bytes": 26969,
+      "sha256": "aefb98dbbcfdf7a1ae0d474c8d0c79d231dca8c40edfc6bfb639b1a45205fdb5"
+    },
+    "source/experiments/combined/donor_yang_gmg/src/gpu_fem/solver_v2.py": {
+      "bytes": 108484,
+      "sha256": "11d5985354db65a14348028cc7014caad18977bc10067dc11c861d922a624abd"
+    },
+    "source/experiments/combined/donor_yang_gmg/src/gpu_fem/solver_v4.py": {
+      "bytes": 10290,
+      "sha256": "bc78bcf31c52fa08bdd401516570393fd2345380cd3593ad97de17b0467b9eb8"
+    },
+    "source/experiments/combined/kff_adapters.py": {
+      "bytes": 5563,
+      "sha256": "f0d513798019c10e1563ac55876eac5b26b6d0aae4551353de1203f70807b2c7"
+    },
+    "source/experiments/session_e/collect.py": {
+      "bytes": 2874,
+      "sha256": "e642ce9d467a8a6e1788ef8821a081690abf96fa0e38b639f65ba4e0d2c8cc5d"
+    },
+    "source/experiments/session_e/dependencies/ATTRIBUTION.md": {
+      "bytes": 882,
+      "sha256": "931f3463612e67da98433ae1461016a9dc566272aa10f314820e4e6cb90efb6f"
+    },
+    "source/experiments/session_e/dependencies/DAO-LICENSE": {
+      "bytes": 1558,
+      "sha256": "8c9ccb96c065e706135b6cbad279b721da6156e51f3a5f27c6b3329af9416d73"
+    },
+    "source/experiments/session_e/dependencies/common.py": {
+      "bytes": 5354,
+      "sha256": "a4f9075f5f8fcbd2a2aec9be966174ed43dd220741d30cd0b970860a15717216"
+    },
+    "source/experiments/session_e/dependencies/cuda.py": {
+      "bytes": 5650,
+      "sha256": "57b05dd89254f8770b9c0cdc5a2081589ca35f1a0a730503399147626ebbbf30"
+    },
+    "source/experiments/session_e/dependencies/modal.py": {
+      "bytes": 4288,
+      "sha256": "63a18941f6390d2dd1f54520d6589bf7c4118deda52ab8d6cefd460f2e90f4b8"
+    },
+    "source/experiments/session_e/donor/LICENSE": {
+      "bytes": 1551,
+      "sha256": "2cbf0d0aeb3004fb99958b857f6a7bcc05c512d2a97d514c23ac1ec15dd8b15f"
+    },
+    "source/experiments/session_e/donor/src/gpu_fem/__init__.py": {
+      "bytes": 434,
+      "sha256": "fb18a505323cb9e0f771ccf75be3d1a678f7851cf739a03b58c701e016c7f06d"
+    },
+    "source/experiments/session_e/donor/src/gpu_fem/cuda_fused_matvec.py": {
+      "bytes": 20411,
+      "sha256": "7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f"
+    },
+    "source/experiments/session_e/donor/src/gpu_fem/cuda_operators.py": {
+      "bytes": 33599,
+      "sha256": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f"
+    },
+    "source/experiments/session_e/donor/src/gpu_fem/filter_r2.py": {
+      "bytes": 6639,
+      "sha256": "2fc74c7a0d0da47adf9ee8154d20682b95c3fd5292f008dbf32cff41a124b88b"
+    },
+    "source/experiments/session_e/donor/src/gpu_fem/pub_simp_solver.py": {
+      "bytes": 26956,
+      "sha256": "37263bd5e6dcfee2ab3469bfd4172dcad7208433bf7cd0af6cab392deaf1073d"
+    },
+    "source/experiments/session_e/donor/src/gpu_fem/simp_r2.py": {
+      "bytes": 42887,
+      "sha256": "c29840e8739c4e992587794c4b9a009f9a5453a3e8b2c551f870a2e3abf6ca3d"
+    },
+    "source/experiments/session_j/job.py": {
+      "bytes": 5329,
+      "sha256": "313d7899465494da6d84050d19ff810f196fbd1aa8b801ff5cadcb392ab3c6f0"
+    },
+    "source/experiments/session_j/ke_unit_3d.npy": {
+      "bytes": 4736,
+      "sha256": "9db9e572e69bdf93095183f1fe1d9363e209607544b77cf42bd1592cd31eb62a"
+    },
+    "source/experiments/session_j/ncu_target.py": {
+      "bytes": 1602,
+      "sha256": "7c34923c6da7f3596c1250252e0b14275a20bb636c4565a8bb49315822933864"
+    },
+    "source/experiments/session_j/protocol.json": {
+      "bytes": 8345,
+      "sha256": "dd45e4d87a97bb1c81ca81f957a4c4fb1b3435f727ec02cc608cbb94a2f89437"
+    }
+  }
+}
