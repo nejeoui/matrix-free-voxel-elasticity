@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-23T15:46:54.426849+00:00",
+  "key": "ratnakar2022symmetry",
+  "reading_status": "Publisher-deposited abstract in Crossref metadata inspected; publisher HTML and PDF returned HTTP 403. No full-text or mechanism-level review.",
+  "source_url": "https://api.crossref.org/works/10.1108/EC-01-2022-0022",
+  "metadata_sha256": "45d1fef99be464e9ea9e9ca25aa89935637fa5c1a28218c0ff5b687404fc096b",
+  "finding": "The abstract explicitly describes matrix-free PCG using the symmetric half of element stiffness matrices, coalesced custom storage and no inter-thread communication; it applies to structured and unstructured all-hexahedral SIMP examples.",
+  "interpretation": "This is directly relevant prior application work. It narrows possible novelty to the specific parity-structured implementation and its measured practical benefit; the abstract cannot settle detailed overlap.",
+  "performance_replication": false,
+  "full_text_obtained": false,
+  "synopsis": {
+    "key": "ratnakar2022synopsis",
+    "reading_status": "Title page and sections 3\u20134 (printed pp. 4\u20135) inspected; PDF page 6 visually inspected. Not a review of the full thesis or final journal paper.",
+    "finding": "The synopsis explicitly describes eight threads per Hex8 element, three rows per thread, and a symmetric-half variant with separate diagonal/off-diagonal arrays and coalesced storage.",
+    "implication": "Eight-thread element ownership and symmetry storage are not a new contribution. The existing dense8 path is a mapping control, not a replication of this symmetric-half method. A credible publication comparison must address this closer baseline.",
+    "scope": "Author synopsis is stored independently; final 2022 Engineering Computations full text remains unavailable."
+  }
+}

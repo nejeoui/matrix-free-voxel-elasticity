@@ -1,0 +1,15 @@
+--- failed/run_gpu.py
++++ v2/run_gpu.py
+@@ -31,7 +31,11 @@
+     def __init__(self, data, path, cp, suite_type):
+         self.cp, self.path, self.data = cp, path, data
+         self.shape = tuple(map(int, data['shape']))
+-        self.suite = suite_type(*self.shape, data['ke'], build_edof=False)
++        self.suite = suite_type(*self.shape, data['ke'], build_edof=(path == 'fused_fp64'))
++        if path == 'fused_fp64':
++            table = self.suite._edof32
++            assert table is not None and table.dtype == cp.int32
++            assert table.size == 24 * int(np.prod(self.shape))
+         self.custom = CudaModal(self.shape, data['ke'], Modal(data['ke']).blocks) if path in ('modal8', 'dense8') else None
+         self.mask = cp.asarray(to_author(data['mask'], self.shape, True))
+         self.force = cp.asarray(to_author(data['force'], self.shape, True))

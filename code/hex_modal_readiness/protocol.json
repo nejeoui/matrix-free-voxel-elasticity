@@ -1,0 +1,52 @@
+{
+  "declared_utc": "2026-09-23T14:50:32.226442+00:00",
+  "kind": "retrospective audit; retained data have already been inspected",
+  "question": "Does existing evidence identify the same-state product share needed to justify the paused fully charged solver campaign?",
+  "experiments": [
+    {
+      "label": "RTX 4090",
+      "result": "results/rescope/hex-modal-cuda-20260923/rental-01/remote/run-01/result.json",
+      "protocol": "results/rescope/hex-modal-cuda-20260923/rental-01/remote/run-01/protocol.json"
+    },
+    {
+      "label": "RTX 3090",
+      "result": "results/rescope/hex-modal-replication-20260923/rental-01/remote/run-01/result.json",
+      "protocol": "results/rescope/hex-modal-replication-20260923/rental-01/remote/run-01/protocol.json"
+    }
+  ],
+  "pending_protocol": "rescope/hex_modal_gpu_application/protocol.json",
+  "source_pins": {
+    "results/rescope/hex-modal-cuda-20260923/rental-01/remote/run-01/result.json": "8acef2ad17e6fd96661689b3b5ee7ceb42e39371f46b1a1aa5d34166ef256707",
+    "results/rescope/hex-modal-cuda-20260923/rental-01/remote/run-01/protocol.json": "cbe2609b63d2e7f761241b796d633457fc9fec399ff307f060de9401c9bb5dba",
+    "results/rescope/hex-modal-replication-20260923/rental-01/remote/run-01/result.json": "9227dedf48b8a58c7df80c90988954614bbca73a362a665009b632856e6a986b",
+    "results/rescope/hex-modal-replication-20260923/rental-01/remote/run-01/protocol.json": "cbe2609b63d2e7f761241b796d633457fc9fec399ff307f060de9401c9bb5dba",
+    "rescope/hex_modal_gpu_application/protocol.json": "484248e850cca0d90754812702f685268437c3dd3cd308cce15a5860805d3494",
+    "rescope/hex_modal_cuda/common.py": "a4f9075f5f8fcbd2a2aec9be966174ed43dd220741d30cd0b970860a15717216"
+  },
+  "published_baselines": [
+    "three_stage_fp64",
+    "fused_fp64",
+    "fused_ai_fp64",
+    "node_fp64"
+  ],
+  "illustrative_product_shares": [
+    0,
+    0.1,
+    0.4,
+    0.5,
+    0.75,
+    1
+  ],
+  "planned_solver_speedup_target": 1.1,
+  "review_threefold_margin_ratio": 1.3,
+  "assumptions": "Identical solver work and non-product cost; synthetic measured ratio is assumed to transfer, not asserted to do so. No in-solve profile is inferred from disjoint timings.",
+  "acceptance": "Recompute all saved timing comparisons; account for every normal solver replicate; report missing timing components as unknown. No GPU rental and no threshold change.",
+  "negative_controls": [
+    "Known rational Amdahl examples",
+    "Invalid product shares",
+    "Corrupted saved timing comparison",
+    "Duplicated solve replacing missing replicate"
+  ],
+  "performance_claim": false,
+  "novelty_claim": false
+}

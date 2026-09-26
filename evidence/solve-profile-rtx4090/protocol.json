@@ -1,0 +1,127 @@
+{
+  "declared_utc": "2026-09-23T15:43:24.532148+00:00",
+  "question": "On actual frozen physical density fields, what fraction of a synchronized state solve lies in complete constrained products, and is there a measured premise for a separate fully charged modal8 campaign?",
+  "scope": "Separate prospective corrected warm prepared-state diagnostic. Original failed package is sealed; original fully charged protocol remains unexecuted.",
+  "parent_protocol_sha256": "484248e850cca0d90754812702f685268437c3dd3cd308cce15a5860805d3494",
+  "cases": [
+    {
+      "id": "smoke-q4",
+      "q": 4,
+      "plain_replicates": 1,
+      "primary": false
+    },
+    {
+      "id": "optimized-q64",
+      "q": 64,
+      "plain_replicates": 3,
+      "primary": true,
+      "thermal_preamble": true
+    },
+    {
+      "id": "optimized-q96",
+      "q": 96,
+      "plain_replicates": 3,
+      "primary": true
+    },
+    {
+      "id": "uniform-q64",
+      "q": 64,
+      "plain_replicates": 3,
+      "primary": false
+    }
+  ],
+  "paths": [
+    "fused_ai_fp64",
+    "fused_fp64",
+    "node_fp64",
+    "dense8",
+    "modal8"
+  ],
+  "candidate": "modal8",
+  "material": {
+    "Emin": 1e-06,
+    "Emax": 1.0,
+    "penal": 3.0,
+    "nu": 0.3
+  },
+  "solver": {
+    "requested_rtol": 1e-08,
+    "true_residual_limit": 1e-07,
+    "energy_force_relative_limit": 1e-06,
+    "cross_state_limit": 5e-05,
+    "cross_compliance_limit": 1e-05,
+    "maximum_iterations": 20000,
+    "check_every": 50,
+    "maximum_state_seconds": 300
+  },
+  "profile_overhead_limit": 0.05,
+  "planning_ratio_target": 1.1,
+  "order_seed": 2026092316,
+  "thermal_preamble_seconds": 20,
+  "measurement": {
+    "plain": "Synchronized host timer includes rebuilding/transferring modulus, constructing the common Jacobi diagonal, unmodified zero-start PCG with native true checks, and transfer of the accepted state to host.",
+    "profile": "Same timer and operations; preallocated CUDA event pair around every complete constrained product, no per-product synchronizations. Sum intervals after solve synchronization. Persist every event interval and call count.",
+    "warmup": "One capped PCG solve per case/path compiles solver operations; save and independently check each rejected state. Thermal preamble runs modal products for 20 seconds on the first large case.",
+    "overhead": "Profiled solve / median of three plain solves minus one; attributable only if iterations and calls match every plain replicate. Absolute overhead must be <=5% on every primary path.",
+    "excluded": "Process/context imports, geometry/kernel preparation, capped warmups, event allocation, C++ auditing and archive I/O. Record these separately. Thus this is not the earlier charged-episode gate.",
+    "reference": "First plain fused_ai_fp64 solution by replicate for each case; compare all states as well as independent physical checks."
+  },
+  "planning_gate": "All normal states and cross-path checks pass; complete declared data; every primary path has qualified profiling (matched work, <=5% absolute apparent overhead); candidate median plain solve ratio >=1.10 against every baseline at both primary sizes. This only justifies a separately executed fully charged campaign, not publication or a speedup claim.",
+  "on_failure": "Retain complete and partial records. Stop on physical failure, timeout or cap; do not replace the rental or relax thresholds within this diagnostic.",
+  "hardware": {
+    "gpu": "RTX 4090",
+    "gpu_full_name": "NVIDIA GeForce RTX 4090",
+    "minimum_cpu_ram_mb": 128000,
+    "minimum_gpu_ram_mb": 24000,
+    "disk_gb": 80,
+    "maximum_total_usd_per_hour": 0.6
+  },
+  "limits": {
+    "suite_seconds": 2100,
+    "maximum_job_seconds": 3000,
+    "maximum_rental_seconds": 5400,
+    "one_rental": true,
+    "destroy_after_verified_collection": true
+  },
+  "documentation": [
+    {
+      "url": "https://docs.cupy.dev/en/v13.6.0/user_guide/performance.html",
+      "accessed_utc": "2026-09-23T15:23:30.373386+00:00",
+      "use": "CUDA event timing, synchronization, compilation and context overhead scope; documentation only, not a screened paper."
+    }
+  ],
+  "package_source_pins": {
+    "analysis.py": "b17dc1a2af41643993429c6f03623b2fe53890fee5c8797dcc924a4d8b393b24",
+    "bootstrap.sh": "2c614f7542e95da762cd7476cbb84211f0f765fcb6336649f8695898ce652ea7",
+    "check_index_contract.py": "353d5f780c6965324b3b9d1ae552d570e60336a839d7b9f2ae1fb629cf5d3e1b",
+    "collect.py": "e642ce9d467a8a6e1788ef8821a081690abf96fa0e38b639f65ba4e0d2c8cc5d",
+    "dependencies/common.py": "a4f9075f5f8fcbd2a2aec9be966174ed43dd220741d30cd0b970860a15717216",
+    "dependencies/cuda.py": "ab3352097f6b96f4ad9852fb9c20f65a553cbce9297b74fb31f62b2d7187dd53",
+    "dependencies/modal.py": "63a18941f6390d2dd1f54520d6589bf7c4118deda52ab8d6cefd460f2e90f4b8",
+    "donor/LICENSE": "2cbf0d0aeb3004fb99958b857f6a7bcc05c512d2a97d514c23ac1ec15dd8b15f",
+    "donor/src/gpu_fem/__init__.py": "fb18a505323cb9e0f771ccf75be3d1a678f7851cf739a03b58c701e016c7f06d",
+    "donor/src/gpu_fem/cuda_fused_matvec.py": "7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f",
+    "donor/src/gpu_fem/cuda_operators.py": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f",
+    "donor/src/gpu_fem/filter_r2.py": "2fc74c7a0d0da47adf9ee8154d20682b95c3fd5292f008dbf32cff41a124b88b",
+    "donor/src/gpu_fem/pub_simp_solver.py": "37263bd5e6dcfee2ab3469bfd4172dcad7208433bf7cd0af6cab392deaf1073d",
+    "donor/src/gpu_fem/simp_r2.py": "c29840e8739c4e992587794c4b9a009f9a5453a3e8b2c551f870a2e3abf6ca3d",
+    "job.py": "813a7ffbf25b3652d8894141c309d4a592bcd18180968dca531cf4bcaf0ebad6",
+    "launch.py": "652340bcbc519c1b3d9e1187ca46c0b343defbaf7cc57a41694676d3f5f381fd",
+    "monitor.py": "6f11ae93ae212c1747263b5b3b318c855e7dbe880524c2b674973626e1692d85",
+    "run_gpu.py": "75af6822e0952b5752dc1a64be930a6208b484f194a1af442c7aae80af82d5fc",
+    "test_profile.py": "1ab1660037a683f64c6705c6124e0b19e9c49e166b223c7fa8c3df0afc7a9715",
+    "verify.py": "8293b2dcdff80c6cd22ac4196b688237bcaa005e6db221a8c3b1731916246cdb"
+  },
+  "performance_claim": false,
+  "novelty_claim": false,
+  "publication_goal_achieved": false,
+  "revision": 2,
+  "previous_failed_diagnostic": {
+    "manifest": "results/rescope/hex-modal-profile-20260923/MANIFEST.json",
+    "sha256": "e6c4f0f693c1aa219440b850f7a3f9053dabc582223fd4894fe23f61d8b6f0c0",
+    "normal_measurements": 0,
+    "rejected_capped_states": 1
+  },
+  "revision_reason": "Build and validate the int32 index table required by fused_fp64. The previous diagnostic passed None to that kernel. Mathematical kernels, PCG, inputs, solver limits, physical thresholds and planning decision are unchanged.",
+  "lifecycle": "Single newly created rental, separate from the failed diagnostic; preserve HTTP errors, destroy immediately after complete archive verification, then replay locally."
+}

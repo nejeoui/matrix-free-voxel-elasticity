@@ -1,0 +1,9 @@
+{
+  "result_sha256": "a92c19b04d342750911205786623f24d41c2c43ef09070709f386dd673cecf3b",
+  "replay_sha256": "f19a6ee13c565f1d440c0466627873aac98b70b9cb46356e35f09d7bd1ca9b97",
+  "matplotlib": "3.10.7",
+  "numpy": "2.5.3",
+  "rows_exported": 70,
+  "bootstrap_or_confidence_interval": false,
+  "publication_claim": false
+}

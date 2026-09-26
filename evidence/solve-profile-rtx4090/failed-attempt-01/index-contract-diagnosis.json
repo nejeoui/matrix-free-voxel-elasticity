@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "expected_table": "missing",
+  "actual_table_present": false,
+  "indices_checked": 0,
+  "actual_donor_wrapper_exercised": true,
+  "cuda_executed": false,
+  "numerical_product_executed": false,
+  "source_pins": {
+    "/Users/nejeoui/JPDC/results/rescope/hex-modal-profile-20260923/source/run_gpu.py": "4f6ec69eef1e895f6d6ded2553377cc4b23416f7951093ac1bb415086f2c15cf",
+    "/Users/nejeoui/JPDC/results/rescope/hex-modal-profile-20260923/source/donor/src/gpu_fem/cuda_operators.py": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f",
+    "/Users/nejeoui/JPDC/rescope/hex_modal_profile/check_index_contract.py": "353d5f780c6965324b3b9d1ae552d570e60336a839d7b9f2ae1fb629cf5d3e1b"
+  }
+}

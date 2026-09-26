@@ -1,0 +1,13 @@
+{
+  "utc": "2026-09-23T16:09:04.154172+00:00",
+  "instance_id": 52254148,
+  "confirmed_destroyed": true,
+  "hourly_rate_usd": "0.43555555555555553",
+  "rate_time_seconds": "1097.052591",
+  "rate_time_estimate_usd": "0.1327298196518518440641328417",
+  "known_amount_subtotal_usd": "12.19956435258650205284636175",
+  "complete_cumulative_cost_usd": null,
+  "invoice_settled": false,
+  "ledger_rows": 13,
+  "account_credit_delta_added_to_spending": false
+}
