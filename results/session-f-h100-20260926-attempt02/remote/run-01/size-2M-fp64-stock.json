@@ -1,0 +1,25 @@
+{
+  "size": "2M",
+  "schedule": "fp64",
+  "arm": "stock",
+  "status": "ok",
+  "utc": "2026-09-26T01:18:48.519088+00:00",
+  "dims": [
+    252,
+    126,
+    63
+  ],
+  "n_elem": 2000376,
+  "ndof": 6169152,
+  "n_free": 6144768,
+  "bc_seconds": 0.21680690720677376,
+  "gpu_total_bytes": 99960487936,
+  "setup_seconds": 37.494933849200606,
+  "solve_seconds": 1.5319542400538921,
+  "iterations": 40,
+  "converged": false,
+  "fp64_operator_calls": 0,
+  "gpu_used_after_bytes": 49803165696,
+  "pool_total_bytes": 49678156800,
+  "seconds_per_iteration": 0.0382988560013473
+}

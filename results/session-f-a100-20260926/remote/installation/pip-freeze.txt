@@ -1,0 +1,5 @@
+cupy-cuda12x==13.6.0
+fastrlock==0.8.3
+numpy==2.2.6
+pyamg==5.3.0
+scipy==1.15.3

@@ -1,0 +1,11 @@
+[smoke] GPU detected: NVIDIA H100 NVL
+[smoke] building 64k cantilever probe ...
+[smoke] running FP64 V-cycle PCG ...
+[smoke] iters      = 25
+[smoke] converged  = True
+[smoke] rel_resid  = 5.95e-11
+[smoke] wall time  = 9.7 s
+
+PASS --- stack is healthy. Proceed to validate_phase1.py.
+
+--- stderr ---

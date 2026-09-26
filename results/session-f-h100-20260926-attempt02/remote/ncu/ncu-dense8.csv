@@ -1,0 +1,4 @@
+==PROF== Connected to process 2518 (/usr/bin/python3.12)
+==ERROR== ERR_NVGPUCTRPERM - The user does not have permission to access NVIDIA GPU Performance Counters on the target device 0. For instructions on enabling permissions and to get more information see https://developer.nvidia.com/ERR_NVGPUCTRPERM
+launched 3 x ['dense8', 'modal8', 'modal8_muladd', 'fused_ai_fp64'] on (128, 64, 64)
+==PROF== Disconnected from process 2518

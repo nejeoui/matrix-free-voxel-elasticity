@@ -1,0 +1,67 @@
+{
+  "rows": [
+    {
+      "size": "2M",
+      "schedule": "fp64",
+      "arm": "stock",
+      "status": "out_of_memory",
+      "utc": "2026-09-26T00:45:06.961794+00:00",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "n_elem": 2000376,
+      "ndof": 6169152,
+      "n_free": 6144768,
+      "bc_seconds": 0.24713452602736652,
+      "gpu_total_bytes": 25252724736,
+      "error": "OutOfMemoryError('Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,836,067,840 bytes).')",
+      "traceback": "Traceback (most recent call last):\n  File \"/root/voxel-session_f/source/experiments/session_f/run_probe.py\", line 166, in size_case\n    _, info = solve(problem, op, schedule, E, s[\"tol\"], s[\"maxiter\"])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/session_f/run_probe.py\", line 97, in solve\n    gmg = problem.gmg(op, schedule)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/session_f/run_probe.py\", line 87, in gmg\n    return GalerkinMatFreeGMG(mf_op=op, free=self.free, free_gpu=self.free_gpu, nelx=nelx, nely=nely,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py\", line 565, in __init__\n    self._level1_struct = _build_level1_galerkin_struct(\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py\", line 240, in _build_level1_galerkin_struct\n    level.fine_elem_stack = cp.stack(level.fine_elem_sorted_stu)  # (8, nnz_raw) int32\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py\", line 151, in stack\n    return concatenate([cupy.expand_dims(x, axis) for x in tup], axis, out,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py\", line 60, in concatenate\n    return _core.concatenate_method(tup, axis, out, dtype, casting)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"cupy/_core/_routines_manipulation.pyx\", line 586, in cupy._core._routines_manipulation.concatenate_method\n  File \"cupy/_core/_routines_manipulation.pyx\", line 658, in cupy._core._routines_manipulation.concatenate_method\n  File \"cupy/_core/core.pyx\", line 167, in cupy._core.core.ndarray.__new__\n  File \"cupy/_core/core.pyx\", line 254, in cupy._core.core._ndarray_base._init\n  File \"cupy/cuda/memory.pyx\", line 875, in cupy.cuda.memory.alloc\n  File \"cupy/cuda/memory.pyx\", line 1579, in cupy.cuda.memory.MemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1600, in cupy.cuda.memory.MemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc\n  File \"cupy/cuda/memory.pyx\", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc\n  File \"cupy/cuda/memory.pyx\", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc\ncupy.cuda.memory.OutOfMemoryError: Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,836,067,840 bytes).\n",
+      "stderr_tail": "",
+      "wall_seconds": 31.31288429396227
+    },
+    {
+      "size": "2M",
+      "schedule": "fp64",
+      "arm": "modal8_muladd",
+      "status": "out_of_memory",
+      "utc": "2026-09-26T00:45:38.278025+00:00",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "n_elem": 2000376,
+      "ndof": 6169152,
+      "n_free": 6144768,
+      "bc_seconds": 0.2509822598658502,
+      "gpu_total_bytes": 25252724736,
+      "error": "OutOfMemoryError('Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,885,426,688 bytes).')",
+      "traceback": "Traceback (most recent call last):\n  File \"/root/voxel-session_f/source/experiments/session_f/run_probe.py\", line 166, in size_case\n    _, info = solve(problem, op, schedule, E, s[\"tol\"], s[\"maxiter\"])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/session_f/run_probe.py\", line 97, in solve\n    gmg = problem.gmg(op, schedule)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/session_f/run_probe.py\", line 87, in gmg\n    return GalerkinMatFreeGMG(mf_op=op, free=self.free, free_gpu=self.free_gpu, nelx=nelx, nely=nely,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py\", line 565, in __init__\n    self._level1_struct = _build_level1_galerkin_struct(\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py\", line 240, in _build_level1_galerkin_struct\n    level.fine_elem_stack = cp.stack(level.fine_elem_sorted_stu)  # (8, nnz_raw) int32\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py\", line 151, in stack\n    return concatenate([cupy.expand_dims(x, axis) for x in tup], axis, out,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py\", line 60, in concatenate\n    return _core.concatenate_method(tup, axis, out, dtype, casting)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"cupy/_core/_routines_manipulation.pyx\", line 586, in cupy._core._routines_manipulation.concatenate_method\n  File \"cupy/_core/_routines_manipulation.pyx\", line 658, in cupy._core._routines_manipulation.concatenate_method\n  File \"cupy/_core/core.pyx\", line 167, in cupy._core.core.ndarray.__new__\n  File \"cupy/_core/core.pyx\", line 254, in cupy._core.core._ndarray_base._init\n  File \"cupy/cuda/memory.pyx\", line 875, in cupy.cuda.memory.alloc\n  File \"cupy/cuda/memory.pyx\", line 1579, in cupy.cuda.memory.MemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1600, in cupy.cuda.memory.MemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc\n  File \"cupy/cuda/memory.pyx\", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc\n  File \"cupy/cuda/memory.pyx\", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc\ncupy.cuda.memory.OutOfMemoryError: Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,885,426,688 bytes).\n",
+      "stderr_tail": "",
+      "wall_seconds": 30.60984403290786
+    },
+    {
+      "size": "2M",
+      "schedule": "mixed",
+      "arm": "stock",
+      "status": "out_of_memory",
+      "utc": "2026-09-26T00:46:08.880901+00:00",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "n_elem": 2000376,
+      "ndof": 6169152,
+      "n_free": 6144768,
+      "bc_seconds": 0.25215683691203594,
+      "gpu_total_bytes": 25252724736,
+      "error": "OutOfMemoryError('Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,885,421,568 bytes).')",
+      "traceback": "Traceback (most recent call last):\n  File \"/root/voxel-session_f/source/experiments/session_f/run_probe.py\", line 166, in size_case\n    _, info = solve(problem, op, schedule, E, s[\"tol\"], s[\"maxiter\"])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/session_f/run_probe.py\", line 97, in solve\n    gmg = problem.gmg(op, schedule)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/session_f/run_probe.py\", line 87, in gmg\n    return GalerkinMatFreeGMG(mf_op=op, free=self.free, free_gpu=self.free_gpu, nelx=nelx, nely=nely,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py\", line 565, in __init__\n    self._level1_struct = _build_level1_galerkin_struct(\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py\", line 240, in _build_level1_galerkin_struct\n    level.fine_elem_stack = cp.stack(level.fine_elem_sorted_stu)  # (8, nnz_raw) int32\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py\", line 151, in stack\n    return concatenate([cupy.expand_dims(x, axis) for x in tup], axis, out,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py\", line 60, in concatenate\n    return _core.concatenate_method(tup, axis, out, dtype, casting)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"cupy/_core/_routines_manipulation.pyx\", line 586, in cupy._core._routines_manipulation.concatenate_method\n  File \"cupy/_core/_routines_manipulation.pyx\", line 658, in cupy._core._routines_manipulation.concatenate_method\n  File \"cupy/_core/core.pyx\", line 167, in cupy._core.core.ndarray.__new__\n  File \"cupy/_core/core.pyx\", line 254, in cupy._core.core._ndarray_base._init\n  File \"cupy/cuda/memory.pyx\", line 875, in cupy.cuda.memory.alloc\n  File \"cupy/cuda/memory.pyx\", line 1579, in cupy.cuda.memory.MemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1600, in cupy.cuda.memory.MemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc\n  File \"cupy/cuda/memory.pyx\", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc\n  File \"cupy/cuda/memory.pyx\", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc\ncupy.cuda.memory.OutOfMemoryError: Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,885,421,568 bytes).\n",
+      "stderr_tail": "",
+      "wall_seconds": 31.424539672210813
+    }
+  ]
+}

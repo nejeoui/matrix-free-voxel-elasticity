@@ -1,0 +1,80 @@
+{
+ "experiment": "Voxel session F: combined-paper feasibility probe (W0/W2/W3) on RTX 4090, A100 80 GB and H100",
+ "status_at_declaration": "Declared before any session F rental. One byte-identical package runs on each GPU type; one rental per type.",
+ "questions": [
+  "Q1 counters: can Nsight Compute read performance counters on each rented GPU (no ERR_NVGPUCTRPERM)?",
+  "Q2 stack: does Yang et al.'s pinned GMG (fd9ddecd) install and pass its own smoke test unchanged?",
+  "Q3 integration: inside their GMG, do the fused_ai_fp64 and modal8_muladd arms reproduce the stock FP64 operator and solve?",
+  "Q4 sizing: how large a cantilever fits, per GPU, solver schedule and arm (peak memory, setup and per-iteration time)?"
+ ],
+ "hardware": {
+  "gpu_full_names": ["NVIDIA GeForce RTX 4090", "NVIDIA A100-SXM4-80GB", "NVIDIA A100 80GB PCIe",
+                     "NVIDIA H100 80GB HBM3", "NVIDIA H100 PCIe", "NVIDIA H100 NVL"],
+  "provider_names": {"rtx4090": ["RTX 4090"], "a100": ["A100 SXM4", "A100 PCIE"], "h100": ["H100 SXM", "H100 NVL", "H100 PCIE"]},
+  "operational_min_gpu_ram_mb": {"rtx4090": 24000, "a100": 79000, "h100": 79000},
+  "minimum_cpu_ram_mb": 120000,
+  "minimum_gpu_ram_mb": 23000,
+  "disk_gb": 80,
+  "maximum_total_usd_per_hour": 3.2
+ },
+ "limits": {
+  "maximum_job_seconds": 4800,
+  "maximum_rental_seconds": 6600,
+  "size_case_timeout_seconds": 900,
+  "ncu_timeout_seconds": 900,
+  "rentals": 3,
+  "destroy_after_verified_collection": true,
+  "evidence_cap_bytes": 2147483648
+ },
+ "donor": {"repository": "https://github.com/nbbllxx0/Mixed-Precision-GMG-SIMP", "commit": "fd9ddecda039fdfb7ffb8cf49c58f602318ed2ef"},
+ "arms": ["stock", "fused_ai_fp64", "modal8_muladd"],
+ "schedules": {
+  "fp64": {"n_levels": 4, "fine_smoother": "fp64", "smoother_type": "chebyshev", "fused_fine": false},
+  "mixed": {"n_levels": 4, "fine_smoother": "fp32", "smoother_type": "chebyshev", "fused_fine": true}
+ },
+ "integration": {
+  "grids": [{"id": "medium", "preset": "cantilever_gpu_medium"},
+            {"id": "odd", "preset": "cantilever_gpu_medium", "nel": [37, 23, 17]}],
+  "density_fields": {"uniform": 0.5, "random": {"low": 0.3, "high": 1.0, "seed": 20260926}},
+  "e_min": 1e-9,
+  "penal": 3.0,
+  "product_seed": 26,
+  "product_relative_l2_limit": 1e-12,
+  "solve": {"tol": 1e-10, "maxiter": 300},
+  "true_residual_limit": 1e-10,
+  "solution_relative_l2_limit": 1e-8
+ },
+ "sizing": {
+  "ladder": [{"id": "2M", "preset": "cantilever_gpu_2M"},
+             {"id": "5M", "preset": "cantilever_gpu_5M"},
+             {"id": "10M", "preset": "cantilever_gpu_5M", "nel": [432, 216, 108]},
+             {"id": "20M", "preset": "cantilever_gpu_5M", "nel": [544, 272, 136]},
+             {"id": "33M", "preset": "cantilever_gpu_5M", "nel": [640, 320, 160]}],
+  "runs": [{"schedule": "fp64", "arm": "stock"}, {"schedule": "fp64", "arm": "modal8_muladd"},
+           {"schedule": "mixed", "arm": "stock"}],
+  "density": 0.5,
+  "solve": {"tol": 1e-8, "maxiter": 40},
+  "stop_rule": "for each run, stop the ladder at the first size that fails (out of memory, error or timeout)"
+ },
+ "ncu": {
+  "grid": [128, 64, 64],
+  "kernels": ["dense8", "modal8", "modal8_muladd", "fused_matvec_ai_fp64"],
+  "launch_skip": 2,
+  "launch_count": 1,
+  "sections": ["SpeedOfLight", "ComputeWorkloadAnalysis", "MemoryWorkloadAnalysis", "Occupancy", "InstructionStats"],
+  "metrics": ["smsp__sass_thread_inst_executed_op_dadd_pred_on.sum", "smsp__sass_thread_inst_executed_op_dfma_pred_on.sum",
+              "smsp__sass_thread_inst_executed_op_dmul_pred_on.sum", "sm__inst_executed_pipe_fp64.sum",
+              "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active", "gpu__time_duration.sum"]
+ },
+ "decision": {
+  "counters_available": "ncu exits 0 and its output contains no ERR_NVGPUCTRPERM; recorded per GPU",
+  "stack_ok": "their unmodified ci/smoke_test.py exits 0",
+  "integration_ok": "for every grid, density field, schedule and non-stock arm: product relative L2 <= 1e-12 against stock; solve converged; true residual (stock operator) <= 1e-10; solution relative L2 against the stock solution <= 1e-8",
+  "sizing": "descriptive only; it sets the W1/W2 size targets, which are frozen in their own protocols"
+ },
+ "not_claimed": [
+  "No timing in this session is a speedup claim: runs are single, unrepeated and unrandomized.",
+  "Counter values from this probe are exploratory; W3 declares its own protocol.",
+  "Compatibility is not a speedup, and a speedup is not novelty."
+ ]
+}

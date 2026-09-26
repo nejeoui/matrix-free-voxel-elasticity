@@ -1,0 +1,32 @@
+OS                           : Linux-5.15.0-173-generic-x86_64-with-glibc2.39
+Python Version               : 3.12.3
+CuPy Version                 : 13.6.0
+CuPy Platform                : NVIDIA CUDA
+NumPy Version                : 2.2.6
+SciPy Version                : 1.15.3
+Cython Build Version         : 3.0.12
+Cython Runtime Version       : None
+CUDA Root                    : /usr/local/cuda
+nvcc PATH                    : /usr/local/cuda/bin/nvcc
+CUDA Build Version           : 12090
+CUDA Driver Version          : 12080
+CUDA Runtime Version         : 12090 (linked to CuPy) / 12060 (locally installed)
+CUDA Extra Include Dirs      : []
+cuBLAS Version               : (available)
+cuFFT Version                : 11300
+cuRAND Version               : 10307
+cuSOLVER Version             : (11, 7, 1)
+cuSPARSE Version             : (available)
+NVRTC Version                : (12, 6)
+Thrust Version               : 200800
+CUB Build Version            : 200800
+Jitify Build Version         : <unknown>
+cuDNN Build Version          : (not loaded; try `import cupy.cuda.cudnn` first)
+cuDNN Version                : (not loaded; try `import cupy.cuda.cudnn` first)
+NCCL Build Version           : 22501
+NCCL Runtime Version         : 22304
+cuTENSOR Version             : None
+cuSPARSELt Build Version     : None
+Device 0 Name                : NVIDIA H100 NVL
+Device 0 Compute Capability  : 90
+Device 0 PCI Bus ID          : 0000:3C:00.0

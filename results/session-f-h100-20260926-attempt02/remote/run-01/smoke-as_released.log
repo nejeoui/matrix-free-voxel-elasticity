@@ -1,0 +1,21 @@
+[smoke] GPU detected: NVIDIA H100 NVL
+
+--- stderr ---
+Traceback (most recent call last):
+  File "/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/ci/smoke_test.py", line 120, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/ci/smoke_test.py", line 53, in main
+    from gpu_fem.bc_generator import generate_bc
+  File "/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/__init__.py", line 16, in <module>
+    from .solver_v2 import SolverV2, HexGridGMG, MatrixFreeKff
+  File "/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/solver_v2.py", line 55, in <module>
+    from .fem_gpu import GPUFEMSolver
+  File "/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/fem_gpu.py", line 44, in <module>
+    ensure_local_paths(__file__)
+  File "/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/paths.py", line 38, in ensure_local_paths
+    paths = resolve_local_paths(start)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/paths.py", line 34, in resolve_local_paths
+    raise RuntimeError("Unable to locate the local GPU-FEM repo root.")
+RuntimeError: Unable to locate the local GPU-FEM repo root.

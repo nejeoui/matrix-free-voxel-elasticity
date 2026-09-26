@@ -1,0 +1,19 @@
+{
+  "size": "5M",
+  "schedule": "fp64",
+  "arm": "stock",
+  "status": "out_of_memory",
+  "utc": "2026-09-26T01:00:41.750976+00:00",
+  "dims": [
+    342,
+    171,
+    86
+  ],
+  "n_elem": 5029452,
+  "ndof": 15397956,
+  "n_free": 15353064,
+  "bc_seconds": 0.508524514734745,
+  "gpu_total_bytes": 85093777408,
+  "error": "OutOfMemoryError('Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,290,732,032 bytes).')",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/voxel-session_f/source/experiments/session_f/run_probe.py\", line 166, in size_case\n    _, info = solve(problem, op, schedule, E, s[\"tol\"], s[\"maxiter\"])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/session_f/run_probe.py\", line 98, in solve\n    gmg.setup(E)\n  File \"/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py\", line 725, in setup\n    K1, diag1 = assemble_level1_galerkin(self._level1_struct, self._E_e_fp64)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py\", line 256, in assemble_level1_galerkin\n    raw = (E_e_gpu[level.fine_elem_stack] * level.Q_stu_stack).sum(axis=0)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"cupy/_core/core.pyx\", line 1627, in cupy._core.core._ndarray_base.__getitem__\n  File \"cupy/_core/_routines_indexing.pyx\", line 43, in cupy._core._routines_indexing._ndarray_getitem\n  File \"cupy/_core/core.pyx\", line 935, in cupy._core.core._ndarray_base.take\n  File \"cupy/_core/_routines_indexing.pyx\", line 132, in cupy._core._routines_indexing._ndarray_take\n  File \"cupy/_core/_routines_indexing.pyx\", line 816, in cupy._core._routines_indexing._take\n  File \"cupy/_core/core.pyx\", line 167, in cupy._core.core.ndarray.__new__\n  File \"cupy/_core/core.pyx\", line 254, in cupy._core.core._ndarray_base._init\n  File \"cupy/cuda/memory.pyx\", line 875, in cupy.cuda.memory.alloc\n  File \"cupy/cuda/memory.pyx\", line 1579, in cupy.cuda.memory.MemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1600, in cupy.cuda.memory.MemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc\n  File \"cupy/cuda/memory.pyx\", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc\n  File \"cupy/cuda/memory.pyx\", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc\ncupy.cuda.memory.OutOfMemoryError: Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,290,732,032 bytes).\n"
+}

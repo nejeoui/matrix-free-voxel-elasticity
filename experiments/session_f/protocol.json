@@ -1,0 +1,257 @@
+{
+ "experiment": "Voxel session F: combined-paper feasibility probe (W0/W2/W3) on RTX 4090, A100 80 GB and H100",
+ "status_at_declaration": "Declared before any session F rental. One byte-identical package runs on each GPU type; one rental per type.",
+ "questions": [
+  "Q1 counters: can Nsight Compute read performance counters on each rented GPU (no ERR_NVGPUCTRPERM)?",
+  "Q2 stack: does Yang et al.'s pinned GMG (fd9ddecd) install and pass its own smoke test unchanged?",
+  "Q3 integration: inside their GMG, do the fused_ai_fp64 and modal8_muladd arms reproduce the stock FP64 operator and solve?",
+  "Q4 sizing: how large a cantilever fits, per GPU, solver schedule and arm (peak memory, setup and per-iteration time)?"
+ ],
+ "hardware": {
+  "gpu_full_names": [
+   "NVIDIA GeForce RTX 4090",
+   "NVIDIA A100-SXM4-80GB",
+   "NVIDIA A100 80GB PCIe",
+   "NVIDIA H100 80GB HBM3",
+   "NVIDIA H100 PCIe",
+   "NVIDIA H100 NVL"
+  ],
+  "provider_names": {
+   "rtx4090": [
+    "RTX 4090"
+   ],
+   "a100": [
+    "A100 SXM4",
+    "A100 PCIE"
+   ],
+   "h100": [
+    "H100 SXM",
+    "H100 NVL",
+    "H100 PCIE"
+   ]
+  },
+  "operational_min_gpu_ram_mb": {
+   "rtx4090": 24000,
+   "a100": 79000,
+   "h100": 79000
+  },
+  "minimum_cpu_ram_mb": 120000,
+  "minimum_gpu_ram_mb": 23000,
+  "disk_gb": 80,
+  "maximum_total_usd_per_hour": 3.2
+ },
+ "limits": {
+  "maximum_job_seconds": 4800,
+  "maximum_rental_seconds": 6600,
+  "size_case_timeout_seconds": 900,
+  "ncu_timeout_seconds": 900,
+  "rentals": 3,
+  "destroy_after_verified_collection": true,
+  "evidence_cap_bytes": 2147483648
+ },
+ "donor": {
+  "repository": "https://github.com/nbbllxx0/Mixed-Precision-GMG-SIMP",
+  "commit": "fd9ddecda039fdfb7ffb8cf49c58f602318ed2ef"
+ },
+ "arms": [
+  "stock",
+  "fused_ai_fp64",
+  "modal8_muladd"
+ ],
+ "schedules": {
+  "fp64": {
+   "n_levels": 4,
+   "fine_smoother": "fp64",
+   "smoother_type": "chebyshev",
+   "fused_fine": false
+  },
+  "mixed": {
+   "n_levels": 4,
+   "fine_smoother": "fp32",
+   "smoother_type": "chebyshev",
+   "fused_fine": true
+  }
+ },
+ "integration": {
+  "grids": [
+   {
+    "id": "medium",
+    "preset": "cantilever_gpu_medium"
+   },
+   {
+    "id": "odd",
+    "preset": "cantilever_gpu_medium",
+    "nel": [
+     37,
+     23,
+     17
+    ]
+   }
+  ],
+  "density_fields": {
+   "uniform": 0.5,
+   "random": {
+    "low": 0.3,
+    "high": 1.0,
+    "seed": 20260926
+   }
+  },
+  "e_min": 1e-09,
+  "penal": 3.0,
+  "product_seed": 26,
+  "product_relative_l2_limit": 1e-12,
+  "solve": {
+   "tol": 1e-10,
+   "maxiter": 300
+  },
+  "true_residual_limit": 1e-10,
+  "solution_relative_l2_limit": 1e-08
+ },
+ "sizing": {
+  "ladder": [
+   {
+    "id": "2M",
+    "preset": "cantilever_gpu_2M"
+   },
+   {
+    "id": "5M",
+    "preset": "cantilever_gpu_5M"
+   },
+   {
+    "id": "10M",
+    "preset": "cantilever_gpu_5M",
+    "nel": [
+     432,
+     216,
+     108
+    ]
+   },
+   {
+    "id": "20M",
+    "preset": "cantilever_gpu_5M",
+    "nel": [
+     544,
+     272,
+     136
+    ]
+   },
+   {
+    "id": "33M",
+    "preset": "cantilever_gpu_5M",
+    "nel": [
+     640,
+     320,
+     160
+    ]
+   }
+  ],
+  "runs": [
+   {
+    "schedule": "fp64",
+    "arm": "stock"
+   },
+   {
+    "schedule": "fp64",
+    "arm": "modal8_muladd"
+   },
+   {
+    "schedule": "mixed",
+    "arm": "stock"
+   }
+  ],
+  "density": 0.5,
+  "solve": {
+   "tol": 1e-08,
+   "maxiter": 40
+  },
+  "stop_rule": "for each run, stop the ladder at the first size that fails (out of memory, error or timeout)"
+ },
+ "ncu": {
+  "grid": [
+   128,
+   64,
+   64
+  ],
+  "kernels": [
+   "dense8",
+   "modal8",
+   "modal8_muladd",
+   "fused_matvec_ai_fp64"
+  ],
+  "launch_skip": 2,
+  "launch_count": 1,
+  "sections": [
+   "SpeedOfLight",
+   "ComputeWorkloadAnalysis",
+   "MemoryWorkloadAnalysis",
+   "Occupancy",
+   "InstructionStats"
+  ],
+  "metrics": [
+   "smsp__sass_thread_inst_executed_op_dadd_pred_on.sum",
+   "smsp__sass_thread_inst_executed_op_dfma_pred_on.sum",
+   "smsp__sass_thread_inst_executed_op_dmul_pred_on.sum",
+   "sm__inst_executed_pipe_fp64.sum",
+   "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active",
+   "gpu__time_duration.sum"
+  ]
+ },
+ "decision": {
+  "counters_available": "ncu exits 0 and its output contains no ERR_NVGPUCTRPERM; recorded per GPU",
+  "stack_ok": "their unmodified ci/smoke_test.py exits 0",
+  "integration_ok": "for every grid, density field, schedule and non-stock arm: product relative L2 <= 1e-12 against stock; solve converged; true residual (stock operator) <= 1e-10; solution relative L2 against the stock solution <= 1e-8",
+  "sizing": "descriptive only; it sets the W1/W2 size targets, which are frozen in their own protocols"
+ },
+ "not_claimed": [
+  "No timing in this session is a speedup claim: runs are single, unrepeated and unrandomized.",
+  "Counter values from this probe are exploratory; W3 declares its own protocol.",
+  "Compatibility is not a speedup, and a speedup is not novelty."
+ ],
+ "declared_utc": "2026-09-26T00:42:40.028905+00:00",
+ "package_source_pins": {
+  "experiments/session_f/run_probe.py": "39b7a59680ff42292ffbf8e209094d98fa660952cbdab86e03fe91495a11a140",
+  "experiments/session_f/ncu_target.py": "51fef9ea6a82c24dcbd1fc7f7fe8dcc0fbea827363f1e3cb9a1ed877b7936e4b",
+  "experiments/session_f/job.py": "1a888a4912e64de140bf4dfece624d36e440dd56ca6510c161fc4b707a87dbd1",
+  "experiments/session_f/ke_unit_3d.npy": "9db9e572e69bdf93095183f1fe1d9363e209607544b77cf42bd1592cd31eb62a",
+  "experiments/combined/kff_adapters.py": "3d9195238a7bf1a361403cdebba07cf97ad3dd663c3fb86e85a855983da293bf",
+  "experiments/session_e/collect.py": "e642ce9d467a8a6e1788ef8821a081690abf96fa0e38b639f65ba4e0d2c8cc5d",
+  "experiments/session_e/dependencies/common.py": "a4f9075f5f8fcbd2a2aec9be966174ed43dd220741d30cd0b970860a15717216",
+  "experiments/session_e/dependencies/cuda.py": "57b05dd89254f8770b9c0cdc5a2081589ca35f1a0a730503399147626ebbbf30",
+  "experiments/session_e/dependencies/modal.py": "63a18941f6390d2dd1f54520d6589bf7c4118deda52ab8d6cefd460f2e90f4b8",
+  "experiments/session_e/dependencies/ATTRIBUTION.md": "931f3463612e67da98433ae1461016a9dc566272aa10f314820e4e6cb90efb6f",
+  "experiments/session_e/dependencies/DAO-LICENSE": "8c9ccb96c065e706135b6cbad279b721da6156e51f3a5f27c6b3329af9416d73",
+  "experiments/combined/donor_yang_gmg/.gitignore": "a5fa21ac1e138c01564ba29858411786d2381dcff44019da615961a7765c03a5",
+  "experiments/combined/donor_yang_gmg/CITATION.cff": "c61bfc8f008d664f269cd68cc3a8ce10dff08f7650508c318c7fdd453c494257",
+  "experiments/combined/donor_yang_gmg/LICENSE": "526c170b0ed4e89f85203566fd8717a8bbe2316e1f48be48851a91f851b1e13d",
+  "experiments/combined/donor_yang_gmg/PINNED.txt": "3f66174f4d350f24fda7d4ad92b6966820934674cfd596bf1ce0b5c5c5c8045f",
+  "experiments/combined/donor_yang_gmg/README.md": "2cb9e634c8c17d2dd15fc546f1f9a902cb63ec82a7a9cb255024f28bc9eca620",
+  "experiments/combined/donor_yang_gmg/ci/smoke_test.py": "06acf9cd41f2e4d5e1db8b41c41e9603dd1d8c1a49ab51990385bf42447c8645",
+  "experiments/combined/donor_yang_gmg/docs/ARTIFACT_MAP.md": "47a96ef6e22fd00548fe2323e8da94f51804572a6a5cc0dcd7542c0a412d6a3c",
+  "experiments/combined/donor_yang_gmg/environment.yml": "623fbe486b48c80dc909c6f0729029ad46b192a7bfb7a608725480bf9a67604e",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/README.md": "5ceeb7d0b6a3d296a499ef9df2b6ab6ca18a1f01c25e95cd99f56a3b462dda3c",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/estimate_preconditioned_kappa.py": "e46efa0e49b37f7fffe9ae27f4fadcca116e8096d40eae78d0b5bd1449fd3d33",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/run_experiments_e1_e10.py": "2140befc86d779d92ae9336d43c4c5fee3fcae983b131f0fa214930ec5526fad",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/validate_phase1.py": "a5a9f616bf166baaf26b4185e343afce9f427abdb69d01ebafea3823840b9a87",
+  "experiments/combined/donor_yang_gmg/figures/make_3d_renders.py": "7a3919c668c21b7030568263b0ca2417b4216eba8959d1d8e0a604f751e5eb25",
+  "experiments/combined/donor_yang_gmg/figures/plot_figures.py": "308284f914e61dcc91d341c80c211fd9d9fbba104baf141d99a14cbc94bb911f",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/__init__.py": "0b90de85f742ff79e8a7061f252d4b38635874333c37d78627ced49fbe9661ac",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/bc_generator.py": "b5efae6aaab402c810f91c2fa7c21c55d1bc515f2eba0f66210b046d26c2a752",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/cuda_fused_matvec.py": "616c9a21e2e102f6c015fa1369d8e898e927f22b7ab6f40dc41d6ac9328f5a83",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/fem_gpu.py": "381f27971f12607093a2fa56837ffb3455dcca89709d5b94623b8d3e8136474c",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py": "5b3df2081017a7395245ad7c8781da6acb4dae4feced0c2e018730353946b15c",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/paths.py": "106acbb2978079e8aaa098b4ad0e62883491b55a747f664aa3fa23c47fb3225b",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/presets.py": "7e463855c3bc2ded8de427195c9d796d3a6ccc13eedeff17e2ba81f4c2bc5d88",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/problem_spec.py": "1819c4079dd253d022ae33719825505dd46fd3232684b2a5156f01a85c310501",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/pub_simp_solver.py": "aefb98dbbcfdf7a1ae0d474c8d0c79d231dca8c40edfc6bfb639b1a45205fdb5",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/solver_v2.py": "11d5985354db65a14348028cc7014caad18977bc10067dc11c861d922a624abd",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/solver_v4.py": "bc78bcf31c52fa08bdd401516570393fd2345380cd3593ad97de17b0467b9eb8",
+  "experiments/session_e/donor/LICENSE": "2cbf0d0aeb3004fb99958b857f6a7bcc05c512d2a97d514c23ac1ec15dd8b15f",
+  "experiments/session_e/donor/src/gpu_fem/__init__.py": "fb18a505323cb9e0f771ccf75be3d1a678f7851cf739a03b58c701e016c7f06d",
+  "experiments/session_e/donor/src/gpu_fem/cuda_fused_matvec.py": "7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f",
+  "experiments/session_e/donor/src/gpu_fem/cuda_operators.py": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f",
+  "experiments/session_e/donor/src/gpu_fem/filter_r2.py": "2fc74c7a0d0da47adf9ee8154d20682b95c3fd5292f008dbf32cff41a124b88b",
+  "experiments/session_e/donor/src/gpu_fem/pub_simp_solver.py": "37263bd5e6dcfee2ab3469bfd4172dcad7208433bf7cd0af6cab392deaf1073d",
+  "experiments/session_e/donor/src/gpu_fem/simp_r2.py": "c29840e8739c4e992587794c4b9a009f9a5453a3e8b2c551f870a2e3abf6ca3d",
+  "experiments/session_f/bootstrap.sh": "765aff27edbb1f2186d5d3b446f5d358918ca5ac964729dc3aa83bd0eefdf0ff"
+ }
+}

@@ -1,0 +1,80 @@
+{
+  "donor_commit": "fd9ddecda039fdfb7ffb8cf49c58f602318ed2ef",
+  "rows": [
+    {
+      "shape": [
+        1,
+        1,
+        1
+      ],
+      "path": "modal8",
+      "relative_l2": 1.7335144051377885e-16
+    },
+    {
+      "shape": [
+        1,
+        1,
+        1
+      ],
+      "path": "dense8",
+      "relative_l2": 1.6547068588971197e-16
+    },
+    {
+      "shape": [
+        2,
+        3,
+        1
+      ],
+      "path": "modal8",
+      "relative_l2": 1.94481686749255e-16
+    },
+    {
+      "shape": [
+        2,
+        3,
+        1
+      ],
+      "path": "dense8",
+      "relative_l2": 1.5246015495493522e-16
+    },
+    {
+      "shape": [
+        3,
+        5,
+        7
+      ],
+      "path": "modal8",
+      "relative_l2": 1.9926379952810034e-16
+    },
+    {
+      "shape": [
+        3,
+        5,
+        7
+      ],
+      "path": "dense8",
+      "relative_l2": 1.2739762977919223e-16
+    },
+    {
+      "shape": [
+        8,
+        4,
+        6
+      ],
+      "path": "modal8",
+      "relative_l2": 1.9400244055584128e-16
+    },
+    {
+      "shape": [
+        8,
+        4,
+        6
+      ],
+      "path": "dense8",
+      "relative_l2": 1.3700628651654179e-16
+    }
+  ],
+  "worst_relative_l2": 1.9926379952810034e-16,
+  "limit": 1e-12,
+  "passed": true
+}
