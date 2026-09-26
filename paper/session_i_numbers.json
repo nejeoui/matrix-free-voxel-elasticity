@@ -1,0 +1,817 @@
+{
+ "session-i-rtx4090-20260926": {
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "ladder": [
+   {
+    "case": "q96x1",
+    "status": "ok"
+   },
+   {
+    "case": "q64x2",
+    "status": "ok"
+   },
+   {
+    "case": "q96x2",
+    "status": "ok"
+   },
+   {
+    "case": "q96x3",
+    "status": "out_of_memory",
+    "error": "OutOfMemoryError('Out of memory allocating 1,156,599,296 bytes (allocated so far: 24,242,471,424 bytes).')",
+    "traceback": "Traceback (most recent call last):\n  File \"/root/voxel-session_i/source/experiments/session_i/run_gpu.py\", line 301, in main\n    M = mg.Multigrid(xp, shapes, prods, E, mask, factor, dt, pre=mgp['pre'], post=mgp['post'],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_i/source/experiments/session_i/dependencies/voxel_mg.py\", line 146, in __init__\n    self.levels.append(Level(xp, shape, prod, E, mask, dtype))\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/voxel-session_i/source/experiments/session_i/dependencies/voxel_mg.py\", line 125, in __init__\n    self.fixed = (1 - self.mask).astype(dtype)\n                  ~~^~~~~~~~~~~\n  File \"cupy/_core/core.pyx\", line 1379, in cupy._core.core._ndarray_base.__sub__\n  File \"cupy/_core/_kernel.pyx\", line 1349, in cupy._core._kernel.ufunc.__call__\n  File \"cupy/_core/_kernel.pyx\", line 645, in cupy._core._kernel._get_out_args_from_optionals\n  File \"cupy/_core/core.pyx\", line 2999, in cupy._core.core._ndarray_init\n  File \"cupy/_core/core.pyx\", line 272, in cupy._core.core._ndarray_base._init_fast\n  File \"cupy/cuda/memory.pyx\", line 875, in cupy.cuda.memory.alloc\n  File \"cupy/cuda/memory.pyx\", line 1579, in cupy.cuda.memory.MemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1600, in cupy.cuda.memory.MemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc\n  File \"cupy/cuda/memory.pyx\", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc\n  File \"cupy/cuda/memory.pyx\", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc\n  File \"cupy/cuda/memory.pyx\", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc\ncupy.cuda.memory.OutOfMemoryError: Out of memory allocating 1,156,599,296 bytes (allocated so far: 24,242,471,424 bytes).\n"
+   }
+  ],
+  "cases": {
+   "q96x1": {
+    "physical_all_passed": true,
+    "iterations": [
+     24
+    ],
+    "tol_seconds_median": {
+     "mg32-fused_ai64-node32": 0.3523870720528066,
+     "mg32-modal8_muladd-node32": 0.3096385915996507,
+     "mg32-node64-node32": 0.3763636299408972,
+     "mg64-fused_ai": 0.7545048984466121,
+     "mg64-modal8_muladd": 0.5446534784277901,
+     "mg64-node": 0.8752741500502452
+    },
+    "shapes": [
+     [
+      192,
+      96,
+      96
+     ],
+     [
+      96,
+      48,
+      48
+     ],
+     [
+      48,
+      24,
+      24
+     ],
+     [
+      24,
+      12,
+      12
+     ],
+     [
+      12,
+      6,
+      6
+     ]
+    ],
+    "fused_over_modal_mg64": 1.3736659959181639,
+    "node_over_modal_mg64": 1.588578364716025,
+    "modal_over_node_mg64": 0.6294936543333576,
+    "fused_over_modal_mg32": 1.0680467712344217,
+    "mg64modal_over_mg32modal": 1.9057375064238842
+   },
+   "q64x2": {
+    "physical_all_passed": true,
+    "iterations": [
+     14
+    ],
+    "tol_seconds_median": {
+     "mg32-fused_ai64-node32": 0.42825103003997356,
+     "mg32-modal8_muladd-node32": 0.37125918397214264,
+     "mg32-node64-node32": 0.46228501247242093,
+     "mg64-fused_ai": 1.082347070099786,
+     "mg64-modal8_muladd": 0.7927307959180325,
+     "mg64-node": 1.245997732388787
+    },
+    "shapes": [
+     [
+      256,
+      128,
+      128
+     ],
+     [
+      128,
+      64,
+      64
+     ],
+     [
+      64,
+      32,
+      32
+     ],
+     [
+      32,
+      16,
+      16
+     ],
+     [
+      16,
+      8,
+      8
+     ]
+    ],
+    "fused_over_modal_mg64": 1.3541777788281641,
+    "node_over_modal_mg64": 1.5502710565722413,
+    "modal_over_node_mg64": 0.645048487334254,
+    "fused_over_modal_mg32": 1.0914469026654985,
+    "mg64modal_over_mg32modal": 2.344752860863308
+   },
+   "q96x2": {
+    "physical_all_passed": true,
+    "iterations": [
+     24
+    ],
+    "tol_seconds_median": {
+     "mg32-fused_ai64-node32": 2.450999540509656,
+     "mg32-modal8_muladd-node32": 2.1160056120716035,
+     "mg32-node64-node32": 2.6348590025445446,
+     "mg64-fused_ai": 6.261435727472417,
+     "mg64-modal8_muladd": 4.593631743453443,
+     "mg64-node": 7.173424904583953
+    },
+    "shapes": [
+     [
+      384,
+      192,
+      192
+     ],
+     [
+      192,
+      96,
+      96
+     ],
+     [
+      96,
+      48,
+      48
+     ],
+     [
+      48,
+      24,
+      24
+     ],
+     [
+      24,
+      12,
+      12
+     ],
+     [
+      12,
+      6,
+      6
+     ]
+    ],
+    "fused_over_modal_mg64": 1.3520307022438436,
+    "node_over_modal_mg64": 1.5440720985772622,
+    "modal_over_node_mg64": 0.6476381516908565,
+    "fused_over_modal_mg32": 1.0931883710462875,
+    "mg64modal_over_mg32modal": 2.382108552850788
+   }
+  },
+  "H14": {
+   "case": "q96x2",
+   "median_fused_over_modal": 1.3520307022438436,
+   "passed": true
+  },
+  "w2a_status": "skipped",
+  "w2a": {},
+  "w2a_setup_memory": {},
+  "w2a_errors": []
+ },
+ "session-i-a100-20260926": {
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "ladder": [
+   {
+    "case": "q96x1",
+    "status": "ok"
+   },
+   {
+    "case": "q64x2",
+    "status": "ok"
+   },
+   {
+    "case": "q96x2",
+    "status": "ok"
+   },
+   {
+    "case": "q96x3",
+    "status": "ok"
+   }
+  ],
+  "cases": {
+   "q96x1": {
+    "physical_all_passed": true,
+    "iterations": [
+     24
+    ],
+    "tol_seconds_median": {
+     "mg32-fused_ai64-node32": 0.3160957144573331,
+     "mg32-modal8_muladd-node32": 0.32833254523575306,
+     "mg32-node64-node32": 0.31963129434734583,
+     "mg64-fused_ai": 0.3947396520525217,
+     "mg64-modal8_muladd": 0.434533828869462,
+     "mg64-node": 0.3625711090862751
+    },
+    "shapes": [
+     [
+      192,
+      96,
+      96
+     ],
+     [
+      96,
+      48,
+      48
+     ],
+     [
+      48,
+      24,
+      24
+     ],
+     [
+      24,
+      12,
+      12
+     ],
+     [
+      12,
+      6,
+      6
+     ]
+    ],
+    "fused_over_modal_mg64": 0.9056649460260742,
+    "node_over_modal_mg64": 0.8332488075427739,
+    "modal_over_node_mg64": 1.2001217294855429,
+    "fused_over_modal_mg32": 0.9842921485109535,
+    "mg64modal_over_mg32modal": 1.443721664194341
+   },
+   "q64x2": {
+    "physical_all_passed": true,
+    "iterations": [
+     14
+    ],
+    "tol_seconds_median": {
+     "mg32-fused_ai64-node32": 0.3153067650273442,
+     "mg32-modal8_muladd-node32": 0.3322998806834221,
+     "mg32-node64-node32": 0.31014201883226633,
+     "mg64-fused_ai": 0.5252802548930049,
+     "mg64-modal8_muladd": 0.5816468242555857,
+     "mg64-node": 0.4910096814855933
+    },
+    "shapes": [
+     [
+      256,
+      128,
+      128
+     ],
+     [
+      128,
+      64,
+      64
+     ],
+     [
+      64,
+      32,
+      32
+     ],
+     [
+      32,
+      16,
+      16
+     ],
+     [
+      16,
+      8,
+      8
+     ]
+    ],
+    "fused_over_modal_mg64": 0.8951850869268132,
+    "node_over_modal_mg64": 0.8389987583271773,
+    "modal_over_node_mg64": 1.1918968771703933,
+    "fused_over_modal_mg32": 0.9792438269905362,
+    "mg64modal_over_mg32modal": 1.9048408920102404
+   },
+   "q96x2": {
+    "physical_all_passed": true,
+    "iterations": [
+     24
+    ],
+    "tol_seconds_median": {
+     "mg32-fused_ai64-node32": 1.6675059236586094,
+     "mg32-modal8_muladd-node32": 1.7374537996947765,
+     "mg32-node64-node32": 1.624055977910757,
+     "mg64-fused_ai": 2.8056187499314547,
+     "mg64-modal8_muladd": 3.168435577303171,
+     "mg64-node": 2.655590070411563
+    },
+    "shapes": [
+     [
+      384,
+      192,
+      192
+     ],
+     [
+      192,
+      96,
+      96
+     ],
+     [
+      96,
+      48,
+      48
+     ],
+     [
+      48,
+      24,
+      24
+     ],
+     [
+      24,
+      12,
+      12
+     ],
+     [
+      12,
+      6,
+      6
+     ]
+    ],
+    "fused_over_modal_mg64": 0.891495359614058,
+    "node_over_modal_mg64": 0.8405776277242845,
+    "modal_over_node_mg64": 1.1896581196281935,
+    "fused_over_modal_mg32": 0.9750437278336337,
+    "mg64modal_over_mg32modal": 1.9677197907781425
+   },
+   "q96x3": {
+    "physical_all_passed": true,
+    "iterations": [
+     20
+    ],
+    "tol_seconds_median": {
+     "mg32-fused_ai64-node32": 4.6118430169299245,
+     "mg32-modal8_muladd-node32": 4.8426701268181205,
+     "mg32-node64-node32": 4.536915969103575,
+     "mg64-fused_ai": 7.855838226154447,
+     "mg64-modal8_muladd": 8.90153927821666,
+     "mg64-node": 7.413952206261456
+    },
+    "shapes": [
+     [
+      576,
+      288,
+      288
+     ],
+     [
+      288,
+      144,
+      144
+     ],
+     [
+      144,
+      72,
+      72
+     ],
+     [
+      72,
+      36,
+      36
+     ],
+     [
+      36,
+      18,
+      18
+     ],
+     [
+      18,
+      9,
+      9
+     ]
+    ],
+    "fused_over_modal_mg64": 0.8867905545269376,
+    "node_over_modal_mg64": 0.8367459956506603,
+    "modal_over_node_mg64": 1.1951058089287803,
+    "fused_over_modal_mg32": 0.9745476984812548,
+    "mg64modal_over_mg32modal": 1.9815419375303753
+   }
+  },
+  "H13": {
+   "median_modal_over_node": {
+    "q64x2": 1.1918968771703933,
+    "q96x2": 1.1896581196281935,
+    "q96x3": 1.1951058089287803
+   },
+   "passed": true
+  },
+  "w2a_status": "completed",
+  "w2a": {
+   "1M/fp64": {
+    "fused_ai_fp64": 2.166986412368715,
+    "modal8_muladd": 2.2261912021785975,
+    "node_fp64": 2.144892611540854,
+    "stock": 2.726531612686813
+   },
+   "1M/mixed": {
+    "node_fp64": 2.172570955939591,
+    "modal8_muladd": 2.153806807473302,
+    "fused_ai_fp64": 2.1699223574250937,
+    "stock": 2.406122948974371
+   },
+   "2M/fp64": {
+    "modal8_muladd": 2.3160814056172967,
+    "fused_ai_fp64": 2.2973484667018056,
+    "stock": 3.3432508083060384,
+    "node_fp64": 2.25615075789392
+   },
+   "2M/mixed": {
+    "modal8_muladd": 2.3184378053992987,
+    "fused_ai_fp64": 2.2599910581484437,
+    "node_fp64": 2.2488896837458014,
+    "stock": 2.6980188628658652
+   }
+  },
+  "w2a_setup_memory": {
+   "1M/fp64/fused_ai_fp64": [
+    6.5,
+    23.5
+   ],
+   "1M/fp64/modal8_muladd": [
+    0.1,
+    23.5
+   ],
+   "1M/fp64/node_fp64": [
+    0.1,
+    23.5
+   ],
+   "1M/fp64/stock": [
+    0.3,
+    23.9
+   ],
+   "1M/mixed/node_fp64": [
+    0.1,
+    23.5
+   ],
+   "1M/mixed/modal8_muladd": [
+    0.1,
+    23.6
+   ],
+   "1M/mixed/fused_ai_fp64": [
+    0.1,
+    23.5
+   ],
+   "1M/mixed/stock": [
+    0.1,
+    23.9
+   ],
+   "2M/fp64/modal8_muladd": [
+    0.2,
+    46.0
+   ],
+   "2M/fp64/fused_ai_fp64": [
+    0.2,
+    45.9
+   ],
+   "2M/fp64/stock": [
+    0.2,
+    46.7
+   ],
+   "2M/fp64/node_fp64": [
+    0.1,
+    45.9
+   ],
+   "2M/mixed/modal8_muladd": [
+    0.2,
+    46.0
+   ],
+   "2M/mixed/fused_ai_fp64": [
+    0.1,
+    46.0
+   ],
+   "2M/mixed/node_fp64": [
+    0.1,
+    46.0
+   ],
+   "2M/mixed/stock": [
+    0.2,
+    46.8
+   ]
+  },
+  "w2a_errors": []
+ },
+ "session-i-h100-20260926": {
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "ladder": [
+   {
+    "case": "q96x1",
+    "status": "ok"
+   },
+   {
+    "case": "q64x2",
+    "status": "ok"
+   },
+   {
+    "case": "q96x2",
+    "status": "ok"
+   },
+   {
+    "case": "q96x3",
+    "status": "ok"
+   }
+  ],
+  "cases": {
+   "q96x1": {
+    "physical_all_passed": true,
+    "iterations": [
+     24
+    ],
+    "tol_seconds_median": {
+     "mg32-fused_ai64-node32": 0.19026102649513632,
+     "mg32-modal8_muladd-node32": 0.19517822249326855,
+     "mg32-node64-node32": 0.1871805666014552,
+     "mg64-fused_ai": 0.27564187441021204,
+     "mg64-modal8_muladd": 0.30012101004831493,
+     "mg64-node": 0.2578939750092104
+    },
+    "shapes": [
+     [
+      192,
+      96,
+      96
+     ],
+     [
+      96,
+      48,
+      48
+     ],
+     [
+      48,
+      24,
+      24
+     ],
+     [
+      24,
+      12,
+      12
+     ],
+     [
+      12,
+      6,
+      6
+     ]
+    ],
+    "fused_over_modal_mg64": 1.0368758431032112,
+    "node_over_modal_mg64": 0.847752602048716,
+    "modal_over_node_mg64": 1.179589419818183,
+    "fused_over_modal_mg32": 0.9597570411557629,
+    "mg64modal_over_mg32modal": 1.5667223623194406
+   },
+   "q64x2": {
+    "physical_all_passed": true,
+    "iterations": [
+     14
+    ],
+    "tol_seconds_median": {
+     "mg32-fused_ai64-node32": 0.2456692400155589,
+     "mg32-modal8_muladd-node32": 0.2451921794563532,
+     "mg32-node64-node32": 0.23602338891942054,
+     "mg64-fused_ai": 0.36136180243920535,
+     "mg64-modal8_muladd": 0.39319790655281395,
+     "mg64-node": 0.34008160198573023
+    },
+    "shapes": [
+     [
+      256,
+      128,
+      128
+     ],
+     [
+      128,
+      64,
+      64
+     ],
+     [
+      64,
+      32,
+      32
+     ],
+     [
+      32,
+      16,
+      16
+     ],
+     [
+      16,
+      8,
+      8
+     ]
+    ],
+    "fused_over_modal_mg64": 0.9259728796732205,
+    "node_over_modal_mg64": 0.9160396860364535,
+    "modal_over_node_mg64": 1.0916557603817671,
+    "fused_over_modal_mg32": 0.9532786159206311,
+    "mg64modal_over_mg32modal": 1.63519285705596
+   },
+   "q96x2": {
+    "physical_all_passed": true,
+    "iterations": [
+     24
+    ],
+    "tol_seconds_median": {
+     "mg32-fused_ai64-node32": 1.404211575514637,
+     "mg32-modal8_muladd-node32": 1.4374637266155332,
+     "mg32-node64-node32": 1.3919320279965177,
+     "mg64-fused_ai": 2.2341006920905784,
+     "mg64-modal8_muladd": 2.4100818944862112,
+     "mg64-node": 2.199607855407521
+    },
+    "shapes": [
+     [
+      384,
+      192,
+      192
+     ],
+     [
+      192,
+      96,
+      96
+     ],
+     [
+      96,
+      48,
+      48
+     ],
+     [
+      48,
+      24,
+      24
+     ],
+     [
+      24,
+      12,
+      12
+     ],
+     [
+      12,
+      6,
+      6
+     ]
+    ],
+    "fused_over_modal_mg64": 0.9275178428505503,
+    "node_over_modal_mg64": 0.9053867924961306,
+    "modal_over_node_mg64": 1.1045003177515136,
+    "fused_over_modal_mg32": 0.9790483250693721,
+    "mg64modal_over_mg32modal": 1.760899293499834
+   },
+   "q96x3": {
+    "physical_all_passed": true,
+    "iterations": [
+     20
+    ],
+    "tol_seconds_median": {
+     "mg32-fused_ai64-node32": 4.001087444019504,
+     "mg32-modal8_muladd-node32": 4.094448056071997,
+     "mg32-node64-node32": 3.9779700414510444,
+     "mg64-fused_ai": 6.395141430431977,
+     "mg64-modal8_muladd": 6.8737863635178655,
+     "mg64-node": 6.190865340526216
+    },
+    "shapes": [
+     [
+      576,
+      288,
+      288
+     ],
+     [
+      288,
+      144,
+      144
+     ],
+     [
+      144,
+      72,
+      72
+     ],
+     [
+      72,
+      36,
+      36
+     ],
+     [
+      36,
+      18,
+      18
+     ],
+     [
+      18,
+      9,
+      9
+     ]
+    ],
+    "fused_over_modal_mg64": 0.9315836379240592,
+    "node_over_modal_mg64": 0.9126876329360526,
+    "modal_over_node_mg64": 1.0956651146713468,
+    "fused_over_modal_mg32": 0.9910848367902484,
+    "mg64modal_over_mg32modal": 1.7788681342920631
+   }
+  },
+  "H13": {
+   "median_modal_over_node": {
+    "q64x2": 1.0916557603817671,
+    "q96x2": 1.1045003177515136,
+    "q96x3": 1.0956651146713468
+   },
+   "passed": true
+  },
+  "w2a_status": "completed",
+  "w2a": {
+   "1M/fp64": {
+    "fused_ai_fp64": 1.25708788796328,
+    "modal8_muladd": 1.256776004913263,
+    "node_fp64": 1.2457342359703034,
+    "stock": 1.6168833844130859
+   },
+   "1M/mixed": {
+    "node_fp64": 1.2561767185106874,
+    "modal8_muladd": 1.253977818065323,
+    "fused_ai_fp64": 1.2526809560367838,
+    "stock": 1.382582048419863
+   },
+   "2M/fp64": {
+    "modal8_muladd": 1.3609665359836072,
+    "fused_ai_fp64": 1.3607972309691831,
+    "stock": 2.1303890170529485,
+    "node_fp64": 1.3466383094200864
+   },
+   "2M/mixed": {
+    "modal8_muladd": 1.342124552000314,
+    "fused_ai_fp64": 1.3563878459390253,
+    "node_fp64": 1.3326176754198968,
+    "stock": 1.6218363164225593
+   }
+  },
+  "w2a_setup_memory": {
+   "1M/fp64/fused_ai_fp64": [
+    4.4,
+    23.6
+   ],
+   "1M/fp64/modal8_muladd": [
+    0.1,
+    23.6
+   ],
+   "1M/fp64/node_fp64": [
+    0.1,
+    23.6
+   ],
+   "1M/fp64/stock": [
+    0.2,
+    24.1
+   ],
+   "1M/mixed/node_fp64": [
+    0.1,
+    23.7
+   ],
+   "1M/mixed/modal8_muladd": [
+    0.1,
+    23.7
+   ],
+   "1M/mixed/fused_ai_fp64": [
+    0.1,
+    23.7
+   ],
+   "1M/mixed/stock": [
+    0.1,
+    24.1
+   ],
+   "2M/fp64/modal8_muladd": [
+    0.1,
+    46.1
+   ],
+   "2M/fp64/fused_ai_fp64": [
+    0.1,
+    46.1
+   ],
+   "2M/fp64/stock": [
+    0.2,
+    46.9
+   ],
+   "2M/fp64/node_fp64": [
+    0.1,
+    46.1
+   ],
+   "2M/mixed/modal8_muladd": [
+    0.1,
+    46.2
+   ],
+   "2M/mixed/fused_ai_fp64": [
+    0.1,
+    46.1
+   ],
+   "2M/mixed/node_fp64": [
+    0.1,
+    46.1
+   ],
+   "2M/mixed/stock": [
+    0.2,
+    46.9
+   ]
+  },
+  "w2a_errors": []
+ }
+}

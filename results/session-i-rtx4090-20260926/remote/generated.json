@@ -1,0 +1,64 @@
+{
+ "rows": [
+  {
+   "id": "q96x1",
+   "base": "optimized-q96.npz",
+   "base_sha256": "98a3cecc12102738b8e44a6502f2608cd16249e0c708f997f8196d2073387266",
+   "factor": 1,
+   "shape": [
+    192,
+    96,
+    96
+   ],
+   "elements": 1769472,
+   "ndof": 5447811,
+   "file": "q96x1.npz",
+   "sha256": "718f4ddde47486d3af38b2c14478cb3f27117403d3224d7c9902866e67d4cabc"
+  },
+  {
+   "id": "q64x2",
+   "base": "optimized-q64.npz",
+   "base_sha256": "436629fa11955023d6208be98aeefd63fa8d2b310a5703c2646112b4867f19f6",
+   "factor": 2,
+   "shape": [
+    256,
+    128,
+    128
+   ],
+   "elements": 4194304,
+   "ndof": 12830211,
+   "file": "q64x2.npz",
+   "sha256": "0f66a805137ec7ca68dde49db9bc80de58fc3479dec9c21c1a50acb589696481"
+  },
+  {
+   "id": "q96x2",
+   "base": "optimized-q96.npz",
+   "base_sha256": "98a3cecc12102738b8e44a6502f2608cd16249e0c708f997f8196d2073387266",
+   "factor": 2,
+   "shape": [
+    384,
+    192,
+    192
+   ],
+   "elements": 14155776,
+   "ndof": 43022595,
+   "file": "q96x2.npz",
+   "sha256": "d9028c240003702ffaf46c722b8d632e396557ddd750e41ceaef92c03b5e10f4"
+  },
+  {
+   "id": "q96x3",
+   "base": "optimized-q96.npz",
+   "base_sha256": "98a3cecc12102738b8e44a6502f2608cd16249e0c708f997f8196d2073387266",
+   "factor": 3,
+   "shape": [
+    576,
+    288,
+    288
+   ],
+   "elements": 47775744,
+   "ndof": 144574851,
+   "file": "q96x3.npz",
+   "sha256": "a214d01063b25633936012c870daeb36de90bcf510f3f533c6a4d51b4f8a9cd6"
+  }
+ ]
+}

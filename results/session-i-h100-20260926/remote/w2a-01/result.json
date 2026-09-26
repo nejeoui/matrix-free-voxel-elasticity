@@ -1,0 +1,984 @@
+{
+  "started_utc": "2026-09-26T05:38:15.879892+00:00",
+  "status": "completed",
+  "records": [
+    {
+      "size": "1M",
+      "schedule": "fp64",
+      "block": 0,
+      "arm": "fused_ai_fp64",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 4.449581422144547,
+      "gpu_used_bytes": 25340739584,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 25.381616934901103
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.260755280032754
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2603902600239962
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.259432703955099
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "fp64",
+      "block": 0,
+      "arm": "modal8_muladd",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.07240879395976663,
+      "gpu_used_bytes": 25365905408,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 25.18051244900562
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.255506777903065
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2539350548759103
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2464287099428475
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "fp64",
+      "block": 0,
+      "arm": "node_fp64",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.0706671120133251,
+      "gpu_used_bytes": 25340739584,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 24.89341879216954
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.242971477098763
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2430970310233533
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.239607809111476
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "fp64",
+      "block": 0,
+      "arm": "stock",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.18060301896184683,
+      "gpu_used_bytes": 25844056064,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 32.355556366965175
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.618262352887541
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.6131586849223822
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.6389219691045582
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "fp64",
+      "block": 1,
+      "arm": "modal8_muladd",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.07244889601133764,
+      "gpu_used_bytes": 25433014272,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.2596169549506158
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2631611828692257
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2548190711531788
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "fp64",
+      "block": 1,
+      "arm": "fused_ai_fp64",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.07171035907231271,
+      "gpu_used_bytes": 25407848448,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.2612258489243686
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2512897939886898
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.253785515902564
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "fp64",
+      "block": 1,
+      "arm": "stock",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.09517326601780951,
+      "gpu_used_bytes": 25844056064,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.6125871108379215
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.6212982661090791
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.6155044159386307
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "fp64",
+      "block": 1,
+      "arm": "node_fp64",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.07124527008272707,
+      "gpu_used_bytes": 25407848448,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.2461275120731443
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2484969948418438
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2661234380211681
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "mixed",
+      "block": 0,
+      "arm": "node_fp64",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.06870118295773864,
+      "gpu_used_bytes": 25433014272,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 25.46541129401885
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.2648161419201642
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2629341529682279
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2684470880776644
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "mixed",
+      "block": 0,
+      "arm": "modal8_muladd",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.07141957501880825,
+      "gpu_used_bytes": 25458180096,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 25.558572426903993
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.2503801081329584
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.253310017986223
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2561638548504561
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "mixed",
+      "block": 0,
+      "arm": "fused_ai_fp64",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.07045014202594757,
+      "gpu_used_bytes": 25433014272,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 25.164734072983265
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.2512618121691048
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.255027421982959
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2746588019654155
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "mixed",
+      "block": 0,
+      "arm": "stock",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.09563113912008703,
+      "gpu_used_bytes": 25869221888,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 27.771528081037104
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3806249850895256
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3871901619713753
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3881244668737054
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "mixed",
+      "block": 1,
+      "arm": "modal8_muladd",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.07151054008863866,
+      "gpu_used_bytes": 25458180096,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.2507092729210854
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2546456181444228
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2918750350363553
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "mixed",
+      "block": 1,
+      "arm": "node_fp64",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.07064282102510333,
+      "gpu_used_bytes": 25433014272,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.2499885149300098
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.245353799778968
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2475372951012105
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "mixed",
+      "block": 1,
+      "arm": "stock",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.09678267315030098,
+      "gpu_used_bytes": 25869221888,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3779739348683506
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3844749741256237
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3748453510925174
+        }
+      ]
+    },
+    {
+      "size": "1M",
+      "schedule": "mixed",
+      "block": 1,
+      "arm": "fused_ai_fp64",
+      "dims": [
+        200,
+        100,
+        50
+      ],
+      "ndof": 3106053,
+      "setup_seconds": 0.07057033106684685,
+      "gpu_used_bytes": 25433014272,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.2474949769675732
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2522025059442967
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.2503344900906086
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "fp64",
+      "block": 0,
+      "arm": "modal8_muladd",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.12888225400820374,
+      "gpu_used_bytes": 49527193600,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 27.59346915804781
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3636609760578722
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3608411659952253
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.36043921392411
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "fp64",
+      "block": 0,
+      "arm": "fused_ai_fp64",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.12571627390570939,
+      "gpu_used_bytes": 49476861952,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 27.13924345304258
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3632486457936466
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.361412970116362
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.362259283894673
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "fp64",
+      "block": 0,
+      "arm": "stock",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.17497290601022542,
+      "gpu_used_bytes": 50347180032,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 42.24622253281996
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 2.156162377912551
+        },
+        {
+          "iterations": 50,
+          "seconds": 2.1610146518796682
+        },
+        {
+          "iterations": 50,
+          "seconds": 2.120336038991809
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "fp64",
+      "block": 0,
+      "arm": "node_fp64",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.12415697984397411,
+      "gpu_used_bytes": 49476861952,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 27.031038667075336
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3436830369755626
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3458836358040571
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3617643718607724
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "fp64",
+      "block": 1,
+      "arm": "modal8_muladd",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.12735284492373466,
+      "gpu_used_bytes": 49527193600,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.367652458138764
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3592979940585792
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.361091905971989
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "fp64",
+      "block": 1,
+      "arm": "stock",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.174807091942057,
+      "gpu_used_bytes": 50347180032,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 2.0973359558265656
+        },
+        {
+          "iterations": 50,
+          "seconds": 2.106534407939762
+        },
+        {
+          "iterations": 50,
+          "seconds": 2.104615656193346
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "fp64",
+      "block": 1,
+      "arm": "fused_ai_fp64",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.13018045900389552,
+      "gpu_used_bytes": 49476861952,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3535639189649373
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3593351780436933
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.372621223097667
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "fp64",
+      "block": 1,
+      "arm": "node_fp64",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.12738327495753765,
+      "gpu_used_bytes": 49476861952,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3473929830361158
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3488677081186324
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3418513340875506
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "mixed",
+      "block": 0,
+      "arm": "modal8_muladd",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.12955219694413245,
+      "gpu_used_bytes": 49577525248,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 26.78923256904818
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3430989179760218
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3453775129746646
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3495092201046646
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "mixed",
+      "block": 0,
+      "arm": "fused_ai_fp64",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.12569563696160913,
+      "gpu_used_bytes": 49527193600,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 27.031329405959696
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3523383298888803
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3766507022082806
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3734077119734138
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "mixed",
+      "block": 0,
+      "arm": "node_fp64",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.12472148798406124,
+      "gpu_used_bytes": 49527193600,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 26.658945051953197
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3348800169769675
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.331388855818659
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3266897988505661
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "mixed",
+      "block": 0,
+      "arm": "stock",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.1748919291421771,
+      "gpu_used_bytes": 50397511680,
+      "to_tolerance": {
+        "iterations": 1000,
+        "converged": false,
+        "seconds": 32.36353483307175
+      },
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.6218800409696996
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.6204673468600959
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.6161531859543175
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "mixed",
+      "block": 1,
+      "arm": "fused_ai_fp64",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.1276757181622088,
+      "gpu_used_bytes": 49527193600,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3393679799046367
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3388847750611603
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3459742239210755
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "mixed",
+      "block": 1,
+      "arm": "node_fp64",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.12300368095748127,
+      "gpu_used_bytes": 49527193600,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3338464950211346
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3307621451094747
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3342406109441072
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "mixed",
+      "block": 1,
+      "arm": "stock",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.1762244540732354,
+      "gpu_used_bytes": 50397511680,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.6161472278181463
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.6232052859850228
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.6275362810119987
+        }
+      ]
+    },
+    {
+      "size": "2M",
+      "schedule": "mixed",
+      "block": 1,
+      "arm": "modal8_muladd",
+      "dims": [
+        252,
+        126,
+        63
+      ],
+      "ndof": 6169152,
+      "setup_seconds": 0.12893757200799882,
+      "gpu_used_bytes": 49577525248,
+      "fixed_work": [
+        {
+          "iterations": 50,
+          "seconds": 1.3335754049476236
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3611708560492843
+        },
+        {
+          "iterations": 50,
+          "seconds": 1.3388715910259634
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "finished_utc": "2026-09-26T05:56:38.307521+00:00"
+}

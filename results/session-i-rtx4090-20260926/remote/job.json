@@ -1,0 +1,72 @@
+{
+  "started_utc": "2026-09-26T04:30:46.575747+00:00",
+  "state": "finished",
+  "stages": [
+    {
+      "command": [
+        "g++",
+        "-O3",
+        "-std=c++17",
+        "-shared",
+        "-fPIC",
+        "/root/voxel-session_i/source/experiments/session_i/inputs/reference.cc",
+        "-o",
+        "/root/voxel-session_i/build/reference.so"
+      ],
+      "returncode": 0,
+      "timeout": false,
+      "elapsed_seconds": 0.5165311789605767,
+      "log": "reference-build.log"
+    },
+    {
+      "command": [
+        "/opt/voxel-session_i-venv/bin/python",
+        "/root/voxel-session_i/source/experiments/session_i/make_inputs.py",
+        "--base",
+        "/root/voxel-session_i/source/experiments/session_i/inputs",
+        "--out",
+        "/root/voxel-session_i-generated",
+        "--cases",
+        "q96x1",
+        "q64x2",
+        "q96x2",
+        "q96x3"
+      ],
+      "returncode": 0,
+      "timeout": false,
+      "elapsed_seconds": 8.887312039034441,
+      "log": "make-inputs.log"
+    },
+    {
+      "command": [
+        "/opt/voxel-session_i-venv/bin/python",
+        "/root/voxel-session_i/source/experiments/session_i/run_gpu.py",
+        "--inputs",
+        "/root/voxel-session_i-generated",
+        "--reference",
+        "/root/voxel-session_i/build/reference.so",
+        "--out",
+        "/root/voxel-session_i/run-01"
+      ],
+      "returncode": 0,
+      "timeout": false,
+      "elapsed_seconds": 352.72454527392983,
+      "log": "gpu-run.log"
+    },
+    {
+      "command": [
+        "/opt/voxel-session_i-venv/bin/python",
+        "/root/voxel-session_i/source/experiments/session_i/run_yang_scale.py",
+        "--out",
+        "/root/voxel-session_i/w2a-01",
+        "--deadline-seconds",
+        "3600"
+      ],
+      "returncode": 0,
+      "timeout": false,
+      "elapsed_seconds": 0.5669471048749983,
+      "log": "w2a.log"
+    }
+  ],
+  "finished_utc": "2026-09-26T04:36:49.278550+00:00"
+}
