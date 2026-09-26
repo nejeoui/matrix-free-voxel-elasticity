@@ -1,0 +1,174 @@
+{
+ "experiment": "voxel-session-b",
+ "status_at_declaration": "prospective; not executed; frozen by build_package.py which adds source pins and SHA-256",
+ "questions": {
+  "H3": "On a data-centre GPU with full-rate FP64, does modal8's FP64 product advantage over the identical-mapping dense8 fall below 1.10, as the roofline predicts?",
+  "regime_map": "On that GPU, which method reaches the 1e-8 true residual fastest (FP64 PCG vs mixed-precision refinement with fused_ai32 or node32 inner), and what are the fixed-work FP64 PCG ratios?"
+ },
+ "hardware": {
+  "gpu": "A100 80GB or H100",
+  "gpu_full_names": [
+   "NVIDIA A100-SXM4-80GB",
+   "NVIDIA A100 80GB PCIe",
+   "NVIDIA H100 80GB HBM3",
+   "NVIDIA H100 PCIe",
+   "NVIDIA H100 NVL"
+  ],
+  "minimum_cpu_ram_mb": 64000,
+  "minimum_gpu_ram_mb": 40000,
+  "disk_gb": 80,
+  "maximum_total_usd_per_hour": 3.0
+ },
+ "limits": {
+  "suite_seconds": 3600,
+  "maximum_job_seconds": 4500,
+  "maximum_rental_seconds": 7200,
+  "one_rental": true,
+  "destroy_after_verified_collection": true
+ },
+ "material": {
+  "Emin": 1e-06,
+  "Emax": 1.0,
+  "penal": 3.0,
+  "nu": 0.3
+ },
+ "solver": {
+  "requested_rtol": 1e-08,
+  "true_residual_limit": 1e-07,
+  "energy_force_relative_limit": 1e-06,
+  "cross_state_limit": 5e-05,
+  "cross_compliance_limit": 1e-05,
+  "maximum_iterations": 20000,
+  "check_every": 50,
+  "maximum_state_seconds": 300
+ },
+ "order_seed": 2026092318,
+ "cases": [
+  {
+   "id": "smoke-q4",
+   "q": 4,
+   "primary": false,
+   "fixed_iterations": 100
+  },
+  {
+   "id": "optimized-q64",
+   "q": 64,
+   "primary": true,
+   "fixed_iterations": 4600
+  },
+  {
+   "id": "optimized-q96",
+   "q": 96,
+   "primary": true,
+   "fixed_iterations": 6900
+  },
+  {
+   "id": "uniform-q64",
+   "q": 64,
+   "primary": false,
+   "fixed_iterations": 1050
+  }
+ ],
+ "fixed_iterations_source": "JPDC profile v2: converged fused_ai_fp64 iteration counts per case (evidence/solve-profile-rtx4090/local-verification.json). Fixed-work solves run pcg with tol=0 and maxiter=fixed_iterations, so every path performs identical iterations and matvec calls.",
+ "paths_fp64": [
+  "fused_ai_fp64",
+  "fused_fp64",
+  "node_fp64",
+  "dense8",
+  "modal8"
+ ],
+ "paths_fp32": [
+  "fused_ai_fp32",
+  "fused_fp32",
+  "node_fp32",
+  "dense8_fp32",
+  "modal8_fp32"
+ ],
+ "candidate_fp64": "modal8",
+ "candidate_fp32": "modal8_fp32",
+ "fixed_work": {
+  "rounds": 10,
+  "design": "paired rounds; each round runs every FP64 path once in a fresh random order"
+ },
+ "to_tolerance": {
+  "repetitions": 3,
+  "ir": {
+   "inner_tol": 0.1,
+   "max_outer": 40,
+   "inner_maxiter": 4000,
+   "note": "donor pcg_ir defaults"
+  },
+  "methods": [
+   {
+    "id": "pcg64-fused_ai",
+    "kind": "pcg64",
+    "operator": "fused_ai_fp64"
+   },
+   {
+    "id": "pcg64-modal8",
+    "kind": "pcg64",
+    "operator": "modal8"
+   },
+   {
+    "id": "ir-fused_ai64-fused_ai32",
+    "kind": "ir",
+    "outer": "fused_ai_fp64",
+    "inner": "fused_ai_fp32"
+   },
+   {
+    "id": "ir-modal8-fused_ai32",
+    "kind": "ir",
+    "outer": "modal8",
+    "inner": "fused_ai_fp32"
+   },
+   {
+    "id": "ir-modal8-modal8_32",
+    "kind": "ir",
+    "outer": "modal8",
+    "inner": "modal8_fp32"
+   },
+   {
+    "id": "ir-fused_ai64-node32",
+    "kind": "ir",
+    "outer": "fused_ai_fp64",
+    "inner": "node_fp32"
+   },
+   {
+    "id": "ir-modal8-node32",
+    "kind": "ir",
+    "outer": "modal8",
+    "inner": "node_fp32"
+   }
+  ]
+ },
+ "products": {
+  "rounds": 11,
+  "products": 20,
+  "vector": "seeded standard normal, constrained DOFs zeroed",
+  "fp64_relative_limit": 1e-11,
+  "fp32_relative_limit": 1e-05
+ },
+ "decision": {
+  "h2": {
+   "baseline": "fused_ai_fp64",
+   "min_median": 1.08,
+   "min_lower": 1.05,
+   "rule": "descriptive on session B (the continue/stop decision was taken in session A); fixed-work ratios are reported"
+  },
+  "h4": {
+   "gain_threshold": 1.1,
+   "rule": "descriptive replication of the FP32 prediction on the data-centre GPU"
+  },
+  "h3": {
+   "baseline": "dense8",
+   "gain_threshold": 1.1,
+   "rule": "prediction confirmed iff the FP64 product median paired ratio modal8/dense8 < 1.10 on both primary cases; if >= 1.10 the FP64-throttling explanation is incomplete and the paper's scope statement is revised; either outcome is reported"
+  },
+  "time_to_tolerance": "descriptive; the paper's end-to-end claim is stated against the fastest method that physically passes at the same tolerance"
+ },
+ "exclusions": "Process/context import, reference compilation, independent CPU replay and archive I/O are outside solve timers and recorded separately. Setup (construction, compilation, material, diagonal, one capped iteration) is timed per path and reported, not hidden.",
+ "not_claimed": [
+  "complete-optimization speedup",
+  "novelty of the parity decomposition"
+ ]
+}

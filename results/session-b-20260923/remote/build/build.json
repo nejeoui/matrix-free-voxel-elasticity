@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-23T18:41:35.753123+00:00",
+  "command": [
+    "g++",
+    "-O3",
+    "-std=c++17",
+    "-shared",
+    "-fPIC",
+    "/root/voxel-session_b/inputs/reference.cc",
+    "-o",
+    "/root/voxel-session_b/build/reference.so"
+  ],
+  "binary_sha256": "e59c07c4fbb74fc42e4ca33c2fea7ecdc63dbcaadb5d65b217bd11b40a536de3",
+  "reference_sha256": "d87b3ad2fa40d0cf0b59b942a62b6b7b29955224b6ca9fe66d3c9c31a7159911",
+  "element_sha256": "08f4425fa64b6c6d2fafe53dd5953dc1fcc1f80c145d9641a70593cce72f8f43",
+  "compiler": "g++ (Ubuntu 13.2.0-23ubuntu4) 13.2.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+}

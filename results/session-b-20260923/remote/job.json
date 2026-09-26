@@ -1,0 +1,57 @@
+{
+  "started_utc": "2026-09-23T18:41:35.334935+00:00",
+  "state": "finished",
+  "stages": [
+    {
+      "command": [
+        "g++",
+        "-O3",
+        "-std=c++17",
+        "-shared",
+        "-fPIC",
+        "/root/voxel-session_b/inputs/reference.cc",
+        "-o",
+        "/root/voxel-session_b/build/reference.so"
+      ],
+      "returncode": 0,
+      "timeout": false,
+      "elapsed_seconds": 0.41700169490650296,
+      "log": "reference-build.log"
+    },
+    {
+      "command": [
+        "/opt/voxel-session_b-venv/bin/python",
+        "/root/voxel-session_b/source/run_gpu.py",
+        "--inputs",
+        "/root/voxel-session_b/inputs",
+        "--reference",
+        "/root/voxel-session_b/build/reference.so",
+        "--out",
+        "/root/voxel-session_b/run-01"
+      ],
+      "returncode": 0,
+      "timeout": false,
+      "elapsed_seconds": 1539.997250138782,
+      "log": "gpu-run.log"
+    },
+    {
+      "command": [
+        "/opt/voxel-session_b-venv/bin/python",
+        "/root/voxel-session_b/source/verify.py",
+        "--inputs",
+        "/root/voxel-session_b/inputs",
+        "--reference",
+        "/root/voxel-session_b/build/reference.so",
+        "--run",
+        "/root/voxel-session_b/run-01",
+        "--out",
+        "/root/voxel-session_b/remote-verification.json"
+      ],
+      "returncode": 0,
+      "timeout": false,
+      "elapsed_seconds": 45.090357556939125,
+      "log": "remote-verification.log"
+    }
+  ],
+  "finished_utc": "2026-09-23T19:08:00.856593+00:00"
+}
