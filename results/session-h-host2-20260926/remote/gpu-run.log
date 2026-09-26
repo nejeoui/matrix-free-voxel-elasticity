@@ -1,0 +1,2145 @@
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T04:22:59.556175+00:00 rep 1 cantilever-216k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:23:27.426471+00:00 rep 1 cantilever-216k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:23:45.230385+00:00 rep 1 cantilever-216k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:24:02.666801+00:00 rep 1 cantilever-216k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T04:24:24.514972+00:00 rep 1 cantilever-216k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T04:24:42.723597+00:00 rep 1 cantilever-216k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T04:25:01.201406+00:00 rep 1 cantilever-512k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T04:25:27.559129+00:00 rep 1 cantilever-512k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T04:25:56.025713+00:00 rep 1 cantilever-512k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T04:26:37.616979+00:00 rep 1 cantilever-512k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T04:27:03.590181+00:00 rep 1 cantilever-512k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T04:27:30.218700+00:00 rep 1 cantilever-512k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T04:28:01.456092+00:00 rep 1 mbb-514k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:29:50.845857+00:00 rep 1 mbb-514k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:30:48.431141+00:00 rep 1 mbb-514k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:31:37.799398+00:00 rep 1 mbb-514k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[SolverV4] WARNING: pcg did not converge in 1000 iters (n_free=1,615,391).
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:33:08.917211+00:00 rep 1 mbb-514k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[SolverV4] WARNING: pcg did not converge in 1000 iters (n_free=1,615,391).
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:34:32.069447+00:00 rep 1 mbb-514k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[SolverV4] WARNING: pcg did not converge in 1000 iters (n_free=1,615,391).
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:36:38.113179+00:00 rep 1 torsion-499k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T04:37:06.615914+00:00 rep 1 torsion-499k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T04:37:53.300273+00:00 rep 1 torsion-499k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T04:38:19.223295+00:00 rep 1 torsion-499k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T04:38:45.302019+00:00 rep 1 torsion-499k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T04:39:19.649113+00:00 rep 1 torsion-499k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T04:39:46.965084+00:00 rep 2 cantilever-216k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:40:04.347924+00:00 rep 2 cantilever-216k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:40:22.131694+00:00 rep 2 cantilever-216k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:40:50.023337+00:00 rep 2 cantilever-216k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T04:41:08.023558+00:00 rep 2 cantilever-216k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T04:41:29.613029+00:00 rep 2 cantilever-216k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T04:41:47.813828+00:00 rep 2 cantilever-512k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T04:42:14.042466+00:00 rep 2 cantilever-512k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T04:42:55.284775+00:00 rep 2 cantilever-512k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T04:43:23.760884+00:00 rep 2 cantilever-512k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T04:43:49.973573+00:00 rep 2 cantilever-512k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T04:44:16.806322+00:00 rep 2 cantilever-512k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T04:44:48.160526+00:00 rep 2 mbb-514k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:45:37.770016+00:00 rep 2 mbb-514k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:47:25.463432+00:00 rep 2 mbb-514k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:48:23.216607+00:00 rep 2 mbb-514k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[SolverV4] WARNING: pcg did not converge in 1000 iters (n_free=1,615,391).
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:49:51.524486+00:00 rep 2 mbb-514k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[SolverV4] WARNING: pcg did not converge in 1000 iters (n_free=1,615,391).
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:51:05.014728+00:00 rep 2 mbb-514k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T04:52:49.071396+00:00 rep 2 torsion-499k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T04:53:14.959900+00:00 rep 2 torsion-499k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T04:53:44.324549+00:00 rep 2 torsion-499k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T04:54:31.583002+00:00 rep 2 torsion-499k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T04:54:59.172134+00:00 rep 2 torsion-499k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T04:55:25.283464+00:00 rep 2 torsion-499k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T04:56:00.248876+00:00 rep 3 cantilever-216k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:56:28.335568+00:00 rep 3 cantilever-216k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:56:46.300340+00:00 rep 3 cantilever-216k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:57:03.762502+00:00 rep 3 cantilever-216k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T04:57:22.917022+00:00 rep 3 cantilever-216k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T04:57:41.190700+00:00 rep 3 cantilever-216k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T04:58:13.059995+00:00 rep 3 cantilever-512k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T04:58:39.413166+00:00 rep 3 cantilever-512k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T04:59:07.892059+00:00 rep 3 cantilever-512k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T04:59:49.214518+00:00 rep 3 cantilever-512k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T05:00:15.270056+00:00 rep 3 cantilever-512k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T05:00:42.064774+00:00 rep 3 cantilever-512k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T05:01:13.244124+00:00 rep 3 mbb-514k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T05:02:02.501240+00:00 rep 3 mbb-514k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T05:03:52.401489+00:00 rep 3 mbb-514k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T05:04:49.848282+00:00 rep 3 mbb-514k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T05:06:03.946322+00:00 rep 3 mbb-514k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[SolverV4] WARNING: pcg did not converge in 1000 iters (n_free=1,615,391).
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T05:07:54.419338+00:00 rep 3 mbb-514k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T05:09:20.226433+00:00 rep 3 torsion-499k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T05:10:07.431225+00:00 rep 3 torsion-499k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T05:10:33.400242+00:00 rep 3 torsion-499k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T05:11:02.340871+00:00 rep 3 torsion-499k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T05:11:28.802693+00:00 rep 3 torsion-499k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T05:12:02.750513+00:00 rep 3 torsion-499k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T05:12:29.946918+00:00 complete cantilever-216k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T05:13:09.508339+00:00 complete cantilever-216k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T05:13:34.116286+00:00 complete cantilever-216k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T05:13:58.217347+00:00 complete cantilever-216k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T05:14:30.107327+00:00 complete cantilever-216k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T05:14:55.353953+00:00 complete cantilever-216k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2

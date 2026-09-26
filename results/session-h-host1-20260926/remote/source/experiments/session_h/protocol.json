@@ -1,0 +1,150 @@
+{
+ "experiment": "Voxel session H (combined paper W1b): session G's SIMP runs with the density filter and top88 OC on the GPU and 100 fixed steps, inside Yang et al.'s Galerkin GMG, three FP64 arms, RTX 4090, two hosts",
+ "status_at_declaration": "Declared after session G (report section 23), before any session H rental. Session G's H11 failure stands; H11b is a new hypothesis about a changed pipeline, not a re-test of H11.",
+ "questions": [
+  "H11b: with the optimizer on the GPU and 100-step runs, does modal8_muladd shorten complete SIMP runs by >= 1.10x against fused_ai_fp64 in the all-FP64 schedule on every primary case?",
+  "H12b: in the mixed schedule, is the effect < 1.10x?",
+  "Share: what fraction of a run is the linear solve once the optimizer is on the GPU?"
+ ],
+ "hardware": {
+  "gpu_full_names": [
+   "NVIDIA GeForce RTX 4090"
+  ],
+  "minimum_cpu_ram_mb": 64000,
+  "minimum_gpu_ram_mb": 24000,
+  "disk_gb": 80,
+  "maximum_total_usd_per_hour": 0.7
+ },
+ "limits": {
+  "maximum_job_seconds": 10800,
+  "maximum_rental_seconds": 12600,
+  "estimated_repetition_seconds": 1800,
+  "rentals": 2,
+  "destroy_after_verified_collection": true,
+  "evidence_cap_bytes": 2147483648
+ },
+ "donor": {
+  "repository": "https://github.com/nbbllxx0/Mixed-Precision-GMG-SIMP",
+  "commit": "fd9ddecda039fdfb7ffb8cf49c58f602318ed2ef"
+ },
+ "arms": [
+  "stock",
+  "fused_ai_fp64",
+  "modal8_muladd"
+ ],
+ "schedules": {
+  "fp64": {
+   "levels": 4,
+   "fine_smoother": "fp64",
+   "smoother_type": "chebyshev",
+   "enable_fused_cuda": false
+  },
+  "mixed": {
+   "levels": 4,
+   "fine_smoother": "fp32",
+   "smoother_type": "chebyshev",
+   "enable_fused_cuda": true
+  }
+ },
+ "schedule_note": "mixed = their E3 SolverV4 configuration exactly; fp64 = the same with gmg_fine_smoother='fp64' and no fused FP32 kernel. Solver tolerances are their defaults (cg_tol 1e-5, cg_maxiter 1000); outer solver 'auto' (PCG).",
+ "cases": [
+  {
+   "id": "cantilever-216k",
+   "preset": "cantilever_gpu_large",
+   "primary": false,
+   "note": "their E3 cantilever (reproduction)"
+  },
+  {
+   "id": "cantilever-512k",
+   "preset": "cantilever_gpu_xlarge",
+   "primary": true
+  },
+  {
+   "id": "mbb-514k",
+   "preset": "mbb_gpu_xlarge",
+   "primary": true
+  },
+  {
+   "id": "torsion-499k",
+   "preset": "torsion_gpu_500k",
+   "primary": true
+  }
+ ],
+ "simp": {
+  "steps": 100,
+  "warmup_steps": 1,
+  "penal": 3.0,
+  "move": 0.15,
+  "x0": "volfrac",
+  "filter": "density",
+  "filter_rmin": 1.5,
+  "oc": "top88 on the GPU (oc_top88_gpu, same arithmetic as oc_top88), density filter on the GPU (cupyx CSR of the same H)"
+ },
+ "repetitions": 3,
+ "order_seed": 20260926,
+ "complete_optimization": {
+  "case": "cantilever-216k",
+  "stop_change": 0.01,
+  "max_steps": 150,
+  "estimated_run_seconds": 900
+ },
+ "decision": {
+  "equivalence": "per host, case and schedule, repetition 1: each non-stock arm's final compliance within 1e-3 (relative) of the stock arm's, and no non-converged solve (outer iterations reaching cg_maxiter) in any run. Maximum per-step compliance difference and design relative L2 are reported. Volume of the final physical design must be within 1e-3 of volfrac in every run (OC check).",
+  "work_match": "for an H11/H12 comparison of arms X and Y in a repetition, total outer iterations must agree within 3 %; a case where any repetition fails this is 'unqualified' for timing and reported as such",
+  "ratio": "r = wall(fused_ai_fp64) / wall(modal8_muladd) for the same repetition, case and schedule (paired within a repetition)",
+  "H11": "on a host, H11b passes if, for every primary case in the fp64 schedule, the median r over completed repetitions is >= 1.10, at least 2 repetitions completed, the case is work-matched and equivalence holds. Replicated if it passes on both hosts.",
+  "H12": "H12b: reported as the median r per case in the mixed schedule; the declared expectation is r < 1.10",
+  "reproduction": "wall(stock)/wall(modal8_muladd) and wall(stock)/wall(fused_ai_fp64) are reported but are not speedup claims (stock is their CuPy gather+DGEMM+bincount path)",
+  "breakdown": "per-step gmg_setup_ms, cg_ms and sensitivity_ms (their profiling timers) are reported to explain end-to-end dilution",
+  "cpu_gpu_optimizer": "descriptive: the complete-optimization compliance is compared with session G's CPU-optimizer run of the same case (2.370205 at 150 steps on host 1)"
+ },
+ "not_claimed": [
+  "Speedups are for 100-step density-filtered SIMP runs with a GPU-resident optimizer on RTX 4090s; a GPU-resident optimizer is standard engineering, not a contribution.",
+  "A speedup is not novelty; the basis and butterfly are classical/borrowed (report sections 14-18)."
+ ],
+ "declared_utc": "2026-09-26T04:15:46.525935+00:00",
+ "package_source_pins": {
+  "experiments/session_h/run_w1b.py": "a94e1331a79b14844bf276843754904e90fb55e78a781d4b1f7786d49286a8c5",
+  "experiments/session_h/job.py": "71223061137a2d5875125640663e017492d34e86d05afdf4d244b8d7af22aed2",
+  "experiments/combined/kff_adapters.py": "3d9195238a7bf1a361403cdebba07cf97ad3dd663c3fb86e85a855983da293bf",
+  "experiments/session_e/collect.py": "e642ce9d467a8a6e1788ef8821a081690abf96fa0e38b639f65ba4e0d2c8cc5d",
+  "experiments/session_e/dependencies/common.py": "a4f9075f5f8fcbd2a2aec9be966174ed43dd220741d30cd0b970860a15717216",
+  "experiments/session_e/dependencies/cuda.py": "57b05dd89254f8770b9c0cdc5a2081589ca35f1a0a730503399147626ebbbf30",
+  "experiments/session_e/dependencies/modal.py": "63a18941f6390d2dd1f54520d6589bf7c4118deda52ab8d6cefd460f2e90f4b8",
+  "experiments/session_e/dependencies/ATTRIBUTION.md": "931f3463612e67da98433ae1461016a9dc566272aa10f314820e4e6cb90efb6f",
+  "experiments/session_e/dependencies/DAO-LICENSE": "8c9ccb96c065e706135b6cbad279b721da6156e51f3a5f27c6b3329af9416d73",
+  "experiments/combined/donor_yang_gmg/.gitignore": "a5fa21ac1e138c01564ba29858411786d2381dcff44019da615961a7765c03a5",
+  "experiments/combined/donor_yang_gmg/CITATION.cff": "c61bfc8f008d664f269cd68cc3a8ce10dff08f7650508c318c7fdd453c494257",
+  "experiments/combined/donor_yang_gmg/LICENSE": "526c170b0ed4e89f85203566fd8717a8bbe2316e1f48be48851a91f851b1e13d",
+  "experiments/combined/donor_yang_gmg/PINNED.txt": "3f66174f4d350f24fda7d4ad92b6966820934674cfd596bf1ce0b5c5c5c8045f",
+  "experiments/combined/donor_yang_gmg/README.md": "2cb9e634c8c17d2dd15fc546f1f9a902cb63ec82a7a9cb255024f28bc9eca620",
+  "experiments/combined/donor_yang_gmg/ci/smoke_test.py": "06acf9cd41f2e4d5e1db8b41c41e9603dd1d8c1a49ab51990385bf42447c8645",
+  "experiments/combined/donor_yang_gmg/docs/ARTIFACT_MAP.md": "47a96ef6e22fd00548fe2323e8da94f51804572a6a5cc0dcd7542c0a412d6a3c",
+  "experiments/combined/donor_yang_gmg/environment.yml": "623fbe486b48c80dc909c6f0729029ad46b192a7bfb7a608725480bf9a67604e",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/README.md": "5ceeb7d0b6a3d296a499ef9df2b6ab6ca18a1f01c25e95cd99f56a3b462dda3c",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/estimate_preconditioned_kappa.py": "e46efa0e49b37f7fffe9ae27f4fadcca116e8096d40eae78d0b5bd1449fd3d33",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/run_experiments_e1_e10.py": "2140befc86d779d92ae9336d43c4c5fee3fcae983b131f0fa214930ec5526fad",
+  "experiments/combined/donor_yang_gmg/experiments/paper4/validate_phase1.py": "a5a9f616bf166baaf26b4185e343afce9f427abdb69d01ebafea3823840b9a87",
+  "experiments/combined/donor_yang_gmg/figures/make_3d_renders.py": "7a3919c668c21b7030568263b0ca2417b4216eba8959d1d8e0a604f751e5eb25",
+  "experiments/combined/donor_yang_gmg/figures/plot_figures.py": "308284f914e61dcc91d341c80c211fd9d9fbba104baf141d99a14cbc94bb911f",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/__init__.py": "0b90de85f742ff79e8a7061f252d4b38635874333c37d78627ced49fbe9661ac",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/bc_generator.py": "b5efae6aaab402c810f91c2fa7c21c55d1bc515f2eba0f66210b046d26c2a752",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/cuda_fused_matvec.py": "616c9a21e2e102f6c015fa1369d8e898e927f22b7ab6f40dc41d6ac9328f5a83",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/fem_gpu.py": "381f27971f12607093a2fa56837ffb3455dcca89709d5b94623b8d3e8136474c",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py": "5b3df2081017a7395245ad7c8781da6acb4dae4feced0c2e018730353946b15c",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/paths.py": "106acbb2978079e8aaa098b4ad0e62883491b55a747f664aa3fa23c47fb3225b",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/presets.py": "7e463855c3bc2ded8de427195c9d796d3a6ccc13eedeff17e2ba81f4c2bc5d88",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/problem_spec.py": "1819c4079dd253d022ae33719825505dd46fd3232684b2a5156f01a85c310501",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/pub_simp_solver.py": "aefb98dbbcfdf7a1ae0d474c8d0c79d231dca8c40edfc6bfb639b1a45205fdb5",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/solver_v2.py": "11d5985354db65a14348028cc7014caad18977bc10067dc11c861d922a624abd",
+  "experiments/combined/donor_yang_gmg/src/gpu_fem/solver_v4.py": "bc78bcf31c52fa08bdd401516570393fd2345380cd3593ad97de17b0467b9eb8",
+  "experiments/session_e/donor/LICENSE": "2cbf0d0aeb3004fb99958b857f6a7bcc05c512d2a97d514c23ac1ec15dd8b15f",
+  "experiments/session_e/donor/src/gpu_fem/__init__.py": "fb18a505323cb9e0f771ccf75be3d1a678f7851cf739a03b58c701e016c7f06d",
+  "experiments/session_e/donor/src/gpu_fem/cuda_fused_matvec.py": "7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f",
+  "experiments/session_e/donor/src/gpu_fem/cuda_operators.py": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f",
+  "experiments/session_e/donor/src/gpu_fem/filter_r2.py": "2fc74c7a0d0da47adf9ee8154d20682b95c3fd5292f008dbf32cff41a124b88b",
+  "experiments/session_e/donor/src/gpu_fem/pub_simp_solver.py": "37263bd5e6dcfee2ab3469bfd4172dcad7208433bf7cd0af6cab392deaf1073d",
+  "experiments/session_e/donor/src/gpu_fem/simp_r2.py": "c29840e8739c4e992587794c4b9a009f9a5453a3e8b2c551f870a2e3abf6ca3d",
+  "experiments/session_h/bootstrap.sh": "b7b3737172e829eadf440789ac15009d0a111481dd051c3de61956e42b387763"
+ }
+}

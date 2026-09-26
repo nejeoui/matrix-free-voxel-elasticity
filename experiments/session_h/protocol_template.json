@@ -1,0 +1,105 @@
+{
+ "experiment": "Voxel session H (combined paper W1b): session G's SIMP runs with the density filter and top88 OC on the GPU and 100 fixed steps, inside Yang et al.'s Galerkin GMG, three FP64 arms, RTX 4090, two hosts",
+ "status_at_declaration": "Declared after session G (report section 23), before any session H rental. Session G's H11 failure stands; H11b is a new hypothesis about a changed pipeline, not a re-test of H11.",
+ "questions": [
+  "H11b: with the optimizer on the GPU and 100-step runs, does modal8_muladd shorten complete SIMP runs by >= 1.10x against fused_ai_fp64 in the all-FP64 schedule on every primary case?",
+  "H12b: in the mixed schedule, is the effect < 1.10x?",
+  "Share: what fraction of a run is the linear solve once the optimizer is on the GPU?"
+ ],
+ "hardware": {
+  "gpu_full_names": [
+   "NVIDIA GeForce RTX 4090"
+  ],
+  "minimum_cpu_ram_mb": 64000,
+  "minimum_gpu_ram_mb": 24000,
+  "disk_gb": 80,
+  "maximum_total_usd_per_hour": 0.7
+ },
+ "limits": {
+  "maximum_job_seconds": 10800,
+  "maximum_rental_seconds": 12600,
+  "estimated_repetition_seconds": 1800,
+  "rentals": 2,
+  "destroy_after_verified_collection": true,
+  "evidence_cap_bytes": 2147483648
+ },
+ "donor": {
+  "repository": "https://github.com/nbbllxx0/Mixed-Precision-GMG-SIMP",
+  "commit": "fd9ddecda039fdfb7ffb8cf49c58f602318ed2ef"
+ },
+ "arms": [
+  "stock",
+  "fused_ai_fp64",
+  "modal8_muladd"
+ ],
+ "schedules": {
+  "fp64": {
+   "levels": 4,
+   "fine_smoother": "fp64",
+   "smoother_type": "chebyshev",
+   "enable_fused_cuda": false
+  },
+  "mixed": {
+   "levels": 4,
+   "fine_smoother": "fp32",
+   "smoother_type": "chebyshev",
+   "enable_fused_cuda": true
+  }
+ },
+ "schedule_note": "mixed = their E3 SolverV4 configuration exactly; fp64 = the same with gmg_fine_smoother='fp64' and no fused FP32 kernel. Solver tolerances are their defaults (cg_tol 1e-5, cg_maxiter 1000); outer solver 'auto' (PCG).",
+ "cases": [
+  {
+   "id": "cantilever-216k",
+   "preset": "cantilever_gpu_large",
+   "primary": false,
+   "note": "their E3 cantilever (reproduction)"
+  },
+  {
+   "id": "cantilever-512k",
+   "preset": "cantilever_gpu_xlarge",
+   "primary": true
+  },
+  {
+   "id": "mbb-514k",
+   "preset": "mbb_gpu_xlarge",
+   "primary": true
+  },
+  {
+   "id": "torsion-499k",
+   "preset": "torsion_gpu_500k",
+   "primary": true
+  }
+ ],
+ "simp": {
+  "steps": 100,
+  "warmup_steps": 1,
+  "penal": 3.0,
+  "move": 0.15,
+  "x0": "volfrac",
+  "filter": "density",
+  "filter_rmin": 1.5,
+  "oc": "top88 on the GPU (oc_top88_gpu, same arithmetic as oc_top88), density filter on the GPU (cupyx CSR of the same H)"
+ },
+ "repetitions": 3,
+ "order_seed": 20260926,
+ "complete_optimization": {
+  "case": "cantilever-216k",
+  "stop_change": 0.01,
+  "max_steps": 150,
+  "estimated_run_seconds": 900
+ },
+ "decision": {
+  "equivalence": "per host, case and schedule, repetition 1: each non-stock arm's final compliance within 1e-3 (relative) of the stock arm's, and no non-converged solve (outer iterations reaching cg_maxiter) in any run. Maximum per-step compliance difference and design relative L2 are reported. Volume of the final physical design must be within 1e-3 of volfrac in every run (OC check).",
+  "work_match": "for an H11/H12 comparison of arms X and Y in a repetition, total outer iterations must agree within 3 %; a case where any repetition fails this is 'unqualified' for timing and reported as such",
+  "ratio": "r = wall(fused_ai_fp64) / wall(modal8_muladd) for the same repetition, case and schedule (paired within a repetition)",
+  "H11": "on a host, H11b passes if, for every primary case in the fp64 schedule, the median r over completed repetitions is >= 1.10, at least 2 repetitions completed, the case is work-matched and equivalence holds. Replicated if it passes on both hosts.",
+  "H12": "H12b: reported as the median r per case in the mixed schedule; the declared expectation is r < 1.10",
+  "reproduction": "wall(stock)/wall(modal8_muladd) and wall(stock)/wall(fused_ai_fp64) are reported but are not speedup claims (stock is their CuPy gather+DGEMM+bincount path)",
+  "breakdown": "per-step gmg_setup_ms, cg_ms and sensitivity_ms (their profiling timers) are reported to explain end-to-end dilution",
+  "cpu_gpu_optimizer": "descriptive: the complete-optimization compliance is compared with session G's CPU-optimizer run of the same case (2.370205 at 150 steps on host 1)"
+ },
+ "not_claimed": [
+  "Speedups are for 100-step density-filtered SIMP runs with a GPU-resident optimizer on RTX 4090s; a GPU-resident optimizer is standard engineering, not a contribution.",
+  "A speedup is not novelty; the basis and butterfly are classical/borrowed (report sections 14-18)."
+ ]
+}
