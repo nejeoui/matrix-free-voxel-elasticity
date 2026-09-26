@@ -1,0 +1,142 @@
+{
+  "declared_utc": "2026-09-23T12:09:48.410900+00:00",
+  "question": "Does the parity-block kernel reduce constrained FP64 product time beyond the strongest published implementation and an equal-mapping dense control, while retaining true-residual solver acceptance?",
+  "prerequisite_cpu_result_sha256": "308177ce94ccaefe9d5c95b15fb73c7e90f428705f894cbf2b37f51c42d2cb88",
+  "prerequisite_cpu_protocol_sha256": "15f41eee8d052e54ef5b5d795f288da26aa0903b9d1dfb4e88dc3f4b1e9d8615",
+  "donor_revision": "cb619160174f4de83a61c618fc2ef3d97dc3329c",
+  "donor_files": {
+    "src/gpu_fem/__init__.py": "fb18a505323cb9e0f771ccf75be3d1a678f7851cf739a03b58c701e016c7f06d",
+    "src/gpu_fem/cuda_fused_matvec.py": "7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f",
+    "src/gpu_fem/cuda_operators.py": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f",
+    "src/gpu_fem/filter_r2.py": "2fc74c7a0d0da47adf9ee8154d20682b95c3fd5292f008dbf32cff41a124b88b",
+    "src/gpu_fem/pub_simp_solver.py": "37263bd5e6dcfee2ab3469bfd4172dcad7208433bf7cd0af6cab392deaf1073d",
+    "src/gpu_fem/simp_r2.py": "c29840e8739c4e992587794c4b9a009f9a5453a3e8b2c551f870a2e3abf6ca3d"
+  },
+  "paths": [
+    "three_stage_fp64",
+    "fused_fp64",
+    "fused_ai_fp64",
+    "node_fp64",
+    "dense8",
+    "modal8"
+  ],
+  "candidate": "modal8",
+  "thread_mapping_control": "dense8",
+  "cuda_block_threads": 128,
+  "correctness": {
+    "saved_states": "All 15 cases of the prerequisite protocol, with saved displacements and independent C++ target products.",
+    "synthetic_small_shapes": [
+      [
+        3,
+        2,
+        4
+      ],
+      [
+        5,
+        3,
+        3
+      ]
+    ],
+    "probes": [
+      "seeded random vector with nonzero constrained entries",
+      "zero after nonzero output"
+    ],
+    "relative_l2": 1e-11,
+    "absolute_per_sqrt_dof": 1e-12,
+    "state_true_residual_limit": 1e-07,
+    "solver_requested_rtol": 1e-08,
+    "solver_check_every": 50,
+    "solver_max_iterations": 20000,
+    "solver_state_relative_limit": 1e-05,
+    "solver_compliance_relative_limit": 1e-07
+  },
+  "benchmarks": {
+    "shapes": [
+      [
+        64,
+        32,
+        32
+      ],
+      [
+        128,
+        64,
+        64
+      ],
+      [
+        192,
+        96,
+        96
+      ],
+      [
+        96,
+        48,
+        64
+      ]
+    ],
+    "uniform_cell_h": 0.0625,
+    "floor": 1e-06,
+    "density": "Deterministic heterogeneous synthetic field in [0.02,1]; no claim that it is an optimized design. Exact generation code and arrays frozen before rental.",
+    "input": "Seeded random FP64 probe, same arrays for every path; x=0 fixed face with full identity on constrained rows.",
+    "seed": 20260923,
+    "warmup_calls_per_path": 5,
+    "rounds": 11,
+    "calls_per_batch": 20,
+    "order": "Seeded random path permutation in each round; retain raw order, GPU event duration and synchronized host elapsed time.",
+    "timed_scope": "Complete constrained product call, including required output zeroing, masking, kernel launches, assembly and constraint restoration. CPU data generation, transfers, setup/JIT and validation are outside steady-state time and reported separately; no whole-application claim.",
+    "buffer_reuse": true,
+    "measurement": "CUDA events with end-event synchronization; also report elapsed host time for each batch. Never time asynchronously without synchronization.",
+    "primary_cases": [
+      [
+        128,
+        64,
+        64
+      ],
+      [
+        192,
+        96,
+        96
+      ]
+    ],
+    "per_case_criterion": "For every baseline, paired median baseline/candidate GPU-event ratio >=1.15, and one-sided 95% paired bootstrap lower limit >1.05.",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260924,
+    "all_case_reporting": true
+  },
+  "solver_check": {
+    "cases": [
+      "cantilever-q8-final",
+      "cantilever-q16-final",
+      "double_clamped-q16-final",
+      "simply_supported-q16-final"
+    ],
+    "paths": [
+      "three_stage_fp64",
+      "fused_fp64",
+      "fused_ai_fp64",
+      "node_fp64",
+      "dense8",
+      "modal8"
+    ],
+    "replicates": 3,
+    "initial_guess": "zero in every run",
+    "algorithm": "Unmodified donor Jacobi-PCG, exact common diagonal, identical physics and stopping settings for every path.",
+    "order": "Seeded random permutation of paths per case and replicate",
+    "acceptance": "All native and independently verified solutions pass. Small-mesh solver timings are diagnostics, not a large-scale speedup gate.",
+    "negative_control": "One-iteration cap on cantilever-q8-final must fail physical acceptance for every path."
+  },
+  "development_gate": "All declared correctness and solver checks pass; candidate meets every per-case timing criterion on both primary benchmark shapes. No omission of failing cases or baseline paths.",
+  "on_failure": "Retain complete attempt and diagnose; do not lower the effect or correctness thresholds. A corrected implementation requires a fresh output directory and explicit provenance.",
+  "on_pass": "Only an operator development premise passes. Independent rentals/devices, application-scale fully charged solver and optimizer timings, setup amortization, valid sensitivity chain and novelty validation still required before the original goal can pass.",
+  "limits": {
+    "one_gpu": true,
+    "gpu_vram_gb_min": 24,
+    "preferred_ram_gb": 128,
+    "disk_gb": 80,
+    "max_hourly_compute_usd": 0.5,
+    "maximum_rental_seconds": 9000,
+    "maximum_job_seconds": 5400,
+    "destroy_after_verified_collection": true
+  },
+  "publication_goal_achieved": false,
+  "gpu_executed": false
+}
