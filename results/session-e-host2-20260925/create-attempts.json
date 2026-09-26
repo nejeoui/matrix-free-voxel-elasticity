@@ -1,0 +1,13 @@
+[
+  {
+    "offer_id": 41245407,
+    "dph_total": 0.44,
+    "status": 400,
+    "body": "{\"success\":false,\"error\":\"invalid_args\",\"msg\":\"error 404/3603: no_such_ask  Instance type by id 41245407 is not available.\",\"ask_id\":41245407}"
+  },
+  {
+    "offer_id": 45741902,
+    "dph_total": 0.44148148148148153,
+    "result": "created"
+  }
+]

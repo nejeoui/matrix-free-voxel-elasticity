@@ -1,0 +1,18 @@
+{
+  "client_id": "me",
+  "image": "nvidia/cuda:12.6.3-devel-ubuntu24.04",
+  "disk": 80,
+  "label": "voxel-session_e",
+  "runtype": "args",
+  "args": [
+    "bash",
+    "-lc",
+    "set -eu\nexport DEBIAN_FRONTEND=noninteractive\napt-get update\napt-get install -y openssh-server python3\nmkdir -p /run/sshd\nssh-keygen -A\nprintf '%s\\n' 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHENcJN/BcnV9w1ww6bQ/EjX1n907eHUqcOZA+bNegwk opencl mac13' > /etc/jpdc_authorized_keys\nchown root:root /etc/jpdc_authorized_keys\nchmod 600 /etc/jpdc_authorized_keys\nexec /usr/sbin/sshd -D -e -p 2200 -oAuthorizedKeysFile=/etc/jpdc_authorized_keys -oPermitRootLogin=prohibit-password -oPasswordAuthentication=no -oKbdInteractiveAuthentication=no -oUsePAM=yes\n"
+  ],
+  "env": {
+    "-p 2200:2200": "1"
+  },
+  "onstart": "",
+  "force": false,
+  "cancel_unavail": true
+}
