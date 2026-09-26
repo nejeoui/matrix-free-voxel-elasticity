@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the paper and this repository."
+title: "Matrix-free voxel elasticity on GPUs: artifact repository"
+authors:
+  - family-names: Nejeoui
+    given-names: Abderrazzak
+    email: a.nejeoui@uca.ac.ma
+    orcid: "https://orcid.org/0009-0000-6004-1777"
+    affiliation: "National School of Applied Sciences, Cadi Ayyad University, Marrakesh, Morocco"
+  - family-names: Bekkari
+    given-names: Aissam
+    email: a.bekkari@uca.ac.ma
+    orcid: "https://orcid.org/0009-0000-1400-6962"
+    affiliation: "National School of Applied Sciences, Cadi Ayyad University, Marrakesh, Morocco"
+contact:
+  - family-names: Nejeoui
+    given-names: Abderrazzak
+    email: a.nejeoui@uca.ac.ma
+repository-code: "https://github.com/nejeoui/matrix-free-voxel-elasticity"
+type: software
+license:
+  - MIT
+  - CC-BY-4.0

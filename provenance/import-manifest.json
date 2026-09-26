@@ -1,0 +1,835 @@
+{
+ "imported_utc": "2026-09-23T16:59:59+00:00",
+ "companion_path": "companion-record",
+ "companion_head": "be22c1a56c501b969d1707183bacfae7f7586a39",
+ "companion_head_subject": "hex modal readiness",
+ "note": "Files marked differs_from_companion_head=true were uncommitted in the companion project at import; their SHA-256 here is the authoritative identity of what was imported.",
+ "files": [
+  {
+   "dest": "code/hex_modal/README.md",
+   "source": "rescope/hex_modal/README.md",
+   "sha256": "6b8ec9e2100d1f0159a0e3e85d795ab9d456df5818b9291fbdcfa8c2aff89643",
+   "bytes": 3546,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal/modal.py",
+   "source": "rescope/hex_modal/modal.py",
+   "sha256": "63a18941f6390d2dd1f54520d6589bf7c4118deda52ab8d6cefd460f2e90f4b8",
+   "bytes": 4288,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal/protocol.json",
+   "source": "rescope/hex_modal/protocol.json",
+   "sha256": "15f41eee8d052e54ef5b5d795f288da26aa0903b9d1dfb4e88dc3f4b1e9d8615",
+   "bytes": 16112,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal/run.py",
+   "source": "rescope/hex_modal/run.py",
+   "sha256": "e74171669df12b5625f69ff7f7bab85ea294fda5239c6a2a66928f014ee8581a",
+   "bytes": 11233,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_cuda/README.md",
+   "source": "rescope/hex_modal_cuda/README.md",
+   "sha256": "4383591adce3cfef3f67a3768666603c0b13a5f8a86bef72b25f025e33b55416",
+   "bytes": 2463,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_cuda/bootstrap.sh",
+   "source": "rescope/hex_modal_cuda/bootstrap.sh",
+   "sha256": "da0b0902b148f4c592d1f11d1044ff8100b56e0f4624066f70f27f0ba6dc11c5",
+   "bytes": 1153,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_cuda/collect.py",
+   "source": "rescope/hex_modal_cuda/collect.py",
+   "sha256": "e642ce9d467a8a6e1788ef8821a081690abf96fa0e38b639f65ba4e0d2c8cc5d",
+   "bytes": 2874,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_cuda/common.py",
+   "source": "rescope/hex_modal_cuda/common.py",
+   "sha256": "a4f9075f5f8fcbd2a2aec9be966174ed43dd220741d30cd0b970860a15717216",
+   "bytes": 5354,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_cuda/cuda.py",
+   "source": "rescope/hex_modal_cuda/cuda.py",
+   "sha256": "ab3352097f6b96f4ad9852fb9c20f65a553cbce9297b74fb31f62b2d7187dd53",
+   "bytes": 4123,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_cuda/job.py",
+   "source": "rescope/hex_modal_cuda/job.py",
+   "sha256": "326d9a34c8b468d3a0d348eb9e514e090f68d5bacf5ed6ca7704d53885996aab",
+   "bytes": 3523,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_cuda/monitor.py",
+   "source": "rescope/hex_modal_cuda/monitor.py",
+   "sha256": "201efa3dbe30ac3b1c7378970be74940c5ae77d824b315181b7c7f287641946a",
+   "bytes": 5036,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_cuda/prepare.py",
+   "source": "rescope/hex_modal_cuda/prepare.py",
+   "sha256": "0bfe35cade59d5acee0f591181c5aa7e192abdbbc07a3b10113adb4c66e7c60a",
+   "bytes": 4333,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_cuda/protocol.json",
+   "source": "rescope/hex_modal_cuda/protocol.json",
+   "sha256": "cbe2609b63d2e7f761241b796d633457fc9fec399ff307f060de9401c9bb5dba",
+   "bytes": 5651,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_cuda/run_gpu.py",
+   "source": "rescope/hex_modal_cuda/run_gpu.py",
+   "sha256": "772c1baec28ea2cb63df85bd3d300034f31b290acc03ef86ddfa8ee176a01af7",
+   "bytes": 12521,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_cuda/verify.py",
+   "source": "rescope/hex_modal_cuda/verify.py",
+   "sha256": "21f32f8a232153aef0819c55c8ee0217ba786e6db23244deedca60486ac2cdf6",
+   "bytes": 5961,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/analysis.py",
+   "source": "rescope/hex_modal_profile_v2/analysis.py",
+   "sha256": "b17dc1a2af41643993429c6f03623b2fe53890fee5c8797dcc924a4d8b393b24",
+   "bytes": 4543,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/bootstrap.sh",
+   "source": "rescope/hex_modal_profile_v2/bootstrap.sh",
+   "sha256": "2c614f7542e95da762cd7476cbb84211f0f765fcb6336649f8695898ce652ea7",
+   "bytes": 1231,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/check_index_contract.py",
+   "source": "rescope/hex_modal_profile_v2/check_index_contract.py",
+   "sha256": "353d5f780c6965324b3b9d1ae552d570e60336a839d7b9f2ae1fb629cf5d3e1b",
+   "bytes": 3453,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/collect.py",
+   "source": "rescope/hex_modal_profile_v2/collect.py",
+   "sha256": "e642ce9d467a8a6e1788ef8821a081690abf96fa0e38b639f65ba4e0d2c8cc5d",
+   "bytes": 2874,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/dependencies/common.py",
+   "source": "rescope/hex_modal_profile_v2/dependencies/common.py",
+   "sha256": "a4f9075f5f8fcbd2a2aec9be966174ed43dd220741d30cd0b970860a15717216",
+   "bytes": 5354,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/dependencies/cuda.py",
+   "source": "rescope/hex_modal_profile_v2/dependencies/cuda.py",
+   "sha256": "ab3352097f6b96f4ad9852fb9c20f65a553cbce9297b74fb31f62b2d7187dd53",
+   "bytes": 4123,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/dependencies/modal.py",
+   "source": "rescope/hex_modal_profile_v2/dependencies/modal.py",
+   "sha256": "63a18941f6390d2dd1f54520d6589bf7c4118deda52ab8d6cefd460f2e90f4b8",
+   "bytes": 4288,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/donor/LICENSE",
+   "source": "rescope/hex_modal_profile_v2/donor/LICENSE",
+   "sha256": "2cbf0d0aeb3004fb99958b857f6a7bcc05c512d2a97d514c23ac1ec15dd8b15f",
+   "bytes": 1551,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/donor/src/gpu_fem/__init__.py",
+   "source": "rescope/hex_modal_profile_v2/donor/src/gpu_fem/__init__.py",
+   "sha256": "fb18a505323cb9e0f771ccf75be3d1a678f7851cf739a03b58c701e016c7f06d",
+   "bytes": 434,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/donor/src/gpu_fem/cuda_fused_matvec.py",
+   "source": "rescope/hex_modal_profile_v2/donor/src/gpu_fem/cuda_fused_matvec.py",
+   "sha256": "7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f",
+   "bytes": 20411,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/donor/src/gpu_fem/cuda_operators.py",
+   "source": "rescope/hex_modal_profile_v2/donor/src/gpu_fem/cuda_operators.py",
+   "sha256": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f",
+   "bytes": 33599,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/donor/src/gpu_fem/filter_r2.py",
+   "source": "rescope/hex_modal_profile_v2/donor/src/gpu_fem/filter_r2.py",
+   "sha256": "2fc74c7a0d0da47adf9ee8154d20682b95c3fd5292f008dbf32cff41a124b88b",
+   "bytes": 6639,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/donor/src/gpu_fem/pub_simp_solver.py",
+   "source": "rescope/hex_modal_profile_v2/donor/src/gpu_fem/pub_simp_solver.py",
+   "sha256": "37263bd5e6dcfee2ab3469bfd4172dcad7208433bf7cd0af6cab392deaf1073d",
+   "bytes": 26956,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/donor/src/gpu_fem/simp_r2.py",
+   "source": "rescope/hex_modal_profile_v2/donor/src/gpu_fem/simp_r2.py",
+   "sha256": "c29840e8739c4e992587794c4b9a009f9a5453a3e8b2c551f870a2e3abf6ca3d",
+   "bytes": 42887,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/export_results.py",
+   "source": "rescope/hex_modal_profile_v2/export_results.py",
+   "sha256": "c0604b7d00df64d7aa3c9c262847f0a13004d21d03c9ee079a5880acb1239966",
+   "bytes": 3405,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/finalize.py",
+   "source": "rescope/hex_modal_profile_v2/finalize.py",
+   "sha256": "0a2d0be30620d7cf5e7579aaf6795f12186ba515eb6719632e0e7fd7493e97d4",
+   "bytes": 6782,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/job.py",
+   "source": "rescope/hex_modal_profile_v2/job.py",
+   "sha256": "813a7ffbf25b3652d8894141c309d4a592bcd18180968dca531cf4bcaf0ebad6",
+   "bytes": 3502,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/launch.py",
+   "source": "rescope/hex_modal_profile_v2/launch.py",
+   "sha256": "652340bcbc519c1b3d9e1187ca46c0b343defbaf7cc57a41694676d3f5f381fd",
+   "bytes": 7898,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/monitor.py",
+   "source": "rescope/hex_modal_profile_v2/monitor.py",
+   "sha256": "6f11ae93ae212c1747263b5b3b318c855e7dbe880524c2b674973626e1692d85",
+   "bytes": 5314,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/protocol.json",
+   "source": "rescope/hex_modal_profile_v2/protocol.json",
+   "sha256": "1f6b17dc4d1c831d5bb855174cb8ae3b15ce20ccb9240f5590b5df11f4779d97",
+   "bytes": 6868,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/run_gpu.py",
+   "source": "rescope/hex_modal_profile_v2/run_gpu.py",
+   "sha256": "75af6822e0952b5752dc1a64be930a6208b484f194a1af442c7aae80af82d5fc",
+   "bytes": 12865,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/test_profile.py",
+   "source": "rescope/hex_modal_profile_v2/test_profile.py",
+   "sha256": "1ab1660037a683f64c6705c6124e0b19e9c49e166b223c7fa8c3df0afc7a9715",
+   "bytes": 3495,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_profile_v2/verify.py",
+   "source": "rescope/hex_modal_profile_v2/verify.py",
+   "sha256": "8293b2dcdff80c6cd22ac4196b688237bcaa005e6db221a8c3b1731916246cdb",
+   "bytes": 5265,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/analysis.py",
+   "source": "rescope/hex_modal_layout_v2/analysis.py",
+   "sha256": "c4bee2f8217db29d2cc6bf00990217d447ff7a8317092237942f154dc42944a1",
+   "bytes": 3724,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/bootstrap.sh",
+   "source": "rescope/hex_modal_layout_v2/bootstrap.sh",
+   "sha256": "c653b71e9ccd63c17e02a55c7a2f180e351555a4e24e30ed74dba62470b19c9d",
+   "bytes": 1226,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/collect.py",
+   "source": "rescope/hex_modal_layout_v2/collect.py",
+   "sha256": "e642ce9d467a8a6e1788ef8821a081690abf96fa0e38b639f65ba4e0d2c8cc5d",
+   "bytes": 2874,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/dependencies/common.py",
+   "source": "rescope/hex_modal_layout_v2/dependencies/common.py",
+   "sha256": "a4f9075f5f8fcbd2a2aec9be966174ed43dd220741d30cd0b970860a15717216",
+   "bytes": 5354,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/dependencies/cuda.py",
+   "source": "rescope/hex_modal_layout_v2/dependencies/cuda.py",
+   "sha256": "ab3352097f6b96f4ad9852fb9c20f65a553cbce9297b74fb31f62b2d7187dd53",
+   "bytes": 4123,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/dependencies/modal.py",
+   "source": "rescope/hex_modal_layout_v2/dependencies/modal.py",
+   "sha256": "63a18941f6390d2dd1f54520d6589bf7c4118deda52ab8d6cefd460f2e90f4b8",
+   "bytes": 4288,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/donor/LICENSE",
+   "source": "rescope/hex_modal_layout_v2/donor/LICENSE",
+   "sha256": "2cbf0d0aeb3004fb99958b857f6a7bcc05c512d2a97d514c23ac1ec15dd8b15f",
+   "bytes": 1551,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/donor/src/gpu_fem/__init__.py",
+   "source": "rescope/hex_modal_layout_v2/donor/src/gpu_fem/__init__.py",
+   "sha256": "fb18a505323cb9e0f771ccf75be3d1a678f7851cf739a03b58c701e016c7f06d",
+   "bytes": 434,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/donor/src/gpu_fem/cuda_fused_matvec.py",
+   "source": "rescope/hex_modal_layout_v2/donor/src/gpu_fem/cuda_fused_matvec.py",
+   "sha256": "7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f",
+   "bytes": 20411,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/donor/src/gpu_fem/cuda_operators.py",
+   "source": "rescope/hex_modal_layout_v2/donor/src/gpu_fem/cuda_operators.py",
+   "sha256": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f",
+   "bytes": 33599,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/donor/src/gpu_fem/filter_r2.py",
+   "source": "rescope/hex_modal_layout_v2/donor/src/gpu_fem/filter_r2.py",
+   "sha256": "2fc74c7a0d0da47adf9ee8154d20682b95c3fd5292f008dbf32cff41a124b88b",
+   "bytes": 6639,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/donor/src/gpu_fem/pub_simp_solver.py",
+   "source": "rescope/hex_modal_layout_v2/donor/src/gpu_fem/pub_simp_solver.py",
+   "sha256": "37263bd5e6dcfee2ab3469bfd4172dcad7208433bf7cd0af6cab392deaf1073d",
+   "bytes": 26956,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/donor/src/gpu_fem/simp_r2.py",
+   "source": "rescope/hex_modal_layout_v2/donor/src/gpu_fem/simp_r2.py",
+   "sha256": "c29840e8739c4e992587794c4b9a009f9a5453a3e8b2c551f870a2e3abf6ca3d",
+   "bytes": 42887,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/export_results.py",
+   "source": "rescope/hex_modal_layout_v2/export_results.py",
+   "sha256": "01e6d47c97864541881a2c40073fac4e83fdcfa9c8f8f602f7c1d996cbe9101e",
+   "bytes": 3702,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/finalize.py",
+   "source": "rescope/hex_modal_layout_v2/finalize.py",
+   "sha256": "d78f671d1fb2498de0089ab1d56a5438276c6879bdc2e5ca7eb78bd7a595e2a2",
+   "bytes": 5884,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/job.py",
+   "source": "rescope/hex_modal_layout_v2/job.py",
+   "sha256": "43b3440565cf937d046709878e06065abb9d0091b68b82031decfc77625c21bb",
+   "bytes": 3499,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/launch.py",
+   "source": "rescope/hex_modal_layout_v2/launch.py",
+   "sha256": "caeb514a340c3c16a2619db7016c8499a598f2565146c1b6f7e09ac5415e0334",
+   "bytes": 8137,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/launch_attempt_02.py",
+   "source": "rescope/hex_modal_layout_v2/launch_attempt_02.py",
+   "sha256": "9ebbadd535a7634e73426a92a3e4217e9485d373b1162913748cb9a3300f57fd",
+   "bytes": 8137,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/launch_attempt_03.py",
+   "source": "rescope/hex_modal_layout_v2/launch_attempt_03.py",
+   "sha256": "aec15284fd03f7f380aea883ce1ffcea4de0cc8aba95d1e3206b33ebdde63cac",
+   "bytes": 8137,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/monitor.py",
+   "source": "rescope/hex_modal_layout_v2/monitor.py",
+   "sha256": "c6c991763fd9a5786e1f836fed953acdad11d9a7b598b6b1e9b3f0c1a13b2aa5",
+   "bytes": 5225,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/physical.py",
+   "source": "rescope/hex_modal_layout_v2/physical.py",
+   "sha256": "f6224eabf2656c103a49daca19c3087daaca91b9bc817895608bca95e58ec607",
+   "bytes": 2994,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/prepare.py",
+   "source": "rescope/hex_modal_layout_v2/prepare.py",
+   "sha256": "7b3f728876683c0d6638e07dd59629bb2f656dcd8335ea9693574d1e46cbdef3",
+   "bytes": 4642,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/protocol.json",
+   "source": "rescope/hex_modal_layout_v2/protocol.json",
+   "sha256": "26eb6e903b1748819344eace6683eb1e56c9c1cc405c680c3c51ec0b384f68cb",
+   "bytes": 9968,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/provider.py",
+   "source": "rescope/hex_modal_layout_v2/provider.py",
+   "sha256": "bd9492c9bcc818753a7555643c83c0374c721a2125e8c49654d1d37b5d132ff9",
+   "bytes": 2650,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/record_report.py",
+   "source": "rescope/hex_modal_layout_v2/record_report.py",
+   "sha256": "eea4d617ff0092eb20cfbd7fc28f32eb70c782cc063eac2b4b758f9c04d290a0",
+   "bytes": 14727,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/run_gpu.py",
+   "source": "rescope/hex_modal_layout_v2/run_gpu.py",
+   "sha256": "29ab336fb262d9849940834db965dfb47daf429aa36af1e1a60a86864512b9cc",
+   "bytes": 11865,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/test_layout.py",
+   "source": "rescope/hex_modal_layout_v2/test_layout.py",
+   "sha256": "7c5df57e63971d15a4329153bb342cafdd11a0819bf3b929b4bcb3963805e428",
+   "bytes": 4487,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/variants.py",
+   "source": "rescope/hex_modal_layout_v2/variants.py",
+   "sha256": "c73ea570ec1a134ad0561fe9956e2f48560670b743af3d8e10d1ee1860ef1f9a",
+   "bytes": 6450,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_layout_v2/verify.py",
+   "source": "rescope/hex_modal_layout_v2/verify.py",
+   "sha256": "af2cc79ba136eb879e176fcab1afeab027c09f808acaef584932e3fb9d08ef28",
+   "bytes": 6043,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_basis/check_basis.py",
+   "source": "rescope/hex_modal_basis/check_basis.py",
+   "sha256": "a4172e0f56366498e9c22b5b40e3afae5613894236365e07008471084c85a5c7",
+   "bytes": 4132,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_central_parity/protocol.json",
+   "source": "rescope/hex_central_parity/protocol.json",
+   "sha256": "a3fc8fe34f0efb56e03258ab9c167e0efdcaf6186e0df8bde316fb68f29c396a",
+   "bytes": 1516,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_central_parity/run.py",
+   "source": "rescope/hex_central_parity/run.py",
+   "sha256": "843ca98193445224900ba2f6525bbdbaf2e0c530f46fab934d1aa02e8c90fd32",
+   "bytes": 5512,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_central_parity/verify.py",
+   "source": "rescope/hex_central_parity/verify.py",
+   "sha256": "b67e9549dc3a47ebd944bfd3ab9bcdca0e0b0df0dd9266f7aad0b7c134668195",
+   "bytes": 2949,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "code/hex_modal_readiness/README.md",
+   "source": "rescope/hex_modal_readiness/README.md",
+   "sha256": "4ef5b4d51da79e6d3a2e7cc45e9366f92d9e39cb504e2b36a9ec76b295b89c1c",
+   "bytes": 3182,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_readiness/analyze.py",
+   "source": "rescope/hex_modal_readiness/analyze.py",
+   "sha256": "2e887fae2fc0ba9f53998292979f2281fc47e32d97775b9447b4fd78f0ebd79a",
+   "bytes": 9291,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_readiness/protocol.json",
+   "source": "rescope/hex_modal_readiness/protocol.json",
+   "sha256": "483172d12a5a34473aa82b07bab0d67f19d4c716641973fe7986ea8b1a365fa4",
+   "bytes": 2627,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_readiness/reconcile_costs.py",
+   "source": "rescope/hex_modal_readiness/reconcile_costs.py",
+   "sha256": "8df65a68562768dff60ebc1bf67fddfceb1709b83abd6d214706c05b52dd9be6",
+   "bytes": 9057,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_readiness/test_analysis.py",
+   "source": "rescope/hex_modal_readiness/test_analysis.py",
+   "sha256": "6b642b3a3a9ad75849c84369cb4902122133e721f744466626b8cb71c491e1b2",
+   "bytes": 3059,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "code/hex_modal_readiness/verify_inputs.py",
+   "source": "rescope/hex_modal_readiness/verify_inputs.py",
+   "sha256": "22ac47d9e42f423989a2a1306137bfea7e1a82deb7537e6112738897cbcac130",
+   "bytes": 4278,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/kernel-rtx4090/protocol.json",
+   "source": "results/rescope/hex-modal-cuda-20260923/source-01/protocol.json",
+   "sha256": "cbe2609b63d2e7f761241b796d633457fc9fec399ff307f060de9401c9bb5dba",
+   "bytes": 5651,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/kernel-rtx4090/result.json",
+   "source": "results/rescope/hex-modal-cuda-20260923/rental-01/remote/run-01/result.json",
+   "sha256": "8acef2ad17e6fd96661689b3b5ee7ceb42e39371f46b1a1aa5d34166ef256707",
+   "bytes": 245455,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/kernel-rtx4090/local-verification.json",
+   "source": "results/rescope/hex-modal-cuda-20260923/rental-01/local-verification.json",
+   "sha256": "ff1ce8d0845d1470920a10eb7bfd790c66bc00a009369130c5ebdad270b1fb16",
+   "bytes": 8354,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/kernel-rtx4090/cost.json",
+   "source": "results/rescope/hex-modal-cuda-20260923/rental-01/cost.json",
+   "sha256": "447e791553919de3439ba56197ed411cc7e82a3737f45edb657a2f5b155a1f06",
+   "bytes": 544,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/kernel-rtx4090/destruction.json",
+   "source": "results/rescope/hex-modal-cuda-20260923/rental-01/destruction.json",
+   "sha256": "812ec45ef10da9e348f3ff2834e2414880ce9f7166f711af41491a1a7e358f29",
+   "bytes": 208,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/kernel-rtx3090-replication/replication-protocol.json",
+   "source": "results/rescope/hex-modal-replication-20260923/replication-protocol.json",
+   "sha256": "03af1b0553ccfbf1c6bd6c978bc433d0a4f20607b127270f7d257b0b141a94a4",
+   "bytes": 2101,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/kernel-rtx3090-replication/replication-result.json",
+   "source": "results/rescope/hex-modal-replication-20260923/replication-result.json",
+   "sha256": "e018278df11fa9b474500b1b7518ca31b06ef72892762510adecba338065e4b6",
+   "bytes": 641,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/kernel-rtx3090-replication/result.json",
+   "source": "results/rescope/hex-modal-replication-20260923/rental-01/remote/run-01/result.json",
+   "sha256": "9227dedf48b8a58c7df80c90988954614bbca73a362a665009b632856e6a986b",
+   "bytes": 245288,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/kernel-rtx3090-replication/local-verification.json",
+   "source": "results/rescope/hex-modal-replication-20260923/rental-01/local-verification.json",
+   "sha256": "f4c4e71ab55a548df51cdb306af95836dd6083a415f15c44551ea831df8874bf",
+   "bytes": 8344,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/kernel-rtx3090-replication/cost.json",
+   "source": "results/rescope/hex-modal-replication-20260923/rental-01/cost.json",
+   "sha256": "60bfc6075e64eff21a3350ff7cfc7fd1c2b1d4f270b55593d91be6ade1c50da5",
+   "bytes": 425,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/kernel-rtx3090-replication/destruction.json",
+   "source": "results/rescope/hex-modal-replication-20260923/rental-01/destruction.json",
+   "sha256": "676a9280797a2f19f88696f380f9b58a1b3c6f4141ee2ba7afe60cd7c434e99e",
+   "bytes": 208,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/protocol.json",
+   "source": "results/rescope/hex-modal-profile-v2-20260923/protocol.json",
+   "sha256": "1f6b17dc4d1c831d5bb855174cb8ae3b15ce20ccb9240f5590b5df11f4779d97",
+   "bytes": 6868,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/runner-diff.txt",
+   "source": "results/rescope/hex-modal-profile-v2-20260923/runner-diff.txt",
+   "sha256": "ba74b6a0aed83a2ddeb86bcb773bcd1ac8450f1290d0fee35851996fea92e216",
+   "bytes": 871,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/local-verification.json",
+   "source": "results/rescope/hex-modal-profile-v2-20260923/rental-01/local-verification.json",
+   "sha256": "f19a6ee13c565f1d440c0466627873aac98b70b9cb46356e35f09d7bd1ca9b97",
+   "bytes": 34722,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/result.json",
+   "source": "results/rescope/hex-modal-profile-v2-20260923/rental-01/remote/run-01/result.json",
+   "sha256": "a92c19b04d342750911205786623f24d41c2c43ef09070709f386dd673cecf3b",
+   "bytes": 2036304,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/destruction.json",
+   "source": "results/rescope/hex-modal-profile-v2-20260923/rental-01/destruction.json",
+   "sha256": "2c3c301178aaf102eaebf69f76ba7a5ebdf4b530df073a14f36a6aa948f6bd61",
+   "bytes": 223,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/cost-estimate.json",
+   "source": "results/rescope/hex-modal-profile-v2-20260923/cost-estimate.json",
+   "sha256": "eebf4a938d7aee47d6fe25992e17e9189a01c4098cbf33d7600133c5edf7df9f",
+   "bytes": 454,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/all-solves.csv",
+   "source": "results/reports/scientific-report-hex-modal-profile-v2-20260923/figures/all-solves.csv",
+   "sha256": "f68e21c93c9495fe78efe958a571b81a6dd14082a123f731de50f2fa3755b1c5",
+   "bytes": 6628,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/primary-timings.png",
+   "source": "results/reports/scientific-report-hex-modal-profile-v2-20260923/figures/primary-timings.png",
+   "sha256": "aa974d82a3bdb4b69ef701850c2bd93e7f85d14d51a49fdabd7827716b40e9c8",
+   "bytes": 82571,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/primary-timings.svg",
+   "source": "results/reports/scientific-report-hex-modal-profile-v2-20260923/figures/primary-timings.svg",
+   "sha256": "3475eb0bdf21f36259ad471ecace429b9180f657121b5bda4db99b5fa1b4ddc7",
+   "bytes": 75026,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/provenance.json",
+   "source": "results/reports/scientific-report-hex-modal-profile-v2-20260923/figures/provenance.json",
+   "sha256": "ba92771d3d9efa8f0ccb86295bfa33845dd162dc936484aefbc66e6781837af4",
+   "bytes": 321,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/prior-work-followup.json",
+   "source": "results/reports/scientific-report-hex-modal-profile-v2-20260923/prior-work-followup.json",
+   "sha256": "8b6519e86f3ecc358a8e2b4df4cc582e0d70b83cbc55ac49ce83fc0dd0e3a500",
+   "bytes": 1789,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/failed-attempt-01/protocol.json",
+   "source": "results/rescope/hex-modal-profile-20260923/protocol.json",
+   "sha256": "603e6b64846c957104f072c93bdf86a16c36de562de9cea5aed11bdad0da7815",
+   "bytes": 6056,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/failed-attempt-01/index-contract-diagnosis.json",
+   "source": "results/rescope/hex-modal-profile-20260923/index-contract-diagnosis.json",
+   "sha256": "18645361332d73a0883a3841f82d51dd1802704ecbf5d990cecc2abb5b025464",
+   "bytes": 721,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/solve-profile-rtx4090/failed-attempt-01/local-verification.json",
+   "source": "results/rescope/hex-modal-profile-20260923/rental-02/local-verification.json",
+   "sha256": "5fab17b071d999f9dd3502dcd0f219ad5447980631e5916067282dd1ce0313dc",
+   "bytes": 950,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/product-layout-rtx4090/protocol.json",
+   "source": "results/rescope/hex-modal-layout-v2-20260923/protocol.json",
+   "sha256": "26eb6e903b1748819344eace6683eb1e56c9c1cc405c680c3c51ec0b384f68cb",
+   "bytes": 9968,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/product-layout-rtx4090/local-verification.json",
+   "source": "results/rescope/hex-modal-layout-v2-20260923/rental-03/local-verification.json",
+   "sha256": "c252638c7b2ef4348b130286b4da026c3e2818e8cb1636db64e5ddffd47ea2ca",
+   "bytes": 58762,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/product-layout-rtx4090/result.json",
+   "source": "results/rescope/hex-modal-layout-v2-20260923/rental-03/remote/run-01/result.json",
+   "sha256": "d28bbf6cc227c49a227e98411b564a5f4566d4470e8adf31ff0409732a390f2c",
+   "bytes": 175080,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/product-layout-rtx4090/destruction.json",
+   "source": "results/rescope/hex-modal-layout-v2-20260923/rental-03/destruction.json",
+   "sha256": "43d8bbdff35457d1193cccebedb4293425764398d9a135d401a1c30d597f9227",
+   "bytes": 223,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/product-layout-rtx4090/cost-estimate.json",
+   "source": "results/rescope/hex-modal-layout-v2-20260923/cost-estimate.json",
+   "sha256": "34c2708ce37e234a11c02446a94bd29e0e5ae6484c96e9ef1690eca9a3c9694c",
+   "bytes": 412,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/product-layout-rtx4090/failed-attempt-v1/protocol.json",
+   "source": "results/rescope/hex-modal-layout-20260923/protocol.json",
+   "sha256": "d298ab25e1af6cca53ccc9f5c807eea5c8ca6287706b599ee87f5ed5f943ca5f",
+   "bytes": 8707,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/product-layout-rtx4090/failed-attempt-v1/deployment-outcome.json",
+   "source": "results/rescope/hex-modal-layout-20260923/deployment-outcome.json",
+   "sha256": "3f7f414f9493a427c4e0bd97ced2175c2c5e17025903bd343b87367402d25a4e",
+   "bytes": 449,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/algebra/results.json",
+   "source": "results/rescope/hex-modal-basis-20260923/run-01/results.json",
+   "sha256": "e98fbfb82d3dcf65d2965d1fcb4626135b61d0617418462382068d76ceb51bb4",
+   "bytes": 1039,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/algebra/protocol.json",
+   "source": "results/rescope/hex-central-parity-20260923/protocol.json",
+   "sha256": "a3fc8fe34f0efb56e03258ab9c167e0efdcaf6186e0df8bde316fb68f29c396a",
+   "bytes": 1516,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/algebra/verification.json",
+   "source": "results/rescope/hex-central-parity-20260923/verification.json",
+   "sha256": "3d11ad986b6cc62731c76c4288cdcc4227abe135c0b3d66a9f976d7c2c08e917",
+   "bytes": 444,
+   "differs_from_companion_head": true
+  },
+  {
+   "dest": "evidence/readiness/decision.json",
+   "source": "results/rescope/hex-modal-readiness-20260923/audit-01/decision.json",
+   "sha256": "247756e6ec68277c08f5702377140635c4fc36c7f2ad73b4f29d0caeefb3f3fc",
+   "bytes": 5109,
+   "differs_from_companion_head": false
+  },
+  {
+   "dest": "evidence/readiness/kernel-requirements.csv",
+   "source": "results/rescope/hex-modal-readiness-20260923/audit-01/kernel-requirements.csv",
+   "sha256": "3ed98c19e03f8a113b08c9b92ce7b9c53806866a736559e6d12fa5b071b0373f",
+   "bytes": 1100,
+   "differs_from_companion_head": false
+  }
+ ],
+ "missing_sources": [],
+ "large_archive_references": [
+  {
+   "source": "results/rescope/hex-modal-cuda-20260923/rental-01/evidence.tar.gz",
+   "sha256": "b836a2aba5f557289c5163158c3e468583facfbb6225efa495bc95e4e5a9fef3",
+   "bytes": 591696253
+  },
+  {
+   "source": "results/rescope/hex-modal-replication-20260923/rental-01/evidence.tar.gz",
+   "sha256": "30d29fc655c5502c2022c949c877986106f15010b9542c2542550b198f139610",
+   "bytes": 591693771
+  },
+  {
+   "source": "results/rescope/hex-modal-profile-v2-20260923/rental-01/evidence.tar.gz",
+   "sha256": "775747bf9b530312b9600505d9b5a97f659b8c25723ee00c45263aed50acd86e",
+   "bytes": 1320393018
+  },
+  {
+   "source": "results/rescope/hex-modal-layout-v2-20260923/rental-03/evidence.tar.gz",
+   "sha256": "abaae4d9b59e4418c7d3a8a78cf0d1e4c7b5bf352b6ff8962cc36b870175f3d1",
+   "bytes": 1097656387
+  },
+  {
+   "source": "results/rescope/hex-central-parity-20260923/run-01/samples.npz",
+   "sha256": "81a1147eb05240eb0d29c1ac0a2c0bac0f71f0aa2e681f75bb8c67a3f5684005",
+   "bytes": 532409
+  }
+ ]
+}

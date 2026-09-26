@@ -1,0 +1,38 @@
+[
+ {
+  "archive": "companion/results/rescope/hex-modal-mg-damping-gpu-20260923/rental-01/evidence.tar.gz",
+  "original_sha256": "87858ade975fec894fc8715e9363769de29d9638ec104c6d2b0b8c1daae85967",
+  "published_sha256": "576fa68aced3868fa62c009c83c28efa2c744bb97a58e588500799009e1f4dc0",
+  "removed_members": [
+   "source/adapted/.gitignore",
+   "source/adapted/Makefile",
+   "source/adapted/README.md",
+   "source/adapted/definitions.h",
+   "source/adapted/figures/cg_running_time.png",
+   "source/adapted/figures/result.pdf",
+   "source/adapted/figures/result.png",
+   "source/adapted/figures/running_time.png",
+   "source/adapted/figures/speedup.png",
+   "source/adapted/gpu_definitions.c",
+   "source/adapted/gpu_definitions.h",
+   "source/adapted/local_matrix.c",
+   "source/adapted/local_matrix.h",
+   "source/adapted/plot_timings.m",
+   "source/adapted/setup_gbar_env.sh",
+   "source/adapted/stencil_assembly.c",
+   "source/adapted/stencil_assembly.h",
+   "source/adapted/stencil_grid_utility.c",
+   "source/adapted/stencil_grid_utility.h",
+   "source/adapted/stencil_methods.c",
+   "source/adapted/stencil_methods.h",
+   "source/adapted/stencil_optimization.c",
+   "source/adapted/stencil_optimization.h",
+   "source/adapted/stencil_solvers.c",
+   "source/adapted/stencil_solvers.h",
+   "source/adapted/stencil_utility.h",
+   "source/adapted/top3d.c",
+   "source/adapted/top3dmgcg_matrixfree.m",
+   "source/adapted/top3dmgcg_reference.m"
+  ]
+ }
+]
