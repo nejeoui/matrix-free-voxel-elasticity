@@ -1,0 +1,74 @@
+[
+ {
+  "device": "RTX 3090",
+  "precision": "FP64",
+  "ridge_flop_per_byte": 0.594017094017094,
+  "dense_intensity": 3.0,
+  "dense_bound": "compute",
+  "parity_bound": "compute",
+  "ideal_ratio": 4.0
+ },
+ {
+  "device": "RTX 3090",
+  "precision": "FP32",
+  "ridge_flop_per_byte": 38.01282051282051,
+  "dense_intensity": 6.0,
+  "dense_bound": "bandwidth",
+  "parity_bound": "bandwidth",
+  "ideal_ratio": 1.0
+ },
+ {
+  "device": "RTX 4090",
+  "precision": "FP64",
+  "ridge_flop_per_byte": 1.2797619047619047,
+  "dense_intensity": 3.0,
+  "dense_bound": "compute",
+  "parity_bound": "bandwidth",
+  "ideal_ratio": 2.344186046511628
+ },
+ {
+  "device": "RTX 4090",
+  "precision": "FP32",
+  "ridge_flop_per_byte": 81.92460317460318,
+  "dense_intensity": 6.0,
+  "dense_bound": "bandwidth",
+  "parity_bound": "bandwidth",
+  "ideal_ratio": 1.0
+ },
+ {
+  "device": "A100 80GB SXM",
+  "precision": "FP64",
+  "ridge_flop_per_byte": 4.757233938205003,
+  "dense_intensity": 3.0,
+  "dense_bound": "bandwidth",
+  "parity_bound": "bandwidth",
+  "ideal_ratio": 1.0
+ },
+ {
+  "device": "A100 80GB SXM",
+  "precision": "FP32",
+  "ridge_flop_per_byte": 9.563511525257478,
+  "dense_intensity": 6.0,
+  "dense_bound": "bandwidth",
+  "parity_bound": "bandwidth",
+  "ideal_ratio": 1.0
+ },
+ {
+  "device": "H100 SXM",
+  "precision": "FP64",
+  "ridge_flop_per_byte": 10.149253731343284,
+  "dense_intensity": 3.0,
+  "dense_bound": "bandwidth",
+  "parity_bound": "bandwidth",
+  "ideal_ratio": 1.0
+ },
+ {
+  "device": "H100 SXM",
+  "precision": "FP32",
+  "ridge_flop_per_byte": 20.0,
+  "dense_intensity": 6.0,
+  "dense_bound": "bandwidth",
+  "parity_bound": "bandwidth",
+  "ideal_ratio": 1.0
+ }
+]
