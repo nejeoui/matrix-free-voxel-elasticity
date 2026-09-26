@@ -1,0 +1,28 @@
+{
+  "declared_utc": "2026-09-23T12:51:14.848231+00:00",
+  "question": "Does the unchanged passing Hex8 CUDA candidate satisfy the same correctness and per-baseline product-time criteria on an independently rented RTX 3090?",
+  "status": "prospective; not executed",
+  "prior_result_sha256": "8acef2ad17e6fd96661689b3b5ee7ceb42e39371f46b1a1aa5d34166ef256707",
+  "prior_local_verification_sha256": "ff1ce8d0845d1470920a10eb7bfd790c66bc00a009369130c5ebdad270b1fb16",
+  "original_protocol_sha256": "cbe2609b63d2e7f761241b796d633457fc9fec399ff307f060de9401c9bb5dba",
+  "package_sha256": "1fdf69043fabae759091fc2ec6cc3a122c9c137b38c6e1ec10dbfb63e12a17ea",
+  "inputs_manifest_sha256": "b5db7458a15e1e5bed442e07060c5e0272d6e8402d271713814fa581a8285f2e",
+  "method": "Execute the identical transferred package, all 21 inputs, six paths, 126 product controls, 72 normal solves, six negative controls and 264 timing batches. Preserve exact arrays, seeds, physics, source and thresholds. No selection of only favorable baselines or cases.",
+  "hardware": {
+    "gpu": "RTX 3090",
+    "one_visible_gpu": true,
+    "minimum_vram_gb": 24,
+    "preferred_host_ram_gb": 128,
+    "disk_gb": 80,
+    "different_machine_id_from": 146201,
+    "maximum_compute_usd_per_hour": 0.5
+  },
+  "gate": "All original correctness and solver checks; paired median baseline/modal8 ratio >=1.15 and one-sided 95% paired bootstrap lower >1.05 for EVERY baseline on BOTH primary sizes. Report all secondary cases too. A failure remains a failed cross-device replication even though the original RTX 4090 development gate passed.",
+  "collection": "Fresh experiment directory and rental; verify complete archive and replay locally, then destroy immediately. Retain all failed attempts.",
+  "limits": {
+    "maximum_rental_seconds": 9000,
+    "maximum_job_seconds": 5400
+  },
+  "next_boundary": "A replication pass still does not establish larger-scale fully charged solver/optimizer performance or a novel paper contribution. Prepare those experiments separately with valid sensitivity treatment.",
+  "publication_goal_achieved": false
+}

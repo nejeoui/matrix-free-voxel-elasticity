@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-09-23T13:04:47.349432+00:00",
+  "instance_id": 52232330,
+  "rental_seconds": 370.0904290676117,
+  "rental_minutes": 6.168173817793528,
+  "compute_usd_per_hour": 0.24000000000000002,
+  "compute_and_80gb_storage_usd_per_hour": 0.2577777777777778,
+  "rate_times_duration_usd_excluding_transfers": 0.02650030232829812,
+  "observed_credit_decrease_usd": 0.025639641100013932,
+  "settled_invoice": false
+}

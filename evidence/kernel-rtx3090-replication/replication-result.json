@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-09-23T13:04:47.349548+00:00",
+  "protocol_sha256": "03af1b0553ccfbf1c6bd6c978bc433d0a4f20607b127270f7d257b0b141a94a4",
+  "result_sha256": "9227dedf48b8a58c7df80c90988954614bbca73a362a665009b632856e6a986b",
+  "local_verification_sha256": "f4c4e71ab55a548df51cdb306af95836dd6083a415f15c44551ea831df8874bf",
+  "prior_result_sha256": "8acef2ad17e6fd96661689b3b5ee7ceb42e39371f46b1a1aa5d34166ef256707",
+  "unchanged_package_and_inputs": true,
+  "independent_provider_machine": true,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "replication_gate_passed": true,
+  "rental_destroyed": true,
+  "publication_goal_achieved": false
+}
