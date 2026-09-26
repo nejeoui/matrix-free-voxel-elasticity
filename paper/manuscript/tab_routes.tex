@@ -1,0 +1,13 @@
+\begin{tabular}{@{}lllr@{}}
+\toprule
+GPU & solver & configuration & time (s) \\
+\midrule
+RTX 4090 & Jacobi-PCG & FP64 PCG, parity & 19.964 \\
+RTX 4090 & Jacobi-PCG & refinement, node32 inner & 12.941 \\
+A100 & Jacobi-PCG & FP64 PCG, fused-ai & 12.581 \\
+RTX 4090 & multigrid & FP64 V-cycle, fused-ai & 0.752 \\
+RTX 4090 & multigrid & FP64 V-cycle, mul-add & 0.544 \\
+RTX 4090 & multigrid & FP32 V, outer fused-ai & 0.369 \\
+RTX 4090 & multigrid & FP32 V, outer mul-add & 0.326 \\
+\bottomrule
+\end{tabular}
