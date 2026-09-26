@@ -1,0 +1,247 @@
+{
+ "experiment": "voxel-session-c",
+ "status_at_declaration": "prospective; not executed; frozen by build_package.py which adds source pins and SHA-256",
+ "questions": {
+  "fastest_method": "At the original contrast (Emin 1e-6), does refinement with the fastest FP32 kernel (node32 inner) extend its lead over FP64 PCG?",
+  "H5": "At the classic topology-optimization contrast Emin = 1e-9 (e.g. the 88-line code), on the same optimized designs, does the donor's mixed-precision refinement with its shipped defaults fail to reach the 1e-8 true residual where FP64 PCG succeeds?"
+ },
+ "hardware": {
+  "gpu": "RTX 4090",
+  "gpu_full_name": "NVIDIA GeForce RTX 4090",
+  "minimum_cpu_ram_mb": 64000,
+  "minimum_gpu_ram_mb": 24000,
+  "disk_gb": 80,
+  "maximum_total_usd_per_hour": 0.6
+ },
+ "limits": {
+  "suite_seconds": 7200,
+  "maximum_job_seconds": 8400,
+  "maximum_rental_seconds": 10800,
+  "one_rental": true,
+  "destroy_after_verified_collection": true
+ },
+ "material": {
+  "Emin": 1e-06,
+  "Emax": 1.0,
+  "penal": 3.0,
+  "nu": 0.3
+ },
+ "solver": {
+  "requested_rtol": 1e-08,
+  "true_residual_limit": 1e-07,
+  "energy_force_relative_limit": 1e-06,
+  "cross_state_limit": 5e-05,
+  "cross_compliance_limit": 1e-05,
+  "maximum_iterations": 200000,
+  "check_every": 50,
+  "maximum_state_seconds": 600
+ },
+ "order_seed": 2026092319,
+ "cases": [
+  {
+   "id": "smoke-q4",
+   "input": "smoke-q4",
+   "q": 4,
+   "primary": false,
+   "stages": [
+    "to_tolerance"
+   ],
+   "methods": [
+    "pcg64-fused_ai",
+    "pcg64-modal8",
+    "ir-fused_ai64-fused_ai32",
+    "ir-fused_ai64-node32",
+    "ir-modal8-node32"
+   ]
+  },
+  {
+   "id": "optimized-q64-E1e-6",
+   "input": "optimized-q64",
+   "q": 64,
+   "primary": false,
+   "Emin": 1e-06,
+   "stages": [
+    "to_tolerance"
+   ],
+   "methods": [
+    "pcg64-modal8",
+    "ir-fused_ai64-fused_ai32",
+    "ir-fused_ai64-node32",
+    "ir-modal8-node32"
+   ]
+  },
+  {
+   "id": "optimized-q96-E1e-6",
+   "input": "optimized-q96",
+   "q": 96,
+   "primary": false,
+   "Emin": 1e-06,
+   "stages": [
+    "to_tolerance"
+   ],
+   "methods": [
+    "pcg64-modal8",
+    "ir-fused_ai64-fused_ai32",
+    "ir-fused_ai64-node32",
+    "ir-modal8-node32"
+   ]
+  },
+  {
+   "id": "optimized-q64-E1e-9",
+   "input": "optimized-q64",
+   "q": 64,
+   "primary": true,
+   "robustness": true,
+   "Emin": 1e-09,
+   "stages": [
+    "to_tolerance"
+   ],
+   "methods": [
+    "pcg64-fused_ai",
+    "pcg64-modal8",
+    "ir-fused_ai64-fused_ai32",
+    "ir-fused_ai64-node32",
+    "ir-modal8-node32"
+   ]
+  },
+  {
+   "id": "optimized-q96-E1e-9",
+   "input": "optimized-q96",
+   "q": 96,
+   "primary": true,
+   "robustness": true,
+   "Emin": 1e-09,
+   "stages": [
+    "to_tolerance"
+   ],
+   "methods": [
+    "pcg64-fused_ai",
+    "pcg64-modal8",
+    "ir-fused_ai64-fused_ai32",
+    "ir-fused_ai64-node32",
+    "ir-modal8-node32"
+   ]
+  }
+ ],
+ "fixed_iterations_source": "JPDC profile v2: converged fused_ai_fp64 iteration counts per case (evidence/solve-profile-rtx4090/local-verification.json). Fixed-work solves run pcg with tol=0 and maxiter=fixed_iterations, so every path performs identical iterations and matvec calls.",
+ "paths_fp64": [
+  "fused_ai_fp64",
+  "fused_fp64",
+  "node_fp64",
+  "dense8",
+  "modal8"
+ ],
+ "paths_fp32": [
+  "fused_ai_fp32",
+  "fused_fp32",
+  "node_fp32",
+  "dense8_fp32",
+  "modal8_fp32"
+ ],
+ "candidate_fp64": "modal8",
+ "candidate_fp32": "modal8_fp32",
+ "fixed_work": {
+  "rounds": 10,
+  "design": "paired rounds; each round runs every FP64 path once in a fresh random order"
+ },
+ "to_tolerance": {
+  "repetitions": 2,
+  "ir": {
+   "inner_tol": 0.1,
+   "max_outer": 40,
+   "inner_maxiter": 4000,
+   "note": "donor pcg_ir defaults"
+  },
+  "methods": [
+   {
+    "id": "pcg64-fused_ai",
+    "kind": "pcg64",
+    "operator": "fused_ai_fp64"
+   },
+   {
+    "id": "pcg64-modal8",
+    "kind": "pcg64",
+    "operator": "modal8"
+   },
+   {
+    "id": "ir-fused_ai64-fused_ai32",
+    "kind": "ir",
+    "outer": "fused_ai_fp64",
+    "inner": "fused_ai_fp32"
+   },
+   {
+    "id": "ir-modal8-fused_ai32",
+    "kind": "ir",
+    "outer": "modal8",
+    "inner": "fused_ai_fp32"
+   },
+   {
+    "id": "ir-modal8-modal8_32",
+    "kind": "ir",
+    "outer": "modal8",
+    "inner": "modal8_fp32"
+   },
+   {
+    "id": "ir-fused_ai64-node32",
+    "kind": "ir",
+    "outer": "fused_ai_fp64",
+    "inner": "node_fp32"
+   },
+   {
+    "id": "ir-modal8-node32",
+    "kind": "ir",
+    "outer": "modal8",
+    "inner": "node_fp32"
+   }
+  ]
+ },
+ "products": {
+  "rounds": 11,
+  "products": 20,
+  "vector": "seeded standard normal, constrained DOFs zeroed",
+  "fp64_relative_limit": 1e-11,
+  "fp32_relative_limit": 1e-05
+ },
+ "decision": {
+  "h5": {
+   "rule": "FP64-throughout niche supported iff, on at least one robustness case, some refinement method fails physical acceptance (native tolerance 1e-8, independent true residual 1e-7, energy-force 1e-6) in any repetition while every FP64 PCG method passes all repetitions. Otherwise not supported. Refinement uses the donor's shipped defaults; no tuning after results."
+  },
+  "time_to_tolerance": "descriptive; the paper's end-to-end claim is stated against the fastest method that physically passes at the same tolerance"
+ },
+ "exclusions": "Process/context import, reference compilation, independent CPU replay and archive I/O are outside solve timers and recorded separately. Setup (construction, compilation, material, diagonal, one capped iteration) is timed per path and reported, not hidden.",
+ "not_claimed": [
+  "complete-optimization speedup",
+  "novelty of the parity decomposition",
+  "general mixed-precision robustness beyond these designs and defaults"
+ ],
+ "contrast_note": "The optimized designs were produced at Emin 1e-6; re-solving them at Emin 1e-9 is a linear-system robustness test on realistic designs, not a new optimization trajectory.",
+ "amendments": [
+  {
+   "utc": "2026-09-23",
+   "before_any_data": true,
+   "change": "hardware.minimum_cpu_ram_mb 128000 -> 64000",
+   "reason": "Operational: the 128 GB minimum was inherited from the JPDC TopOpt application; this session needs a few GB of host memory. With 128 GB only one in-cap RTX 4090 listing existed and it was stale (two no_such_ask create failures, no instance created). Price cap, GPU model and all scientific parameters unchanged.",
+   "previous_protocol_sha256": "f469ab1b205ec54a\u2026"
+  }
+ ],
+ "declared_utc": "2026-09-23T18:38:14.724569+00:00",
+ "package_source_pins": {
+  "analysis.py": "55f5077edf9626831965baab4404d233e15ecd340942843e3aa6f5d23078011b",
+  "bootstrap.sh": "1c3e0d53168b3847e054bacd75c5c187be447f91cba0ec30cc8239fe8d0d2bc3",
+  "collect.py": "e642ce9d467a8a6e1788ef8821a081690abf96fa0e38b639f65ba4e0d2c8cc5d",
+  "job.py": "3bdb191efa0addea493e3f3f43c4e773c547d953d312c6fd6c7caa69b234abc9",
+  "run_gpu.py": "a341effc3437fe18db56c667b5524d90201adec0a27c718331a5b6598191be94",
+  "verify.py": "feead505de0fb3a31dd3990d6c51bb7b91d52b3a8d5966f73e0ad1fc40815d15",
+  "dependencies/common.py": "a4f9075f5f8fcbd2a2aec9be966174ed43dd220741d30cd0b970860a15717216",
+  "dependencies/cuda.py": "ab3352097f6b96f4ad9852fb9c20f65a553cbce9297b74fb31f62b2d7187dd53",
+  "dependencies/cuda32.py": "df4116e27fc99d2968046046170921dde5ad7d4f1dd3c74f49dfe6afbc7eeeb7",
+  "dependencies/modal.py": "63a18941f6390d2dd1f54520d6589bf7c4118deda52ab8d6cefd460f2e90f4b8",
+  "donor/LICENSE": "2cbf0d0aeb3004fb99958b857f6a7bcc05c512d2a97d514c23ac1ec15dd8b15f",
+  "donor/src/gpu_fem/__init__.py": "fb18a505323cb9e0f771ccf75be3d1a678f7851cf739a03b58c701e016c7f06d",
+  "donor/src/gpu_fem/cuda_fused_matvec.py": "7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f",
+  "donor/src/gpu_fem/cuda_operators.py": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f",
+  "donor/src/gpu_fem/filter_r2.py": "2fc74c7a0d0da47adf9ee8154d20682b95c3fd5292f008dbf32cff41a124b88b",
+  "donor/src/gpu_fem/pub_simp_solver.py": "37263bd5e6dcfee2ab3469bfd4172dcad7208433bf7cd0af6cab392deaf1073d",
+  "donor/src/gpu_fem/simp_r2.py": "c29840e8739c4e992587794c4b9a009f9a5453a3e8b2c551f870a2e3abf6ca3d"
+ }
+}

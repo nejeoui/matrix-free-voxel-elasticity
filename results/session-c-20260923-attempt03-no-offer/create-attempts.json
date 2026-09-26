@@ -1,0 +1,8 @@
+[
+  {
+    "offer_id": 52142423,
+    "dph_total": 0.5096296296296297,
+    "status": 400,
+    "body": "{\"success\":false,\"error\":\"invalid_args\",\"msg\":\"error 404/3603: no_such_ask  Instance type by id 52142423 is not available.\",\"ask_id\":52142423}"
+  }
+]

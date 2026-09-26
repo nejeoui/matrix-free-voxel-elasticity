@@ -1,0 +1,35 @@
+{
+ "created_utc": "2026-09-23T18:38:14.732117+00:00",
+ "protocol_sha256": "4b8327322af4d8d3a34c9c21238b901ce17c488f714b99003b4efb33794117ce",
+ "rows": [
+  {
+   "id": "optimized-q64",
+   "q": 64,
+   "primary": false,
+   "file": "optimized-q64.npz",
+   "bytes": 123205,
+   "sha256": "436629fa11955023d6208be98aeefd63fa8d2b310a5703c2646112b4867f19f6"
+  },
+  {
+   "id": "optimized-q96",
+   "q": 96,
+   "primary": false,
+   "file": "optimized-q96.npz",
+   "bytes": 299920,
+   "sha256": "98a3cecc12102738b8e44a6502f2608cd16249e0c708f997f8196d2073387266"
+  },
+  {
+   "id": "smoke-q4",
+   "q": 4,
+   "primary": false,
+   "file": "smoke-q4.npz",
+   "bytes": 1983,
+   "sha256": "7b1a35504424f6fadbff1927a869768ff8ce5f145a760f14e2ee64118b442129"
+  }
+ ],
+ "support_files": {
+  "reference.cc": "d87b3ad2fa40d0cf0b59b942a62b6b7b29955224b6ca9fe66d3c9c31a7159911",
+  "petsc_element.inc": "08f4425fa64b6c6d2fafe53dd5953dc1fcc1f80c145d9641a70593cce72f8f43"
+ },
+ "origin": "/Users/nejeoui/JPDC/results/rescope/hex-modal-profile-v2-20260923/inputs"
+}

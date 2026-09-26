@@ -1,0 +1,581 @@
+{
+ "decision": {
+  "fixed_work": [],
+  "products": [],
+  "to_tolerance": [
+   {
+    "case": "smoke-q4",
+    "method": "pcg64-fused_ai",
+    "repetitions": 2,
+    "median_seconds": 0.046415349934250116,
+    "all_physical_passed": true
+   },
+   {
+    "case": "smoke-q4",
+    "method": "pcg64-modal8",
+    "repetitions": 2,
+    "median_seconds": 0.045533292926847935,
+    "all_physical_passed": true
+   },
+   {
+    "case": "smoke-q4",
+    "method": "ir-fused_ai64-fused_ai32",
+    "repetitions": 2,
+    "median_seconds": 0.434544759336859,
+    "all_physical_passed": true
+   },
+   {
+    "case": "smoke-q4",
+    "method": "ir-fused_ai64-node32",
+    "repetitions": 2,
+    "median_seconds": 0.07130924006924033,
+    "all_physical_passed": true
+   },
+   {
+    "case": "smoke-q4",
+    "method": "ir-modal8-node32",
+    "repetitions": 2,
+    "median_seconds": 0.07094224030151963,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q64-E1e-6",
+    "method": "pcg64-modal8",
+    "repetitions": 2,
+    "median_seconds": 3.529955339618027,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q64-E1e-6",
+    "method": "ir-fused_ai64-fused_ai32",
+    "repetitions": 2,
+    "median_seconds": 5.349176809191704,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q64-E1e-6",
+    "method": "ir-fused_ai64-node32",
+    "repetitions": 2,
+    "median_seconds": 5.23660042649135,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q64-E1e-6",
+    "method": "ir-modal8-node32",
+    "repetitions": 2,
+    "median_seconds": 5.288925586268306,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q96-E1e-6",
+    "method": "pcg64-modal8",
+    "repetitions": 2,
+    "median_seconds": 20.34012186061591,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q96-E1e-6",
+    "method": "ir-fused_ai64-fused_ai32",
+    "repetitions": 2,
+    "median_seconds": 16.183057572692633,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q96-E1e-6",
+    "method": "ir-fused_ai64-node32",
+    "repetitions": 2,
+    "median_seconds": 12.941076727584004,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q96-E1e-6",
+    "method": "ir-modal8-node32",
+    "repetitions": 2,
+    "median_seconds": 13.0325973527506,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q64-E1e-9",
+    "method": "pcg64-fused_ai",
+    "repetitions": 2,
+    "median_seconds": 4.281062769237906,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q64-E1e-9",
+    "method": "pcg64-modal8",
+    "repetitions": 2,
+    "median_seconds": 3.6538407737389207,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q64-E1e-9",
+    "method": "ir-fused_ai64-fused_ai32",
+    "repetitions": 2,
+    "median_seconds": 4.745723250322044,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q64-E1e-9",
+    "method": "ir-fused_ai64-node32",
+    "repetitions": 2,
+    "median_seconds": 4.474351665005088,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q64-E1e-9",
+    "method": "ir-modal8-node32",
+    "repetitions": 2,
+    "median_seconds": 4.936456022784114,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q96-E1e-9",
+    "method": "pcg64-fused_ai",
+    "repetitions": 2,
+    "median_seconds": 23.5824936311692,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q96-E1e-9",
+    "method": "pcg64-modal8",
+    "repetitions": 2,
+    "median_seconds": 20.896225860342383,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q96-E1e-9",
+    "method": "ir-fused_ai64-fused_ai32",
+    "repetitions": 2,
+    "median_seconds": 17.29162576003,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q96-E1e-9",
+    "method": "ir-fused_ai64-node32",
+    "repetitions": 2,
+    "median_seconds": 14.028324337210506,
+    "all_physical_passed": true
+   },
+   {
+    "case": "optimized-q96-E1e-9",
+    "method": "ir-modal8-node32",
+    "repetitions": 2,
+    "median_seconds": 13.57528769550845,
+    "all_physical_passed": true
+   }
+  ],
+  "h2_passed": {},
+  "h4_confirmed": {},
+  "complete": true,
+  "h2_decision": "not_declared",
+  "h4_decision": "not_declared",
+  "performance_claim": false,
+  "novelty_claim": false,
+  "scope": "RTX 4090 development session; warm contexts after charged setup. Fixed-work ratios compare identical PCG work. Not a complete-optimization or publication claim.",
+  "fastest_passing_method": {
+   "smoke-q4": {
+    "method": "pcg64-modal8",
+    "median_seconds": 0.045533292926847935
+   },
+   "optimized-q64-E1e-6": {
+    "method": "pcg64-modal8",
+    "median_seconds": 3.529955339618027
+   },
+   "optimized-q96-E1e-6": {
+    "method": "ir-fused_ai64-node32",
+    "median_seconds": 12.941076727584004
+   },
+   "optimized-q64-E1e-9": {
+    "method": "pcg64-modal8",
+    "median_seconds": 3.6538407737389207
+   },
+   "optimized-q96-E1e-9": {
+    "method": "ir-modal8-node32",
+    "median_seconds": 13.57528769550845
+   }
+  },
+  "h5_per_case": {
+   "optimized-q64-E1e-9": {
+    "refinement_failed": false,
+    "fp64_pcg_passed": true,
+    "niche": false
+   },
+   "optimized-q96-E1e-9": {
+    "refinement_failed": false,
+    "fp64_pcg_passed": true,
+    "niche": false
+   }
+  },
+  "h5_decision": "fp64_throughout_niche_not_supported"
+ },
+ "setups": [
+  {
+   "case": "smoke-q4",
+   "path": "fused_ai_fp64",
+   "setup_seconds": 1.1852435739710927,
+   "diagonal_relative_l2": 1.5336110200028323e-19
+  },
+  {
+   "case": "smoke-q4",
+   "path": "fused_fp64",
+   "setup_seconds": 0.7627869620919228,
+   "diagonal_relative_l2": 1.5336110200028323e-19
+  },
+  {
+   "case": "smoke-q4",
+   "path": "node_fp64",
+   "setup_seconds": 0.003259931690990925,
+   "diagonal_relative_l2": 1.5336110200028323e-19
+  },
+  {
+   "case": "smoke-q4",
+   "path": "dense8",
+   "setup_seconds": 0.12889626529067755,
+   "diagonal_relative_l2": 1.5336110200028323e-19
+  },
+  {
+   "case": "smoke-q4",
+   "path": "modal8",
+   "setup_seconds": 0.002793623134493828,
+   "diagonal_relative_l2": 1.5336110200028323e-19
+  },
+  {
+   "case": "smoke-q4",
+   "path": "fused_ai_fp32",
+   "setup_seconds": 0.273328410461545,
+   "diagonal_relative_l2": 1.5336110200028323e-19
+  },
+  {
+   "case": "smoke-q4",
+   "path": "fused_fp32",
+   "setup_seconds": 0.11043846514075994,
+   "diagonal_relative_l2": 1.5336110200028323e-19
+  },
+  {
+   "case": "smoke-q4",
+   "path": "node_fp32",
+   "setup_seconds": 0.0021073436364531517,
+   "diagonal_relative_l2": 1.5336110200028323e-19
+  },
+  {
+   "case": "smoke-q4",
+   "path": "dense8_fp32",
+   "setup_seconds": 0.09974407404661179,
+   "diagonal_relative_l2": 1.5336110200028323e-19
+  },
+  {
+   "case": "smoke-q4",
+   "path": "modal8_fp32",
+   "setup_seconds": 0.0011266162618994713,
+   "diagonal_relative_l2": 1.5336110200028323e-19
+  },
+  {
+   "case": "optimized-q64-E1e-6",
+   "path": "fused_ai_fp64",
+   "setup_seconds": 0.08809576462954283,
+   "diagonal_relative_l2": 3.360373892054324e-18
+  },
+  {
+   "case": "optimized-q64-E1e-6",
+   "path": "fused_fp64",
+   "setup_seconds": 0.07454434130340815,
+   "diagonal_relative_l2": 3.360373892054324e-18
+  },
+  {
+   "case": "optimized-q64-E1e-6",
+   "path": "node_fp64",
+   "setup_seconds": 0.07295591570436954,
+   "diagonal_relative_l2": 3.360373892054324e-18
+  },
+  {
+   "case": "optimized-q64-E1e-6",
+   "path": "dense8",
+   "setup_seconds": 0.07269480545073748,
+   "diagonal_relative_l2": 3.360373892054324e-18
+  },
+  {
+   "case": "optimized-q64-E1e-6",
+   "path": "modal8",
+   "setup_seconds": 0.07184263784438372,
+   "diagonal_relative_l2": 3.360373892054324e-18
+  },
+  {
+   "case": "optimized-q64-E1e-6",
+   "path": "fused_ai_fp32",
+   "setup_seconds": 0.07730638235807419,
+   "diagonal_relative_l2": 3.360373892054324e-18
+  },
+  {
+   "case": "optimized-q64-E1e-6",
+   "path": "fused_fp32",
+   "setup_seconds": 0.07068194076418877,
+   "diagonal_relative_l2": 3.360373892054324e-18
+  },
+  {
+   "case": "optimized-q64-E1e-6",
+   "path": "node_fp32",
+   "setup_seconds": 0.06827659718692303,
+   "diagonal_relative_l2": 3.360373892054324e-18
+  },
+  {
+   "case": "optimized-q64-E1e-6",
+   "path": "dense8_fp32",
+   "setup_seconds": 0.069295484572649,
+   "diagonal_relative_l2": 3.360373892054324e-18
+  },
+  {
+   "case": "optimized-q64-E1e-6",
+   "path": "modal8_fp32",
+   "setup_seconds": 0.0688315462321043,
+   "diagonal_relative_l2": 3.360373892054324e-18
+  },
+  {
+   "case": "optimized-q96-E1e-6",
+   "path": "fused_ai_fp64",
+   "setup_seconds": 0.2413925640285015,
+   "diagonal_relative_l2": 3.0856340667175982e-18
+  },
+  {
+   "case": "optimized-q96-E1e-6",
+   "path": "fused_fp64",
+   "setup_seconds": 0.19159344676882029,
+   "diagonal_relative_l2": 3.0856340667175982e-18
+  },
+  {
+   "case": "optimized-q96-E1e-6",
+   "path": "node_fp64",
+   "setup_seconds": 0.20398132409900427,
+   "diagonal_relative_l2": 3.0856340667175982e-18
+  },
+  {
+   "case": "optimized-q96-E1e-6",
+   "path": "dense8",
+   "setup_seconds": 0.19759245123714209,
+   "diagonal_relative_l2": 3.0856340667175982e-18
+  },
+  {
+   "case": "optimized-q96-E1e-6",
+   "path": "modal8",
+   "setup_seconds": 0.1913329679518938,
+   "diagonal_relative_l2": 3.0856340667175982e-18
+  },
+  {
+   "case": "optimized-q96-E1e-6",
+   "path": "fused_ai_fp32",
+   "setup_seconds": 0.20730735640972853,
+   "diagonal_relative_l2": 3.0856340667175982e-18
+  },
+  {
+   "case": "optimized-q96-E1e-6",
+   "path": "fused_fp32",
+   "setup_seconds": 0.19406252074986696,
+   "diagonal_relative_l2": 3.0856340667175982e-18
+  },
+  {
+   "case": "optimized-q96-E1e-6",
+   "path": "node_fp32",
+   "setup_seconds": 0.17970244958996773,
+   "diagonal_relative_l2": 3.0856340667175982e-18
+  },
+  {
+   "case": "optimized-q96-E1e-6",
+   "path": "dense8_fp32",
+   "setup_seconds": 0.1792844207957387,
+   "diagonal_relative_l2": 3.0856340667175982e-18
+  },
+  {
+   "case": "optimized-q96-E1e-6",
+   "path": "modal8_fp32",
+   "setup_seconds": 0.177801214158535,
+   "diagonal_relative_l2": 3.0856340667175982e-18
+  },
+  {
+   "case": "optimized-q64-E1e-9",
+   "path": "fused_ai_fp64",
+   "setup_seconds": 0.08458721358329058,
+   "diagonal_relative_l2": 3.1380129845409066e-18
+  },
+  {
+   "case": "optimized-q64-E1e-9",
+   "path": "fused_fp64",
+   "setup_seconds": 0.08595394901931286,
+   "diagonal_relative_l2": 3.1380129845409066e-18
+  },
+  {
+   "case": "optimized-q64-E1e-9",
+   "path": "node_fp64",
+   "setup_seconds": 0.08497805241495371,
+   "diagonal_relative_l2": 3.1380129845409066e-18
+  },
+  {
+   "case": "optimized-q64-E1e-9",
+   "path": "dense8",
+   "setup_seconds": 0.08465936314314604,
+   "diagonal_relative_l2": 3.1380129845409066e-18
+  },
+  {
+   "case": "optimized-q64-E1e-9",
+   "path": "modal8",
+   "setup_seconds": 0.08600456919521093,
+   "diagonal_relative_l2": 3.1380129845409066e-18
+  },
+  {
+   "case": "optimized-q64-E1e-9",
+   "path": "fused_ai_fp32",
+   "setup_seconds": 0.08336649648845196,
+   "diagonal_relative_l2": 3.1380129845409066e-18
+  },
+  {
+   "case": "optimized-q64-E1e-9",
+   "path": "fused_fp32",
+   "setup_seconds": 0.08317571599036455,
+   "diagonal_relative_l2": 3.1380129845409066e-18
+  },
+  {
+   "case": "optimized-q64-E1e-9",
+   "path": "node_fp32",
+   "setup_seconds": 0.0818967605009675,
+   "diagonal_relative_l2": 3.1380129845409066e-18
+  },
+  {
+   "case": "optimized-q64-E1e-9",
+   "path": "dense8_fp32",
+   "setup_seconds": 0.08198842033743858,
+   "diagonal_relative_l2": 3.1380129845409066e-18
+  },
+  {
+   "case": "optimized-q64-E1e-9",
+   "path": "modal8_fp32",
+   "setup_seconds": 0.0821327306330204,
+   "diagonal_relative_l2": 3.1380129845409066e-18
+  },
+  {
+   "case": "optimized-q96-E1e-9",
+   "path": "fused_ai_fp64",
+   "setup_seconds": 0.19731123931705952,
+   "diagonal_relative_l2": 2.878095218274063e-18
+  },
+  {
+   "case": "optimized-q96-E1e-9",
+   "path": "fused_fp64",
+   "setup_seconds": 0.194406826980412,
+   "diagonal_relative_l2": 2.878095218274063e-18
+  },
+  {
+   "case": "optimized-q96-E1e-9",
+   "path": "node_fp64",
+   "setup_seconds": 0.1955999145284295,
+   "diagonal_relative_l2": 2.878095218274063e-18
+  },
+  {
+   "case": "optimized-q96-E1e-9",
+   "path": "dense8",
+   "setup_seconds": 0.1951602352783084,
+   "diagonal_relative_l2": 2.878095218274063e-18
+  },
+  {
+   "case": "optimized-q96-E1e-9",
+   "path": "modal8",
+   "setup_seconds": 0.1952485255897045,
+   "diagonal_relative_l2": 2.878095218274063e-18
+  },
+  {
+   "case": "optimized-q96-E1e-9",
+   "path": "fused_ai_fp32",
+   "setup_seconds": 0.18283987883478403,
+   "diagonal_relative_l2": 2.878095218274063e-18
+  },
+  {
+   "case": "optimized-q96-E1e-9",
+   "path": "fused_fp32",
+   "setup_seconds": 0.1756494678556919,
+   "diagonal_relative_l2": 2.878095218274063e-18
+  },
+  {
+   "case": "optimized-q96-E1e-9",
+   "path": "node_fp32",
+   "setup_seconds": 0.18714733701199293,
+   "diagonal_relative_l2": 2.878095218274063e-18
+  },
+  {
+   "case": "optimized-q96-E1e-9",
+   "path": "dense8_fp32",
+   "setup_seconds": 0.1833864776417613,
+   "diagonal_relative_l2": 2.878095218274063e-18
+  },
+  {
+   "case": "optimized-q96-E1e-9",
+   "path": "modal8_fp32",
+   "setup_seconds": 0.1908106580376625,
+   "diagonal_relative_l2": 2.878095218274063e-18
+  }
+ ],
+ "product_checks": [],
+ "telemetry": [
+  {
+   "utc": "2026-09-23T18:39:48.191518+00:00",
+   "returncode": 0,
+   "output": "NVIDIA GeForce RTX 4090, GPU-d5ef5fcf-283d-13b0-daa5-a1560bd1697c, 590.48.01, 24564 MiB, 4 MiB, 38, 2535 MHz, 10501 MHz, 57.78 W"
+  },
+  {
+   "utc": "2026-09-23T18:39:53.480687+00:00",
+   "returncode": 0,
+   "output": "NVIDIA GeForce RTX 4090, GPU-d5ef5fcf-283d-13b0-daa5-a1560bd1697c, 590.48.01, 24564 MiB, 400 MiB, 38, 2535 MHz, 10251 MHz, 59.89 W"
+  },
+  {
+   "utc": "2026-09-23T18:39:54.860815+00:00",
+   "returncode": 0,
+   "output": "NVIDIA GeForce RTX 4090, GPU-d5ef5fcf-283d-13b0-daa5-a1560bd1697c, 590.48.01, 24564 MiB, 400 MiB, 39, 2535 MHz, 10251 MHz, 62.39 W"
+  },
+  {
+   "utc": "2026-09-23T18:39:56.096835+00:00",
+   "returncode": 0,
+   "output": "NVIDIA GeForce RTX 4090, GPU-d5ef5fcf-283d-13b0-daa5-a1560bd1697c, 590.48.01, 24564 MiB, 1334 MiB, 38, 2535 MHz, 10251 MHz, 62.01 W"
+  },
+  {
+   "utc": "2026-09-23T18:40:40.257579+00:00",
+   "returncode": 0,
+   "output": "NVIDIA GeForce RTX 4090, GPU-d5ef5fcf-283d-13b0-daa5-a1560bd1697c, 590.48.01, 24564 MiB, 1470 MiB, 41, 2625 MHz, 10251 MHz, 129.06 W"
+  },
+  {
+   "utc": "2026-09-23T18:40:43.907726+00:00",
+   "returncode": 0,
+   "output": "NVIDIA GeForce RTX 4090, GPU-d5ef5fcf-283d-13b0-daa5-a1560bd1697c, 590.48.01, 24564 MiB, 3358 MiB, 40, 2535 MHz, 10251 MHz, 65.18 W"
+  },
+  {
+   "utc": "2026-09-23T18:43:07.118603+00:00",
+   "returncode": 0,
+   "output": "NVIDIA GeForce RTX 4090, GPU-d5ef5fcf-283d-13b0-daa5-a1560bd1697c, 590.48.01, 24564 MiB, 3804 MiB, 46, 2535 MHz, 10251 MHz, 70.23 W"
+  },
+  {
+   "utc": "2026-09-23T18:43:08.528147+00:00",
+   "returncode": 0,
+   "output": "NVIDIA GeForce RTX 4090, GPU-d5ef5fcf-283d-13b0-daa5-a1560bd1697c, 590.48.01, 24564 MiB, 1432 MiB, 45, 2535 MHz, 10251 MHz, 66.07 W"
+  },
+  {
+   "utc": "2026-09-23T18:43:59.709204+00:00",
+   "returncode": 0,
+   "output": "NVIDIA GeForce RTX 4090, GPU-d5ef5fcf-283d-13b0-daa5-a1560bd1697c, 590.48.01, 24564 MiB, 1530 MiB, 45, 2700 MHz, 10251 MHz, 151.03 W"
+  },
+  {
+   "utc": "2026-09-23T18:44:03.289769+00:00",
+   "returncode": 0,
+   "output": "NVIDIA GeForce RTX 4090, GPU-d5ef5fcf-283d-13b0-daa5-a1560bd1697c, 590.48.01, 24564 MiB, 3358 MiB, 43, 2535 MHz, 10251 MHz, 65.32 W"
+  },
+  {
+   "utc": "2026-09-23T18:47:24.803291+00:00",
+   "returncode": 0,
+   "output": "NVIDIA GeForce RTX 4090, GPU-d5ef5fcf-283d-13b0-daa5-a1560bd1697c, 590.48.01, 24564 MiB, 3760 MiB, 46, 2535 MHz, 10251 MHz, 71.45 W"
+  }
+ ],
+ "device": {
+  "name": "NVIDIA GeForce RTX 4090",
+  "total_memory": 25252724736,
+  "cupy": "13.6.0",
+  "numpy": "2.2.6",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-94-generic-x86_64-with-glibc2.39",
+  "driver_version": 13010
+ }
+}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/root/voxel-session_c/source/verify.py", line 98, in <module>
+    main()
+  File "/root/voxel-session_c/source/verify.py", line 52, in main
+    base = retained.get(p['decision']['h2']['baseline'])
+                        ~~~~~~~~~~~~~^^^^^^
+KeyError: 'h2'
