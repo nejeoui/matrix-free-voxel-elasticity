@@ -1,0 +1,188 @@
+{
+ "experiment": "voxel-session-d",
+ "status_at_declaration": "prospective; not executed; frozen by build_package.py",
+ "questions": {
+  "H6": "Inside multigrid-preconditioned CG (all-FP64), is modal8 still the fastest FP64 finest-level kernel at identical work on the RTX 4090?",
+  "H7": "What is the fastest route to a 1e-8 true residual with multigrid on the RTX 4090 (all-FP64 vs FP32 V-cycle inside FP64 CG), and does it use modal8?"
+ },
+ "hardware": {
+  "gpu": "RTX 4090",
+  "gpu_full_name": "NVIDIA GeForce RTX 4090",
+  "minimum_cpu_ram_mb": 64000,
+  "minimum_gpu_ram_mb": 24000,
+  "disk_gb": 80,
+  "maximum_total_usd_per_hour": 0.6
+ },
+ "limits": {
+  "suite_seconds": 2700,
+  "maximum_job_seconds": 3600,
+  "maximum_rental_seconds": 5400,
+  "one_rental": true,
+  "destroy_after_verified_collection": true
+ },
+ "material": {
+  "Emin": 1e-06,
+  "Emax": 1.0,
+  "penal": 3.0,
+  "nu": 0.3
+ },
+ "solver": {
+  "requested_rtol": 1e-08,
+  "true_residual_limit": 1e-07,
+  "energy_force_relative_limit": 1e-06,
+  "maximum_iterations": 200,
+  "check_every": 1,
+  "maximum_state_seconds": 120,
+  "outer": "flexible CG (Polak-Ribiere), FP64, true-residual test every iteration with residual replacement"
+ },
+ "multigrid": {
+  "type": "geometric, Traeff-style rediscretised voxel hierarchy",
+  "max_coarse_x": 16,
+  "coarse_modulus": "2x2x2 average",
+  "coarse_ke": "fine ke * 2**level",
+  "transfers": "trilinear P, P^T",
+  "smoother": "damped Jacobi",
+  "pre": 4,
+  "post": 4,
+  "omega": "4/(3 lambda_l), lambda_l by 30 seeded power iterations on the FP64 hierarchy with node_fp64 finest; shared by all arms",
+  "power_iterations": 30,
+  "omega_reference_kernel": "node_fp64",
+  "coarse_levels_kernel": "node_fp64 (FP64 arms) / node_fp32 (FP32 V-cycle arms), identical for all arms",
+  "coarsest_solve": "dense Cholesky of the constrained operator assembled on the host, shared by all arms"
+ },
+ "order_seed": 2026092320,
+ "cases": [
+  {
+   "id": "smoke-q4",
+   "q": 4,
+   "primary": false
+  },
+  {
+   "id": "optimized-q64",
+   "q": 64,
+   "primary": true
+  },
+  {
+   "id": "optimized-q96",
+   "q": 96,
+   "primary": true
+  },
+  {
+   "id": "uniform-q64",
+   "q": 64,
+   "primary": false
+  }
+ ],
+ "arms": [
+  {
+   "id": "mg64-fused_ai",
+   "precision": "fp64",
+   "outer": "fused_ai_fp64",
+   "vcycle": "fused_ai_fp64"
+  },
+  {
+   "id": "mg64-fused",
+   "precision": "fp64",
+   "outer": "fused_fp64",
+   "vcycle": "fused_fp64"
+  },
+  {
+   "id": "mg64-node",
+   "precision": "fp64",
+   "outer": "node_fp64",
+   "vcycle": "node_fp64"
+  },
+  {
+   "id": "mg64-dense8",
+   "precision": "fp64",
+   "outer": "dense8",
+   "vcycle": "dense8"
+  },
+  {
+   "id": "mg64-modal8",
+   "precision": "fp64",
+   "outer": "modal8",
+   "vcycle": "modal8"
+  },
+  {
+   "id": "mg32-node64-node32",
+   "precision": "fp32",
+   "outer": "node_fp64",
+   "vcycle": "node_fp32"
+  },
+  {
+   "id": "mg32-fused_ai64-node32",
+   "precision": "fp32",
+   "outer": "fused_ai_fp64",
+   "vcycle": "node_fp32"
+  },
+  {
+   "id": "mg32-modal8-node32",
+   "precision": "fp32",
+   "outer": "modal8",
+   "vcycle": "node_fp32"
+  },
+  {
+   "id": "mg32-fused_ai64-fused_ai32",
+   "precision": "fp32",
+   "outer": "fused_ai_fp64",
+   "vcycle": "fused_ai_fp32"
+  },
+  {
+   "id": "mg32-modal8-modal8_32",
+   "precision": "fp32",
+   "outer": "modal8",
+   "vcycle": "modal8_fp32"
+  }
+ ],
+ "to_tolerance": {
+  "repetitions": 5
+ },
+ "fixed_work": {
+  "rounds": 10,
+  "arms": [
+   "mg64-fused_ai",
+   "mg64-fused",
+   "mg64-node",
+   "mg64-dense8",
+   "mg64-modal8",
+   "mg32-node64-node32",
+   "mg32-fused_ai64-node32",
+   "mg32-modal8-node32",
+   "mg32-fused_ai64-fused_ai32",
+   "mg32-modal8-modal8_32"
+  ],
+  "iterations_from_arm": "mg64-fused_ai",
+  "rule": "K = max converged outer iterations of mg64-fused_ai over its to-tolerance repetitions; every arm runs exactly K outer iterations"
+ },
+ "profile": {
+  "arms": [
+   "mg64-fused_ai",
+   "mg64-modal8",
+   "mg32-fused_ai64-node32",
+   "mg32-modal8-node32"
+  ]
+ },
+ "decision": {
+  "h6": {
+   "candidate": "mg64-modal8",
+   "baselines": [
+    "mg64-fused_ai",
+    "mg64-fused",
+    "mg64-node"
+   ],
+   "min_median": 1.05,
+   "min_lower": 1.02,
+   "rule": "FP64 ranking survives iff, on both primary cases, the fixed-work paired ratio (fastest FP64 donor-kernel arm / mg64-modal8) has median >= 1.05 and one-sided 95% bootstrap lower bound >= 1.02, with identical work in every fixed-work solve"
+  },
+  "h7": {
+   "rule": "descriptive: fastest arm that physically passes all repetitions per case; plus fixed-work paired ratio of the best mixed arm without modal8 over mg32-modal8-node32 (the outer-kernel effect under an FP32 V-cycle)"
+  }
+ },
+ "not_claimed": [
+  "complete-optimization speedup",
+  "novelty of the parity decomposition or of geometric multigrid",
+  "optimality of the multigrid parameters"
+ ],
+ "cpu_preflight": "multigrid converged on the real optimized-q64 design in 15 iterations (FP64 and FP32 V-cycle) and uniform-q64 in 10, CPU NumPy, before declaration"
+}
