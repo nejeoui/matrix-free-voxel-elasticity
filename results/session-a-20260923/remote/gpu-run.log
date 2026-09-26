@@ -1,0 +1,260 @@
+{"case": "smoke-q4", "path": "dense8", "round": 0, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013192910000725533}
+{"case": "smoke-q4", "path": "fused_ai_fp64", "round": 0, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013597627999843098}
+{"case": "smoke-q4", "path": "node_fp64", "round": 0, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013220082999396254}
+{"case": "smoke-q4", "path": "fused_fp64", "round": 0, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.01315292999970552}
+{"case": "smoke-q4", "path": "modal8", "round": 0, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013024793001022772}
+{"case": "smoke-q4", "path": "dense8", "round": 1, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013026820999584743}
+{"case": "smoke-q4", "path": "modal8", "round": 1, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013528575998861925}
+{"case": "smoke-q4", "path": "fused_ai_fp64", "round": 1, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013931794001109665}
+{"case": "smoke-q4", "path": "fused_fp64", "round": 1, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013277677000587573}
+{"case": "smoke-q4", "path": "node_fp64", "round": 1, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013156459001038456}
+{"case": "smoke-q4", "path": "dense8", "round": 2, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013004090000322321}
+{"case": "smoke-q4", "path": "node_fp64", "round": 2, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.01313347699942824}
+{"case": "smoke-q4", "path": "fused_fp64", "round": 2, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013012942999921506}
+{"case": "smoke-q4", "path": "modal8", "round": 2, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012959001000126591}
+{"case": "smoke-q4", "path": "fused_ai_fp64", "round": 2, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013447534998704214}
+{"case": "smoke-q4", "path": "node_fp64", "round": 3, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013084810998407193}
+{"case": "smoke-q4", "path": "fused_fp64", "round": 3, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013083376999929897}
+{"case": "smoke-q4", "path": "fused_ai_fp64", "round": 3, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013371376000577584}
+{"case": "smoke-q4", "path": "modal8", "round": 3, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012859328999184072}
+{"case": "smoke-q4", "path": "dense8", "round": 3, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012864840000474942}
+{"case": "smoke-q4", "path": "dense8", "round": 4, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012865336000686511}
+{"case": "smoke-q4", "path": "fused_ai_fp64", "round": 4, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013309962001585518}
+{"case": "smoke-q4", "path": "fused_fp64", "round": 4, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013025181999182678}
+{"case": "smoke-q4", "path": "modal8", "round": 4, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.01286600299863494}
+{"case": "smoke-q4", "path": "node_fp64", "round": 4, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012971273999937694}
+{"case": "smoke-q4", "path": "modal8", "round": 5, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.01291145899995172}
+{"case": "smoke-q4", "path": "fused_fp64", "round": 5, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.01298161200065806}
+{"case": "smoke-q4", "path": "node_fp64", "round": 5, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012882266999440617}
+{"case": "smoke-q4", "path": "fused_ai_fp64", "round": 5, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013220750999607844}
+{"case": "smoke-q4", "path": "dense8", "round": 5, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012975817000551615}
+{"case": "smoke-q4", "path": "dense8", "round": 6, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.01310028799889551}
+{"case": "smoke-q4", "path": "fused_fp64", "round": 6, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.01317940099943371}
+{"case": "smoke-q4", "path": "fused_ai_fp64", "round": 6, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013351053999940632}
+{"case": "smoke-q4", "path": "node_fp64", "round": 6, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.01310109899895906}
+{"case": "smoke-q4", "path": "modal8", "round": 6, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.0129447679992154}
+{"case": "smoke-q4", "path": "modal8", "round": 7, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012974991999726626}
+{"case": "smoke-q4", "path": "dense8", "round": 7, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013047467000433244}
+{"case": "smoke-q4", "path": "node_fp64", "round": 7, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013017507999393274}
+{"case": "smoke-q4", "path": "fused_ai_fp64", "round": 7, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013297153000166873}
+{"case": "smoke-q4", "path": "fused_fp64", "round": 7, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013057468000624795}
+{"case": "smoke-q4", "path": "fused_fp64", "round": 8, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013091396000163513}
+{"case": "smoke-q4", "path": "node_fp64", "round": 8, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012954965999597334}
+{"case": "smoke-q4", "path": "dense8", "round": 8, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012855578999733552}
+{"case": "smoke-q4", "path": "modal8", "round": 8, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012945925000167335}
+{"case": "smoke-q4", "path": "fused_ai_fp64", "round": 8, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013184650000766851}
+{"case": "smoke-q4", "path": "node_fp64", "round": 9, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013016922001042985}
+{"case": "smoke-q4", "path": "fused_ai_fp64", "round": 9, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.01329264299965871}
+{"case": "smoke-q4", "path": "modal8", "round": 9, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012862330000643851}
+{"case": "smoke-q4", "path": "fused_fp64", "round": 9, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.013098834000629722}
+{"case": "smoke-q4", "path": "dense8", "round": 9, "iterations": 100, "matvec_calls": 104, "solver_seconds": 0.012944134999997914}
+{"case": "smoke-q4", "method": "ir-modal8-fused_ai32", "rep": 0, "solver_seconds": 0.31020964399976947, "physical_passed": true}
+{"case": "smoke-q4", "method": "pcg64-fused_ai", "rep": 0, "solver_seconds": 0.01346396099870617, "physical_passed": true}
+{"case": "smoke-q4", "method": "ir-modal8-modal8_32", "rep": 0, "solver_seconds": 0.020024060000650934, "physical_passed": true}
+{"case": "smoke-q4", "method": "pcg64-modal8", "rep": 0, "solver_seconds": 0.012869960999523755, "physical_passed": true}
+{"case": "smoke-q4", "method": "ir-fused_ai64-fused_ai32", "rep": 0, "solver_seconds": 0.02056338700094784, "physical_passed": true}
+{"case": "smoke-q4", "method": "ir-modal8-modal8_32", "rep": 1, "solver_seconds": 0.02017278899984376, "physical_passed": true}
+{"case": "smoke-q4", "method": "ir-modal8-fused_ai32", "rep": 1, "solver_seconds": 0.02057158800016623, "physical_passed": true}
+{"case": "smoke-q4", "method": "ir-fused_ai64-fused_ai32", "rep": 1, "solver_seconds": 0.020661863998611807, "physical_passed": true}
+{"case": "smoke-q4", "method": "pcg64-modal8", "rep": 1, "solver_seconds": 0.01311187300052552, "physical_passed": true}
+{"case": "smoke-q4", "method": "pcg64-fused_ai", "rep": 1, "solver_seconds": 0.013377352999668801, "physical_passed": true}
+{"case": "smoke-q4", "method": "pcg64-modal8", "rep": 2, "solver_seconds": 0.012981945001229178, "physical_passed": true}
+{"case": "smoke-q4", "method": "ir-modal8-modal8_32", "rep": 2, "solver_seconds": 0.020211229999404168, "physical_passed": true}
+{"case": "smoke-q4", "method": "pcg64-fused_ai", "rep": 2, "solver_seconds": 0.013424824999674456, "physical_passed": true}
+{"case": "smoke-q4", "method": "ir-modal8-fused_ai32", "rep": 2, "solver_seconds": 0.020585129999744822, "physical_passed": true}
+{"case": "smoke-q4", "method": "ir-fused_ai64-fused_ai32", "rep": 2, "solver_seconds": 0.020432138999240124, "physical_passed": true}
+{"case": "optimized-q64", "path": "node_fp64", "round": 0, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 4.3801819540003635}
+{"case": "optimized-q64", "path": "dense8", "round": 0, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.7460980340001697}
+{"case": "optimized-q64", "path": "fused_ai_fp64", "round": 0, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.6379516899996815}
+{"case": "optimized-q64", "path": "fused_fp64", "round": 0, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.8627788569992845}
+{"case": "optimized-q64", "path": "modal8", "round": 0, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.1076344039993273}
+{"case": "optimized-q64", "path": "fused_fp64", "round": 1, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.8596234979995643}
+{"case": "optimized-q64", "path": "fused_ai_fp64", "round": 1, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.636660566999126}
+{"case": "optimized-q64", "path": "node_fp64", "round": 1, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 4.380549898000027}
+{"case": "optimized-q64", "path": "modal8", "round": 1, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.1106394160015043}
+{"case": "optimized-q64", "path": "dense8", "round": 1, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.7462174159991264}
+{"case": "optimized-q64", "path": "fused_ai_fp64", "round": 2, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.6409152060005}
+{"case": "optimized-q64", "path": "fused_fp64", "round": 2, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.8671275970009447}
+{"case": "optimized-q64", "path": "node_fp64", "round": 2, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 4.391670967999744}
+{"case": "optimized-q64", "path": "dense8", "round": 2, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.747382495999773}
+{"case": "optimized-q64", "path": "modal8", "round": 2, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.1066381719992933}
+{"case": "optimized-q64", "path": "modal8", "round": 3, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.112362400001075}
+{"case": "optimized-q64", "path": "node_fp64", "round": 3, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 4.391629121999358}
+{"case": "optimized-q64", "path": "fused_ai_fp64", "round": 3, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.642307107000306}
+{"case": "optimized-q64", "path": "dense8", "round": 3, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.7488392180002847}
+{"case": "optimized-q64", "path": "fused_fp64", "round": 3, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.8755019010004617}
+{"case": "optimized-q64", "path": "dense8", "round": 4, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.757668881000427}
+{"case": "optimized-q64", "path": "fused_fp64", "round": 4, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.8723421869999584}
+{"case": "optimized-q64", "path": "fused_ai_fp64", "round": 4, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.650093153999478}
+{"case": "optimized-q64", "path": "node_fp64", "round": 4, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 4.388793912999972}
+{"case": "optimized-q64", "path": "modal8", "round": 4, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.112237784998797}
+{"case": "optimized-q64", "path": "modal8", "round": 5, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.110882507000497}
+{"case": "optimized-q64", "path": "fused_fp64", "round": 5, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.861698974000319}
+{"case": "optimized-q64", "path": "node_fp64", "round": 5, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 4.3892404080015694}
+{"case": "optimized-q64", "path": "dense8", "round": 5, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.7508618900010333}
+{"case": "optimized-q64", "path": "fused_ai_fp64", "round": 5, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.6512134529984905}
+{"case": "optimized-q64", "path": "dense8", "round": 6, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.7550765110008797}
+{"case": "optimized-q64", "path": "modal8", "round": 6, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.1194009169994388}
+{"case": "optimized-q64", "path": "node_fp64", "round": 6, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 4.398926533000122}
+{"case": "optimized-q64", "path": "fused_ai_fp64", "round": 6, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.643004445999395}
+{"case": "optimized-q64", "path": "fused_fp64", "round": 6, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.8604214770002727}
+{"case": "optimized-q64", "path": "node_fp64", "round": 7, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 4.389096623999649}
+{"case": "optimized-q64", "path": "fused_ai_fp64", "round": 7, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.644261565001216}
+{"case": "optimized-q64", "path": "modal8", "round": 7, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.111205555000197}
+{"case": "optimized-q64", "path": "dense8", "round": 7, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.7521580510001513}
+{"case": "optimized-q64", "path": "fused_fp64", "round": 7, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.8753918789989257}
+{"case": "optimized-q64", "path": "fused_fp64", "round": 8, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.871519206000812}
+{"case": "optimized-q64", "path": "dense8", "round": 8, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.757061854001222}
+{"case": "optimized-q64", "path": "fused_ai_fp64", "round": 8, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.651416116999826}
+{"case": "optimized-q64", "path": "node_fp64", "round": 8, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 4.3889320269991}
+{"case": "optimized-q64", "path": "modal8", "round": 8, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.112378630999956}
+{"case": "optimized-q64", "path": "dense8", "round": 9, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.753951307000534}
+{"case": "optimized-q64", "path": "fused_ai_fp64", "round": 9, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.649584025999502}
+{"case": "optimized-q64", "path": "modal8", "round": 9, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.1193007660003786}
+{"case": "optimized-q64", "path": "fused_fp64", "round": 9, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 3.8713849270006904}
+{"case": "optimized-q64", "path": "node_fp64", "round": 9, "iterations": 4600, "matvec_calls": 4694, "solver_seconds": 4.394656198999655}
+{"case": "optimized-q64", "method": "pcg64-fused_ai", "rep": 0, "solver_seconds": 3.641104346999782, "physical_passed": true}
+{"case": "optimized-q64", "method": "pcg64-modal8", "rep": 0, "solver_seconds": 3.111532549999538, "physical_passed": true}
+{"case": "optimized-q64", "method": "ir-modal8-modal8_32", "rep": 0, "solver_seconds": 3.7891665489987645, "physical_passed": true}
+{"case": "optimized-q64", "method": "ir-fused_ai64-fused_ai32", "rep": 0, "solver_seconds": 2.4541436870003963, "physical_passed": true}
+{"case": "optimized-q64", "method": "ir-modal8-fused_ai32", "rep": 0, "solver_seconds": 2.7805007160004607, "physical_passed": true}
+{"case": "optimized-q64", "method": "pcg64-fused_ai", "rep": 1, "solver_seconds": 3.6478243620003923, "physical_passed": true}
+{"case": "optimized-q64", "method": "ir-fused_ai64-fused_ai32", "rep": 1, "solver_seconds": 2.786911515000611, "physical_passed": true}
+{"case": "optimized-q64", "method": "ir-modal8-modal8_32", "rep": 1, "solver_seconds": 3.6454542219998984, "physical_passed": true}
+{"case": "optimized-q64", "method": "pcg64-modal8", "rep": 1, "solver_seconds": 3.1008345789996383, "physical_passed": true}
+{"case": "optimized-q64", "method": "ir-modal8-fused_ai32", "rep": 1, "solver_seconds": 2.7811005790008494, "physical_passed": true}
+{"case": "optimized-q64", "method": "pcg64-fused_ai", "rep": 2, "solver_seconds": 3.6327508200010925, "physical_passed": true}
+{"case": "optimized-q64", "method": "ir-fused_ai64-fused_ai32", "rep": 2, "solver_seconds": 2.756115135998698, "physical_passed": true}
+{"case": "optimized-q64", "method": "ir-modal8-fused_ai32", "rep": 2, "solver_seconds": 2.7935466569997516, "physical_passed": true}
+{"case": "optimized-q64", "method": "ir-modal8-modal8_32", "rep": 2, "solver_seconds": 3.64048579899827, "physical_passed": true}
+{"case": "optimized-q64", "method": "pcg64-modal8", "rep": 2, "solver_seconds": 3.099434530999133, "physical_passed": true}
+{"case": "optimized-q96", "path": "modal8", "round": 0, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 19.97703075100071}
+{"case": "optimized-q96", "path": "fused_ai_fp64", "round": 0, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.687126770999384}
+{"case": "optimized-q96", "path": "node_fp64", "round": 0, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 26.185727483001756}
+{"case": "optimized-q96", "path": "fused_fp64", "round": 0, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.986373348001507}
+{"case": "optimized-q96", "path": "dense8", "round": 0, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.18309320700064}
+{"case": "optimized-q96", "path": "fused_fp64", "round": 1, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.97052408700074}
+{"case": "optimized-q96", "path": "dense8", "round": 1, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.203782156999296}
+{"case": "optimized-q96", "path": "fused_ai_fp64", "round": 1, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.707646323999143}
+{"case": "optimized-q96", "path": "modal8", "round": 1, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 19.962948976000916}
+{"case": "optimized-q96", "path": "node_fp64", "round": 1, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 26.22289161399931}
+{"case": "optimized-q96", "path": "dense8", "round": 2, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.185331505999784}
+{"case": "optimized-q96", "path": "fused_fp64", "round": 2, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.97161556699939}
+{"case": "optimized-q96", "path": "modal8", "round": 2, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 20.003189687000486}
+{"case": "optimized-q96", "path": "node_fp64", "round": 2, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 26.214066602000457}
+{"case": "optimized-q96", "path": "fused_ai_fp64", "round": 2, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.68047814500096}
+{"case": "optimized-q96", "path": "node_fp64", "round": 3, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 26.22254360899933}
+{"case": "optimized-q96", "path": "dense8", "round": 3, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.18461690499862}
+{"case": "optimized-q96", "path": "modal8", "round": 3, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 19.96460952900088}
+{"case": "optimized-q96", "path": "fused_fp64", "round": 3, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.998589916000128}
+{"case": "optimized-q96", "path": "fused_ai_fp64", "round": 3, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.706524586999876}
+{"case": "optimized-q96", "path": "dense8", "round": 4, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.16772983699957}
+{"case": "optimized-q96", "path": "fused_ai_fp64", "round": 4, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.723891653000464}
+{"case": "optimized-q96", "path": "modal8", "round": 4, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 19.98083763499926}
+{"case": "optimized-q96", "path": "node_fp64", "round": 4, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 26.20624067099925}
+{"case": "optimized-q96", "path": "fused_fp64", "round": 4, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.002130003000275}
+{"case": "optimized-q96", "path": "dense8", "round": 5, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.185853936000058}
+{"case": "optimized-q96", "path": "fused_ai_fp64", "round": 5, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.682968511999206}
+{"case": "optimized-q96", "path": "fused_fp64", "round": 5, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.001659851999648}
+{"case": "optimized-q96", "path": "modal8", "round": 5, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 19.980663038000785}
+{"case": "optimized-q96", "path": "node_fp64", "round": 5, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 26.203221514999314}
+{"case": "optimized-q96", "path": "node_fp64", "round": 6, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 26.22510032900027}
+{"case": "optimized-q96", "path": "modal8", "round": 6, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 19.980482471999494}
+{"case": "optimized-q96", "path": "fused_ai_fp64", "round": 6, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.681501402999857}
+{"case": "optimized-q96", "path": "fused_fp64", "round": 6, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.000828817999718}
+{"case": "optimized-q96", "path": "dense8", "round": 6, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.18672521500048}
+{"case": "optimized-q96", "path": "node_fp64", "round": 7, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 26.20509749899975}
+{"case": "optimized-q96", "path": "fused_fp64", "round": 7, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.00299073899987}
+{"case": "optimized-q96", "path": "modal8", "round": 7, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 19.979061665999325}
+{"case": "optimized-q96", "path": "fused_ai_fp64", "round": 7, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.684531708999202}
+{"case": "optimized-q96", "path": "dense8", "round": 7, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.205991086999347}
+{"case": "optimized-q96", "path": "node_fp64", "round": 8, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 26.213824878001105}
+{"case": "optimized-q96", "path": "dense8", "round": 8, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.169976758999837}
+{"case": "optimized-q96", "path": "fused_ai_fp64", "round": 8, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.72837938900011}
+{"case": "optimized-q96", "path": "fused_fp64", "round": 8, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.977656953000405}
+{"case": "optimized-q96", "path": "modal8", "round": 8, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 19.964248223999675}
+{"case": "optimized-q96", "path": "node_fp64", "round": 9, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 26.226811296999585}
+{"case": "optimized-q96", "path": "dense8", "round": 9, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.186099320999347}
+{"case": "optimized-q96", "path": "fused_ai_fp64", "round": 9, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 22.68369331699978}
+{"case": "optimized-q96", "path": "fused_fp64", "round": 9, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 23.000369864001186}
+{"case": "optimized-q96", "path": "modal8", "round": 9, "iterations": 6900, "matvec_calls": 7040, "solver_seconds": 19.98028727500059}
+{"case": "optimized-q96", "method": "ir-modal8-modal8_32", "rep": 0, "solver_seconds": 18.79050293200089, "physical_passed": true}
+{"case": "optimized-q96", "method": "ir-fused_ai64-fused_ai32", "rep": 0, "solver_seconds": 15.361813494000671, "physical_passed": true}
+{"case": "optimized-q96", "method": "pcg64-fused_ai", "rep": 0, "solver_seconds": 22.69357608500104, "physical_passed": true}
+{"case": "optimized-q96", "method": "ir-modal8-fused_ai32", "rep": 0, "solver_seconds": 15.196757171001082, "physical_passed": true}
+{"case": "optimized-q96", "method": "pcg64-modal8", "rep": 0, "solver_seconds": 19.99048955699982, "physical_passed": true}
+{"case": "optimized-q96", "method": "pcg64-fused_ai", "rep": 1, "solver_seconds": 22.67233074700016, "physical_passed": true}
+{"case": "optimized-q96", "method": "pcg64-modal8", "rep": 1, "solver_seconds": 19.952308288000495, "physical_passed": true}
+{"case": "optimized-q96", "method": "ir-fused_ai64-fused_ai32", "rep": 1, "solver_seconds": 15.244909282000663, "physical_passed": true}
+{"case": "optimized-q96", "method": "ir-modal8-fused_ai32", "rep": 1, "solver_seconds": 15.178031671999634, "physical_passed": true}
+{"case": "optimized-q96", "method": "ir-modal8-modal8_32", "rep": 1, "solver_seconds": 18.190191493000384, "physical_passed": true}
+{"case": "optimized-q96", "method": "ir-modal8-fused_ai32", "rep": 2, "solver_seconds": 15.337717624001016, "physical_passed": true}
+{"case": "optimized-q96", "method": "ir-modal8-modal8_32", "rep": 2, "solver_seconds": 17.849799744000848, "physical_passed": true}
+{"case": "optimized-q96", "method": "pcg64-fused_ai", "rep": 2, "solver_seconds": 22.71045560100174, "physical_passed": true}
+{"case": "optimized-q96", "method": "pcg64-modal8", "rep": 2, "solver_seconds": 19.963888616000986, "physical_passed": true}
+{"case": "optimized-q96", "method": "ir-fused_ai64-fused_ai32", "rep": 2, "solver_seconds": 15.322306273999857, "physical_passed": true}
+{"case": "uniform-q64", "path": "fused_fp64", "round": 0, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8869835469995451}
+{"case": "uniform-q64", "path": "dense8", "round": 0, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8582929260010133}
+{"case": "uniform-q64", "path": "modal8", "round": 0, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.7096747310006322}
+{"case": "uniform-q64", "path": "fused_ai_fp64", "round": 0, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8342151950000698}
+{"case": "uniform-q64", "path": "node_fp64", "round": 0, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 1.004817238999749}
+{"case": "uniform-q64", "path": "node_fp64", "round": 1, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 1.0050199189990963}
+{"case": "uniform-q64", "path": "modal8", "round": 1, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.71307865900053}
+{"case": "uniform-q64", "path": "fused_ai_fp64", "round": 1, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.837008517999493}
+{"case": "uniform-q64", "path": "fused_fp64", "round": 1, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8863073000011354}
+{"case": "uniform-q64", "path": "dense8", "round": 1, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8565032909991714}
+{"case": "uniform-q64", "path": "dense8", "round": 2, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8591928770001687}
+{"case": "uniform-q64", "path": "node_fp64", "round": 2, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 1.0056134189999284}
+{"case": "uniform-q64", "path": "fused_ai_fp64", "round": 2, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.836701718999393}
+{"case": "uniform-q64", "path": "modal8", "round": 2, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.713038724999933}
+{"case": "uniform-q64", "path": "fused_fp64", "round": 2, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8875900410002941}
+{"case": "uniform-q64", "path": "dense8", "round": 3, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8590551649995177}
+{"case": "uniform-q64", "path": "node_fp64", "round": 3, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 1.0057121300014842}
+{"case": "uniform-q64", "path": "fused_fp64", "round": 3, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8867856999986543}
+{"case": "uniform-q64", "path": "fused_ai_fp64", "round": 3, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8364804720004031}
+{"case": "uniform-q64", "path": "modal8", "round": 3, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.7139214039998478}
+{"case": "uniform-q64", "path": "node_fp64", "round": 4, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 1.0069883100004517}
+{"case": "uniform-q64", "path": "fused_fp64", "round": 4, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8870272320000367}
+{"case": "uniform-q64", "path": "dense8", "round": 4, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8575859359989408}
+{"case": "uniform-q64", "path": "modal8", "round": 4, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.7130873679998331}
+{"case": "uniform-q64", "path": "fused_ai_fp64", "round": 4, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8370392910001101}
+{"case": "uniform-q64", "path": "modal8", "round": 5, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.7146033210010501}
+{"case": "uniform-q64", "path": "node_fp64", "round": 5, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 1.005703827000616}
+{"case": "uniform-q64", "path": "fused_ai_fp64", "round": 5, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8366562990013335}
+{"case": "uniform-q64", "path": "dense8", "round": 5, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8564574620013445}
+{"case": "uniform-q64", "path": "fused_fp64", "round": 5, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8873796259995288}
+{"case": "uniform-q64", "path": "node_fp64", "round": 6, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 1.0073727240014705}
+{"case": "uniform-q64", "path": "fused_ai_fp64", "round": 6, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8371885369997472}
+{"case": "uniform-q64", "path": "dense8", "round": 6, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8574615639990952}
+{"case": "uniform-q64", "path": "modal8", "round": 6, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.7130611299999146}
+{"case": "uniform-q64", "path": "fused_fp64", "round": 6, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8875211619997572}
+{"case": "uniform-q64", "path": "dense8", "round": 7, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8596276490006858}
+{"case": "uniform-q64", "path": "modal8", "round": 7, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.713977261000764}
+{"case": "uniform-q64", "path": "fused_ai_fp64", "round": 7, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8369523049987038}
+{"case": "uniform-q64", "path": "node_fp64", "round": 7, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 1.0052096810013609}
+{"case": "uniform-q64", "path": "fused_fp64", "round": 7, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.888667320001332}
+{"case": "uniform-q64", "path": "dense8", "round": 8, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.860715610000625}
+{"case": "uniform-q64", "path": "modal8", "round": 8, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.7139641060002759}
+{"case": "uniform-q64", "path": "fused_ai_fp64", "round": 8, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8372766570009844}
+{"case": "uniform-q64", "path": "node_fp64", "round": 8, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 1.0064714039999672}
+{"case": "uniform-q64", "path": "fused_fp64", "round": 8, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8876887289989099}
+{"case": "uniform-q64", "path": "dense8", "round": 9, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8593470169998909}
+{"case": "uniform-q64", "path": "fused_fp64", "round": 9, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8866015540006629}
+{"case": "uniform-q64", "path": "fused_ai_fp64", "round": 9, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.8367785449991061}
+{"case": "uniform-q64", "path": "node_fp64", "round": 9, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 1.0051395800001046}
+{"case": "uniform-q64", "path": "modal8", "round": 9, "iterations": 1050, "matvec_calls": 1073, "solver_seconds": 0.714053783000054}
+{"case": "uniform-q64", "method": "ir-modal8-modal8_32", "rep": 0, "solver_seconds": 0.6631193080011144, "physical_passed": true}
+{"case": "uniform-q64", "method": "pcg64-modal8", "rep": 0, "solver_seconds": 0.7123685179994936, "physical_passed": true}
+{"case": "uniform-q64", "method": "pcg64-fused_ai", "rep": 0, "solver_seconds": 0.8311943560001964, "physical_passed": true}
+{"case": "uniform-q64", "method": "ir-modal8-fused_ai32", "rep": 0, "solver_seconds": 0.5588954849990841, "physical_passed": true}
+{"case": "uniform-q64", "method": "ir-fused_ai64-fused_ai32", "rep": 0, "solver_seconds": 0.5484621440009505, "physical_passed": true}
+{"case": "uniform-q64", "method": "ir-modal8-fused_ai32", "rep": 1, "solver_seconds": 0.5586274340003001, "physical_passed": true}
+{"case": "uniform-q64", "method": "pcg64-fused_ai", "rep": 1, "solver_seconds": 0.8382748770000035, "physical_passed": true}
+{"case": "uniform-q64", "method": "pcg64-modal8", "rep": 1, "solver_seconds": 0.7117391369993129, "physical_passed": true}
+{"case": "uniform-q64", "method": "ir-modal8-modal8_32", "rep": 1, "solver_seconds": 0.6872804009999527, "physical_passed": true}
+{"case": "uniform-q64", "method": "ir-fused_ai64-fused_ai32", "rep": 1, "solver_seconds": 0.5505546790009248, "physical_passed": true}
+{"case": "uniform-q64", "method": "pcg64-modal8", "rep": 2, "solver_seconds": 0.7117131689992675, "physical_passed": true}
+{"case": "uniform-q64", "method": "ir-modal8-modal8_32", "rep": 2, "solver_seconds": 0.6507973019997735, "physical_passed": true}
+{"case": "uniform-q64", "method": "ir-modal8-fused_ai32", "rep": 2, "solver_seconds": 0.5481284779998532, "physical_passed": true}
+{"case": "uniform-q64", "method": "pcg64-fused_ai", "rep": 2, "solver_seconds": 0.8354989580002439, "physical_passed": true}
+{"case": "uniform-q64", "method": "ir-fused_ai64-fused_ai32", "rep": 2, "solver_seconds": 0.5504009859996586, "physical_passed": true}
