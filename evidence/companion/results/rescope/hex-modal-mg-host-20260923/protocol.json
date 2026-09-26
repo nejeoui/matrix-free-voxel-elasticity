@@ -1,0 +1,116 @@
+{
+  "declared_utc": "2026-09-23T17:42:49.402475+00:00",
+  "question": "Can the modal finest-level operator preserve the published mixed-precision multigrid solve and three optimizer steps on source-matched matrices before a GPU application comparison?",
+  "author_commit": "b46ed453ad5a05818b563e540ce176c9d85c6fe2",
+  "source_pins": {
+    "results/rescope/hex-modal-mg-host-20260923/author/.gitignore": "4c3d21ad0bb15cedbbf835ad6612e143422346252b909744b36106fa2d14bdc4",
+    "results/rescope/hex-modal-mg-host-20260923/author/Makefile": "88dfaeeb11da2029cd54d6524bfda595d5691b2e0e8a0869d00559359839e21e",
+    "results/rescope/hex-modal-mg-host-20260923/author/README.md": "6738e36aa617d25dfe8be740717907f1cec606a0ab37f6475462072336776682",
+    "results/rescope/hex-modal-mg-host-20260923/author/definitions.h": "04db7ed9561e6057a39f3ce809c09967165cc3d19efe5d6f3ee65757213d1a91",
+    "results/rescope/hex-modal-mg-host-20260923/author/figures/cg_running_time.png": "c41c1e7642b47c7940ffa260dc118102c0fd3a6f4dd35869ac805fd1382a6096",
+    "results/rescope/hex-modal-mg-host-20260923/author/figures/result.pdf": "8dc19606ca90812c16a3335ad5f215afc7dc34a06ef3576e6fc087bbe28cae0c",
+    "results/rescope/hex-modal-mg-host-20260923/author/figures/result.png": "d3d35d896acfdd771a928019a95ef60573002f889af978ff564f73bf4c839c86",
+    "results/rescope/hex-modal-mg-host-20260923/author/figures/running_time.png": "d053132b0437c3507225234c9a101d98ef67a9f38234af6c6c824b691d438ad1",
+    "results/rescope/hex-modal-mg-host-20260923/author/figures/speedup.png": "f4165d6f20b03408f22c6c6a381dbeb096a4d03090f30ad085d536b22b907be8",
+    "results/rescope/hex-modal-mg-host-20260923/author/gpu_definitions.c": "fa08c3101afb828b258454b9a44a4fad23a3000db7a3fe48164849c6270dbbcb",
+    "results/rescope/hex-modal-mg-host-20260923/author/gpu_definitions.h": "eee564d4b2abd3691a6199ce4330fe265b94ba06a882e1c7e0c9ca945494005c",
+    "results/rescope/hex-modal-mg-host-20260923/author/local_matrix.c": "b8b164d98f4d41de833f050abe4be1a23011c7ddea9c3e808f28ab5795963fe5",
+    "results/rescope/hex-modal-mg-host-20260923/author/local_matrix.h": "45eb53f8b72b3217c4e29fcf5ee9a5893fe39cbb4eb27635ee7622bef5110943",
+    "results/rescope/hex-modal-mg-host-20260923/author/plot_timings.m": "94f26919937d28b7d19186b9124e83fc4e03812d8e3c751e47ce04e7cde037a9",
+    "results/rescope/hex-modal-mg-host-20260923/author/setup_gbar_env.sh": "25e4ef72ef9109dc379cf414c48b7afa5d68c273453e70a81b3889cfdc49e004",
+    "results/rescope/hex-modal-mg-host-20260923/author/stencil_assembly.c": "98acc0a7457d2c56bd8fd9d78eb60502a43bd733b29bc58a8a741c4494a27bd0",
+    "results/rescope/hex-modal-mg-host-20260923/author/stencil_assembly.h": "cd060fcac56f171b5c22008ac35024468a8c7b76e76ddfe7c1e6d61b2f011969",
+    "results/rescope/hex-modal-mg-host-20260923/author/stencil_grid_utility.c": "273b7392ab131443d22e8cef9edb035c58d3148ac10ed8079e769be3755f6fec",
+    "results/rescope/hex-modal-mg-host-20260923/author/stencil_grid_utility.h": "913bf95287dcf30089da786be70f652af4cb6933e1f968894aac94db0e52a8a8",
+    "results/rescope/hex-modal-mg-host-20260923/author/stencil_methods.c": "c5d50dd54b0a9f7733c2cfd0d8b3ab9f0d2673d9adef9d64276fcf32b6e9ab40",
+    "results/rescope/hex-modal-mg-host-20260923/author/stencil_methods.h": "c4d669b0a2deddcc89dc1734aed153faca5cd6d5b644f6d5507fab6d4770d42e",
+    "results/rescope/hex-modal-mg-host-20260923/author/stencil_optimization.c": "e4ed5956199dc199a05fd845c740b64884473b3a6abc70624b6490284e0bad59",
+    "results/rescope/hex-modal-mg-host-20260923/author/stencil_optimization.h": "4d3a4076dede886f94b8074316a27d3cb489b5ffae7fa6a565966ee862c019e7",
+    "results/rescope/hex-modal-mg-host-20260923/author/stencil_solvers.c": "1732134401d5c909bcf7398d7bf5a3b5ee822c8291a59a2b096bedc5d17cca90",
+    "results/rescope/hex-modal-mg-host-20260923/author/stencil_solvers.h": "f0ba51e5b4dba6a6097e47e99a8f557fc4b4a51bec546656037733c39b5a09c9",
+    "results/rescope/hex-modal-mg-host-20260923/author/stencil_utility.h": "f176775e30c170c6ef2d335aab5ff54394b6d07eef1ec4c9cfbc1a7bba7e086a",
+    "results/rescope/hex-modal-mg-host-20260923/author/top3d.c": "3ccd1a75e539d1d134379260dcf5aae41fb30e673324245c25c192f54997fa50",
+    "results/rescope/hex-modal-mg-host-20260923/author/top3dmgcg_matrixfree.m": "511813f97d72c12a125c3daacee442996b80437acf51dfd036d6df60da1e0c9d",
+    "results/rescope/hex-modal-mg-host-20260923/author/top3dmgcg_reference.m": "cafde6ba35a957eee84cf7d6c7661aab5c222f188a5943eaf62b5a6c8e7048aa",
+    "rescope/hex_modal_mg_host/run.py": "27d3de281e4272022022de8100d4a8a710daae3f2aa21c3ff3d085a85e80a7a5",
+    "rescope/hex_modal_mg_host/interpose.c": "594f98be0065de60c3e9fdda87de6e98ffafc7b4dc1269efc9b202f7c4324d0f",
+    "results/rescope/hex-modal-priorart-20260923/cpu-02/matrices-and-vectors.npz": "06283f0b707a4125cdc8ba77f03775e6207aca0f4028ba2cc6445a2fbb07ebe2"
+  },
+  "paths": [
+    "source",
+    "modal"
+  ],
+  "cases": [
+    {
+      "id": "16x8x8",
+      "coarse": [
+        4,
+        2,
+        2
+      ],
+      "stock_control": true
+    },
+    {
+      "id": "24x12x8",
+      "coarse": [
+        6,
+        3,
+        2
+      ],
+      "stock_control": false
+    },
+    {
+      "id": "16x8x12",
+      "coarse": [
+        4,
+        2,
+        3
+      ],
+      "stock_control": false
+    }
+  ],
+  "levels": 3,
+  "design_steps": 3,
+  "run_timeout_seconds": 180,
+  "published_defaults": {
+    "nu": 0.3,
+    "E0": 1,
+    "Emin": 1e-06,
+    "penal": 3,
+    "volume_fraction": 0.2,
+    "filter_radius": 1.5,
+    "jacobi_sweeps": 4,
+    "dtype": "Matrices and accumulated state FP64; CG/correction, densities and gradients FP32",
+    "quadrature": "Author 10x10x10 midpoint per subcell; no substitution by exact Gauss"
+  },
+  "correctness": {
+    "native_requested_rtol": 1e-05,
+    "independent_true_residual": 0.0001,
+    "direct_reference_residual": 1e-10,
+    "product_relative_l2": 1e-06,
+    "state_relative_l2": 0.002,
+    "compliance_relative": 0.0002,
+    "ke_relative_frobenius": 1e-12
+  },
+  "cross_path": {
+    "density_relative_l2": 0.0001,
+    "state_relative_l2": 0.002,
+    "compliance_relative": 0.0002
+  },
+  "controls": [
+    "Stock uninstrumented executable vs instrumented source: exact stdout and both final VTU byte hashes",
+    "One seeded free-DOF product probe at each of 18 captured solves, both paths against independent sparse assembly",
+    "Exact zero actions and fixed state values",
+    "One-percent perturbation of modal block 0 component xx must fail the product tolerance",
+    "Direct sparse solutions and residuals for both source float-cubic and mathematical FP64-cubic SIMP",
+    "Paired input designs, states and compliance at all three steps; final exported density after third update"
+  ],
+  "known_ke_file": "results/rescope/hex-modal-priorart-20260923/cpu-02/matrices-and-vectors.npz",
+  "execution": "Serial CPU execution of unchanged author C source, OpenMP pragmas ignored, omp.h force-included only for diagnostic API declaration. Host CHOLMOD/Accelerate; two symbol aliases intercept finest products and state solves. No GPU/offload replication or performance claim.",
+  "acceptance": "All declared states, products, controls and endpoint comparisons must pass for host integration readiness. Compiler/run failures retained separately. Native residual alone cannot establish acceptance. This does not meet the all-FP64 1e-8 contract of older tests.",
+  "decision_boundary": "Even a host pass is preparation for a separate published-baseline GPU experiment, not application speedup, global novelty or publication readiness. Earlier failed profiling gate is not retroactively changed.",
+  "gpu_rentals": 0,
+  "excluded_instance_ids": [
+    52267803
+  ]
+}

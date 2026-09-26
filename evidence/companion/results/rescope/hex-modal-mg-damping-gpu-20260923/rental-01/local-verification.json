@@ -1,0 +1,1851 @@
+{
+  "utc": "2026-09-23T22:20:13.693257+00:00",
+  "remote_result": {
+    "utc": "2026-09-23T22:08:20.270425+00:00",
+    "status": "completed",
+    "completed": [
+      {
+        "name": "state9-zero-original-modal8-r0",
+        "case": "state9-zero",
+        "boundary": "projected",
+        "damping": "original",
+        "path": "modal8",
+        "repetition": 0,
+        "native_iterations": 1000,
+        "native_residual": 8.483837035655015e-05,
+        "native_converged": false
+      },
+      {
+        "name": "state9-warm-certified-dense8-r0",
+        "case": "state9-warm",
+        "boundary": "projected",
+        "damping": "certified",
+        "path": "dense8",
+        "repetition": 0,
+        "native_iterations": 54,
+        "native_residual": 8.466226289474693e-09,
+        "native_converged": true
+      },
+      {
+        "name": "state9-zero-certified-source-r0",
+        "case": "state9-zero",
+        "boundary": "projected",
+        "damping": "certified",
+        "path": "source",
+        "repetition": 0,
+        "native_iterations": 56,
+        "native_residual": 7.135066411956032e-09,
+        "native_converged": true
+      },
+      {
+        "name": "state9-warm-original-modal8-r0",
+        "case": "state9-warm",
+        "boundary": "projected",
+        "damping": "original",
+        "path": "modal8",
+        "repetition": 0,
+        "native_iterations": 1000,
+        "native_residual": 3.379588298609517e-05,
+        "native_converged": false
+      },
+      {
+        "name": "state8-warm-original-source-r0",
+        "case": "state8-warm",
+        "boundary": "projected",
+        "damping": "original",
+        "path": "source",
+        "repetition": 0,
+        "native_iterations": 782,
+        "native_residual": 9.802847125191022e-09,
+        "native_converged": true
+      },
+      {
+        "name": "state8-warm-original-modal8-r0",
+        "case": "state8-warm",
+        "boundary": "projected",
+        "damping": "original",
+        "path": "modal8",
+        "repetition": 0,
+        "native_iterations": 778,
+        "native_residual": 9.786601623905452e-09,
+        "native_converged": true
+      },
+      {
+        "name": "state8-warm-certified-dense8-r0",
+        "case": "state8-warm",
+        "boundary": "projected",
+        "damping": "certified",
+        "path": "dense8",
+        "repetition": 0,
+        "native_iterations": 40,
+        "native_residual": 6.146369710858581e-09,
+        "native_converged": true
+      },
+      {
+        "name": "state9-zero-certified-dense8-r0",
+        "case": "state9-zero",
+        "boundary": "projected",
+        "damping": "certified",
+        "path": "dense8",
+        "repetition": 0,
+        "native_iterations": 56,
+        "native_residual": 7.137309259116332e-09,
+        "native_converged": true
+      },
+      {
+        "name": "state9-zero-certified-modal8-r0",
+        "case": "state9-zero",
+        "boundary": "projected",
+        "damping": "certified",
+        "path": "modal8",
+        "repetition": 0,
+        "native_iterations": 56,
+        "native_residual": 7.135314489467098e-09,
+        "native_converged": true
+      },
+      {
+        "name": "state9-zero-original-source-r0",
+        "case": "state9-zero",
+        "boundary": "projected",
+        "damping": "original",
+        "path": "source",
+        "repetition": 0,
+        "native_iterations": 1000,
+        "native_residual": 5.809853964263067e-05,
+        "native_converged": false
+      },
+      {
+        "name": "state9-warm-certified-modal8-r0",
+        "case": "state9-warm",
+        "boundary": "projected",
+        "damping": "certified",
+        "path": "modal8",
+        "repetition": 0,
+        "native_iterations": 54,
+        "native_residual": 8.467633444770586e-09,
+        "native_converged": true
+      },
+      {
+        "name": "state9-warm-original-dense8-r0",
+        "case": "state9-warm",
+        "boundary": "projected",
+        "damping": "original",
+        "path": "dense8",
+        "repetition": 0,
+        "native_iterations": 1000,
+        "native_residual": 4.550141428094011e-05,
+        "native_converged": false
+      },
+      {
+        "name": "state9-warm-original-source-r0",
+        "case": "state9-warm",
+        "boundary": "projected",
+        "damping": "original",
+        "path": "source",
+        "repetition": 0,
+        "native_iterations": 1000,
+        "native_residual": 4.164438220015205e-05,
+        "native_converged": false
+      },
+      {
+        "name": "state8-warm-certified-source-r0",
+        "case": "state8-warm",
+        "boundary": "projected",
+        "damping": "certified",
+        "path": "source",
+        "repetition": 0,
+        "native_iterations": 40,
+        "native_residual": 6.146369710845267e-09,
+        "native_converged": true
+      },
+      {
+        "name": "state8-warm-original-dense8-r0",
+        "case": "state8-warm",
+        "boundary": "projected",
+        "damping": "original",
+        "path": "dense8",
+        "repetition": 0,
+        "native_iterations": 739,
+        "native_residual": 9.957377079497796e-09,
+        "native_converged": true
+      },
+      {
+        "name": "state8-warm-certified-modal8-r0",
+        "case": "state8-warm",
+        "boundary": "projected",
+        "damping": "certified",
+        "path": "modal8",
+        "repetition": 0,
+        "native_iterations": 40,
+        "native_residual": 6.146369710859687e-09,
+        "native_converged": true
+      },
+      {
+        "name": "state9-zero-original-dense8-r0",
+        "case": "state9-zero",
+        "boundary": "projected",
+        "damping": "original",
+        "path": "dense8",
+        "repetition": 0,
+        "native_iterations": 1000,
+        "native_residual": 8.58513831645408e-05,
+        "native_converged": false
+      },
+      {
+        "name": "state9-warm-certified-source-r0",
+        "case": "state9-warm",
+        "boundary": "projected",
+        "damping": "certified",
+        "path": "source",
+        "repetition": 0,
+        "native_iterations": 54,
+        "native_residual": 8.468595331737643e-09,
+        "native_converged": true
+      }
+    ],
+    "independent_cpu_replay": "pending after destruction",
+    "publication_goal_achieved": false
+  },
+  "replays": [
+    {
+      "name": "state9-zero-original-modal8-r0",
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "modal8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.9708687243223974e-16,
+          "free_relative_l2": 2.989417747064009e-16,
+          "abs_per_sqrt_dof": 4.9176089904733e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.1434027316138256e-16,
+          "free_relative_l2": 3.1630289938843164e-16,
+          "abs_per_sqrt_dof": 5.203200466957078e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.003389047155229856,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": false,
+      "density_domain_passed": true,
+      "native_iterations": 1000,
+      "native_residual": 8.483837035655015e-05,
+      "native_converged": false,
+      "true_residual": 8.483837034094299e-05,
+      "energy_force_relative": 1.8272653390383198e-09,
+      "compliance": 3.95473108244975,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 13.211015939712524,
+      "finest_operator_calls": 10001,
+      "passed": false,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state9-warm-certified-dense8-r0",
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "dense8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.976749641558709e-16,
+          "free_relative_l2": 2.99533538260654e-16,
+          "abs_per_sqrt_dof": 4.927343534190008e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.1464050435100253e-16,
+          "free_relative_l2": 3.166050051122975e-16,
+          "abs_per_sqrt_dof": 5.208170123088997e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.003389047155229856,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 54,
+      "native_residual": 8.466226289474693e-09,
+      "native_converged": true,
+      "true_residual": 8.46623115235127e-09,
+      "energy_force_relative": 2.1298185437501616e-11,
+      "compliance": 3.954731089928219,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 0.8990888595581055,
+      "finest_operator_calls": 541,
+      "passed": true,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state9-zero-certified-source-r0",
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "source",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.975734448557388e-16,
+          "free_relative_l2": 2.99431385110971e-16,
+          "abs_per_sqrt_dof": 4.925663109138072e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.1446409711692e-16,
+          "free_relative_l2": 3.164274964556681e-16,
+          "abs_per_sqrt_dof": 5.205250095713818e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.003389047155229856,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 56,
+      "native_residual": 7.135066411956032e-09,
+      "native_converged": true,
+      "true_residual": 7.135062640089489e-09,
+      "energy_force_relative": 2.219424644067658e-11,
+      "compliance": 3.9547310899243264,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 5.710471868515015,
+      "finest_operator_calls": 561,
+      "passed": true,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state9-warm-original-modal8-r0",
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "modal8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.974451107160399e-16,
+          "free_relative_l2": 2.993022496996251e-16,
+          "abs_per_sqrt_dof": 4.9235388243657386e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.145179132136093e-16,
+          "free_relative_l2": 3.164816485604729e-16,
+          "abs_per_sqrt_dof": 5.206140900880484e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.0033890471552298564,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": false,
+      "density_domain_passed": true,
+      "native_iterations": 1000,
+      "native_residual": 3.379588298609517e-05,
+      "native_converged": false,
+      "true_residual": 3.379588291861541e-05,
+      "energy_force_relative": 1.182393849497032e-08,
+      "compliance": 3.9547311367255658,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 14.403128147125244,
+      "finest_operator_calls": 10001,
+      "passed": false,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state8-warm-original-source-r0",
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "source",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.320298288808139e-16,
+          "free_relative_l2": 4.36177186198184e-16,
+          "abs_per_sqrt_dof": 5.781723453999016e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.9874909745317606e-16,
+          "free_relative_l2": 3.0161699955750485e-16,
+          "abs_per_sqrt_dof": 3.9980680687735093e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.152374787663048e-16,
+          "free_relative_l2": 3.182636644064436e-16,
+          "abs_per_sqrt_dof": 4.218727047815661e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.0034084829946793302,
+      "boundary_negative_error": 0.13757338577503997,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 782,
+      "native_residual": 9.802847125191022e-09,
+      "native_converged": true,
+      "true_residual": 9.802851887996154e-09,
+      "energy_force_relative": 2.60709231980627e-11,
+      "compliance": 4.953872200879529,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 77.11535286903381,
+      "finest_operator_calls": 7821,
+      "passed": true,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state8-warm-original-modal8-r0",
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "modal8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.320298288808139e-16,
+          "free_relative_l2": 4.36177186198184e-16,
+          "abs_per_sqrt_dof": 5.781723453999016e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.9855117634658914e-16,
+          "free_relative_l2": 3.014171784674103e-16,
+          "abs_per_sqrt_dof": 3.995419350959373e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.1499012027789474e-16,
+          "free_relative_l2": 3.180139313504265e-16,
+          "abs_per_sqrt_dof": 4.215416724596334e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.0034084829946793302,
+      "boundary_negative_error": 0.13757338577503997,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 778,
+      "native_residual": 9.786601623905452e-09,
+      "native_converged": true,
+      "true_residual": 9.786548317968591e-09,
+      "energy_force_relative": 2.4462321057683312e-11,
+      "compliance": 4.953872200887735,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 11.39491605758667,
+      "finest_operator_calls": 7781,
+      "passed": true,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state8-warm-certified-dense8-r0",
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "dense8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.320298288808139e-16,
+          "free_relative_l2": 4.36177186198184e-16,
+          "abs_per_sqrt_dof": 5.781723453999016e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.9871066771494365e-16,
+          "free_relative_l2": 3.015782009052637e-16,
+          "abs_per_sqrt_dof": 3.997553775305753e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.145688401675396e-16,
+          "free_relative_l2": 3.1758860707684116e-16,
+          "abs_per_sqrt_dof": 4.209778861347277e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.0034084829946793302,
+      "boundary_negative_error": 0.13757338577503997,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 40,
+      "native_residual": 6.146369710858581e-09,
+      "native_converged": true,
+      "true_residual": 6.1463685128009576e-09,
+      "energy_force_relative": 3.1160962699061656e-11,
+      "compliance": 4.953872200854228,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 0.8090999126434326,
+      "finest_operator_calls": 401,
+      "passed": true,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state9-zero-certified-dense8-r0",
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "dense8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.9733084092068147e-16,
+          "free_relative_l2": 2.991872664452654e-16,
+          "abs_per_sqrt_dof": 4.9216473433709926e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.147333453864287e-16,
+          "free_relative_l2": 3.166984258133493e-16,
+          "abs_per_sqrt_dof": 5.2097068988702995e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.003389047155229856,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 56,
+      "native_residual": 7.137309259116332e-09,
+      "native_converged": true,
+      "true_residual": 7.137313790527625e-09,
+      "energy_force_relative": 2.247324548676488e-11,
+      "compliance": 3.954731089923602,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 0.9745290279388428,
+      "finest_operator_calls": 561,
+      "passed": true,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state9-zero-certified-modal8-r0",
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "modal8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.9762911503485067e-16,
+          "free_relative_l2": 2.994874028744139e-16,
+          "abs_per_sqrt_dof": 4.926584604494162e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.1471114188727377e-16,
+          "free_relative_l2": 3.1667608368362896e-16,
+          "abs_per_sqrt_dof": 5.209339369581071e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.003389047155229856,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 56,
+      "native_residual": 7.135314489467098e-09,
+      "native_converged": true,
+      "true_residual": 7.135308815226841e-09,
+      "energy_force_relative": 1.9241164217476125e-11,
+      "compliance": 3.9547310899363852,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 0.8196239471435547,
+      "finest_operator_calls": 561,
+      "passed": true,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state9-zero-original-source-r0",
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "source",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.973207677425067e-16,
+          "free_relative_l2": 2.9917713037383343e-16,
+          "abs_per_sqrt_dof": 4.921480604426423e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.1454907894857687e-16,
+          "free_relative_l2": 3.1651300888294346e-16,
+          "abs_per_sqrt_dof": 5.2066567799471577e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.0033890471552298564,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": false,
+      "density_domain_passed": true,
+      "native_iterations": 1000,
+      "native_residual": 5.809853964263067e-05,
+      "native_converged": false,
+      "true_residual": 5.809853970006577e-05,
+      "energy_force_relative": 4.119994012619088e-09,
+      "compliance": 3.9547310735378316,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 97.30007195472717,
+      "finest_operator_calls": 10001,
+      "passed": false,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state9-warm-certified-modal8-r0",
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "modal8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.977915110194491e-16,
+          "free_relative_l2": 2.996508128004184e-16,
+          "abs_per_sqrt_dof": 4.929272706958401e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.1470537573197436e-16,
+          "free_relative_l2": 3.166702815265551e-16,
+          "abs_per_sqrt_dof": 5.209243923771201e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.003389047155229856,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 54,
+      "native_residual": 8.467633444770586e-09,
+      "native_converged": true,
+      "true_residual": 8.467627720337574e-09,
+      "energy_force_relative": 1.8098522680531914e-11,
+      "compliance": 3.9547310899410633,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 0.7602279186248779,
+      "finest_operator_calls": 541,
+      "passed": true,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state9-warm-original-dense8-r0",
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "dense8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.9749680112204655e-16,
+          "free_relative_l2": 2.9935426284170836e-16,
+          "abs_per_sqrt_dof": 4.924394443475457e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.147649056851722e-16,
+          "free_relative_l2": 3.1673018316310833e-16,
+          "abs_per_sqrt_dof": 5.2102293090581763e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.0033890471552298564,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": false,
+      "density_domain_passed": true,
+      "native_iterations": 1000,
+      "native_residual": 4.550141428094011e-05,
+      "native_converged": false,
+      "true_residual": 4.550141437676927e-05,
+      "energy_force_relative": 2.742477611672456e-08,
+      "compliance": 3.954730981461937,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 13.809599161148071,
+      "finest_operator_calls": 10001,
+      "passed": false,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state9-warm-original-source-r0",
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "source",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.972881827426481e-16,
+          "free_relative_l2": 2.991443419250985e-16,
+          "abs_per_sqrt_dof": 4.92094123260246e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.1495714797954535e-16,
+          "free_relative_l2": 3.1692362574837984e-16,
+          "abs_per_sqrt_dof": 5.213411450454795e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.003389047155229856,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": false,
+      "density_domain_passed": true,
+      "native_iterations": 1000,
+      "native_residual": 4.164438220015205e-05,
+      "native_converged": false,
+      "true_residual": 4.164438218216668e-05,
+      "energy_force_relative": 2.030893786475474e-09,
+      "compliance": 3.9547310819078882,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 95.39805603027344,
+      "finest_operator_calls": 10001,
+      "passed": false,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state8-warm-certified-source-r0",
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "source",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.320298288808139e-16,
+          "free_relative_l2": 4.36177186198184e-16,
+          "abs_per_sqrt_dof": 5.781723453999016e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.987586379825654e-16,
+          "free_relative_l2": 3.0162663167312674e-16,
+          "abs_per_sqrt_dof": 3.998195746768978e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.1509369206095595e-16,
+          "free_relative_l2": 3.1811849739166993e-16,
+          "abs_per_sqrt_dof": 4.2168027941852056e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.0034084829946793302,
+      "boundary_negative_error": 0.13757338577503997,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 40,
+      "native_residual": 6.146369710845267e-09,
+      "native_converged": true,
+      "true_residual": 6.146385133816617e-09,
+      "energy_force_relative": 3.184996710814403e-11,
+      "compliance": 4.953872200851447,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 4.052588224411011,
+      "finest_operator_calls": 401,
+      "passed": true,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state8-warm-original-dense8-r0",
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "dense8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.320298288808139e-16,
+          "free_relative_l2": 4.36177186198184e-16,
+          "abs_per_sqrt_dof": 5.781723453999016e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.982532776106069e-16,
+          "free_relative_l2": 3.0111641999253984e-16,
+          "abs_per_sqrt_dof": 3.991432663018851e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.1499720689650785e-16,
+          "free_relative_l2": 3.1802108599846163e-16,
+          "abs_per_sqrt_dof": 4.215511562652194e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.0034084829946793302,
+      "boundary_negative_error": 0.13757338577503997,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 739,
+      "native_residual": 9.957377079497796e-09,
+      "native_converged": true,
+      "true_residual": 9.957329504488309e-09,
+      "energy_force_relative": 4.5934256398538764e-11,
+      "compliance": 4.953872200781084,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 11.757387161254883,
+      "finest_operator_calls": 7391,
+      "passed": true,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state8-warm-certified-modal8-r0",
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "modal8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.320298288808139e-16,
+          "free_relative_l2": 4.36177186198184e-16,
+          "abs_per_sqrt_dof": 5.781723453999016e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.9879046543715386e-16,
+          "free_relative_l2": 3.0165876466177286e-16,
+          "abs_per_sqrt_dof": 3.998621683888069e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.1512878445135e-16,
+          "free_relative_l2": 3.1815392665853024e-16,
+          "abs_per_sqrt_dof": 4.217272424944553e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.0034084829946793302,
+      "boundary_negative_error": 0.13757338577503997,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 40,
+      "native_residual": 6.146369710859687e-09,
+      "native_converged": true,
+      "true_residual": 6.146375935792381e-09,
+      "energy_force_relative": 2.769184881401543e-11,
+      "compliance": 4.953872200871242,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 0.6949598789215088,
+      "finest_operator_calls": 401,
+      "passed": true,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state9-zero-original-dense8-r0",
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "dense8",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.972828056332507e-16,
+          "free_relative_l2": 2.9913893124298763e-16,
+          "abs_per_sqrt_dof": 4.920852226577727e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.149857496389706e-16,
+          "free_relative_l2": 3.1695240598615385e-16,
+          "abs_per_sqrt_dof": 5.2138848869832445e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.003389047155229856,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": false,
+      "density_domain_passed": true,
+      "native_iterations": 1000,
+      "native_residual": 8.58513831645408e-05,
+      "native_converged": false,
+      "true_residual": 8.585138313001623e-05,
+      "energy_force_relative": 4.807389930583383e-09,
+      "compliance": 3.9547310706136605,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 14.263082027435303,
+      "finest_operator_calls": 10001,
+      "passed": false,
+      "coarse_gate_passed": true
+    },
+    {
+      "name": "state9-warm-certified-source-r0",
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "source",
+      "repetition": 0,
+      "input_bytes_match": true,
+      "support_exact": true,
+      "force_relative_error": 0.0,
+      "ke_relative_error": 3.8289131818144995e-16,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.348316770163627e-16,
+          "free_relative_l2": 4.3754660770303914e-16,
+          "abs_per_sqrt_dof": 7.197666281016719e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "dense8",
+          "relative_l2": 2.9723287589173973e-16,
+          "free_relative_l2": 2.9908868975834808e-16,
+          "abs_per_sqrt_dof": 4.9200257513325025e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "modal8",
+          "relative_l2": 3.146919499474076e-16,
+          "free_relative_l2": 3.166567719162773e-16,
+          "abs_per_sqrt_dof": 5.2090216899230704e-17,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.003389047155229855,
+      "boundary_negative_error": 0.11122629613635361,
+      "negative_controls_rejected": true,
+      "zero_action_maximum": 0,
+      "product_gate_passed": true,
+      "state_gate_passed": true,
+      "density_domain_passed": true,
+      "native_iterations": 54,
+      "native_residual": 8.468595331737643e-09,
+      "native_converged": true,
+      "true_residual": 8.468612912795123e-09,
+      "energy_force_relative": 2.1095902802414912e-11,
+      "compliance": 3.9547310899287464,
+      "unprojected_fixed_maximum": 0.0,
+      "fixed_maximum": 0.0,
+      "projection_free_entries_unchanged": true,
+      "native_solve_seconds_diagnostic_only": 5.281061887741089,
+      "finest_operator_calls": 541,
+      "passed": true,
+      "coarse_gate_passed": true
+    }
+  ],
+  "coarse_checks": [
+    {
+      "folder": "state9-zero-original-modal8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.5839116514851256e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state9-warm-certified-dense8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.5780154737801507e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state9-zero-certified-source-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.580994301176484e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state9-warm-original-modal8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.586725750521476e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state8-warm-original-source-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.97098294149749e-16,
+          "free_relative_l2": 4.999538669697421e-16,
+          "abs_per_sqrt_dof": 1.2126397172997512e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.093953556670436e-16,
+          "free_relative_l2": 5.123215687508393e-16,
+          "abs_per_sqrt_dof": 1.2426376178708154e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004983950129590817,
+      "boundary_negative_error": 0.10500539318474003,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.4713418659972084e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state8-warm-original-modal8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.97098294149749e-16,
+          "free_relative_l2": 4.999538669697421e-16,
+          "abs_per_sqrt_dof": 1.2126397172997512e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.093953556670436e-16,
+          "free_relative_l2": 5.123215687508393e-16,
+          "abs_per_sqrt_dof": 1.2426376178708154e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004983950129590817,
+      "boundary_negative_error": 0.10500539318474003,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.4711783209192956e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state8-warm-certified-dense8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.97098294149749e-16,
+          "free_relative_l2": 4.999538669697421e-16,
+          "abs_per_sqrt_dof": 1.2126397172997512e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.093953556670436e-16,
+          "free_relative_l2": 5.123215687508393e-16,
+          "abs_per_sqrt_dof": 1.2426376178708154e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004983950129590817,
+      "boundary_negative_error": 0.10500539318474003,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.4661291768270225e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state9-zero-certified-dense8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.5809643887860887e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state9-zero-certified-modal8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.583756433188787e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state9-zero-original-source-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.5814721398592386e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state9-warm-certified-modal8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.5830967656102445e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state9-warm-original-dense8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.5817909662568525e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state9-warm-original-source-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.569925589986104e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state8-warm-certified-source-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.97098294149749e-16,
+          "free_relative_l2": 4.999538669697421e-16,
+          "abs_per_sqrt_dof": 1.2126397172997512e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.093953556670436e-16,
+          "free_relative_l2": 5.123215687508393e-16,
+          "abs_per_sqrt_dof": 1.2426376178708154e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004983950129590817,
+      "boundary_negative_error": 0.10500539318474003,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.468305718450844e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state8-warm-original-dense8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.97098294149749e-16,
+          "free_relative_l2": 4.999538669697421e-16,
+          "abs_per_sqrt_dof": 1.2126397172997512e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.093953556670436e-16,
+          "free_relative_l2": 5.123215687508393e-16,
+          "abs_per_sqrt_dof": 1.2426376178708154e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004983950129590817,
+      "boundary_negative_error": 0.10500539318474003,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.4718509467812545e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state8-warm-certified-modal8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.97098294149749e-16,
+          "free_relative_l2": 4.999538669697421e-16,
+          "abs_per_sqrt_dof": 1.2126397172997512e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.093953556670436e-16,
+          "free_relative_l2": 5.123215687508393e-16,
+          "abs_per_sqrt_dof": 1.2426376178708154e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004983950129590817,
+      "boundary_negative_error": 0.10500539318474003,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.469718259122705e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state9-zero-original-dense8-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.577554744941533e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    },
+    {
+      "folder": "state9-warm-certified-source-r0",
+      "step": 1,
+      "products": [
+        {
+          "path": "source",
+          "relative_l2": 4.990064387899359e-16,
+          "free_relative_l2": 5.008110833130055e-16,
+          "abs_per_sqrt_dof": 1.5317539837208753e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        },
+        {
+          "path": "cached",
+          "relative_l2": 5.141026245329335e-16,
+          "free_relative_l2": 5.159618640407621e-16,
+          "abs_per_sqrt_dof": 1.5780933510182202e-16,
+          "fixed_identity_exact": true,
+          "passed": true
+        }
+      ],
+      "coefficient_negative_error": 0.004990005137450856,
+      "boundary_negative_error": 0.08453827830825364,
+      "negative_controls_rejected": true,
+      "inverse_diagonal_relative_l2": 2.579732862940018e-16,
+      "inverse_diagonal_passed": true,
+      "zero_action_maximum": 0,
+      "cache_epoch": 1,
+      "passed": true
+    }
+  ],
+  "candidate_cross_path": [
+    {
+      "case": "state8-warm",
+      "path": "dense8",
+      "state_relative_l2": 6.714854915121352e-13,
+      "compliance_relative": 5.613287612504791e-13,
+      "passed": true
+    },
+    {
+      "case": "state8-warm",
+      "path": "modal8",
+      "state_relative_l2": 5.168506638237154e-12,
+      "compliance_relative": 3.9959147102308634e-12,
+      "passed": true
+    },
+    {
+      "case": "state9-warm",
+      "path": "dense8",
+      "state_relative_l2": 6.043494132021854e-13,
+      "compliance_relative": 1.3344880755994382e-13,
+      "passed": true
+    },
+    {
+      "case": "state9-warm",
+      "path": "modal8",
+      "state_relative_l2": 4.7566055090723135e-12,
+      "compliance_relative": 3.114397628678489e-12,
+      "passed": true
+    },
+    {
+      "case": "state9-zero",
+      "path": "dense8",
+      "state_relative_l2": 3.53190814164785e-13,
+      "compliance_relative": 1.8318679906315083e-13,
+      "passed": true
+    },
+    {
+      "case": "state9-zero",
+      "path": "modal8",
+      "state_relative_l2": 4.401453176987821e-12,
+      "compliance_relative": 3.04911651483053e-12,
+      "passed": true
+    }
+  ],
+  "all_executions_completed": true,
+  "all_products_passed": true,
+  "all_coarse_checks_passed": true,
+  "candidate_all_states_passed": true,
+  "candidate_cross_path_passed": true,
+  "original_warm_failure_reproduced_all_paths": true,
+  "all_original_states_passed": false,
+  "publication_goal_achieved": false,
+  "scope": "Fixed-input GPU correctness/intervention diagnostic; no optimizer trajectory, statistical speedup, new smoother or publication result.",
+  "damping_repair_supported_on_tested_inputs": true
+}

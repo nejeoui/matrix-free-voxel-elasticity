@@ -1,0 +1,314 @@
+{
+  "declared_utc": "2026-09-23T21:50:34.285595+00:00",
+  "previous_goal_turn_classification": "Progress: closed and sealed sections56/57 with spectral evidence, two preserved harness failures, exact local damping certificates and native CPU probes. Publication objective remains unfulfilled.",
+  "question": "On identical retained physical inputs and warm starts, does common conservative damping restore the failed large MGCG solve across source/dense/modal operators?",
+  "scope": "Fixed-input GPU correctness/intervention diagnostic; no optimizer trajectory, statistical speedup, new smoother or publication result.",
+  "parents": {
+    "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/protocol.json": "b46b8fc37e4d1f7ee735f25c23b74d6b0eebc6199c37c269ed5e42eea48ef210",
+    "results/rescope/hex-modal-mg-damping-control-20260923/protocol-v3.json": "532a724c86ad4d89d0d1a5cbb76b535c49eaad483a2e3271b4689d3d475c73b1",
+    "results/rescope/hex-modal-mg-damping-control-20260923/run-03/exact-summary.json": "68f4cdf1436f2f11334a5c9d4f598df03f662ae5d4ed0253e08eb90dc67a3a1e",
+    "results/rescope/hex-modal-mg-damping-control-20260923/run-03/result.json": "bec4ffb94990fd1cd5f944de163ad54031ce2061505a043f790b50f8a8a9fa00"
+  },
+  "shape": [
+    128,
+    64,
+    64
+  ],
+  "coarse": [
+    16,
+    8,
+    8
+  ],
+  "levels": 4,
+  "sweeps": 4,
+  "native_iteration_cap": 1000,
+  "cases": [
+    {
+      "id": "state8-warm",
+      "rho": "step-008-rho.f64",
+      "warm": "step-007-u.f64",
+      "role": "previously accepted density with its actual preceding accepted displacement"
+    },
+    {
+      "id": "state9-warm",
+      "rho": "step-009-rho.f64",
+      "warm": "step-008-u.f64",
+      "role": "previously failed density with its actual preceding accepted displacement"
+    },
+    {
+      "id": "state9-zero",
+      "rho": "step-009-rho.f64",
+      "warm": "zero",
+      "role": "same failed density with a controlled zero initial guess"
+    }
+  ],
+  "paths": [
+    "source",
+    "dense8",
+    "modal8"
+  ],
+  "damping": {
+    "original": [
+      0.6,
+      0.6,
+      0.6
+    ],
+    "certified": [
+      0.3,
+      0.25,
+      0.2
+    ]
+  },
+  "schedule": [
+    {
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "modal8",
+      "repetition": 0
+    },
+    {
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "dense8",
+      "repetition": 0
+    },
+    {
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "source",
+      "repetition": 0
+    },
+    {
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "modal8",
+      "repetition": 0
+    },
+    {
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "source",
+      "repetition": 0
+    },
+    {
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "modal8",
+      "repetition": 0
+    },
+    {
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "dense8",
+      "repetition": 0
+    },
+    {
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "dense8",
+      "repetition": 0
+    },
+    {
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "modal8",
+      "repetition": 0
+    },
+    {
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "source",
+      "repetition": 0
+    },
+    {
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "modal8",
+      "repetition": 0
+    },
+    {
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "dense8",
+      "repetition": 0
+    },
+    {
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "source",
+      "repetition": 0
+    },
+    {
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "source",
+      "repetition": 0
+    },
+    {
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "dense8",
+      "repetition": 0
+    },
+    {
+      "case": "state8-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "modal8",
+      "repetition": 0
+    },
+    {
+      "case": "state9-zero",
+      "boundary": "projected",
+      "damping": "original",
+      "path": "dense8",
+      "repetition": 0
+    },
+    {
+      "case": "state9-warm",
+      "boundary": "projected",
+      "damping": "certified",
+      "path": "source",
+      "repetition": 0
+    }
+  ],
+  "seed": 2026092358,
+  "intervention": "Only V-cycle damping changes between paired variants. Same projected transfers, exact-Q1/FP64 operators, common cached level-one action rebuilt once for each fresh fixed-state solve, coarse matrices, CHOLMOD bottom, native CG algorithm, tolerances and iteration cap.",
+  "ideal_certificate_scope": "Weights have exact sufficient local bounds for ideal Q1 nu=3/10 at the three smoothed levels. No interval certificate of rounded GPU execution or guarantee of iteration count is claimed.",
+  "initialization": "Fresh author workspace each replay; load byte-pinned natural density and warm displacement on the first solve, update GPU copies, then product controls and one native solve. Archive and exit without any optimizer update. Prior hidden workspace history is not reproduced.",
+  "products": "Every replay archives all three finest actions, coefficient/boundary negative controls and exact zero actions, plus source/cache coarse products, faults, inverse diagonals and zero actions after the solve.",
+  "correctness": {
+    "native_requested_rtol": 1e-08,
+    "independent_true_residual": 1e-07,
+    "direct_reference_residual": 1e-10,
+    "product_relative_l2": 1e-11,
+    "product_abs_per_sqrt_dof": 1e-12,
+    "energy_force_relative": 1e-06,
+    "state_relative_l2": 5e-05,
+    "compliance_relative": 1e-05,
+    "ke_relative_frobenius": 1e-12
+  },
+  "cross_path": {
+    "density_relative_l2": 0.0001,
+    "state_relative_l2": 5e-05,
+    "compliance_relative": 1e-05
+  },
+  "coarse_diagonal_relative_l2": 1e-12,
+  "density_domain": [
+    0,
+    1
+  ],
+  "acceptance": "All nine conservative-weight states and all fine/coarse controls in every variant must pass their unchanged numerical thresholds; six conservative cross-path comparisons must pass. Repair support additionally requires native and independent warm-state9 failure in all three original-weight paths. Every original outcome is reported.",
+  "causal_interpretation": "A matched failure/success contrast can support the damping intervention on these fixed inputs. It cannot prove the original finest V-cycle indefinite, distinguish all spectral mechanisms, establish a full optimizer repair or claim performance.",
+  "timing": "Native solve time including common cache setup/rebuild is diagnostic only. No speed ratios or optimizer performance gate.",
+  "cpu_threads": 8,
+  "blas_threads": 1,
+  "runtime_environment": {
+    "LD_LIBRARY_PATH": "/opt/nvidia/hpc_sdk/Linux_x86_64/25.1/compilers/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/25.1/cuda/12.6/lib64"
+  },
+  "hardware": {
+    "gpu": "RTX 4090",
+    "maximum_total_usd_per_hour": 0.7,
+    "disk_gb": 80,
+    "image": "nvcr.io/nvidia/nvhpc:25.1-devel-cuda12.6-ubuntu22.04",
+    "minimum_cpu_cores_effective": 8
+  },
+  "preferred_machine_id": 114271,
+  "limits": {
+    "maximum_rental_seconds": 2700,
+    "job_seconds": 1500,
+    "per_process_seconds": 240,
+    "compile_seconds": 300,
+    "disk_gb": 80
+  },
+  "failure_policy": "Native numerical failures are retained as outcomes and the complete randomized schedule continues. Infrastructure/process failures stop execution and preserve partial evidence.",
+  "collection": "Manifest-first gzip1 archive; eight read-only range streams; whole-archive and every-file hashes checked before immediate destruction of this task contract, then CPU replay.",
+  "instance_ownership": "Only the matching new creation-response contract with this experiment label may be used/destroyed; all pre-existing IDs and 52267803 are excluded. No creation retries.",
+  "verification_sources": {
+    "matrix": "results/rescope/hex-modal-mg-fp64-20260923/run-02/element-audit/matrices.npz",
+    "matrix_sha256": "6475f9222300ee1c36e2c7608ac15b5c1b8dda9d8889c40e8d63ccae67b72c97",
+    "verifier_sha256": "d96dfa04ecc0efa02d19f068aaf92c776f624938b30dce381ddb25d5e72c103b",
+    "state_check_sha256": "a3afe2aa7d07e18c37d6ea3865a5fb79a6e28e42e7c1009c0e6fadeab533f5ba",
+    "coarse_check_sha256": "fae8a84eb7c54818b217cfbc231519a471b95d0841fc9640431615eb9f8a0d6a",
+    "episode_check_sha256": "10c41358d9b6bbd074adeba9a6f92362334bfeb4c4e82d31b80a0e7288f3d816"
+  },
+  "local_source_pins": {
+    "README.md": "21feabd555c845fe82736644c70295cf932db4aced783add5b6dc1f8a5fb700e",
+    "bootstrap.sh": "8845fc3170a8aa7254357fda50c5e5592422055f62f9ace2da79e74568d27d22",
+    "coarse.cu": "7a1109e15d0a6578d7b72d0bab880a8847f98ca18cd53a3a839118bbc9ce3952",
+    "coarse_check.py": "fae8a84eb7c54818b217cfbc231519a471b95d0841fc9640431615eb9f8a0d6a",
+    "collect.py": "4d5a2e61779fe837947bd73852dec9304e4f4e9c29a40ca4cf3d87054c322800",
+    "episode_check.py": "10c41358d9b6bbd074adeba9a6f92362334bfeb4c4e82d31b80a0e7288f3d816",
+    "interpose.c": "05f477c9d2f0ea27fd2292e0b904ffc0984b2941cc55fe3d37bd6cff5dc7e6ca",
+    "job.py": "869b59102f4aa5eba0261d3f6e1b9fedfeed38c22f49955e4459f5de55503d7e",
+    "lifecycle.py": "d2e2af6f6a5390cc06242206593f199bf10c9c9331bb8a0afb01ff7ebcc729c8",
+    "make_sources.py": "22fc541a185596caa80451aa2076d91c5e4e12071956973c5d50e3032e33d8fd",
+    "parallel_collection.py": "36c8fc307a704ec6388f302fe0eb52b328a93e56fa8431e59343a304e4cade6c",
+    "prepare.py": "48625f9ceb64faefb517ae4eb867f0726819df1eddd4982836525ab6d236de27",
+    "rate_limit.py": "47ebccc93d106d2fe683006af944161c4196289bb73fbd98f3c74c7c6c09cd77",
+    "state_check.py": "a3afe2aa7d07e18c37d6ea3865a5fb79a6e28e42e7c1009c0e6fadeab533f5ba",
+    "verify.py": "d96dfa04ecc0efa02d19f068aaf92c776f624938b30dce381ddb25d5e72c103b"
+  },
+  "package_pins": {
+    "inputs/force.f64": "96a8039be5f77fbcc0d5002981baab26f30bf350e41415ccad023e083536191a",
+    "inputs/step-007-u.f64": "8d22c3a67222013ca5c5ce5b808e9350ad33780f6e0d29c083d663b246c9c674",
+    "inputs/step-008-rho.f64": "b9c3c15225ad9a0641fdfdfff572f51ff57c6d759a490e7190dacc3c548188f0",
+    "inputs/step-008-u.f64": "855fea3f58c77667c89091bed2c4c1aa588afcf640bca5550f82d58dc6380db6",
+    "inputs/step-009-rho.f64": "4b5495c4353cdac81463f43a6f90a0de82598f607285c59234dc9bcdcd78b622",
+    "source/adapted/.gitignore": "4c3d21ad0bb15cedbbf835ad6612e143422346252b909744b36106fa2d14bdc4",
+    "source/adapted/Makefile": "88dfaeeb11da2029cd54d6524bfda595d5691b2e0e8a0869d00559359839e21e",
+    "source/adapted/README.md": "6738e36aa617d25dfe8be740717907f1cec606a0ab37f6475462072336776682",
+    "source/adapted/definitions.h": "f46b7f411de515bcf826891f15b6a1be59a68572025efce928b3bdbc3aa75381",
+    "source/adapted/figures/cg_running_time.png": "c41c1e7642b47c7940ffa260dc118102c0fd3a6f4dd35869ac805fd1382a6096",
+    "source/adapted/figures/result.pdf": "8dc19606ca90812c16a3335ad5f215afc7dc34a06ef3576e6fc087bbe28cae0c",
+    "source/adapted/figures/result.png": "d3d35d896acfdd771a928019a95ef60573002f889af978ff564f73bf4c839c86",
+    "source/adapted/figures/running_time.png": "d053132b0437c3507225234c9a101d98ef67a9f38234af6c6c824b691d438ad1",
+    "source/adapted/figures/speedup.png": "f4165d6f20b03408f22c6c6a381dbeb096a4d03090f30ad085d536b22b907be8",
+    "source/adapted/gpu_definitions.c": "8d746b6db168d907a2419d92c4826eeec12a3a28505a6e294f21785030d75e08",
+    "source/adapted/gpu_definitions.h": "1eac8c2ee4878ab2a8130a8ef6244bd45bfeacce243216c497a37313db36aaf2",
+    "source/adapted/local_matrix.c": "2b3ad6d3c38f7ef9ac9f522f68f91ec41d0fd2fc27f6313a7bd9da303dd246e0",
+    "source/adapted/local_matrix.h": "45eb53f8b72b3217c4e29fcf5ee9a5893fe39cbb4eb27635ee7622bef5110943",
+    "source/adapted/plot_timings.m": "94f26919937d28b7d19186b9124e83fc4e03812d8e3c751e47ce04e7cde037a9",
+    "source/adapted/setup_gbar_env.sh": "25e4ef72ef9109dc379cf414c48b7afa5d68c273453e70a81b3889cfdc49e004",
+    "source/adapted/stencil_assembly.c": "98acc0a7457d2c56bd8fd9d78eb60502a43bd733b29bc58a8a741c4494a27bd0",
+    "source/adapted/stencil_assembly.h": "cd060fcac56f171b5c22008ac35024468a8c7b76e76ddfe7c1e6d61b2f011969",
+    "source/adapted/stencil_grid_utility.c": "273b7392ab131443d22e8cef9edb035c58d3148ac10ed8079e769be3755f6fec",
+    "source/adapted/stencil_grid_utility.h": "913bf95287dcf30089da786be70f652af4cb6933e1f968894aac94db0e52a8a8",
+    "source/adapted/stencil_methods.c": "c5d50dd54b0a9f7733c2cfd0d8b3ab9f0d2673d9adef9d64276fcf32b6e9ab40",
+    "source/adapted/stencil_methods.h": "c4d669b0a2deddcc89dc1734aed153faca5cd6d5b644f6d5507fab6d4770d42e",
+    "source/adapted/stencil_optimization.c": "6289f3d275e362fc950e5308aa7c45e15d4b67098e2d1b956c27cd6395b5fd4e",
+    "source/adapted/stencil_optimization.h": "b502a4b8d8a87a67e9b379c0604697301daf5b20956260cdefe6df721787a950",
+    "source/adapted/stencil_solvers.c": "1b25210c687c3fdd3880128ae5b79ea0d5be2f9bc0bf537573c403a53d05f00b",
+    "source/adapted/stencil_solvers.h": "d684244af5fa307b10e136bfd03b79c76f5d51240b4a6ca7045d5c07928e2726",
+    "source/adapted/stencil_utility.h": "f176775e30c170c6ef2d335aab5ff54394b6d07eef1ec4c9cfbc1a7bba7e086a",
+    "source/adapted/top3d.c": "f55a9c8b140fec14eaa06774d967ef6f3954b88cc900be62e63fba485db0726a",
+    "source/adapted/top3dmgcg_matrixfree.m": "511813f97d72c12a125c3daacee442996b80437acf51dfd036d6df60da1e0c9d",
+    "source/adapted/top3dmgcg_reference.m": "cafde6ba35a957eee84cf7d6c7661aab5c222f188a5943eaf62b5a6c8e7048aa",
+    "source/bootstrap.sh": "8845fc3170a8aa7254357fda50c5e5592422055f62f9ace2da79e74568d27d22",
+    "source/coarse.cu": "7a1109e15d0a6578d7b72d0bab880a8847f98ca18cd53a3a839118bbc9ce3952",
+    "source/collect.py": "4d5a2e61779fe837947bd73852dec9304e4f4e9c29a40ca4cf3d87054c322800",
+    "source/interpose.c": "05f477c9d2f0ea27fd2292e0b904ffc0984b2941cc55fe3d37bd6cff5dc7e6ca",
+    "source/job.py": "869b59102f4aa5eba0261d3f6e1b9fedfeed38c22f49955e4459f5de55503d7e",
+    "source/kernels.cu": "c98e3f5dced6de56b1d180c08041723c350e4306fb7e809285f01bf871fbfad7"
+  },
+  "lifecycle_pins": {
+    "lifecycle.py": "d2e2af6f6a5390cc06242206593f199bf10c9c9331bb8a0afb01ff7ebcc729c8",
+    "parallel_collection.py": "36c8fc307a704ec6388f302fe0eb52b328a93e56fa8431e59343a304e4cade6c",
+    "rate_limit.py": "47ebccc93d106d2fe683006af944161c4196289bb73fbd98f3c74c7c6c09cd77"
+  }
+}

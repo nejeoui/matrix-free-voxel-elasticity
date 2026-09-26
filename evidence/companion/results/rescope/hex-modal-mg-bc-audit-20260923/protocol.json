@@ -1,0 +1,88 @@
+{
+  "declared_utc": "2026-09-23T19:32:18.202330+00:00",
+  "question": "Does the actual adapted source V-cycle map free residuals to free corrections and satisfy numerical self-adjointness; does masking restriction/prolongation outputs restore these properties?",
+  "trigger": "Section 50 large modal8 optimizer failed native and independent residual checks at state five. Larger source/dense controls were not reached. This audit cannot alone attribute that GPU failure.",
+  "source": "Exact byte copies of section 46 adapted-02 numerical source, no stiffness/solver changes. Only transfer function symbols are renamed at build; wrappers optionally project fixed output entries at each relevant level.",
+  "cases": [
+    {
+      "id": "16x8x8-l3",
+      "shape": [
+        16,
+        8,
+        8
+      ],
+      "levels": 3
+    },
+    {
+      "id": "24x12x8-l3",
+      "shape": [
+        24,
+        12,
+        8
+      ],
+      "levels": 3
+    },
+    {
+      "id": "32x16x16-l4",
+      "shape": [
+        32,
+        16,
+        16
+      ],
+      "levels": 4
+    }
+  ],
+  "patterns": {
+    "0": "Uniform .2",
+    "1": "LCG seed 2026092351: 35% zero-density void, else uniform .1 to 1."
+  },
+  "variants": {
+    "0": "Unchanged source transfers",
+    "1": "After restriction, zero target coarse fixed entries; after prolongation, zero target fine fixed entries."
+  },
+  "pairs": 4,
+  "seed": 2026092351,
+  "sweeps": 4,
+  "omega": 0.6,
+  "acceptance": {
+    "scaled_bilinear_symmetry_maximum": 1e-11,
+    "fixed_output_maximum": 0.0,
+    "transfer_adjoint_error_maximum": 1e-12,
+    "positive_r_dot_Br": true
+  },
+  "negative_controls": "Scale only one B response by 1.01 to violate bilinear reciprocity; negate each response to violate positive quadratic-form check.",
+  "scope": "CPU source execution only, OpenMP directives ignored. Sampled necessary properties, not a proof of SPD for every density or reproduction of the large GPU failure. No performance/novelty claim.",
+  "pins": {
+    "rescope/hex_modal_mg_bc_audit/run.py": "fed99451d32f1537fc172b72567d8f748a2e3d179007c5e9e259010ef5f9390b",
+    "rescope/hex_modal_mg_bc_audit/probe.c": "6f49c0090c3e9e2e93749f1f7c43de5a9a4cf44e6472c412e07ca1729c103f4e",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/.gitignore": "4c3d21ad0bb15cedbbf835ad6612e143422346252b909744b36106fa2d14bdc4",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/Makefile": "88dfaeeb11da2029cd54d6524bfda595d5691b2e0e8a0869d00559359839e21e",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/README.md": "6738e36aa617d25dfe8be740717907f1cec606a0ab37f6475462072336776682",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/definitions.h": "f46b7f411de515bcf826891f15b6a1be59a68572025efce928b3bdbc3aa75381",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/figures/cg_running_time.png": "c41c1e7642b47c7940ffa260dc118102c0fd3a6f4dd35869ac805fd1382a6096",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/figures/result.pdf": "8dc19606ca90812c16a3335ad5f215afc7dc34a06ef3576e6fc087bbe28cae0c",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/figures/result.png": "d3d35d896acfdd771a928019a95ef60573002f889af978ff564f73bf4c839c86",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/figures/running_time.png": "d053132b0437c3507225234c9a101d98ef67a9f38234af6c6c824b691d438ad1",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/figures/speedup.png": "f4165d6f20b03408f22c6c6a381dbeb096a4d03090f30ad085d536b22b907be8",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/gpu_definitions.c": "8d746b6db168d907a2419d92c4826eeec12a3a28505a6e294f21785030d75e08",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/gpu_definitions.h": "1eac8c2ee4878ab2a8130a8ef6244bd45bfeacce243216c497a37313db36aaf2",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/local_matrix.c": "2b3ad6d3c38f7ef9ac9f522f68f91ec41d0fd2fc27f6313a7bd9da303dd246e0",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/local_matrix.h": "45eb53f8b72b3217c4e29fcf5ee9a5893fe39cbb4eb27635ee7622bef5110943",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/plot_timings.m": "94f26919937d28b7d19186b9124e83fc4e03812d8e3c751e47ce04e7cde037a9",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/setup_gbar_env.sh": "25e4ef72ef9109dc379cf414c48b7afa5d68c273453e70a81b3889cfdc49e004",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/stencil_assembly.c": "98acc0a7457d2c56bd8fd9d78eb60502a43bd733b29bc58a8a741c4494a27bd0",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/stencil_assembly.h": "cd060fcac56f171b5c22008ac35024468a8c7b76e76ddfe7c1e6d61b2f011969",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/stencil_grid_utility.c": "273b7392ab131443d22e8cef9edb035c58d3148ac10ed8079e769be3755f6fec",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/stencil_grid_utility.h": "913bf95287dcf30089da786be70f652af4cb6933e1f968894aac94db0e52a8a8",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/stencil_methods.c": "c5d50dd54b0a9f7733c2cfd0d8b3ab9f0d2673d9adef9d64276fcf32b6e9ab40",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/stencil_methods.h": "c4d669b0a2deddcc89dc1734aed153faca5cd6d5b644f6d5507fab6d4770d42e",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/stencil_optimization.c": "6289f3d275e362fc950e5308aa7c45e15d4b67098e2d1b956c27cd6395b5fd4e",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/stencil_optimization.h": "b502a4b8d8a87a67e9b379c0604697301daf5b20956260cdefe6df721787a950",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/stencil_solvers.c": "c5603788a74b6700c1572195312fcab95c2500bb351bbe195be27cea6a0fe0a9",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/stencil_solvers.h": "d684244af5fa307b10e136bfd03b79c76f5d51240b4a6ca7045d5c07928e2726",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/stencil_utility.h": "f176775e30c170c6ef2d335aab5ff54394b6d07eef1ec4c9cfbc1a7bba7e086a",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/top3d.c": "f55a9c8b140fec14eaa06774d967ef6f3954b88cc900be62e63fba485db0726a",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/top3dmgcg_matrixfree.m": "511813f97d72c12a125c3daacee442996b80437acf51dfd036d6df60da1e0c9d",
+    "results/rescope/hex-modal-mg-bc-audit-20260923/author/top3dmgcg_reference.m": "cafde6ba35a957eee84cf7d6c7661aab5c222f188a5943eaf62b5a6c8e7048aa"
+  }
+}

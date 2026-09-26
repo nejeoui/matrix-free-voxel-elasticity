@@ -1,0 +1,89 @@
+{
+  "declared_utc": "2026-09-23T21:22:04.579011+00:00",
+  "question": "Do the fixed Jacobi weight 0.6 and the retained valid/failed physical densities exhibit unstable free-space modes at any smoothed level?",
+  "cases": [
+    {
+      "id": "large-valid-state8",
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "density": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/step-008-rho.f64",
+      "source_inverse_diagonal": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/step-008-coarse-source-invdiag.f64",
+      "density_sha256": "b9c3c15225ad9a0641fdfdfff572f51ff57c6d759a490e7190dacc3c548188f0",
+      "source_inverse_diagonal_sha256": "d26dfaa0b227199721c6ffbb43d60979e617fc864a3eb3c8faa03fbd0f640011",
+      "previous_state_accepted": true,
+      "previous_true_residual": 9.97441033297003e-09
+    },
+    {
+      "id": "large-failed-state9",
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "density": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/step-009-rho.f64",
+      "source_inverse_diagonal": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/step-009-coarse-source-invdiag.f64",
+      "density_sha256": "4b5495c4353cdac81463f43a6f90a0de82598f607285c59234dc9bcdcd78b622",
+      "source_inverse_diagonal_sha256": "6521c47fa41f761fa305d9595be2575e8d5842b19da275b98db8df2f64c403af",
+      "previous_state_accepted": false,
+      "previous_true_residual": 3.597938871517143e-05
+    },
+    {
+      "id": "small-certified-endpoint",
+      "shape": [
+        64,
+        32,
+        32
+      ],
+      "density": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/64x32x32-source-profile/step-021-rho.f64",
+      "source_inverse_diagonal": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/64x32x32-source-profile/step-021-coarse-source-invdiag.f64",
+      "density_sha256": "8359fb1c9c33f34faa106684d6435d2654be14f3ee21edeca2c7e036b1278094",
+      "source_inverse_diagonal_sha256": "d628b4baf28996c726a18fea4e2db9e3da108fc0fa937aba09a8e82056b41023",
+      "previous_state_accepted": true,
+      "previous_true_residual": 7.25372751284798e-09
+    }
+  ],
+  "levels": [
+    0,
+    1,
+    2
+  ],
+  "omega": 0.6,
+  "seed": 2026092356,
+  "scope": "CPU spectral diagnostic only; no GPU rental, solver repair, speedup, V-cycle definiteness proof or novelty result.",
+  "operator": "Symmetrized independent exact-Q1 element matrices; positive FP64 SIMP material with Emin=1e-6. Fine action matrix-free; coarse matrices independently assembled from all weighted subcells and checked against P^T K_fine P. Fixed coarse entries are projected at their own level, without inserting additional fine support masking into the physical coarse operator.",
+  "eigensolver": {
+    "method": "SciPy eigsh largest algebraic, seeded start",
+    "requested_relative_tolerance": 1e-07,
+    "maximum_restart_iterations": 100,
+    "krylov_dimension": 24,
+    "maximum_products": 240,
+    "maximum_seconds_per_case": 180
+  },
+  "validation": {
+    "probes_per_case_level": 2,
+    "product_relative_l2": 1e-11,
+    "inverse_diagonal_relative_l2": 1e-12,
+    "scaled_symmetry_maximum": 1e-11,
+    "eigen_residual_relative": 1e-06,
+    "instability_margin": 1e-06
+  },
+  "acceptance_interpretation": "An independently re-evaluated Rayleigh quotient exceeding 2/omega by the declared margin witnesses an unstable Jacobi mode even without eigensolver convergence. A converged maximum-eigenpair estimate below that threshold is not an exact global stability certificate. Neither outcome alone establishes full V-cycle definiteness or GPU failure causality.",
+  "local_envelopes": "Report normalized 24x24 subcell eigenvalue estimates and row-absolute-sum/diagonal Gershgorin bounds for stored nu .2,.3,.45, levels0..2. These local envelopes do not establish instability of an assembled failed-state operator. No rational/interval certificate is claimed.",
+  "matrix": "results/rescope/hex-modal-mg-fp64-20260923/run-02/element-audit/matrices.npz",
+  "matrix_sha256": "6475f9222300ee1c36e2c7608ac15b5c1b8dda9d8889c40e8d63ccae67b72c97",
+  "sources": {
+    "rescope/hex_modal_mg_smoother_audit/run.py": "7c5ff7c0d758f11b22c422adaa5da50b8994b538426042fa16f95351cff9813b",
+    "rescope/hex_modal_mg_smoother_audit/spectrum.py": "2a9686fce101772a2b8e624bce0717196ce569cab786d837c4848ca8d2a443c6",
+    "rescope/hex_modal_mg_runtime/verify.py": "b0bbd304b39f3116617bc92f8ac09cd076fb93be5effb349ca0bca30e940432c"
+  },
+  "environment": {
+    "python": "3.12.11 (main, Jun  4 2025, 17:42:58) [Clang 20.1.4 ]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "platform": "macOS-26.3.1-arm64-arm-64bit"
+  },
+  "previous_goal_turn_classification": "Progress: completed numerical replay, local cache audit, one retained infrastructure failure, and GPU pilot retaining six independently verified new state failures. No publication result yet."
+}

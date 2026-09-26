@@ -1,0 +1,524 @@
+{
+  "utc": "2026-09-23T21:22:40.659158+00:00",
+  "status": "completed",
+  "rows": [
+    {
+      "case": "large-valid-state8",
+      "level": 0,
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "free_dofs": 1628445,
+      "products": [
+        {
+          "sample": 0,
+          "relative_l2": 0.0,
+          "passed": true
+        },
+        {
+          "sample": 1,
+          "relative_l2": 0.0,
+          "passed": true
+        }
+      ],
+      "inverse_diagonal": null,
+      "operator_validation_passed": true,
+      "scaled_bilinear_symmetry": 3.697877798638881e-18,
+      "spectrum_executed": true,
+      "eigensolver_status": "converged",
+      "arpack_eigenvalue": 3.085680123198816,
+      "rayleigh_quotient": 3.085680123198814,
+      "eigen_residual_absolute": 3.152033452689508e-09,
+      "eigen_residual_relative": 1.0215036318871277e-09,
+      "estimated_extreme_eigenpair_accepted": true,
+      "omega": 0.6,
+      "omega_times_rayleigh": 1.8514080739192882,
+      "unstable_jacobi_mode_witnessed": false,
+      "full_vcycle_indefiniteness_proved": false,
+      "gpu_failure_cause_established": false,
+      "matvec_calls": 85,
+      "history": [
+        {
+          "case": "large-valid-state8",
+          "level": 0,
+          "products": 25,
+          "largest_observed_rayleigh": 1.7341874038398588
+        },
+        {
+          "case": "large-valid-state8",
+          "level": 0,
+          "products": 50,
+          "largest_observed_rayleigh": 1.7341874038398588
+        },
+        {
+          "case": "large-valid-state8",
+          "level": 0,
+          "products": 75,
+          "largest_observed_rayleigh": 1.7341874038398588
+        }
+      ],
+      "elapsed_cpu_seconds_diagnostic_only": 16.515295916993637,
+      "interpretation": "A Rayleigh quotient above 2/omega witnesses an unstable Jacobi mode. It does not prove the full V-cycle indefinite or establish the observed CG failure mechanism. Values below threshold are estimates, not certified stability bounds."
+    },
+    {
+      "case": "large-valid-state8",
+      "level": 1,
+      "shape": [
+        64,
+        32,
+        32
+      ],
+      "free_dofs": 210573,
+      "products": [
+        {
+          "sample": 0,
+          "relative_l2": 5.490368505610397e-16,
+          "passed": true
+        },
+        {
+          "sample": 1,
+          "relative_l2": 5.522030068206486e-16,
+          "passed": true
+        }
+      ],
+      "inverse_diagonal": {
+        "relative_l2": 3.001789373744758e-16,
+        "passed": true
+      },
+      "operator_validation_passed": true,
+      "scaled_bilinear_symmetry": 9.77256600044016e-19,
+      "spectrum_executed": true,
+      "eigensolver_status": "converged",
+      "arpack_eigenvalue": 3.2739861533242274,
+      "rayleigh_quotient": 3.273986153324229,
+      "eigen_residual_absolute": 6.74144106498842e-08,
+      "eigen_residual_relative": 2.0590927234507466e-08,
+      "estimated_extreme_eigenpair_accepted": true,
+      "omega": 0.6,
+      "omega_times_rayleigh": 1.9643916919945374,
+      "unstable_jacobi_mode_witnessed": false,
+      "full_vcycle_indefiniteness_proved": false,
+      "gpu_failure_cause_established": false,
+      "matvec_calls": 61,
+      "history": [
+        {
+          "case": "large-valid-state8",
+          "level": 1,
+          "products": 25,
+          "largest_observed_rayleigh": 1.770468781600669
+        },
+        {
+          "case": "large-valid-state8",
+          "level": 1,
+          "products": 50,
+          "largest_observed_rayleigh": 1.770468781600669
+        }
+      ],
+      "elapsed_cpu_seconds_diagnostic_only": 2.2899486660026014,
+      "interpretation": "A Rayleigh quotient above 2/omega witnesses an unstable Jacobi mode. It does not prove the full V-cycle indefinite or establish the observed CG failure mechanism. Values below threshold are estimates, not certified stability bounds."
+    },
+    {
+      "case": "large-valid-state8",
+      "level": 2,
+      "shape": [
+        32,
+        16,
+        16
+      ],
+      "free_dofs": 28101,
+      "products": [
+        {
+          "sample": 0,
+          "relative_l2": 1.8581690803464024e-15,
+          "passed": true
+        },
+        {
+          "sample": 1,
+          "relative_l2": 1.8192116959018233e-15,
+          "passed": true
+        }
+      ],
+      "inverse_diagonal": null,
+      "operator_validation_passed": true,
+      "scaled_bilinear_symmetry": 4.3815521341204365e-18,
+      "spectrum_executed": true,
+      "eigensolver_status": "converged",
+      "arpack_eigenvalue": 3.3767752629174703,
+      "rayleigh_quotient": 3.3767752629174748,
+      "eigen_residual_absolute": 2.539717594890724e-07,
+      "eigen_residual_relative": 7.521133025288904e-08,
+      "estimated_extreme_eigenpair_accepted": true,
+      "omega": 0.6,
+      "omega_times_rayleigh": 2.0260651577504847,
+      "unstable_jacobi_mode_witnessed": true,
+      "full_vcycle_indefiniteness_proved": false,
+      "gpu_failure_cause_established": false,
+      "matvec_calls": 85,
+      "history": [
+        {
+          "case": "large-valid-state8",
+          "level": 2,
+          "products": 25,
+          "largest_observed_rayleigh": 1.856074229548147
+        },
+        {
+          "case": "large-valid-state8",
+          "level": 2,
+          "products": 50,
+          "largest_observed_rayleigh": 1.856074229548147
+        },
+        {
+          "case": "large-valid-state8",
+          "level": 2,
+          "products": 75,
+          "largest_observed_rayleigh": 1.856074229548147
+        }
+      ],
+      "elapsed_cpu_seconds_diagnostic_only": 0.6795647079998162,
+      "interpretation": "A Rayleigh quotient above 2/omega witnesses an unstable Jacobi mode. It does not prove the full V-cycle indefinite or establish the observed CG failure mechanism. Values below threshold are estimates, not certified stability bounds."
+    },
+    {
+      "case": "large-failed-state9",
+      "level": 0,
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "free_dofs": 1628445,
+      "products": [
+        {
+          "sample": 0,
+          "relative_l2": 0.0,
+          "passed": true
+        },
+        {
+          "sample": 1,
+          "relative_l2": 0.0,
+          "passed": true
+        }
+      ],
+      "inverse_diagonal": null,
+      "operator_validation_passed": true,
+      "scaled_bilinear_symmetry": 4.687763938715987e-18,
+      "spectrum_executed": true,
+      "eigensolver_status": "converged",
+      "arpack_eigenvalue": 3.154914105895106,
+      "rayleigh_quotient": 3.1549141058951036,
+      "eigen_residual_absolute": 2.5267342378912076e-09,
+      "eigen_residual_relative": 8.008884404078981e-10,
+      "estimated_extreme_eigenpair_accepted": true,
+      "omega": 0.6,
+      "omega_times_rayleigh": 1.8929484635370621,
+      "unstable_jacobi_mode_witnessed": false,
+      "full_vcycle_indefiniteness_proved": false,
+      "gpu_failure_cause_established": false,
+      "matvec_calls": 61,
+      "history": [
+        {
+          "case": "large-failed-state9",
+          "level": 0,
+          "products": 25,
+          "largest_observed_rayleigh": 1.7360538569372774
+        },
+        {
+          "case": "large-failed-state9",
+          "level": 0,
+          "products": 50,
+          "largest_observed_rayleigh": 1.7360538569372774
+        }
+      ],
+      "elapsed_cpu_seconds_diagnostic_only": 11.78730245801853,
+      "interpretation": "A Rayleigh quotient above 2/omega witnesses an unstable Jacobi mode. It does not prove the full V-cycle indefinite or establish the observed CG failure mechanism. Values below threshold are estimates, not certified stability bounds."
+    },
+    {
+      "case": "large-failed-state9",
+      "level": 1,
+      "shape": [
+        64,
+        32,
+        32
+      ],
+      "free_dofs": 210573,
+      "products": [
+        {
+          "sample": 0,
+          "relative_l2": 5.575531590174567e-16,
+          "passed": true
+        },
+        {
+          "sample": 1,
+          "relative_l2": 5.504403408777203e-16,
+          "passed": true
+        }
+      ],
+      "inverse_diagonal": {
+        "relative_l2": 3.172314675427209e-16,
+        "passed": true
+      },
+      "operator_validation_passed": true,
+      "scaled_bilinear_symmetry": 2.9602039638846245e-18,
+      "spectrum_executed": true,
+      "eigensolver_status": "converged",
+      "arpack_eigenvalue": 3.289656639806115,
+      "rayleigh_quotient": 3.289656639806114,
+      "eigen_residual_absolute": 7.702814809487944e-08,
+      "eigen_residual_relative": 2.341525469947506e-08,
+      "estimated_extreme_eigenpair_accepted": true,
+      "omega": 0.6,
+      "omega_times_rayleigh": 1.9737939838836682,
+      "unstable_jacobi_mode_witnessed": false,
+      "full_vcycle_indefiniteness_proved": false,
+      "gpu_failure_cause_established": false,
+      "matvec_calls": 61,
+      "history": [
+        {
+          "case": "large-failed-state9",
+          "level": 1,
+          "products": 25,
+          "largest_observed_rayleigh": 1.8171263419957124
+        },
+        {
+          "case": "large-failed-state9",
+          "level": 1,
+          "products": 50,
+          "largest_observed_rayleigh": 1.8171263419957124
+        }
+      ],
+      "elapsed_cpu_seconds_diagnostic_only": 2.0298135000048205,
+      "interpretation": "A Rayleigh quotient above 2/omega witnesses an unstable Jacobi mode. It does not prove the full V-cycle indefinite or establish the observed CG failure mechanism. Values below threshold are estimates, not certified stability bounds."
+    },
+    {
+      "case": "large-failed-state9",
+      "level": 2,
+      "shape": [
+        32,
+        16,
+        16
+      ],
+      "free_dofs": 28101,
+      "products": [
+        {
+          "sample": 0,
+          "relative_l2": 1.8123508952450405e-15,
+          "passed": true
+        },
+        {
+          "sample": 1,
+          "relative_l2": 1.833908475451192e-15,
+          "passed": true
+        }
+      ],
+      "inverse_diagonal": null,
+      "operator_validation_passed": true,
+      "scaled_bilinear_symmetry": 4.368376632804128e-18,
+      "spectrum_executed": true,
+      "eigensolver_status": "converged",
+      "arpack_eigenvalue": 3.3993928878779003,
+      "rayleigh_quotient": 3.3993928878779,
+      "eigen_residual_absolute": 4.476702289541528e-08,
+      "eigen_residual_relative": 1.3169122949881052e-08,
+      "estimated_extreme_eigenpair_accepted": true,
+      "omega": 0.6,
+      "omega_times_rayleigh": 2.03963573272674,
+      "unstable_jacobi_mode_witnessed": true,
+      "full_vcycle_indefiniteness_proved": false,
+      "gpu_failure_cause_established": false,
+      "matvec_calls": 97,
+      "history": [
+        {
+          "case": "large-failed-state9",
+          "level": 2,
+          "products": 25,
+          "largest_observed_rayleigh": 1.8883119508117145
+        },
+        {
+          "case": "large-failed-state9",
+          "level": 2,
+          "products": 50,
+          "largest_observed_rayleigh": 1.8883119508117145
+        },
+        {
+          "case": "large-failed-state9",
+          "level": 2,
+          "products": 75,
+          "largest_observed_rayleigh": 1.8883119508117145
+        }
+      ],
+      "elapsed_cpu_seconds_diagnostic_only": 0.6792704999970738,
+      "interpretation": "A Rayleigh quotient above 2/omega witnesses an unstable Jacobi mode. It does not prove the full V-cycle indefinite or establish the observed CG failure mechanism. Values below threshold are estimates, not certified stability bounds."
+    },
+    {
+      "case": "small-certified-endpoint",
+      "level": 0,
+      "shape": [
+        64,
+        32,
+        32
+      ],
+      "free_dofs": 210573,
+      "products": [
+        {
+          "sample": 0,
+          "relative_l2": 0.0,
+          "passed": true
+        },
+        {
+          "sample": 1,
+          "relative_l2": 0.0,
+          "passed": true
+        }
+      ],
+      "inverse_diagonal": null,
+      "operator_validation_passed": true,
+      "scaled_bilinear_symmetry": 2.373317557995997e-19,
+      "spectrum_executed": true,
+      "eigensolver_status": "converged",
+      "arpack_eigenvalue": 3.1473671775340737,
+      "rayleigh_quotient": 3.1473671775340817,
+      "eigen_residual_absolute": 2.3475871618472748e-07,
+      "eigen_residual_relative": 7.458891922761222e-08,
+      "estimated_extreme_eigenpair_accepted": true,
+      "omega": 0.6,
+      "omega_times_rayleigh": 1.888420306520449,
+      "unstable_jacobi_mode_witnessed": false,
+      "full_vcycle_indefiniteness_proved": false,
+      "gpu_failure_cause_established": false,
+      "matvec_calls": 73,
+      "history": [
+        {
+          "case": "small-certified-endpoint",
+          "level": 0,
+          "products": 25,
+          "largest_observed_rayleigh": 1.7491890484797856
+        },
+        {
+          "case": "small-certified-endpoint",
+          "level": 0,
+          "products": 50,
+          "largest_observed_rayleigh": 1.7491890484797856
+        }
+      ],
+      "elapsed_cpu_seconds_diagnostic_only": 1.6828010409954004,
+      "interpretation": "A Rayleigh quotient above 2/omega witnesses an unstable Jacobi mode. It does not prove the full V-cycle indefinite or establish the observed CG failure mechanism. Values below threshold are estimates, not certified stability bounds."
+    },
+    {
+      "case": "small-certified-endpoint",
+      "level": 1,
+      "shape": [
+        32,
+        16,
+        16
+      ],
+      "free_dofs": 28101,
+      "products": [
+        {
+          "sample": 0,
+          "relative_l2": 5.822063070246032e-16,
+          "passed": true
+        },
+        {
+          "sample": 1,
+          "relative_l2": 5.545065857446455e-16,
+          "passed": true
+        }
+      ],
+      "inverse_diagonal": {
+        "relative_l2": 2.872553984010278e-16,
+        "passed": true
+      },
+      "operator_validation_passed": true,
+      "scaled_bilinear_symmetry": 1.7440422223177275e-18,
+      "spectrum_executed": true,
+      "eigensolver_status": "converged",
+      "arpack_eigenvalue": 3.3291130268308096,
+      "rayleigh_quotient": 3.329113026830811,
+      "eigen_residual_absolute": 9.862990765809804e-08,
+      "eigen_residual_relative": 2.962648214800624e-08,
+      "estimated_extreme_eigenpair_accepted": true,
+      "omega": 0.6,
+      "omega_times_rayleigh": 1.9974678160984864,
+      "unstable_jacobi_mode_witnessed": false,
+      "full_vcycle_indefiniteness_proved": false,
+      "gpu_failure_cause_established": false,
+      "matvec_calls": 73,
+      "history": [
+        {
+          "case": "small-certified-endpoint",
+          "level": 1,
+          "products": 25,
+          "largest_observed_rayleigh": 1.8732219657437952
+        },
+        {
+          "case": "small-certified-endpoint",
+          "level": 1,
+          "products": 50,
+          "largest_observed_rayleigh": 1.8732219657437952
+        }
+      ],
+      "elapsed_cpu_seconds_diagnostic_only": 0.26765391702065244,
+      "interpretation": "A Rayleigh quotient above 2/omega witnesses an unstable Jacobi mode. It does not prove the full V-cycle indefinite or establish the observed CG failure mechanism. Values below threshold are estimates, not certified stability bounds."
+    },
+    {
+      "case": "small-certified-endpoint",
+      "level": 2,
+      "shape": [
+        16,
+        8,
+        8
+      ],
+      "free_dofs": 3969,
+      "products": [
+        {
+          "sample": 0,
+          "relative_l2": 2.0565690392901723e-15,
+          "passed": true
+        },
+        {
+          "sample": 1,
+          "relative_l2": 2.0373001561362557e-15,
+          "passed": true
+        }
+      ],
+      "inverse_diagonal": null,
+      "operator_validation_passed": true,
+      "scaled_bilinear_symmetry": 3.031904672278925e-18,
+      "spectrum_executed": true,
+      "eigensolver_status": "converged",
+      "arpack_eigenvalue": 3.485225066356771,
+      "rayleigh_quotient": 3.485225066356771,
+      "eigen_residual_absolute": 8.386716178927592e-09,
+      "eigen_residual_relative": 2.4063628658835863e-09,
+      "estimated_extreme_eigenpair_accepted": true,
+      "omega": 0.6,
+      "omega_times_rayleigh": 2.0911350398140627,
+      "unstable_jacobi_mode_witnessed": true,
+      "full_vcycle_indefiniteness_proved": false,
+      "gpu_failure_cause_established": false,
+      "matvec_calls": 61,
+      "history": [
+        {
+          "case": "small-certified-endpoint",
+          "level": 2,
+          "products": 25,
+          "largest_observed_rayleigh": 2.016841348870052
+        },
+        {
+          "case": "small-certified-endpoint",
+          "level": 2,
+          "products": 50,
+          "largest_observed_rayleigh": 2.016841348870052
+        }
+      ],
+      "elapsed_cpu_seconds_diagnostic_only": 0.08405595802469179,
+      "interpretation": "A Rayleigh quotient above 2/omega witnesses an unstable Jacobi mode. It does not prove the full V-cycle indefinite or establish the observed CG failure mechanism. Values below threshold are estimates, not certified stability bounds."
+    }
+  ],
+  "all_operator_validations_passed": true,
+  "all_extreme_eigenpair_estimates_accepted": true,
+  "any_unstable_jacobi_mode_witnessed": true,
+  "gpu_failure_cause_established": false,
+  "publication_goal_achieved": false
+}

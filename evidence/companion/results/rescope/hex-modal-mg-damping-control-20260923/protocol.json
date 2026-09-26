@@ -1,0 +1,155 @@
+{
+  "declared_utc": "2026-09-23T21:37:05.082698+00:00",
+  "question": "Can exact local spectral bounds justify a density-independent damping control, and what are the actual source V-cycle quadratic forms on retained designs?",
+  "cases": [
+    {
+      "id": "large-valid-state8",
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "density": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/step-008-rho.f64",
+      "source_inverse_diagonal": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/step-008-coarse-source-invdiag.f64",
+      "density_sha256": "b9c3c15225ad9a0641fdfdfff572f51ff57c6d759a490e7190dacc3c548188f0",
+      "source_inverse_diagonal_sha256": "d26dfaa0b227199721c6ffbb43d60979e617fc864a3eb3c8faa03fbd0f640011",
+      "previous_state_accepted": true,
+      "previous_true_residual": 9.97441033297003e-09,
+      "state": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/step-008-u.f64",
+      "force": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/force.f64",
+      "state_sha256": "855fea3f58c77667c89091bed2c4c1aa588afcf640bca5550f82d58dc6380db6",
+      "force_sha256": "96a8039be5f77fbcc0d5002981baab26f30bf350e41415ccad023e083536191a",
+      "spectral_inputs": {
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/large-valid-state8-level0/scaled-eigenvector.f64": "273abe2ab56c880535a03640faeff2121ca1580d799e3b6c10edd0327b45828b",
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/large-valid-state8-level0/diagonal.f64": "7951295fdfd9ec05a70eafc657f8ed3e571c8b109ac30af429831f9963fc81b6",
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/large-valid-state8-level2/scaled-eigenvector.f64": "a49464ed6c61361c0c7fca5e53f917cc193e999b1174f7487e90491a66fa86df",
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/large-valid-state8-level2/diagonal.f64": "729100b59476a6d50ddc4718333ddbfd86a00b9e86ddf30ebf70f2ef27162832"
+      }
+    },
+    {
+      "id": "large-failed-state9",
+      "shape": [
+        128,
+        64,
+        64
+      ],
+      "density": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/step-009-rho.f64",
+      "source_inverse_diagonal": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/step-009-coarse-source-invdiag.f64",
+      "density_sha256": "4b5495c4353cdac81463f43a6f90a0de82598f607285c59234dc9bcdcd78b622",
+      "source_inverse_diagonal_sha256": "6521c47fa41f761fa305d9595be2575e8d5842b19da275b98db8df2f64c403af",
+      "previous_state_accepted": false,
+      "previous_true_residual": 3.597938871517143e-05,
+      "state": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/step-009-u.f64",
+      "force": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/128x64x64-source-profile/force.f64",
+      "state_sha256": "48732f399526a3fcaf50ea05510441369b292d02aa05915d70cdf801ea3f8672",
+      "force_sha256": "96a8039be5f77fbcc0d5002981baab26f30bf350e41415ccad023e083536191a",
+      "spectral_inputs": {
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/large-failed-state9-level0/scaled-eigenvector.f64": "df68754b696a0f130d6c9836b2f8e00384d887efa18a8e1f2a78c074327fa399",
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/large-failed-state9-level0/diagonal.f64": "80291f08bc95cd50574a6e4807d20f3190339ca867b5682cbf4269bb10ff3385",
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/large-failed-state9-level2/scaled-eigenvector.f64": "3b1abae31d3ff5861429e4b9584d7430a520c0ce1475e6f382bcd1ecf2929b10",
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/large-failed-state9-level2/diagonal.f64": "1218b3d66b79b1f8b2fab2b13ec8f32d6c942647521b5c2540d314dde56971e8"
+      }
+    },
+    {
+      "id": "small-certified-endpoint",
+      "shape": [
+        64,
+        32,
+        32
+      ],
+      "density": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/64x32x32-source-profile/step-021-rho.f64",
+      "source_inverse_diagonal": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/64x32x32-source-profile/step-021-coarse-source-invdiag.f64",
+      "density_sha256": "8359fb1c9c33f34faa106684d6435d2654be14f3ee21edeca2c7e036b1278094",
+      "source_inverse_diagonal_sha256": "d628b4baf28996c726a18fea4e2db9e3da108fc0fa937aba09a8e82056b41023",
+      "previous_state_accepted": true,
+      "previous_true_residual": 7.25372751284798e-09,
+      "state": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/64x32x32-source-profile/step-021-u.f64",
+      "force": "results/rescope/hex-modal-mg-cache-gpu-v2-20260923/rental-01/remote/run-01/64x32x32-source-profile/force.f64",
+      "state_sha256": "d8cbc21789059fa8e477340a8c03c9dad72efaf532e44b896ee494ead5d4b3d2",
+      "force_sha256": "f11fdd4a6407e06a671237ff639b885a23316c0059505ce1725f16d17b15d207",
+      "spectral_inputs": {
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/small-certified-endpoint-level0/scaled-eigenvector.f64": "56eb25cc7305c82e649033acb6ff473d4fcc7b37958bd0c2c805499f536a00cc",
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/small-certified-endpoint-level0/diagonal.f64": "b322212359212a8a0d172e4d482916e40ed76158b51f70dba58eb528ffdfd00e",
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/small-certified-endpoint-level2/scaled-eigenvector.f64": "b69b327aefd5a1a4f4fa54c6466b377d2024cbe2d1cd8ad357bef70f7c79ed89",
+        "results/rescope/hex-modal-mg-smoother-audit-20260923/run-01/small-certified-endpoint-level2/diagonal.f64": "96fe3e87aa4cfefac70b4329c024fe6b2ebf25cdd2dd7624808a647a50c3b9bd"
+      }
+    }
+  ],
+  "levels_probed": [
+    0,
+    2
+  ],
+  "all_smoothed_levels": [
+    0,
+    1,
+    2
+  ],
+  "nu": "3/10",
+  "bounds": [
+    6,
+    7,
+    9
+  ],
+  "weights": [
+    "3/10",
+    "1/4",
+    "1/5"
+  ],
+  "original_omega": 0.6,
+  "sweeps": 4,
+  "hierarchy_levels": 4,
+  "seed": 2026092357,
+  "candidate_selection": "Conservative integer bounds and rational weights chosen after section 56 floating local envelopes, before these exact certificates/native probes. No independent performance validation claimed.",
+  "exact_certificate": "Analytically integrate products of affine 1D Q1 factors over each fine unit subcell, all three global derivatives and isotropic elasticity lambda/mu. For every level0/1/2 subcell verify exact rational LDL^T with positive pivots and reconstruction of Lambda*diag(K)-K. Compare rational K converted to FP64 against independently integrated section46 matrices.",
+  "controls": "Every Lambda=1 local bound must be rejected; every 1% perturbation of one stiffness diagonal must fail the reference comparison. Candidate V-cycle response sign reversal and one-sided 1% scaling must fail positivity and reciprocity tests.",
+  "probe_inputs": "Per case, two seeded free random vectors and sqrt(D)*section56 eigenvector at levels0 and2. Level0 also receives normalized independently recomputed residual of the retained state. All inputs normalized to unit norm and saved before native code runs.",
+  "native_execution": "Exact section46 source copy with per-V-cycle-level damping hook; common projected transfer outputs from section51. CPU only with OpenMP pragmas ignored. No GPU cache involved; its equivalence was tested separately in section55.",
+  "validation": {
+    "element_relative": 1e-12,
+    "product_relative": 1e-11,
+    "inverse_diagonal_relative": 1e-12,
+    "scaled_symmetry": 1e-11,
+    "fixed_output_maximum": 0,
+    "negative_quadratic_margin": 1e-10
+  },
+  "maximum_seconds_per_native_case": 300,
+  "scope": "A standard sufficient stability argument for exact ideal Q1 operators under the stated assumptions, plus sampled native CPU V-cycle checks; not a GPU rounding certificate, iteration-count guarantee, repair of full optimizer, speedup or novelty claim.",
+  "matrix": "results/rescope/hex-modal-mg-fp64-20260923/run-02/element-audit/matrices.npz",
+  "matrix_sha256": "6475f9222300ee1c36e2c7608ac15b5c1b8dda9d8889c40e8d63ccae67b72c97",
+  "pins": {
+    "rescope/hex_modal_mg_damping_control/run.py": "1ede8f0c14b7a435fb3df1b66f9e4d476b4284ff30f609fa5d47a89c9e445a30",
+    "rescope/hex_modal_mg_damping_control/exact.py": "03d38aaab46a6b4090774cf5b18c6a7344de395f7c3bd14a9f2649a0f4ac70d9",
+    "rescope/hex_modal_mg_damping_control/probe.c": "b866b3d2c366479c0beaa39dd78e648eb7bc9bcc31e0dcef11c9564b492992d1",
+    "rescope/hex_modal_mg_smoother_audit/spectrum.py": "2a9686fce101772a2b8e624bce0717196ce569cab786d837c4848ca8d2a443c6",
+    "rescope/hex_modal_mg_runtime/verify.py": "b0bbd304b39f3116617bc92f8ac09cd076fb93be5effb349ca0bca30e940432c",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/.gitignore": "4c3d21ad0bb15cedbbf835ad6612e143422346252b909744b36106fa2d14bdc4",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/Makefile": "88dfaeeb11da2029cd54d6524bfda595d5691b2e0e8a0869d00559359839e21e",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/README.md": "6738e36aa617d25dfe8be740717907f1cec606a0ab37f6475462072336776682",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/definitions.h": "f46b7f411de515bcf826891f15b6a1be59a68572025efce928b3bdbc3aa75381",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/figures/cg_running_time.png": "c41c1e7642b47c7940ffa260dc118102c0fd3a6f4dd35869ac805fd1382a6096",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/figures/result.pdf": "8dc19606ca90812c16a3335ad5f215afc7dc34a06ef3576e6fc087bbe28cae0c",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/figures/result.png": "d3d35d896acfdd771a928019a95ef60573002f889af978ff564f73bf4c839c86",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/figures/running_time.png": "d053132b0437c3507225234c9a101d98ef67a9f38234af6c6c824b691d438ad1",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/figures/speedup.png": "f4165d6f20b03408f22c6c6a381dbeb096a4d03090f30ad085d536b22b907be8",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/gpu_definitions.c": "8d746b6db168d907a2419d92c4826eeec12a3a28505a6e294f21785030d75e08",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/gpu_definitions.h": "1eac8c2ee4878ab2a8130a8ef6244bd45bfeacce243216c497a37313db36aaf2",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/local_matrix.c": "2b3ad6d3c38f7ef9ac9f522f68f91ec41d0fd2fc27f6313a7bd9da303dd246e0",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/local_matrix.h": "45eb53f8b72b3217c4e29fcf5ee9a5893fe39cbb4eb27635ee7622bef5110943",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/plot_timings.m": "94f26919937d28b7d19186b9124e83fc4e03812d8e3c751e47ce04e7cde037a9",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/setup_gbar_env.sh": "25e4ef72ef9109dc379cf414c48b7afa5d68c273453e70a81b3889cfdc49e004",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/stencil_assembly.c": "98acc0a7457d2c56bd8fd9d78eb60502a43bd733b29bc58a8a741c4494a27bd0",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/stencil_assembly.h": "cd060fcac56f171b5c22008ac35024468a8c7b76e76ddfe7c1e6d61b2f011969",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/stencil_grid_utility.c": "273b7392ab131443d22e8cef9edb035c58d3148ac10ed8079e769be3755f6fec",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/stencil_grid_utility.h": "913bf95287dcf30089da786be70f652af4cb6933e1f968894aac94db0e52a8a8",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/stencil_methods.c": "c5d50dd54b0a9f7733c2cfd0d8b3ab9f0d2673d9adef9d64276fcf32b6e9ab40",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/stencil_methods.h": "c4d669b0a2deddcc89dc1734aed153faca5cd6d5b644f6d5507fab6d4770d42e",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/stencil_optimization.c": "6289f3d275e362fc950e5308aa7c45e15d4b67098e2d1b956c27cd6395b5fd4e",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/stencil_optimization.h": "b502a4b8d8a87a67e9b379c0604697301daf5b20956260cdefe6df721787a950",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/stencil_solvers.c": "1b25210c687c3fdd3880128ae5b79ea0d5be2f9bc0bf537573c403a53d05f00b",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/stencil_solvers.h": "d684244af5fa307b10e136bfd03b79c76f5d51240b4a6ca7045d5c07928e2726",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/stencil_utility.h": "f176775e30c170c6ef2d335aab5ff54394b6d07eef1ec4c9cfbc1a7bba7e086a",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/top3d.c": "f55a9c8b140fec14eaa06774d967ef6f3954b88cc900be62e63fba485db0726a",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/top3dmgcg_matrixfree.m": "511813f97d72c12a125c3daacee442996b80437acf51dfd036d6df60da1e0c9d",
+    "results/rescope/hex-modal-mg-damping-control-20260923/author/top3dmgcg_reference.m": "cafde6ba35a957eee84cf7d6c7661aab5c222f188a5943eaf62b5a6c8e7048aa"
+  }
+}

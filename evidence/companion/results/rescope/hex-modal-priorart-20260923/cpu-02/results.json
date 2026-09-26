@@ -1,0 +1,198 @@
+{
+  "utc": "2026-09-23T17:16:23.567181+00:00",
+  "status": "completed",
+  "constant_checks": [
+    {
+      "label": "futhark_slices_vs_keconst",
+      "relative_frobenius": 0.0,
+      "maximum_absolute": 0.0,
+      "passed": true
+    },
+    {
+      "label": "futhark_blocks_vs_keconst",
+      "relative_frobenius": 0.0,
+      "maximum_absolute": 0.0,
+      "passed": true
+    },
+    {
+      "label": "futhark_vs_exact_unit_nu03",
+      "relative_frobenius": 3.1025050757439887e-16,
+      "maximum_absolute": 8.326672684688674e-17,
+      "passed": true
+    },
+    {
+      "label": "node_and_component_y_reflection_covariance",
+      "relative_frobenius": 3.1025050757439887e-16,
+      "maximum_absolute": 8.326672684688674e-17,
+      "passed": true
+    }
+  ],
+  "openmp_cases": [
+    {
+      "label": "openmp_nu0p2_level0",
+      "nu": 0.2,
+      "level": 0,
+      "subcells": 1,
+      "source_vs_independent_midpoint": {
+        "relative_frobenius": 3.268210580781261e-15,
+        "maximum_absolute": 1.1934897514720433e-15,
+        "passed": true
+      },
+      "source_sum_vs_exact_gauss": {
+        "relative_frobenius": 0.00548361475870774,
+        "maximum_absolute": 0.001078896604938595,
+        "passed": false
+      }
+    },
+    {
+      "label": "openmp_nu0p3_level0",
+      "nu": 0.3,
+      "level": 0,
+      "subcells": 1,
+      "source_vs_independent_midpoint": {
+        "relative_frobenius": 4.673456175400557e-15,
+        "maximum_absolute": 2.220446049250313e-15,
+        "passed": true
+      },
+      "source_sum_vs_exact_gauss": {
+        "relative_frobenius": 0.005164541570298495,
+        "maximum_absolute": 0.0011737446581200073,
+        "passed": false
+      }
+    },
+    {
+      "label": "openmp_nu0p45_level0",
+      "nu": 0.45,
+      "level": 0,
+      "subcells": 1,
+      "source_vs_independent_midpoint": {
+        "relative_frobenius": 5.398390777917609e-15,
+        "maximum_absolute": 4.884981308350689e-15,
+        "passed": true
+      },
+      "source_sum_vs_exact_gauss": {
+        "relative_frobenius": 0.004164694887132141,
+        "maximum_absolute": 0.002487308429119095,
+        "passed": false
+      }
+    },
+    {
+      "label": "openmp_nu0p3_level1",
+      "nu": 0.3,
+      "level": 1,
+      "subcells": 8,
+      "source_vs_independent_midpoint": {
+        "relative_frobenius": 5.347345795008449e-15,
+        "maximum_absolute": 1.8318679906315083e-15,
+        "passed": true
+      },
+      "source_sum_vs_exact_gauss": {
+        "relative_frobenius": 0.0012921440326903154,
+        "maximum_absolute": 0.0005874232104703947,
+        "passed": false
+      }
+    }
+  ],
+  "modal_checks": [
+    {
+      "label": "futhark_unit_nu03",
+      "discarded_relative": 9.934322188654407e-17,
+      "reconstruction": {
+        "relative_frobenius": 1.8104385802161376e-16,
+        "maximum_absolute": 2.7755575615628914e-17,
+        "passed": true
+      },
+      "actions": 40,
+      "maximum_error_over_limit": 0.00017812933684527584,
+      "actions_passed": true
+    },
+    {
+      "label": "openmp_nu0p2_level0_sum",
+      "discarded_relative": 6.106661873186383e-16,
+      "reconstruction": {
+        "relative_frobenius": 6.182316646754855e-16,
+        "maximum_absolute": 1.3877787807814457e-16,
+        "passed": true
+      },
+      "actions": 40,
+      "maximum_error_over_limit": 0.0004787351008554045,
+      "actions_passed": true
+    },
+    {
+      "label": "openmp_nu0p3_level0_sum",
+      "discarded_relative": 7.153737695218781e-16,
+      "reconstruction": {
+        "relative_frobenius": 7.245980379454474e-16,
+        "maximum_absolute": 3.0531133177191805e-16,
+        "passed": true
+      },
+      "actions": 40,
+      "maximum_error_over_limit": 0.000656830607111282,
+      "actions_passed": true
+    },
+    {
+      "label": "openmp_nu0p45_level0_sum",
+      "discarded_relative": 9.508824040718938e-16,
+      "reconstruction": {
+        "relative_frobenius": 9.565523657465104e-16,
+        "maximum_absolute": 7.216449660063518e-16,
+        "passed": true
+      },
+      "actions": 40,
+      "maximum_error_over_limit": 0.002726965095980833,
+      "actions_passed": true
+    },
+    {
+      "label": "openmp_nu0p3_level1_sum",
+      "discarded_relative": 2.604299406910011e-16,
+      "reconstruction": {
+        "relative_frobenius": 2.8590465630453023e-16,
+        "maximum_absolute": 2.220446049250313e-16,
+        "passed": true
+      },
+      "actions": 40,
+      "maximum_error_over_limit": 0.00028344427235583975,
+      "actions_passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "label": "node_permutation_without_component_reflection",
+      "relative_frobenius": 0.8478761756392199,
+      "maximum_absolute": 0.16025641025641024,
+      "passed": false,
+      "correctly_rejected": true
+    },
+    {
+      "label": "nu_0p31_without_matching_material",
+      "relative_frobenius": 0.03963167597183647,
+      "maximum_absolute": 0.004764553780222794,
+      "passed": false,
+      "correctly_rejected": true
+    },
+    {
+      "label": "h_0p5_without_matching_length_scale",
+      "relative_frobenius": 0.9999999999999998,
+      "maximum_absolute": 0.11752136752136752,
+      "passed": false,
+      "correctly_rejected": true
+    },
+    {
+      "label": "fp32_roundtrip_under_fp64_contract",
+      "relative_frobenius": 2.080595722335404e-08,
+      "maximum_absolute": 2.67456741476213e-09,
+      "passed": false,
+      "correctly_rejected": true
+    }
+  ],
+  "scope": "Source-level local matrix compatibility only. No Futhark compilation, whole solver, GPU, speedup, global novelty, or publication result.",
+  "all_source_reconstructions_passed": true,
+  "openmp_exact_gauss_contract_passed": false,
+  "all_modal_checks_passed": true,
+  "all_negative_controls_rejected": true,
+  "library_sha256": {
+    "reference.dylib": "8ea36e931b4067680e5b0506fba1a52c085594e2db41af1186d42b4e7f621bc0",
+    "author.dylib": "e5a0ca1ab88c125734d9fec9efd4be47b2a7c7ed4b1b7e9257f911e69abadc33"
+  },
+  "numpy_version": "2.5.3"
+}
