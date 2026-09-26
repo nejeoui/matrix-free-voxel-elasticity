@@ -1,0 +1,884 @@
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T03:12:11.544575+00:00 rep 1 cantilever-216k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T03:12:33.551841+00:00 rep 1 cantilever-216k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T03:12:51.599127+00:00 rep 1 cantilever-216k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T03:13:09.391165+00:00 rep 1 cantilever-216k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T03:13:28.994642+00:00 rep 1 cantilever-216k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T03:13:47.074093+00:00 rep 1 cantilever-216k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T03:14:04.931436+00:00 rep 1 cantilever-512k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T03:14:42.940288+00:00 rep 1 cantilever-512k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T03:15:21.385956+00:00 rep 1 cantilever-512k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T03:16:03.479821+00:00 rep 1 cantilever-512k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T03:16:41.644305+00:00 rep 1 cantilever-512k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T03:17:18.891080+00:00 rep 1 cantilever-512k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T03:17:57.698191+00:00 rep 1 mbb-514k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:19:05.328292+00:00 rep 1 mbb-514k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:19:53.654355+00:00 rep 1 mbb-514k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:20:40.191225+00:00 rep 1 mbb-514k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[SolverV4] WARNING: pcg did not converge in 1000 iters (n_free=1,615,391).
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:21:48.721909+00:00 rep 1 mbb-514k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:22:45.360610+00:00 rep 1 mbb-514k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:23:56.671242+00:00 rep 1 torsion-499k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T03:24:37.213320+00:00 rep 1 torsion-499k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T03:25:27.452421+00:00 rep 1 torsion-499k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T03:26:07.134117+00:00 rep 1 torsion-499k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T03:26:47.283941+00:00 rep 1 torsion-499k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T03:27:30.737840+00:00 rep 1 torsion-499k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T03:28:11.452523+00:00 rep 2 cantilever-216k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T03:28:29.554707+00:00 rep 2 cantilever-216k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T03:28:47.527849+00:00 rep 2 cantilever-216k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T03:29:09.619675+00:00 rep 2 cantilever-216k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T03:29:28.082364+00:00 rep 2 cantilever-216k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T03:29:47.611339+00:00 rep 2 cantilever-216k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T03:30:05.707021+00:00 rep 2 cantilever-512k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T03:30:43.067291+00:00 rep 2 cantilever-512k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T03:31:26.196139+00:00 rep 2 cantilever-512k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T03:32:05.381384+00:00 rep 2 cantilever-512k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T03:32:43.230237+00:00 rep 2 cantilever-512k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T03:33:22.034015+00:00 rep 2 cantilever-512k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T03:34:02.156047+00:00 rep 2 mbb-514k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:34:47.993389+00:00 rep 2 mbb-514k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:35:56.790107+00:00 rep 2 mbb-514k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:36:46.085997+00:00 rep 2 mbb-514k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:38:00.561653+00:00 rep 2 mbb-514k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:38:50.564110+00:00 rep 2 mbb-514k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:40:02.445289+00:00 rep 2 torsion-499k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T03:40:42.549940+00:00 rep 2 torsion-499k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T03:41:24.002611+00:00 rep 2 torsion-499k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T03:42:15.532226+00:00 rep 2 torsion-499k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T03:42:55.844324+00:00 rep 2 torsion-499k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T03:43:35.954137+00:00 rep 2 torsion-499k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T03:44:20.129007+00:00 rep 3 cantilever-216k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T03:44:41.961232+00:00 rep 3 cantilever-216k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T03:45:00.077429+00:00 rep 3 cantilever-216k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T03:45:18.218977+00:00 rep 3 cantilever-216k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T03:45:41.012162+00:00 rep 3 cantilever-216k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T03:45:59.775381+00:00 rep 3 cantilever-216k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T03:46:19.571123+00:00 rep 3 cantilever-512k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T03:46:58.948259+00:00 rep 3 cantilever-512k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T03:47:38.478506+00:00 rep 3 cantilever-512k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp64, degree=2
+2026-09-26T03:48:22.450566+00:00 rep 3 cantilever-512k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T03:48:59.450313+00:00 rep 3 cantilever-512k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T03:49:37.695238+00:00 rep 3 cantilever-512k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,604,043
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 160x80x40, 4 levels, fine=fp32, degree=2
+2026-09-26T03:50:17.968998+00:00 rep 3 mbb-514k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:51:03.546943+00:00 rep 3 mbb-514k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:52:11.083868+00:00 rep 3 mbb-514k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp64, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:52:59.896009+00:00 rep 3 mbb-514k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:54:01.086756+00:00 rep 3 mbb-514k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:55:35.997849+00:00 rep 3 mbb-514k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,617,948
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 210x70x35, 4 levels, fine=fp32, degree=2
+[GMG] coarsest matrix regularised (eps=3.03e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=3.68e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=4.37e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.41e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=5.89e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.10e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.43e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=6.80e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=7.31e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.05e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=8.92e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=9.74e-08): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.04e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.08e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.10e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.11e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.12e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[SolverV4] WARNING: pcg did not converge in 1000 iters (n_free=1,615,391).
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+[GMG] coarsest matrix regularised (eps=1.13e-07): Cholesky OK
+2026-09-26T03:59:38.636801+00:00 rep 3 torsion-499k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T04:00:30.020435+00:00 rep 3 torsion-499k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T04:01:08.613725+00:00 rep 3 torsion-499k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp64, degree=2
+2026-09-26T04:02:32.655716+00:00 rep 3 torsion-499k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T04:04:46.200803+00:00 rep 3 torsion-499k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T04:05:30.194349+00:00 rep 3 torsion-499k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=1,561,728
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 165x55x55, 4 levels, fine=fp32, degree=2
+2026-09-26T04:06:09.530813+00:00 complete cantilever-216k fp64 stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:07:33.656268+00:00 complete cantilever-216k fp64 fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:08:43.161868+00:00 complete cantilever-216k fp64 modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp64, degree=2
+2026-09-26T04:09:51.907833+00:00 complete cantilever-216k mixed stock
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T04:11:07.719981+00:00 complete cantilever-216k mixed fused_ai_fp64
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2
+2026-09-26T04:12:19.399122+00:00 complete cantilever-216k mixed modal8_muladd
+[GPUFEMSolver] Requested=cupy Resolved=cupy  ndof=686,433
+[SolverV4] FusedMatvec ready for paper-4 fine smoothing.
+[SolverV4] Building GalerkinMatFreeGMG: 120x60x30, 4 levels, fine=fp32, degree=2

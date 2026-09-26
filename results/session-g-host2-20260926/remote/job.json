@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-09-26T02:44:46.829262+00:00",
+  "state": "finished",
+  "stages": [
+    {
+      "command": [
+        "/opt/voxel-session_g-venv/bin/python",
+        "/root/voxel-session_g/source/experiments/session_g/run_w1.py",
+        "--out",
+        "/root/voxel-session_g/run-01",
+        "--deadline-seconds",
+        "13800"
+      ],
+      "returncode": 0,
+      "timeout": false,
+      "elapsed_seconds": 5329.444808667526,
+      "log": "gpu-run.log"
+    }
+  ],
+  "finished_utc": "2026-09-26T04:13:36.275350+00:00"
+}
