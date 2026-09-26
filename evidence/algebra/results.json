@@ -1,0 +1,34 @@
+{
+ "question": "Is modal8's basis the classical Hex8 monomial/hourglass basis, and where is its parity block structure exact?",
+ "basis_entries_are_pm1": true,
+ "basis_orthogonal_HtH_eq_8I": true,
+ "basis_equals_sylvester_wht_up_to_order_and_sign": true,
+ "parity_classes": 8,
+ "class_sizes": [
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3
+ ],
+ "dense_entries": 576,
+ "block_entries": 72,
+ "off_block_share_rectangular_brick": 2.1504370620273152e-16,
+ "off_block_share_median_by_node_jitter_fraction": {
+  "0.0": 2.1504370620273152e-16,
+  "0.001": 0.0007070457086896077,
+  "0.01": 0.007027597822400122,
+  "0.05": 0.033376033851376066,
+  "0.1": 0.07526757304102552,
+  "0.2": 0.14325862951014817
+ },
+ "off_block_share_affine_shear": 0.29159674410826375,
+ "interpretation": "Exact parity decoupling holds for axis-aligned rectangular bricks only (structured voxel grids). Distortion leaks roughly linearly; an affine shear already gives a large off-block share. Desk analysis only.",
+ "environment": {
+  "python": "3.12.11",
+  "numpy": "2.5.3"
+ }
+}

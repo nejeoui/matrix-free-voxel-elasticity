@@ -1,0 +1,28 @@
+{
+  "declared_utc": "2026-09-23T15:56:00.965217+00:00",
+  "question": "Does central-inversion parity retain an exact two-block Hex8 stiffness action on affine and centrally symmetric cells when the eight reflection classes fail?",
+  "scope": "CPU algebraic scope test only; no GPU, speedup, solver or novelty claim.",
+  "seed": 2026092354,
+  "counts": {
+    "random_affine_isotropic": 40,
+    "random_affine_anisotropic": 40,
+    "centrally_symmetric_nonaffine": 20,
+    "unpaired_distortion_controls": 20,
+    "rotated_rectangular_controls": 20
+  },
+  "exact_relative_tolerance": 1e-12,
+  "nonaffine_jitter_fraction": 0.05,
+  "jacobian_acceptance": "All eight Gauss-point determinants strictly positive; no absolute determinant repair.",
+  "projection": "Orthogonal Hex8 monomial transform; preserve modes of equal total parity, remove three constant-translation coordinates.",
+  "entry_counts": {
+    "full": 576,
+    "two_12_blocks": 288,
+    "after_translation_nullspace": 225
+  },
+  "source_dependency": {
+    "rescope/hex_modal_basis/check_basis.py": "a4172e0f56366498e9c22b5b40e3afae5613894236365e07008471084c85a5c7"
+  },
+  "interpretation_rule": "Require every affine and centrally symmetric sample to satisfy the exact tolerance; unpaired distortion is a negative scope control. Rotated boxes are tested both in global components and with co-rotated displacement components. Any result is evidence of algebraic scope, not novelty or GPU advantage.",
+  "performance_claim": false,
+  "novelty_claim": false
+}
