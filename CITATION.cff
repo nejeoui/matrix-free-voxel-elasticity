@@ -16,6 +16,10 @@ contact:
   - family-names: Nejeoui
     given-names: Abderrazzak
     email: a.nejeoui@uca.ac.ma
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22998404"
+    description: "Raw evidence archives of the experiments (Zenodo data set)"
 repository-code: "https://github.com/nejeoui/matrix-free-voxel-elasticity"
 type: software
 license:

@@ -54,7 +54,8 @@ of these macros. The manuscript text itself will be added to this repository aft
 
 ## Large files
 
-Files of 5 MB or more are not in git; they are archived on Zenodo (DOI: **pending**). Nothing in the build above
+Files of 5 MB or more are not in git; they are archived on Zenodo,
+[doi:10.5281/zenodo.22998404](https://doi.org/10.5281/zenodo.22998404). Nothing in the build above
 needs them; they allow the raw evidence to be audited and the independent replays to be rerun.
 
 * `LARGE_FILES.tsv` lists every large file of the session folders (`results/`) with its path, size and SHA-256.
