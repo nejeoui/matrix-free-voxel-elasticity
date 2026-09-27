@@ -16,12 +16,20 @@ contact:
   - family-names: Nejeoui
     given-names: Abderrazzak
     email: a.nejeoui@uca.ac.ma
-identifiers:
-  - type: doi
-    value: "10.5281/zenodo.22998404"
-    description: "Raw evidence archives of the experiments (Zenodo data set)"
 repository-code: "https://github.com/nejeoui/matrix-free-voxel-elasticity"
 type: software
 license:
   - MIT
   - CC-BY-4.0
+references:
+  - type: data
+    title: "Raw GPU evidence for \"Matrix-free voxel elasticity on GPUs: a reproducible kernel and multigrid study across precisions and hardware\""
+    authors:
+      - family-names: Nejeoui
+        given-names: Abderrazzak
+      - family-names: Bekkari
+        given-names: Aissam
+    doi: "10.5281/zenodo.22998404"
+    publisher:
+      name: Zenodo
+    year: 2026
