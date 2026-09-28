@@ -77,7 +77,7 @@ panels = [("RTX 4090, FP64", product_times(A, "optimized-q96", "fp64"), PUBLISHE
           ("A100, FP32", product_times(B, "optimized-q96", "fp32"), PUBLISHED32)]
 fig, axes = plt.subplots(2, 2, figsize=(COL, 2.55), sharex=True)
 for ax, (title, t, published) in zip(axes.ravel(), panels):
-    ref = min(t[k] for k in published)                 # fastest published kernel = 1.0
+    ref = min(t[k] for k in published)                 # fastest tested supplied kernel = 1.0
     suffix = "" if published is PUBLISHED64 else "_fp32"
     order = list(published) + ["dense8" + suffix, "modal8" + suffix]      # same order in every panel
     speeds = [ref / t[k] for k in order]
@@ -93,7 +93,7 @@ for ax, (title, t, published) in zip(axes.ravel(), panels):
     ax.set_xlim(0, 1.75)
     ax.tick_params(length=2, pad=1.5)
 fig.tight_layout(h_pad=0.6, w_pad=0.8)
-fig.supxlabel("speed relative to the fastest published kernel (dashed = 1)", fontsize=8, y=-0.03)
+fig.supxlabel("speed relative to the fastest tested supplied kernel (dashed = 1)", fontsize=8, y=-0.03)
 fig.savefig(HERE / "fig_products.pdf", metadata={"CreationDate": None})  # no timestamp: rebuilds are byte-identical
 plt.close(fig)
 
@@ -128,27 +128,32 @@ prof = [dict(v, arm=a, fixed_iterations=KE) for a, v in E1["profiles"][case].ite
 PL = {"mg64-fused_ai": "FP64 V, fused-ai", "mg64-modal8": "FP64 V, parity plain",
       "mg64-modal8_muladd": "FP64 V, parity mul-add",
       "mg32-fused_ai64-node32": "FP32 V (node),\nouter fused-ai", "mg32-modal8_muladd-node32": "FP32 V (node),\nouter mul-add"}
-fig, ax = plt.subplots(figsize=(COL, 2.2))
+fig, ax = plt.subplots(figsize=(COL, 3.05))
 for i, p in enumerate(prof):
     v, o, tot = p["vcycle_finest_product_seconds"], p["outer_product_seconds"], p["solver_seconds"]
     parts = [(v, BLUE, "V-cycle finest products"), (o, ORANGE, "outer FP64 products"),
              (tot - v - o, LIGHTGRAY, "everything else")]
     left = 0.0
     for val, colr, lab in parts:
-        ax.barh(i, val * 1000, left=left * 1000, color=colr, height=0.6, edgecolor="white", linewidth=1.0,
+        ax.barh(i, val * 1000, left=left * 1000, color=colr, height=0.34, edgecolor="white", linewidth=0.4,
                 label=lab if i == 0 else None)
-        if val * 1000 > 90:                              # inline only where it fits
+        if val * 1000 > 140:                             # inline only where it fits
             ax.text((left + val / 2) * 1000, i, f"{val / tot:.0%}", ha="center", va="center", fontsize=6.3,
                     color="white" if colr != LIGHTGRAY else INK)
         left += val
-    small = f"\nV {v / tot:.0%} · outer {o / tot:.0%}" if v * 1000 <= 90 else ""
-    ax.text(tot * 1000 + 8, i, f"{tot * 1000:.0f} ms{small}", va="center", fontsize=6.3, color=INK,
-            linespacing=1.1)
-ax.set_yticks(range(len(prof)), [PL[p["arm"]] for p in prof])
+    # The exact component times beneath each route make even a narrow outer-
+    # product segment readable without relying on its rendered width.
+    ax.text(tot * 1000 + 8, i, f"{tot * 1000:.0f}", va="center", fontsize=7, color=INK)
+    ax.text(0, i - 0.30, PL[p["arm"]].replace("\n", " "), va="center", fontsize=7, color=INK)
+    ax.text(0, i + 0.31, f"V {v * 1000:.1f} / outer {o * 1000:.1f} / other {(tot - v - o) * 1000:.1f} ms",
+            va="center", fontsize=6.5, color=INK)
+ax.set_yticks([])
 ax.invert_yaxis()
 ax.set_xlabel(f"one fixed-work solve ({prof[0]['fixed_iterations']} iterations), ms")
 ax.set_xlim(0, max(p["solver_seconds"] for p in prof) * 1000 * 1.22)
-ax.legend(loc="lower center", bbox_to_anchor=(0.45, 1.0), fontsize=6.3, frameon=False, ncol=3,
+ax.set_xticks([0, 400, 800])
+ax.set_ylim(len(prof) - 0.25, -0.6)
+ax.legend(loc="lower left", bbox_to_anchor=(0, 1.02), fontsize=6.5, frameon=False, ncol=2,
           handlelength=1.2, columnspacing=1.0, borderaxespad=0.2)
 ax.tick_params(length=2, pad=1.5)
 fig.tight_layout()
@@ -275,6 +280,8 @@ m("MuladdFpSixFourQnineSixHone", E1["to_tolerance"]["optimized-q96"]["mg64-modal
 m("FusedFpSixFourQnineSixHone", E1["to_tolerance"]["optimized-q96"]["mg64-fused_ai"]["seconds"], "{:.3f}")
 m("MuladdMixedGainQnineSix", E1["to_tolerance"]["optimized-q96"]["mg64-fused_ai"]["seconds"]
   / E1["to_tolerance"]["optimized-q96"]["mg32-modal8_muladd-node32"]["seconds"])
+m("FpThirtyTwoVcycleGainQnineSix", E1["to_tolerance"]["optimized-q96"]["mg64-fused_ai"]["seconds"]
+  / E1["to_tolerance"]["optimized-q96"]["mg32-fused_ai64-node32"]["seconds"])
 pe = [h["profiles"]["optimized-q96"] for h in (E1, E2)]
 vs = [p["mg64-fused_ai"]["vcycle_finest_product_seconds"] / p["mg64-fused_ai"]["solver_seconds"] * 100 for p in pe]
 m("EVShareFusedMin", min(vs), "{:.0f}"); m("EVShareFusedMax", max(vs), "{:.0f}")
@@ -324,7 +331,7 @@ for dec, gpu in [(A, "RTX 4090"), (B, "A100")]:
         e = next(x for x in dec["products"] if x["case"] == c and x["precision"] == "fp64" and x["baseline"] == "fused_ai_fp64")
         rowsT.append((gpu, f"{el / 1e6:.2f} M", "optimized design", f"{e['median_ratio']:.3f}", f"{e['lower95']:.3f}"))
 tab = ["\\begin{tabular}{@{}llrrr@{}}", "\\toprule",
-       "GPU & elements & input & ratio & 95\\% lower \\\\", "\\midrule"]
+       "GPU & elements & input & fused-ai / parity & 95\\% lower \\\\", "\\midrule"]
 tab += [" & ".join(r) + " \\\\" for r in rowsT]
 tab += ["\\bottomrule", "\\end{tabular}"]
 (HERE / "tab_products.tex").write_text("\n".join(tab) + "\n")

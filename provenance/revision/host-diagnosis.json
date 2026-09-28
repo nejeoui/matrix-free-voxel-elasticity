@@ -1,0 +1,21 @@
+{
+  "utc": "2026-09-23T17:47:18.986384+00:00",
+  "status": "failed",
+  "reason": "All declared states fail the original gate. The stock source has small nonzero constrained displacements. Our first modal replacement incorrectly zeros constrained output rows instead of copying the input, which changes the published operator on nonzero constrained vectors.",
+  "source_evidence": {
+    "file": "author/stencil_methods.c",
+    "line": 426,
+    "behavior": "out[fidx[i]] = in[fidx[i]]"
+  },
+  "candidate_evidence": {
+    "file": "rescope/hex_modal_mg_host/interpose.c",
+    "behavior": "output[fixed]=0"
+  },
+  "test_gap": "Initial randomized products constrain probe inputs to zero at fixed DOFs, so both row conventions coincide. Full solves expose the difference.",
+  "next_experiment": "Retain the failure. Use identity rows in the replacement and test nonzero constrained vectors. Separately declare a matched source/modal configuration with exact boundary projection after solves, retaining raw unprojected states and original numerical tolerances. Keep the original source gate failed; label the common projection as an adaptation.",
+  "unrelated_instance_ids": [
+    52267803
+  ],
+  "gpu_rentals": 0,
+  "publication_goal_achieved": false
+}

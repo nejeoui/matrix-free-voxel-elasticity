@@ -28,7 +28,10 @@ def analyze(d):
     remote = Path(d) / "remote"
     res = json.loads((remote / "run-01/result.json").read_text())
     dev = res.get("device", {}).get("name", "?")
-    out = {"gpu": dev, "ladder": res["ladder"], "cases": {}}
+    out = {"gpu": dev, "ladder": res["ladder"], "cases": {},
+           "timing_boundary": "warm solve, excluding shared and arm setup; retained solve allocations and true-residual work included",
+           "memory_measurement": "per-route live and peak bytes not recorded",
+           "coarse_operator": "matrix-free rediscretization on noncoarsest levels; assembled dense Cholesky coarsest solve"}
     fixed = res["fixed_work"]
     for case in [c for c in ORDER if any(t["case"] == c for t in res["to_tolerance"])]:
         tol = [t for t in res["to_tolerance"] if t["case"] == case]
@@ -38,6 +41,11 @@ def analyze(d):
                                       for a in sorted({t["arm"] for t in tol})}}
         g = next((c for c in res["cases"] if c["case"] == case), {})
         row["shapes"] = g.get("shapes")
+        row["shared_setup_seconds"] = g.get("shared_setup_seconds")
+        row["arm_setup_seconds"] = g.get("arm_setup_seconds")
+        row["to_tolerance_observations"] = tol
+        row["fixed_work_observations"] = [t for t in fixed if t["case"] == case]
+        row["fastest_observed_to_tolerance"] = min(row["tol_seconds_median"], key=row["tol_seconds_median"].get)
         for name, (num, den) in {"fused_over_modal_mg64": ("mg64-fused_ai", "mg64-modal8_muladd"),
                                  "node_over_modal_mg64": ("mg64-node", "mg64-modal8_muladd"),
                                  "modal_over_node_mg64": ("mg64-modal8_muladd", "mg64-node"),
@@ -59,6 +67,7 @@ def analyze(d):
     if w2a.exists():
         w = json.loads(w2a.read_text())
         out["w2a_status"] = w.get("status")
+        out["w2a_records"] = w.get("records", [])
         recs = [r for r in w.get("records", []) if "fixed_work" in r]
         table = {}
         for r in recs:

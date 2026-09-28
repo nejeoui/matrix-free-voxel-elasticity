@@ -1,43 +1,115 @@
 {
+ "schema_version": 2,
+ "workload": {
+  "grid_elements": [
+   128,
+   64,
+   64
+  ],
+  "elements": 524288,
+  "gpu": "RTX 4090 VM",
+  "launch_skip": 2,
+  "launch_count_per_kernel": 1,
+  "nsight_compute_version": "NVIDIA (R) Nsight Compute Command Line Profiler\nCopyright (c) 2018-2023 NVIDIA Corporation\nVersion 2023.2.2.0 (build 33188574) (public-release)"
+ },
+ "units_and_metrics": {
+  "executed_fp64_thread_instructions_total": "sum of predicate-enabled DADD, DFMA and DMUL thread instructions; DFMA counts once",
+  "executed_fp64_thread_instructions_per_element": "total divided by grid element count, independent of thread layout",
+  "fp64_thread_instruction_metrics": [
+   "smsp__sass_thread_inst_executed_op_dadd_pred_on.sum",
+   "smsp__sass_thread_inst_executed_op_dfma_pred_on.sum",
+   "smsp__sass_thread_inst_executed_op_dmul_pred_on.sum"
+  ],
+  "pipe_pct": "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active",
+  "dram_pct": "dram__throughput.avg.pct_of_peak_sustained_elapsed",
+  "time_ns": "gpu__time_duration.sum",
+  "model": "post-hoc total instructions / (active-cycle FP64 pipe percentage / 100); not an independent time prediction"
+ },
+ "profiling_policy": {
+  "explicit_clock_cache_replay_overrides": false,
+  "version_documented_defaults": {
+   "clock_control": "base",
+   "cache_control": "all",
+   "replay_mode": "kernel"
+  },
+  "default_source": "https://archive.docs.nvidia.com/nsight-compute/2023.2/NsightComputeCli/index.html",
+  "actual_clock_lock_verified": false,
+  "timing_boundary": "selected kernel duration under profiler replay; excludes wrapper zeroing/projection and host overhead"
+ },
  "kernels": {
   "dense8": {
-   "fp64_thread_instructions": 314572800.0,
-   "per_thread": 75.0,
+   "executed_fp64_thread_instructions_total": 314572800,
+   "executed_fp64_thread_instructions_per_element": 600.0,
+   "executed_fp64_thread_instructions_by_metric": {
+    "smsp__sass_thread_inst_executed_op_dadd_pred_on.sum": 0,
+    "smsp__sass_thread_inst_executed_op_dfma_pred_on.sum": 301989888,
+    "smsp__sass_thread_inst_executed_op_dmul_pred_on.sum": 12582912
+   },
    "pipe_pct": 93.48,
    "dram_pct": 5.19,
    "time_ns": 594688.0,
+   "replay_passes": 12,
+   "launch_thread_count": 4194304,
    "model": 336513478.8189987
   },
   "modal8": {
-   "fp64_thread_instructions": 201326592.0,
-   "per_thread": 48.0,
+   "executed_fp64_thread_instructions_total": 201326592,
+   "executed_fp64_thread_instructions_per_element": 384.0,
+   "executed_fp64_thread_instructions_by_metric": {
+    "smsp__sass_thread_inst_executed_op_dadd_pred_on.sum": 150994944,
+    "smsp__sass_thread_inst_executed_op_dfma_pred_on.sum": 25165824,
+    "smsp__sass_thread_inst_executed_op_dmul_pred_on.sum": 25165824
+   },
    "pipe_pct": 83.0,
    "dram_pct": 7.21,
    "time_ns": 429152.0,
+   "replay_passes": 12,
+   "launch_thread_count": 4194304,
    "model": 242562159.03614458
   },
   "modal8_muladd": {
-   "fp64_thread_instructions": 125829120.0,
-   "per_thread": 30.0,
+   "executed_fp64_thread_instructions_total": 125829120,
+   "executed_fp64_thread_instructions_per_element": 240.0,
+   "executed_fp64_thread_instructions_by_metric": {
+    "smsp__sass_thread_inst_executed_op_dadd_pred_on.sum": 0,
+    "smsp__sass_thread_inst_executed_op_dfma_pred_on.sum": 100663296,
+    "smsp__sass_thread_inst_executed_op_dmul_pred_on.sum": 25165824
+   },
    "pipe_pct": 88.01,
    "dram_pct": 12.14,
    "time_ns": 254304.0,
+   "replay_passes": 12,
+   "launch_thread_count": 4194304,
    "model": 142971389.6148165
   },
   "fused_matvec_ai_fp64": {
-   "fp64_thread_instructions": 314572800.0,
-   "per_thread": 75.0,
+   "executed_fp64_thread_instructions_total": 314572800,
+   "executed_fp64_thread_instructions_per_element": 600.0,
+   "executed_fp64_thread_instructions_by_metric": {
+    "smsp__sass_thread_inst_executed_op_dadd_pred_on.sum": 0,
+    "smsp__sass_thread_inst_executed_op_dfma_pred_on.sum": 301989888,
+    "smsp__sass_thread_inst_executed_op_dmul_pred_on.sum": 12582912
+   },
    "pipe_pct": 97.47,
    "dram_pct": 5.42,
    "time_ns": 569888.0,
+   "replay_passes": 12,
+   "launch_thread_count": 524288,
    "model": 322738073.2533087
   },
   "node_matvec_fp64": {
-   "fp64_thread_instructions": 402653184.0,
-   "per_thread": 96.0,
+   "executed_fp64_thread_instructions_total": 402653184,
+   "executed_fp64_thread_instructions_per_element": 768.0,
+   "executed_fp64_thread_instructions_by_metric": {
+    "smsp__sass_thread_inst_executed_op_dadd_pred_on.sum": 0,
+    "smsp__sass_thread_inst_executed_op_dfma_pred_on.sum": 301989888,
+    "smsp__sass_thread_inst_executed_op_dmul_pred_on.sum": 100663296
+   },
    "pipe_pct": 94.74,
    "dram_pct": 2.26,
    "time_ns": 769568.0,
+   "replay_passes": 12,
+   "launch_thread_count": 545152,
    "model": 425008638.37872076
   }
  },

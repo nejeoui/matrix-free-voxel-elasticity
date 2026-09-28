@@ -18,6 +18,7 @@ contact:
     email: a.nejeoui@uca.ac.ma
 repository-code: "https://github.com/nejeoui/matrix-free-voxel-elasticity"
 type: software
+version: "v1.1"
 license:
   - MIT
   - CC-BY-4.0

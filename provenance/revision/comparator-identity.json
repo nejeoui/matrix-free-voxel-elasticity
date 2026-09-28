@@ -1,0 +1,20 @@
+{
+  "checked_on": "2026-09-27",
+  "method": "read-only download at pinned GitHub commit; exact byte comparison against retained source",
+  "files": [
+    {
+      "path": "experiments/session_e/donor/src/gpu_fem/cuda_operators.py",
+      "source_url": "https://raw.githubusercontent.com/nbbllxx0/Fused-Gather-GEMM-Scatter-Kernels/3a6e37af137c3f8ba65ef1d298602a6390da6466/src/gpu_fem/cuda_operators.py",
+      "commit": "3a6e37af137c3f8ba65ef1d298602a6390da6466",
+      "sha256": "d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f",
+      "byte_identical": true
+    },
+    {
+      "path": "experiments/session_e/donor/src/gpu_fem/cuda_fused_matvec.py",
+      "source_url": "https://raw.githubusercontent.com/nbbllxx0/Fused-Gather-GEMM-Scatter-Kernels/3a6e37af137c3f8ba65ef1d298602a6390da6466/src/gpu_fem/cuda_fused_matvec.py",
+      "commit": "3a6e37af137c3f8ba65ef1d298602a6390da6466",
+      "sha256": "7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f",
+      "byte_identical": true
+    }
+  ]
+}

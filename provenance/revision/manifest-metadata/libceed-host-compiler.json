@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "stdout": "gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "stderr": "",
+  "utc": "2026-09-24T14:08:11.745288+00:00",
+  "argv": [
+    "gcc",
+    "--version"
+  ],
+  "cwd": "/root/jpdc-hex-libceed-resident-20260924/run-01",
+  "seconds_budgeting_only": 0.0011254549999648589
+}

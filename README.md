@@ -4,12 +4,18 @@ Artifact repository of the paper **"Matrix-free voxel elasticity on GPUs: a repr
 multigrid study across precisions and hardware"** by Abderrazzak Nejeoui (corresponding author,
 a.nejeoui@uca.ac.ma, ORCID [0009-0000-6004-1777](https://orcid.org/0009-0000-6004-1777)) and Aissam Bekkari (ORCID
 [0009-0000-1400-6962](https://orcid.org/0009-0000-1400-6962)), National School of Applied Sciences, Cadi Ayyad University, Marrakesh, Morocco. It contains the code, the frozen protocols,
-the verified evidence and the scripts needed to regenerate every number, table and figure of the
-paper. It depends on no other repository.
+the retained evidence and scripts for numerical regeneration of the paper's results, tables and
+figures. This CPU regeneration path uses the files in this repository; larger saved-state inputs
+and source snapshots are mapped to the existing raw-evidence deposit below.
 
-## One commit per experiment
+## Historical release tags
 
-Each experiment of the paper is one commit with an annotated tag, in paper order. The paper cites the tags.
+The artifact organizes experiments with the tags below, in paper order. These tags
+identify the retained experimental snapshots. The v1.1 corrections and supporting
+documentation are described in [CHANGELOG.md](CHANGELOG.md); the original v1.0
+software archive remains available at
+[doi:10.5281/zenodo.23001863](https://doi.org/10.5281/zenodo.23001863).
+Use the release-specific citation for the version you use.
 
 | tag | paper section | content |
 |---|---|---|
@@ -34,9 +40,11 @@ Each experiment of the paper is one commit with an annotated tag, in paper order
 | `exp17-traff-audit` | §10 | reproducibility audit of the Träff et al. multigrid codes |
 | `paper` | all | generated numbers, tables and figures |
 
-Each experiment keeps its declared protocol (`experiments/session_*/protocol.json` or `evidence/*/protocol.json`),
-the code that ran, the collected results (`results/`), the independent CPU replay (`local-verification.json`)
-and the rental receipts. Failed and unexecuted attempts are kept beside successful ones.
+Each experiment retains its declared protocol (`experiments/session_*/protocol.json` or `evidence/*/protocol.json`),
+executed code, collected results (`results/`) and lifecycle records. Independent saved-state CPU replays,
+where performed, are recorded in `local-verification.json`; verification coverage is session-specific
+and documented in [the accuracy supplement](paper/revision/methods-accuracy.md).
+Failed and unexecuted attempts are kept beside successful ones.
 
 ## Reproduce the paper
 
@@ -44,13 +52,42 @@ and the rental receipts. Failed and unexecuted attempts are kept beside successf
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt                 # NumPy, SciPy, Matplotlib, pytest
 python -m pytest -q tests                       # CPU checks of the kernel source and lane algebra
-PY=python paper/combined/build.sh               # regenerate every number, table and figure of the paper
+PY=python paper/combined/build.sh               # regenerate numerical results, tables and figures
+python analysis/revision_registry.py            # audit units, hypothesis outcomes and dated provenance
 ```
 
-The build writes every value the paper reports as LaTeX macros (`paper/combined/combined_numbers.tex`,
+The build writes result values as LaTeX macros (`paper/combined/combined_numbers.tex`,
 `paper/combined/repro_numbers.tex`, `paper/manuscript/numbers.tex`), plus the tables (`paper/manuscript/tab_*.tex`)
-and figures (`paper/manuscript/fig_*.pdf`). The manuscript contains no hand-typed result: each value in it is one
-of these macros. The manuscript text itself will be added to this repository after the paper is accepted.
+and figures (`paper/manuscript/fig_*.pdf`). The [evidence supplement](paper/revision/revision-supplement.pdf) and
+[provenance and claim-evidence map](paper/revision/provenance-audit.md) document these outputs. They include source identities,
+audit contracts and units, measured claims and retained failed outcomes, with exact analysis commands.
+The numerical build requires only the Python packages in `requirements.txt`.
+To rebuild the optional evidence-supplement PDF, additionally install Pandoc and
+Tectonic and run `python paper/revision/build_supplement.py`. This uses the bundled
+TeX Gyre Heros and Latin Modern Mono fonts by default; `--main-font` and
+`--mono-font` select alternatives.
+Validation commands and scope are recorded in
+[release-validation.md](paper/revision/release-validation.md).
+
+The manuscript prose and full manuscript build will be added after acceptance. The public numerical
+build currently succeeds without the withheld prose and does not create the complete manuscript PDF.
+
+These are three different reproducibility levels:
+
+* **Numerical regeneration** reads saved results and recomputes statistics, tables, macros and figures.
+  The commands above do this on a CPU; they do not rerun GPU timing experiments.
+* **Saved-state replay** reloads saved densities/displacements and applies independent reference
+  checks. Session verifier scripts and `local-verification.json` identify the checked states and
+  tolerances. Larger inputs can be restored from the deposited archives and checked against the
+  manifests. The revision registry also recomputes selected audit norms from small extracted arrays.
+* **Fresh GPU execution** runs the frozen workload again on identified hardware with its declared
+  environment, warmup, timing boundary and accuracy gates. It needs a suitable GPU/CUDA environment
+  and any source/large-input restoration specified by that session. Historical launcher paths are
+  provenance, not a claim that the CPU build provisions fresh GPU experiments.
+
+The [hypothesis registry](paper/revision/hypothesis-registry.md) links protocol hashes to dated
+execution records when their identities match. Hashes prove content identity, not temporal priority;
+self-recorded timestamps are distinguished from independently timestamped preregistration.
 
 ## Large files
 

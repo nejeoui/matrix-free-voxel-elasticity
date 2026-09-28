@@ -1,0 +1,28 @@
+{
+  "kind": "CPU recomputation of selected saved array norms, not fresh operator/GPU execution",
+  "source_manifest": "provenance/revision/extractions.json",
+  "state": {
+    "case": "24x12x8/modal/step-001",
+    "formula": "norm(u-reference,2)/norm(reference,2), full DOFs",
+    "unit": "dimensionless",
+    "relative": 0.1217077000915272,
+    "percent": 12.17077000915272,
+    "attribution": "initial candidate used zero fixed rows instead of published identity rows; see host-diagnosis.json"
+  },
+  "bilinear": {
+    "case": "16x8x8-l3/pattern-0/variant-0/pair-2",
+    "formula": "abs(a.T@B(b)-b.T@B(a))/(norm(a)*norm(B(b))+norm(b)*norm(B(a)))",
+    "unit": "dimensionless",
+    "numerator": 35.7952324161588,
+    "denominator": 3141522.957120963,
+    "value": 1.139422913813853e-05
+  },
+  "leakage": {
+    "case": "24x12x8-l3/pattern-0/variant-0/pair-0",
+    "formula": "max(abs(B(a)[fixed]),abs(B(b)[fixed]))",
+    "unit": "absolute correction/displacement in benchmark units; no denominator",
+    "maximum": 66.59326498943867,
+    "fixed_count": 216,
+    "maximum_abs_probe": 0.4999379515647888
+  }
+}

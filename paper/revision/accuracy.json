@@ -1,0 +1,126 @@
+{
+  "scope": "retained independent-check records, not fresh replay or GPU execution",
+  "rows": [
+    {
+      "experiment": "Session E, two RTX 4090 hosts",
+      "observations": 440,
+      "requested": 1e-08,
+      "replay_limit": 1e-07,
+      "energy_limit": 1e-06,
+      "observed_residual_max": 4.353014360771937e-09,
+      "observed_native_residual_max": 4.353014968944164e-09,
+      "observed_energy_max": 7.947198454871796e-12,
+      "sources": [
+        "results/session-e-host1-20260925/remote/run-01/result.json",
+        "results/session-e-host2-20260925/remote/run-01/result.json"
+      ],
+      "host_checks": [
+        {
+          "source": "results/session-e-host1-20260925/remote/run-01/result.json",
+          "protocol": "results/session-e-host1-20260925/remote/run-01/source/protocol.json",
+          "observations": 220,
+          "cases": [
+            "optimized-q64",
+            "optimized-q96",
+            "smoke-q4",
+            "uniform-q64"
+          ],
+          "independent_check_stage": "CPU/C-reference check during the retained GPU run"
+        },
+        {
+          "source": "results/session-e-host2-20260925/remote/run-01/result.json",
+          "protocol": "results/session-e-host2-20260925/remote/run-01/source/protocol.json",
+          "observations": 220,
+          "cases": [
+            "optimized-q64",
+            "optimized-q96",
+            "smoke-q4",
+            "uniform-q64"
+          ],
+          "independent_check_stage": "CPU/C-reference check during the retained GPU run"
+        }
+      ]
+    },
+    {
+      "experiment": "Session I, RTX 4090",
+      "observations": 36,
+      "requested": 1e-08,
+      "replay_limit": 1e-07,
+      "energy_limit": 1e-06,
+      "observed_residual_max": 4.431923151134537e-09,
+      "observed_native_residual_max": 4.431922422168153e-09,
+      "observed_energy_max": 3.061750852850764e-11,
+      "sources": [
+        "results/session-i-rtx4090-20260926/remote/run-01/result.json"
+      ],
+      "host_checks": [
+        {
+          "source": "results/session-i-rtx4090-20260926/remote/run-01/result.json",
+          "protocol": "results/session-i-rtx4090-20260926/remote/run-01/source/protocol.json",
+          "observations": 36,
+          "cases": [
+            "q64x2",
+            "q96x1",
+            "q96x2"
+          ],
+          "independent_check_stage": "CPU/C-reference check during the retained GPU run"
+        }
+      ]
+    },
+    {
+      "experiment": "Session I, A100 and H100",
+      "observations": 96,
+      "requested": 1e-08,
+      "replay_limit": 1e-07,
+      "energy_limit": 1e-06,
+      "observed_residual_max": 7.445634878342999e-09,
+      "observed_native_residual_max": 7.445634717444712e-09,
+      "observed_energy_max": 6.841849309324743e-11,
+      "sources": [
+        "results/session-i-a100-20260926/remote/run-01/result.json",
+        "results/session-i-h100-20260926/remote/run-01/result.json"
+      ],
+      "host_checks": [
+        {
+          "source": "results/session-i-a100-20260926/remote/run-01/result.json",
+          "protocol": "results/session-i-a100-20260926/remote/run-01/source/protocol.json",
+          "observations": 48,
+          "cases": [
+            "q64x2",
+            "q96x1",
+            "q96x2",
+            "q96x3"
+          ],
+          "independent_check_stage": "CPU/C-reference check during the retained GPU run"
+        },
+        {
+          "source": "results/session-i-h100-20260926/remote/run-01/result.json",
+          "protocol": "results/session-i-h100-20260926/remote/run-01/source/protocol.json",
+          "observations": 48,
+          "cases": [
+            "q64x2",
+            "q96x1",
+            "q96x2",
+            "q96x3"
+          ],
+          "independent_check_stage": "CPU/C-reference check during the retained GPU run"
+        }
+      ]
+    }
+  ],
+  "separate_saved_state_replays": [
+    {
+      "source": "results/session-e-host1-20260925/local-verification.json",
+      "observations": 44,
+      "observed_residual_max": 4.352903919102774e-09,
+      "coverage": "rep=0 for every case and arm; separate retained local CPU replay"
+    },
+    {
+      "source": "results/session-e-host2-20260925/local-verification.json",
+      "observations": 44,
+      "observed_residual_max": 4.352964447458278e-09,
+      "coverage": "rep=0 for every case and arm; separate retained local CPU replay"
+    }
+  ],
+  "limits_source": "each run's archived protocol.json; replay_limit is the independent acceptance threshold, not an observed error"
+}

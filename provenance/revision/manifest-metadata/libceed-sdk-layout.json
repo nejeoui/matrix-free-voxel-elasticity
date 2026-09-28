@@ -1,0 +1,25 @@
+{
+  "sdk_root": "/opt/nvidia/hpc_sdk/Linux_x86_64/25.1",
+  "math_root": "/opt/nvidia/hpc_sdk/Linux_x86_64/25.1/math_libs/12.6",
+  "cuda_root": "/opt/nvidia/hpc_sdk/Linux_x86_64/25.1/cuda/12.6",
+  "headers": [
+    {
+      "path": "/opt/nvidia/hpc_sdk/Linux_x86_64/25.1/math_libs/12.6/targets/x86_64-linux/include/cublas_v2.h",
+      "resolved": "/opt/nvidia/hpc_sdk/Linux_x86_64/25.1/math_libs/12.6/targets/x86_64-linux/include/cublas_v2.h",
+      "sha256": "ab131d0798dbf7b96e11fc3ad4b10007e5a5afc03d0cb06f3b8ad1ca90c234ac"
+    }
+  ],
+  "libraries": [
+    {
+      "path": "/opt/nvidia/hpc_sdk/Linux_x86_64/25.1/math_libs/12.6/targets/x86_64-linux/lib/libcublas.so",
+      "resolved": "/opt/nvidia/hpc_sdk/Linux_x86_64/25.1/math_libs/12.6/targets/x86_64-linux/lib/libcublas.so.12.6.4.1",
+      "bytes": 108244960
+    }
+  ],
+  "include_dirs": [
+    "/opt/nvidia/hpc_sdk/Linux_x86_64/25.1/math_libs/12.6/targets/x86_64-linux/include"
+  ],
+  "library_dirs": [
+    "/opt/nvidia/hpc_sdk/Linux_x86_64/25.1/math_libs/12.6/targets/x86_64-linux/lib"
+  ]
+}

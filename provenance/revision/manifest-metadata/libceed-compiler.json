@@ -1,0 +1,12 @@
+{
+  "returncode": 0,
+  "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Tue_Oct_29_23:50:19_PDT_2024\nCuda compilation tools, release 12.6, V12.6.85\nBuild cuda_12.6.r12.6/compiler.35059454_0\n",
+  "stderr": "",
+  "utc": "2026-09-24T14:08:11.743985+00:00",
+  "argv": [
+    "nvcc",
+    "--version"
+  ],
+  "cwd": "/root/jpdc-hex-libceed-resident-20260924/run-01",
+  "seconds_budgeting_only": 0.08202350400006253
+}

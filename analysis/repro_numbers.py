@@ -26,7 +26,7 @@ def main():
     a.add_argument("--companion", type=Path, default=V / "evidence/companion")
     r = a.parse_args().companion / "results/rescope"
     m = {}
-    # A1: OpenMP midpoint fine matrix vs exact Gauss Q1 (level 0 only)
+    # A1: OpenMP composite 10x10x10 midpoint fine matrix vs exact Gauss Q1 (level 0 only)
     omp = [c for c in load(r / "hex-modal-priorart-20260923/cpu-02/results.json")["openmp_cases"] if c["level"] == 0]
     errs = [100 * c["source_sum_vs_exact_gauss"]["relative_frobenius"] for c in omp]
     m["WAMidpointMin"], m["WAMidpointMax"] = f"{min(errs):.3f}", f"{max(errs):.3f}"

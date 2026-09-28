@@ -2,13 +2,14 @@
 
     python3 analysis/session_j_counters.py -> paper/session_j_numbers.json
 
-H15 as declared: pipe utilization >= 70 % for dense8, modal8 and modal8_muladd, AND issued FP64 thread
+H15 as declared: pipe utilization >= 70 % for dense8, modal8 and modal8_muladd, AND executed FP64 thread
 instructions (DADD+DFMA+DMUL) with ratios dense8/muladd and modal8/muladd within 5 % of the static-site
 ratios 78/34 and 52/34. The time model (time ~ instructions / utilization) is post-hoc and descriptive.
 """
 import csv
 import io
 import json
+import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,13 +21,24 @@ PIPE = "sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active"
 DRAM = "dram__throughput.avg.pct_of_peak_sustained_elapsed"
 TIME = "gpu__time_duration.sum"
 STATIC = {"dense8": 78, "modal8": 52, "modal8_muladd": 34}
-THREADS = 128 * 64 * 64 * 8
+PROTOCOL = json.loads((ROOT / "experiments/session_j/protocol.json").read_text())
+ELEMENTS = math.prod(PROTOCOL["ncu"]["grid"])
 
 
 def row(kernel):
     lines = [l for l in (RUN / f"ncu-{kernel}.csv").read_text().splitlines() if l.startswith('"')]
-    head, _units, data = list(csv.reader(io.StringIO("\n".join(lines))))[:3]
-    return {h: v for h, v in zip(head, data)}
+    records = list(csv.reader(io.StringIO("\n".join(lines))))
+    if len(records) != 3:
+        raise ValueError(f"Expected header, units and one profiled launch for {kernel}")
+    head, units, data = records
+    unit = dict(zip(head, units))
+    for metric, expected in {**dict.fromkeys(OPS, "inst"), PIPE: "%", DRAM: "%", TIME: "nsecond"}.items():
+        if unit.get(metric) != expected:
+            raise ValueError(f"Unexpected {metric} unit for {kernel}: {unit.get(metric)!r}")
+    result = dict(zip(head, data))
+    if result["Kernel Name"] != kernel:
+        raise ValueError(f"Wrong kernel in {kernel} record: {result['Kernel Name']}")
+    return result
 
 
 def num(v):
@@ -38,15 +50,36 @@ def main():
     for name in KERNELS:
         r = row(name)
         fp64 = sum(num(r[o]) for o in OPS)
-        k[name] = {"fp64_thread_instructions": fp64, "per_thread": fp64 / THREADS, "pipe_pct": num(r[PIPE]),
-                   "dram_pct": num(r[DRAM]), "time_ns": num(r[TIME])}
-        k[name]["model"] = k[name]["fp64_thread_instructions"] / (k[name]["pipe_pct"] / 100)
+        k[name] = {"executed_fp64_thread_instructions_total": int(fp64),
+                   "executed_fp64_thread_instructions_per_element": fp64 / ELEMENTS,
+                   "executed_fp64_thread_instructions_by_metric": {o: int(num(r[o])) for o in OPS},
+                   "pipe_pct": num(r[PIPE]), "dram_pct": num(r[DRAM]), "time_ns": num(r[TIME]),
+                   "replay_passes": int(num(r["profiler__replayer_passes"])),
+                   "launch_thread_count": int(num(r["launch__thread_count"]))}
+        k[name]["model"] = fp64 / (k[name]["pipe_pct"] / 100)
     ref = "modal8_muladd"
-    out = {"kernels": k, "ratios_vs_muladd": {}}
+    job = json.loads((RUN.parent / "job.json").read_text())
+    out = {"schema_version": 2,
+           "workload": {"grid_elements": PROTOCOL["ncu"]["grid"], "elements": ELEMENTS,
+                        "gpu": "RTX 4090 VM", "launch_skip": 2, "launch_count_per_kernel": 1,
+                        "nsight_compute_version": job["version"]},
+           "units_and_metrics": {
+               "executed_fp64_thread_instructions_total": "sum of predicate-enabled DADD, DFMA and DMUL thread instructions; DFMA counts once",
+               "executed_fp64_thread_instructions_per_element": "total divided by grid element count, independent of thread layout",
+               "fp64_thread_instruction_metrics": OPS,
+               "pipe_pct": PIPE, "dram_pct": DRAM, "time_ns": TIME,
+               "model": "post-hoc total instructions / (active-cycle FP64 pipe percentage / 100); not an independent time prediction"},
+           "profiling_policy": {
+               "explicit_clock_cache_replay_overrides": False,
+               "version_documented_defaults": {"clock_control": "base", "cache_control": "all", "replay_mode": "kernel"},
+               "default_source": "https://archive.docs.nvidia.com/nsight-compute/2023.2/NsightComputeCli/index.html",
+               "actual_clock_lock_verified": False,
+               "timing_boundary": "selected kernel duration under profiler replay; excludes wrapper zeroing/projection and host overhead"},
+           "kernels": k, "ratios_vs_muladd": {}}
     for name in KERNELS:
         out["ratios_vs_muladd"][name] = {
             "time": k[name]["time_ns"] / k[ref]["time_ns"],
-            "instructions": k[name]["fp64_thread_instructions"] / k[ref]["fp64_thread_instructions"],
+            "instructions": k[name]["executed_fp64_thread_instructions_total"] / k[ref]["executed_fp64_thread_instructions_total"],
             "model": k[name]["model"] / k[ref]["model"],
             "static": STATIC[name] / STATIC[ref] if name in STATIC else None}
     util_ok = all(k[n]["pipe_pct"] >= 70 for n in STATIC)
@@ -59,9 +92,10 @@ def main():
     (ROOT / "paper/session_j_numbers.json").write_text(json.dumps(out, indent=1) + "\n")
     for n in KERNELS:
         r = out["ratios_vs_muladd"][n]
-        print(f"{n:22s} pipe {k[n]['pipe_pct']:5.1f}% dram {k[n]['dram_pct']:5.1f}% instr/thread {k[n]['per_thread']:5.1f} "
-              f"time/muladd {r['time']:.3f} model {r['model']:.3f}")
-    print("H15:", out["H15"], "model max error", round(out["model_max_error"], 4))
+        print(f"{n:22s} pipe(active) {k[n]['pipe_pct']:5.1f}% dram(elapsed) {k[n]['dram_pct']:5.1f}% "
+              f"executed FP64 thread instr/element {k[n]['executed_fp64_thread_instructions_per_element']:5.1f} "
+              f"time/muladd {r['time']:.3f} post-hoc ratio {r['model']:.3f}")
+    print("H15:", out["H15"], "post-hoc consistency max relative error", round(out["model_max_error"], 4))
 
 
 if __name__ == "__main__":

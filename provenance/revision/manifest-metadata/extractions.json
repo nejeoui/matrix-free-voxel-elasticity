@@ -1,0 +1,75 @@
+{
+  "source_record": "https://doi.org/10.5281/zenodo.22998404",
+  "files": [
+    {
+      "archive": "companion--hex-modal-libceed-resident-20260924--files.tar.gz",
+      "archive_sha256": "16467148605184e553e1285002ff1b5ef7ce9a739cacb92d2c0a84649184aa8e",
+      "member": "hex-modal-libceed-resident-20260924/rental-01/remote/run-01/cpu.json",
+      "path": "provenance/revision/manifest-metadata/libceed-cpu.json",
+      "sha256": "8680c0961f4ad5477c8e244918071d141d464290355b0895a3f3538e7ae30029"
+    },
+    {
+      "archive": "companion--hex-modal-libceed-resident-20260924--files.tar.gz",
+      "archive_sha256": "16467148605184e553e1285002ff1b5ef7ce9a739cacb92d2c0a84649184aa8e",
+      "member": "hex-modal-libceed-resident-20260924/rental-01/remote/run-01/gpu-before.json",
+      "path": "provenance/revision/manifest-metadata/libceed-gpu-before.json",
+      "sha256": "ce1455faff9374262b31109ae4dddd1a7f45050153b5890b879e478298c580fa"
+    },
+    {
+      "archive": "companion--hex-modal-libceed-resident-20260924--files.tar.gz",
+      "archive_sha256": "16467148605184e553e1285002ff1b5ef7ce9a739cacb92d2c0a84649184aa8e",
+      "member": "hex-modal-libceed-resident-20260924/rental-01/remote/run-01/compiler.json",
+      "path": "provenance/revision/manifest-metadata/libceed-compiler.json",
+      "sha256": "b0d170f00b41180e183e5d41c3c1bbcb47da175f12fcf3ccf9bc832364fa252d"
+    },
+    {
+      "archive": "companion--hex-modal-libceed-resident-20260924--files.tar.gz",
+      "archive_sha256": "16467148605184e553e1285002ff1b5ef7ce9a739cacb92d2c0a84649184aa8e",
+      "member": "hex-modal-libceed-resident-20260924/rental-01/remote/run-01/host-compiler.json",
+      "path": "provenance/revision/manifest-metadata/libceed-host-compiler.json",
+      "sha256": "2e0211f091a25729a8a6e806bf2db0c00679af2ed3a1b6e5298b82964c3dd07a"
+    },
+    {
+      "archive": "companion--hex-modal-libceed-resident-20260924--files.tar.gz",
+      "archive_sha256": "16467148605184e553e1285002ff1b5ef7ce9a739cacb92d2c0a84649184aa8e",
+      "member": "hex-modal-libceed-resident-20260924/rental-01/remote/run-01/sdk-layout.json",
+      "path": "provenance/revision/manifest-metadata/libceed-sdk-layout.json",
+      "sha256": "8f3e4ec8d18021d3643ffdde51fd7e6990fbc40e1d9ac8fe86476c18c3087643"
+    },
+    {
+      "archive": "companion--hex-modal-libceed-resident-20260924--files.tar.gz",
+      "archive_sha256": "16467148605184e553e1285002ff1b5ef7ce9a739cacb92d2c0a84649184aa8e",
+      "member": "hex-modal-libceed-resident-20260924/rental-01/remote/run-01/sdk-probe-run.json",
+      "path": "provenance/revision/manifest-metadata/libceed-sdk-probe-run.json",
+      "sha256": "c50cfce143c0410117e991a45b1d87bb31e16c5a448ee3b15bf967f2c0c3ff6a"
+    },
+    {
+      "archive": "companion--hex-modal-cuda-20260923--files.tar.gz",
+      "archive_sha256": "9949251012f6eb24254aa444fe5450f1a4eba576676a69cf206a957f12407ced",
+      "member": "hex-modal-cuda-20260923/rental-01/rental.json",
+      "path": "provenance/revision/manifest-metadata/synthetic-4090-rental.json",
+      "sha256": "0ed5e1a69a65a171f9d08b673441fc980e50098d5f3426bb7c42e8b6d1ada3f3"
+    },
+    {
+      "archive": "companion--hex-modal-cuda-20260923--files.tar.gz",
+      "archive_sha256": "9949251012f6eb24254aa444fe5450f1a4eba576676a69cf206a957f12407ced",
+      "member": "hex-modal-cuda-20260923/rental-01/remote/installation/cupy-config.txt",
+      "path": "provenance/revision/manifest-metadata/synthetic-4090-cupy-config.txt",
+      "sha256": "3e3717c7962f4af6d7d3d3f8f44f50648be0b77abeb23314abca6777da43e314"
+    },
+    {
+      "archive": "companion--hex-modal-replication-20260923--files.tar.gz",
+      "archive_sha256": "3505ff266969ea354ed633241a6f9786802addb6218b6f0c6d356819cce8e977",
+      "member": "hex-modal-replication-20260923/rental-01/rental.json",
+      "path": "provenance/revision/manifest-metadata/synthetic-3090-rental.json",
+      "sha256": "40aeb1c03ab7a782ba969a203f7d8c5625ff80ca94f4ddc7396b948f79434ff9"
+    },
+    {
+      "archive": "companion--hex-modal-replication-20260923--files.tar.gz",
+      "archive_sha256": "3505ff266969ea354ed633241a6f9786802addb6218b6f0c6d356819cce8e977",
+      "member": "hex-modal-replication-20260923/rental-01/remote/installation/cupy-config.txt",
+      "path": "provenance/revision/manifest-metadata/synthetic-3090-cupy-config.txt",
+      "sha256": "714e6e9bac19844d0669a146b1d31c3d0e7b0643783e5c99d30b0a8150db2033"
+    }
+  ]
+}

@@ -1,0 +1,1053 @@
+{
+  "convention": "Five named hypotheses lack support: H3, H5, H11, H11b, H15. H5 retains its original not-supported label; H11b is a separate changed-pipeline hypothesis. Descriptive H12/H12b expectations and packaging/integration gates are separate. This count is for Sessions A-J, not every exploratory companion study.",
+  "failed_or_unsupported_ids": [
+    "H3",
+    "H5",
+    "H11",
+    "H11b",
+    "H15"
+  ],
+  "chronology_limit": "Hashes identify content, not temporal priority. These dates are author/system recorded timestamps, checked against byte-linked execution records where available, not independent preregistration timestamps. No local git history is present in this revision workspace.",
+  "H3_ratio_label_note": "Frozen Session B h3.rule writes modal8/dense8, but the question and recorded analysis concern advantage dense8 time / modal8 time. The retained failed decision uses that latter ratio (about 2.24), not the literal reversed label. The historical protocol is preserved.",
+  "rows": [
+    {
+      "id": "H2",
+      "type": "hypothesis",
+      "session": "A",
+      "question": "At identical PCG work on physical topology-optimization states, is the FP64 modal8 solve faster than the fastest published FP64 fused baseline on an RTX 4090?",
+      "primary_cases": [
+        {
+          "id": "optimized-q64",
+          "q": 64,
+          "primary": true,
+          "fixed_iterations": 4600
+        },
+        {
+          "id": "optimized-q96",
+          "q": 96,
+          "primary": true,
+          "fixed_iterations": 6900
+        }
+      ],
+      "endpoint_and_threshold": {
+        "baseline": "fused_ai_fp64",
+        "min_median": 1.08,
+        "min_lower": 1.05,
+        "rule": "continue modal8 iff both primary cases pass with identical work and all rounds present; otherwise stop modal8"
+      },
+      "outcome": "supported",
+      "recorded_decision": "continue_modal8",
+      "chronology": {
+        "protocol": "experiments/session_a/protocol.json",
+        "sha256": "4fd17ba44153f4a8a6d3b78357b3a803e901fe52d5d2917ec8ef5fc347ce868b",
+        "declared_utc": "2026-09-23T17:15:38.872727+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-a-20260923/remote/job.json",
+            "started_utc": "2026-09-23T17:26:40.633962+00:00",
+            "finished_utc": "2026-09-23T17:56:14.669354+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-a-20260923/remote/source/protocol.json",
+              "results/session-a-20260923/remote/run-01/source/protocol.json",
+              "results/session-a-20260923/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H3",
+      "type": "hypothesis",
+      "session": "B",
+      "question": "On a data-centre GPU with full-rate FP64, does modal8's FP64 product advantage over the identical-mapping dense8 fall below 1.10, as the roofline predicts?",
+      "primary_cases": [
+        {
+          "id": "optimized-q64",
+          "q": 64,
+          "primary": true,
+          "fixed_iterations": 4600
+        },
+        {
+          "id": "optimized-q96",
+          "q": 96,
+          "primary": true,
+          "fixed_iterations": 6900
+        }
+      ],
+      "endpoint_and_threshold": {
+        "baseline": "dense8",
+        "gain_threshold": 1.1,
+        "rule": "prediction confirmed iff the FP64 product median paired ratio modal8/dense8 < 1.10 on both primary cases; if >= 1.10 the FP64-throttling explanation is incomplete and the paper's scope statement is revised; either outcome is reported"
+      },
+      "outcome": "not confirmed",
+      "recorded_decision": "datacentre_prediction_not_confirmed_or_incomplete",
+      "chronology": {
+        "protocol": "experiments/session_b/protocol.json",
+        "sha256": "3dc32f58e78b5974369efed55e6568a2f34ec0a95f7cc8e583c0beec87e5cd5d",
+        "declared_utc": "2026-09-23T18:05:36.869318+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-b-20260923/remote/job.json",
+            "started_utc": "2026-09-23T18:41:35.334935+00:00",
+            "finished_utc": "2026-09-23T19:08:00.856593+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-b-20260923/remote/source/protocol.json",
+              "results/session-b-20260923/remote/run-01/source/protocol.json",
+              "results/session-b-20260923/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H4",
+      "type": "hypothesis",
+      "session": "A",
+      "question": "In FP32 on the same GPU, does modal8 still beat the fastest FP32 baseline? (Roofline predicts no.)",
+      "primary_cases": [
+        {
+          "id": "optimized-q64",
+          "q": 64,
+          "primary": true,
+          "fixed_iterations": 4600
+        },
+        {
+          "id": "optimized-q96",
+          "q": 96,
+          "primary": true,
+          "fixed_iterations": 6900
+        }
+      ],
+      "endpoint_and_threshold": {
+        "gain_threshold": 1.1,
+        "rule": "prediction confirmed iff modal8_fp32 median paired ratio vs the fastest FP32 baseline < 1.10 on both primary cases; either outcome is reported"
+      },
+      "outcome": "supported",
+      "recorded_decision": "predicted_no_fp32_gain_confirmed",
+      "chronology": {
+        "protocol": "experiments/session_a/protocol.json",
+        "sha256": "4fd17ba44153f4a8a6d3b78357b3a803e901fe52d5d2917ec8ef5fc347ce868b",
+        "declared_utc": "2026-09-23T17:15:38.872727+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-a-20260923/remote/job.json",
+            "started_utc": "2026-09-23T17:26:40.633962+00:00",
+            "finished_utc": "2026-09-23T17:56:14.669354+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-a-20260923/remote/source/protocol.json",
+              "results/session-a-20260923/remote/run-01/source/protocol.json",
+              "results/session-a-20260923/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H5",
+      "type": "hypothesis",
+      "session": "C",
+      "question": "At the classic topology-optimization contrast Emin = 1e-9 (e.g. the 88-line code), on the same optimized designs, does the donor's mixed-precision refinement with its shipped defaults fail to reach the 1e-8 true residual where FP64 PCG succeeds?",
+      "primary_cases": [
+        {
+          "id": "optimized-q64-E1e-9",
+          "input": "optimized-q64",
+          "q": 64,
+          "primary": true,
+          "robustness": true,
+          "Emin": 1e-09,
+          "stages": [
+            "to_tolerance"
+          ],
+          "methods": [
+            "pcg64-fused_ai",
+            "pcg64-modal8",
+            "ir-fused_ai64-fused_ai32",
+            "ir-fused_ai64-node32",
+            "ir-modal8-node32"
+          ]
+        },
+        {
+          "id": "optimized-q96-E1e-9",
+          "input": "optimized-q96",
+          "q": 96,
+          "primary": true,
+          "robustness": true,
+          "Emin": 1e-09,
+          "stages": [
+            "to_tolerance"
+          ],
+          "methods": [
+            "pcg64-fused_ai",
+            "pcg64-modal8",
+            "ir-fused_ai64-fused_ai32",
+            "ir-fused_ai64-node32",
+            "ir-modal8-node32"
+          ]
+        }
+      ],
+      "endpoint_and_threshold": {
+        "rule": "FP64-throughout niche supported iff, on at least one robustness case, some refinement method fails physical acceptance (native tolerance 1e-8, independent true residual 1e-7, energy-force 1e-6) in any repetition while every FP64 PCG method passes all repetitions. Otherwise not supported. Refinement uses the donor's shipped defaults; no tuning after results."
+      },
+      "outcome": "not supported",
+      "recorded_decision": "fp64_throughout_niche_not_supported",
+      "chronology": {
+        "protocol": "experiments/session_c/protocol.json",
+        "sha256": "4b8327322af4d8d3a34c9c21238b901ce17c488f714b99003b4efb33794117ce",
+        "declared_utc": "2026-09-23T18:38:14.724569+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-c-20260923/remote/job.json",
+            "started_utc": "2026-09-23T18:39:47.326926+00:00",
+            "finished_utc": "2026-09-23T18:47:25.243757+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-c-20260923/remote/source/protocol.json",
+              "results/session-c-20260923/remote/run-01/source/protocol.json",
+              "results/session-c-20260923/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H6",
+      "type": "hypothesis",
+      "session": "D",
+      "question": "Inside multigrid-preconditioned CG (all-FP64), is modal8 still the fastest FP64 finest-level kernel at identical work on the RTX 4090?",
+      "primary_cases": [
+        {
+          "id": "optimized-q64",
+          "q": 64,
+          "primary": true
+        },
+        {
+          "id": "optimized-q96",
+          "q": 96,
+          "primary": true
+        }
+      ],
+      "endpoint_and_threshold": {
+        "candidate": "mg64-modal8",
+        "baselines": [
+          "mg64-fused_ai",
+          "mg64-fused",
+          "mg64-node"
+        ],
+        "min_median": 1.05,
+        "min_lower": 1.02,
+        "rule": "FP64 ranking survives iff, on both primary cases, the fixed-work paired ratio (fastest FP64 donor-kernel arm / mg64-modal8) has median >= 1.05 and one-sided 95% bootstrap lower bound >= 1.02, with identical work in every fixed-work solve"
+      },
+      "outcome": "supported",
+      "recorded_decision": "fp64_ranking_survives_in_multigrid",
+      "chronology": {
+        "protocol": "experiments/session_d/protocol.json",
+        "sha256": "ce2bb01c783067c0c39c9624700b7ff4305ccbdf1a86a19515d61ceb36f0b431",
+        "declared_utc": "2026-09-23T19:35:12.974869+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-d-20260923/remote/job.json",
+            "started_utc": "2026-09-23T19:38:27.064181+00:00",
+            "finished_utc": "2026-09-23T19:41:33.938470+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-d-20260923/remote/source/protocol.json",
+              "results/session-d-20260923/remote/run-01/source/protocol.json",
+              "results/session-d-20260923/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H7",
+      "type": "descriptive question",
+      "session": "D",
+      "question": "What is the fastest route to a 1e-8 true residual with multigrid on the RTX 4090 (all-FP64 vs FP32 V-cycle inside FP64 CG), and does it use modal8?",
+      "primary_cases": [
+        {
+          "id": "optimized-q64",
+          "q": 64,
+          "primary": true
+        },
+        {
+          "id": "optimized-q96",
+          "q": 96,
+          "primary": true
+        }
+      ],
+      "endpoint_and_threshold": {
+        "rule": "descriptive: fastest arm that physically passes all repetitions per case; plus fixed-work paired ratio of the best mixed arm without modal8 over mg32-modal8-node32 (the outer-kernel effect under an FP32 V-cycle)"
+      },
+      "outcome": "descriptive",
+      "recorded_decision": {
+        "smoke-q4": false,
+        "optimized-q64": true,
+        "optimized-q96": true,
+        "uniform-q64": true
+      },
+      "chronology": {
+        "protocol": "experiments/session_d/protocol.json",
+        "sha256": "ce2bb01c783067c0c39c9624700b7ff4305ccbdf1a86a19515d61ceb36f0b431",
+        "declared_utc": "2026-09-23T19:35:12.974869+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-d-20260923/remote/job.json",
+            "started_utc": "2026-09-23T19:38:27.064181+00:00",
+            "finished_utc": "2026-09-23T19:41:33.938470+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-d-20260923/remote/source/protocol.json",
+              "results/session-d-20260923/remote/run-01/source/protocol.json",
+              "results/session-d-20260923/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H8",
+      "type": "hypothesis",
+      "session": "E",
+      "question": "Products: on the RTX 4090, is the signed multiply-add butterfly variant (modal8_muladd) faster than the fastest FP64 donor kernel (fused_ai_fp64, fused_fp64, node_fp64) and than modal8, at identical inputs?",
+      "primary_cases": [
+        {
+          "id": "optimized-q64",
+          "q": 64,
+          "primary": true
+        },
+        {
+          "id": "optimized-q96",
+          "q": 96,
+          "primary": true
+        }
+      ],
+      "endpoint_and_threshold": {
+        "candidate": "modal8_muladd",
+        "donors": [
+          "fused_ai_fp64",
+          "fused_fp64",
+          "node_fp64"
+        ],
+        "also_versus": [
+          "modal8",
+          "modal8_signbit",
+          "dense8"
+        ],
+        "min_median": 1.05,
+        "min_lower": 1.02,
+        "rule": "H8 passes on a host iff, on both primary cases, the paired per-round product ratio (fastest donor by median / modal8_muladd) has median >= 1.05 and one-sided 95% bootstrap lower bound >= 1.02, all rounds present and all product checks passed. The ratios vs modal8, modal8_signbit and dense8 are reported descriptively."
+      },
+      "outcome": "supported on two hosts",
+      "recorded_decision": true,
+      "chronology": {
+        "protocol": "experiments/session_e/protocol.json",
+        "sha256": "a36e7b8e1a128d155c7457e9d2e8325e45014be7b7a768433edd4bd354677ac0",
+        "declared_utc": "2026-09-25T10:54:43.487971+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-e-host1-20260925/remote/job.json",
+            "started_utc": "2026-09-25T10:58:45.115585+00:00",
+            "finished_utc": "2026-09-25T11:02:55.764246+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-e-host1-20260925/remote/source/protocol.json",
+              "results/session-e-host1-20260925/remote/run-01/source/protocol.json",
+              "results/session-e-host1-20260925/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-e-host2-20260925/remote/job.json",
+            "started_utc": "2026-09-25T11:09:30.478933+00:00",
+            "finished_utc": "2026-09-25T11:13:46.310124+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-e-host2-20260925/remote/source/protocol.json",
+              "results/session-e-host2-20260925/remote/run-01/source/protocol.json",
+              "results/session-e-host2-20260925/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H9",
+      "type": "hypothesis",
+      "session": "E",
+      "question": "Inside multigrid-preconditioned CG (all-FP64, identical outer iterations), is mg64-modal8_muladd faster than the fastest FP64 donor arm and than mg64-modal8?",
+      "primary_cases": [
+        {
+          "id": "optimized-q64",
+          "q": 64,
+          "primary": true
+        },
+        {
+          "id": "optimized-q96",
+          "q": 96,
+          "primary": true
+        }
+      ],
+      "endpoint_and_threshold": {
+        "candidate": "mg64-modal8_muladd",
+        "baselines": [
+          "mg64-fused_ai",
+          "mg64-fused",
+          "mg64-node"
+        ],
+        "also_versus": [
+          "mg64-modal8"
+        ],
+        "min_median": 1.05,
+        "min_lower": 1.02,
+        "rule": "H9 passes on a host iff, on both primary cases, the fixed-work paired ratio (fastest FP64 donor arm / mg64-modal8_muladd) has median >= 1.05 and lower bound >= 1.02 with identical work in every fixed-work solve and a completed run."
+      },
+      "outcome": "supported on two hosts",
+      "recorded_decision": true,
+      "chronology": {
+        "protocol": "experiments/session_e/protocol.json",
+        "sha256": "a36e7b8e1a128d155c7457e9d2e8325e45014be7b7a768433edd4bd354677ac0",
+        "declared_utc": "2026-09-25T10:54:43.487971+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-e-host1-20260925/remote/job.json",
+            "started_utc": "2026-09-25T10:58:45.115585+00:00",
+            "finished_utc": "2026-09-25T11:02:55.764246+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-e-host1-20260925/remote/source/protocol.json",
+              "results/session-e-host1-20260925/remote/run-01/source/protocol.json",
+              "results/session-e-host1-20260925/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-e-host2-20260925/remote/job.json",
+            "started_utc": "2026-09-25T11:09:30.478933+00:00",
+            "finished_utc": "2026-09-25T11:13:46.310124+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-e-host2-20260925/remote/source/protocol.json",
+              "results/session-e-host2-20260925/remote/run-01/source/protocol.json",
+              "results/session-e-host2-20260925/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H10",
+      "type": "descriptive question",
+      "session": "E",
+      "question": "Under an FP32 V-cycle inside FP64 CG, what is the outer-kernel effect of modal8_muladd, and which route is fastest to a 1e-8 true residual?",
+      "primary_cases": [
+        {
+          "id": "optimized-q64",
+          "q": 64,
+          "primary": true
+        },
+        {
+          "id": "optimized-q96",
+          "q": 96,
+          "primary": true
+        }
+      ],
+      "endpoint_and_threshold": {
+        "rule": "descriptive: fastest arm that physically passes all repetitions per case; outer-kernel effect = fixed-work paired ratio of mg32-fused_ai64-node32 over mg32-modal8_muladd-node32."
+      },
+      "outcome": "descriptive",
+      "recorded_decision": "fastest passing route and outer-product effect",
+      "chronology": {
+        "protocol": "experiments/session_e/protocol.json",
+        "sha256": "a36e7b8e1a128d155c7457e9d2e8325e45014be7b7a768433edd4bd354677ac0",
+        "declared_utc": "2026-09-25T10:54:43.487971+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-e-host1-20260925/remote/job.json",
+            "started_utc": "2026-09-25T10:58:45.115585+00:00",
+            "finished_utc": "2026-09-25T11:02:55.764246+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-e-host1-20260925/remote/source/protocol.json",
+              "results/session-e-host1-20260925/remote/run-01/source/protocol.json",
+              "results/session-e-host1-20260925/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-e-host2-20260925/remote/job.json",
+            "started_utc": "2026-09-25T11:09:30.478933+00:00",
+            "finished_utc": "2026-09-25T11:13:46.310124+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-e-host2-20260925/remote/source/protocol.json",
+              "results/session-e-host2-20260925/remote/run-01/source/protocol.json",
+              "results/session-e-host2-20260925/local-verification.json#protocol_sha256"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "F-stack",
+      "type": "packaging gate",
+      "session": "F",
+      "question": [
+        "Q1 counters: can Nsight Compute read performance counters on each rented GPU (no ERR_NVGPUCTRPERM)?",
+        "Q2 stack: does Yang et al.'s pinned GMG (fd9ddecd) install and pass its own smoke test unchanged?",
+        "Q3 integration: inside their GMG, do the fused_ai_fp64 and modal8_muladd arms reproduce the stock FP64 operator and solve?",
+        "Q4 sizing: how large a cantilever fits, per GPU, solver schedule and arm (peak memory, setup and per-iteration time)?"
+      ],
+      "primary_cases": [],
+      "endpoint_and_threshold": "their unmodified ci/smoke_test.py exits 0",
+      "outcome": "failed as released; directory workaround passes",
+      "recorded_decision": {
+        "RTX 4090": {
+          "as_released": 1,
+          "with_scripts_dir": 0
+        },
+        "A100 80GB PCIe": {
+          "as_released": 1,
+          "with_scripts_dir": 0
+        },
+        "H100 NVL": {
+          "as_released": 1,
+          "with_scripts_dir": 0
+        }
+      },
+      "chronology": {
+        "protocol": "experiments/session_f/protocol.json",
+        "sha256": "de031055aacc181d26441606393ad505bb7262643eba0b4252c78ba8c1ff44f9",
+        "declared_utc": "2026-09-26T00:42:40.028905+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-f-a100-20260926/remote/job.json",
+            "started_utc": "2026-09-26T00:59:35.815376+00:00",
+            "finished_utc": "2026-09-26T01:15:23.178008+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-f-a100-20260926/remote/source/experiments/session_f/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-f-h100-20260926-attempt02/remote/job.json",
+            "started_utc": "2026-09-26T01:18:10.843569+00:00",
+            "finished_utc": "2026-09-26T01:25:47.957655+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-f-h100-20260926-attempt02/remote/source/experiments/session_f/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-f-rtx4090-20260926/remote/job.json",
+            "started_utc": "2026-09-26T00:44:22.145076+00:00",
+            "finished_utc": "2026-09-26T00:46:40.361802+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-f-rtx4090-20260926/remote/source/experiments/session_f/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "F-integration",
+      "type": "integration gate",
+      "session": "F",
+      "question": [
+        "Q1 counters: can Nsight Compute read performance counters on each rented GPU (no ERR_NVGPUCTRPERM)?",
+        "Q2 stack: does Yang et al.'s pinned GMG (fd9ddecd) install and pass its own smoke test unchanged?",
+        "Q3 integration: inside their GMG, do the fused_ai_fp64 and modal8_muladd arms reproduce the stock FP64 operator and solve?",
+        "Q4 sizing: how large a cantilever fits, per GPU, solver schedule and arm (peak memory, setup and per-iteration time)?"
+      ],
+      "primary_cases": [],
+      "endpoint_and_threshold": "for every grid, density field, schedule and non-stock arm: product relative L2 <= 1e-12 against stock; solve converged; true residual (stock operator) <= 1e-10; solution relative L2 against the stock solution <= 1e-8",
+      "outcome": "not passed",
+      "recorded_decision": {
+        "RTX 4090": false,
+        "A100 80GB PCIe": false,
+        "H100 NVL": false
+      },
+      "chronology": {
+        "protocol": "experiments/session_f/protocol.json",
+        "sha256": "de031055aacc181d26441606393ad505bb7262643eba0b4252c78ba8c1ff44f9",
+        "declared_utc": "2026-09-26T00:42:40.028905+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-f-a100-20260926/remote/job.json",
+            "started_utc": "2026-09-26T00:59:35.815376+00:00",
+            "finished_utc": "2026-09-26T01:15:23.178008+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-f-a100-20260926/remote/source/experiments/session_f/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-f-h100-20260926-attempt02/remote/job.json",
+            "started_utc": "2026-09-26T01:18:10.843569+00:00",
+            "finished_utc": "2026-09-26T01:25:47.957655+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-f-h100-20260926-attempt02/remote/source/experiments/session_f/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-f-rtx4090-20260926/remote/job.json",
+            "started_utc": "2026-09-26T00:44:22.145076+00:00",
+            "finished_utc": "2026-09-26T00:46:40.361802+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-f-rtx4090-20260926/remote/source/experiments/session_f/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H11",
+      "type": "hypothesis",
+      "session": "G",
+      "question": "H11: in the all-FP64 schedule, does modal8_muladd shorten complete SIMP runs by >= 1.10x against fused_ai_fp64 (the strongest published FP64 kernel)?",
+      "primary_cases": [
+        {
+          "id": "cantilever-512k",
+          "preset": "cantilever_gpu_xlarge",
+          "primary": true
+        },
+        {
+          "id": "mbb-514k",
+          "preset": "mbb_gpu_xlarge",
+          "primary": true
+        },
+        {
+          "id": "torsion-499k",
+          "preset": "torsion_gpu_500k",
+          "primary": true
+        }
+      ],
+      "endpoint_and_threshold": "on a host, passes if, for every primary case in the fp64 schedule, the median r over completed repetitions is >= 1.10, at least 2 repetitions completed, the case is work-matched and equivalence holds. Replicated if it passes on both hosts.",
+      "outcome": "failed on two hosts",
+      "recorded_decision": false,
+      "chronology": {
+        "protocol": "experiments/session_g/protocol.json",
+        "sha256": "eecc694994a9953b6a24e4f034158f68d21cc79a063da270d8c5d70305742599",
+        "declared_utc": "2026-09-26T01:41:32.350334+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-g-host1-20260926/remote/job.json",
+            "started_utc": "2026-09-26T01:44:43.726462+00:00",
+            "finished_utc": "2026-09-26T02:40:46.860297+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-g-host1-20260926/remote/source/experiments/session_g/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-g-host2-20260926/remote/job.json",
+            "started_utc": "2026-09-26T02:44:46.829262+00:00",
+            "finished_utc": "2026-09-26T04:13:36.275350+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-g-host2-20260926/remote/source/experiments/session_g/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H12",
+      "type": "descriptive expectation",
+      "session": "G",
+      "question": "H12: in their default mixed schedule (FP32 fused fine smoother), is the effect < 1.10x, because only outer FP64 products change?",
+      "primary_cases": [
+        {
+          "id": "cantilever-512k",
+          "preset": "cantilever_gpu_xlarge",
+          "primary": true
+        },
+        {
+          "id": "mbb-514k",
+          "preset": "mbb_gpu_xlarge",
+          "primary": true
+        },
+        {
+          "id": "torsion-499k",
+          "preset": "torsion_gpu_500k",
+          "primary": true
+        }
+      ],
+      "endpoint_and_threshold": "reported as the median r per case in the mixed schedule; the declared expectation is r < 1.10",
+      "outcome": "not uniformly below 1.10; work-match qualification required",
+      "recorded_decision": {
+        "session-g-host1-20260926": {
+          "cantilever-216k": 0.9989171464654387,
+          "cantilever-512k": 1.001764362874519,
+          "mbb-514k": 1.2544983638823133,
+          "torsion-499k": 1.0156596771725859
+        },
+        "session-g-host2-20260926": {
+          "cantilever-216k": 0.9876627319475861,
+          "cantilever-512k": 1.0252592083791396,
+          "mbb-514k": 1.49016717305354,
+          "torsion-499k": 1.0050520318758
+        }
+      },
+      "chronology": {
+        "protocol": "experiments/session_g/protocol.json",
+        "sha256": "eecc694994a9953b6a24e4f034158f68d21cc79a063da270d8c5d70305742599",
+        "declared_utc": "2026-09-26T01:41:32.350334+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-g-host1-20260926/remote/job.json",
+            "started_utc": "2026-09-26T01:44:43.726462+00:00",
+            "finished_utc": "2026-09-26T02:40:46.860297+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-g-host1-20260926/remote/source/experiments/session_g/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-g-host2-20260926/remote/job.json",
+            "started_utc": "2026-09-26T02:44:46.829262+00:00",
+            "finished_utc": "2026-09-26T04:13:36.275350+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-g-host2-20260926/remote/source/experiments/session_g/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H11b",
+      "type": "new hypothesis on changed pipeline",
+      "session": "H",
+      "question": "H11b: with the optimizer on the GPU and 100-step runs, does modal8_muladd shorten complete SIMP runs by >= 1.10x against fused_ai_fp64 in the all-FP64 schedule on every primary case?",
+      "primary_cases": [
+        {
+          "id": "cantilever-512k",
+          "preset": "cantilever_gpu_xlarge",
+          "primary": true
+        },
+        {
+          "id": "mbb-514k",
+          "preset": "mbb_gpu_xlarge",
+          "primary": true
+        },
+        {
+          "id": "torsion-499k",
+          "preset": "torsion_gpu_500k",
+          "primary": true
+        }
+      ],
+      "endpoint_and_threshold": "on a host, H11b passes if, for every primary case in the fp64 schedule, the median r over completed repetitions is >= 1.10, at least 2 repetitions completed, the case is work-matched and equivalence holds. Replicated if it passes on both hosts.",
+      "outcome": "failed on two hosts",
+      "recorded_decision": false,
+      "chronology": {
+        "protocol": "experiments/session_h/protocol.json",
+        "sha256": "86206f7dab3c289b5b94eb9ead8af92234d7b383093b84da4d536e739d88a529",
+        "declared_utc": "2026-09-26T04:15:46.525935+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-h-host1-20260926/remote/job.json",
+            "started_utc": "2026-09-26T04:17:38.833102+00:00",
+            "finished_utc": "2026-09-26T05:46:12.674089+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-h-host1-20260926/remote/source/experiments/session_h/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-h-host2-20260926/remote/job.json",
+            "started_utc": "2026-09-26T04:18:54.130180+00:00",
+            "finished_utc": "2026-09-26T05:15:21.748042+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-h-host2-20260926/remote/source/experiments/session_h/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H12b",
+      "type": "descriptive expectation",
+      "session": "H",
+      "question": "H12b: in the mixed schedule, is the effect < 1.10x?",
+      "primary_cases": [
+        {
+          "id": "cantilever-512k",
+          "preset": "cantilever_gpu_xlarge",
+          "primary": true
+        },
+        {
+          "id": "mbb-514k",
+          "preset": "mbb_gpu_xlarge",
+          "primary": true
+        },
+        {
+          "id": "torsion-499k",
+          "preset": "torsion_gpu_500k",
+          "primary": true
+        }
+      ],
+      "endpoint_and_threshold": "H12b: reported as the median r per case in the mixed schedule; the declared expectation is r < 1.10",
+      "outcome": "not uniformly below 1.10; work-match qualification required",
+      "recorded_decision": {
+        "session-h-host1-20260926": {
+          "cantilever-216k": 1.0157277714036974,
+          "cantilever-512k": 1.0231199394530242,
+          "mbb-514k": 1.1049573451993548,
+          "torsion-499k": 1.040187202048864
+        },
+        "session-h-host2-20260926": {
+          "cantilever-216k": 1.01506435846474,
+          "cantilever-512k": 1.0252096371293575,
+          "mbb-514k": 1.1582988389283557,
+          "torsion-499k": 1.0468784330602525
+        }
+      },
+      "chronology": {
+        "protocol": "experiments/session_h/protocol.json",
+        "sha256": "86206f7dab3c289b5b94eb9ead8af92234d7b383093b84da4d536e739d88a529",
+        "declared_utc": "2026-09-26T04:15:46.525935+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-h-host1-20260926/remote/job.json",
+            "started_utc": "2026-09-26T04:17:38.833102+00:00",
+            "finished_utc": "2026-09-26T05:46:12.674089+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-h-host1-20260926/remote/source/experiments/session_h/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-h-host2-20260926/remote/job.json",
+            "started_utc": "2026-09-26T04:18:54.130180+00:00",
+            "finished_utc": "2026-09-26T05:15:21.748042+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-h-host2-20260926/remote/source/experiments/session_h/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H13",
+      "type": "hypothesis",
+      "session": "I",
+      "question": "H13: on the A100 and H100 (FP64:FP32 = 1:2), is modal8_muladd within 1.05x of node_fp64 in all-FP64 multigrid (fixed work), i.e. no consumer-GPU-style gain?",
+      "primary_cases": [
+        {
+          "id": "q64x2",
+          "q": 128,
+          "primary": true,
+          "note": "4.19 M elements, 12.8 M DOFs"
+        },
+        {
+          "id": "q96x2",
+          "q": 192,
+          "primary": true,
+          "note": "14.16 M elements, 43.0 M DOFs"
+        },
+        {
+          "id": "q96x3",
+          "q": 288,
+          "primary": true,
+          "note": "47.78 M elements, 143.5 M DOFs"
+        }
+      ],
+      "endpoint_and_threshold": "on each 80 GB card, for every primary case that fits: median over fixed-work rounds of time(mg64-modal8_muladd)/time(mg64-node) >= 1/1.05, i.e. node_fp64 is not beaten by more than 5 %; reported with the fused_ai ratio",
+      "outcome": "supported on fitting primary cases",
+      "recorded_decision": {
+        "session-i-a100-20260926": {
+          "median_modal_over_node": {
+            "q64x2": 1.1918968771703933,
+            "q96x2": 1.1896581196281935,
+            "q96x3": 1.1951058089287803
+          },
+          "passed": true
+        },
+        "session-i-h100-20260926": {
+          "median_modal_over_node": {
+            "q64x2": 1.0916557603817671,
+            "q96x2": 1.1045003177515136,
+            "q96x3": 1.0956651146713468
+          },
+          "passed": true
+        }
+      },
+      "chronology": {
+        "protocol": "experiments/session_i/protocol.json",
+        "sha256": "19dce31c95d42a9b17c4ccb06d4c2912c1a9de369007cf3333b8e100cc813c3f",
+        "declared_utc": "2026-09-26T04:22:52.918966+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-i-a100-20260926/remote/job.json",
+            "started_utc": "2026-09-26T04:40:45.488168+00:00",
+            "finished_utc": "2026-09-26T05:22:17.243890+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-i-a100-20260926/remote/run-01/source/protocol.json",
+              "results/session-i-a100-20260926/remote/source/experiments/session_i/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-i-h100-20260926/remote/job.json",
+            "started_utc": "2026-09-26T05:27:10.403470+00:00",
+            "finished_utc": "2026-09-26T05:56:40.404668+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-i-h100-20260926/remote/run-01/source/protocol.json",
+              "results/session-i-h100-20260926/remote/source/experiments/session_i/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-i-rtx4090-20260926/remote/job.json",
+            "started_utc": "2026-09-26T04:30:46.575747+00:00",
+            "finished_utc": "2026-09-26T04:36:49.278550+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-i-rtx4090-20260926/remote/run-01/source/protocol.json",
+              "results/session-i-rtx4090-20260926/remote/source/experiments/session_i/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H14",
+      "type": "hypothesis",
+      "session": "I",
+      "question": "H14: on the RTX 4090, does the all-FP64 multigrid gain of modal8_muladd over fused_ai_fp64 stay >= 1.18x at the largest size that fits (fixed work)?",
+      "primary_cases": [
+        {
+          "id": "q64x2",
+          "q": 128,
+          "primary": true,
+          "note": "4.19 M elements, 12.8 M DOFs"
+        },
+        {
+          "id": "q96x2",
+          "q": 192,
+          "primary": true,
+          "note": "14.16 M elements, 43.0 M DOFs"
+        },
+        {
+          "id": "q96x3",
+          "q": 288,
+          "primary": true,
+          "note": "47.78 M elements, 143.5 M DOFs"
+        }
+      ],
+      "endpoint_and_threshold": "on the RTX 4090, at the largest primary case that fits: median fixed-work time(mg64-fused_ai)/time(mg64-modal8_muladd) >= 1.18",
+      "outcome": "supported at largest fitting primary case",
+      "recorded_decision": {
+        "session-i-rtx4090-20260926": {
+          "case": "q96x2",
+          "median_fused_over_modal": 1.3520307022438436,
+          "passed": true
+        }
+      },
+      "chronology": {
+        "protocol": "experiments/session_i/protocol.json",
+        "sha256": "19dce31c95d42a9b17c4ccb06d4c2912c1a9de369007cf3333b8e100cc813c3f",
+        "declared_utc": "2026-09-26T04:22:52.918966+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-i-a100-20260926/remote/job.json",
+            "started_utc": "2026-09-26T04:40:45.488168+00:00",
+            "finished_utc": "2026-09-26T05:22:17.243890+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-i-a100-20260926/remote/run-01/source/protocol.json",
+              "results/session-i-a100-20260926/remote/source/experiments/session_i/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-i-h100-20260926/remote/job.json",
+            "started_utc": "2026-09-26T05:27:10.403470+00:00",
+            "finished_utc": "2026-09-26T05:56:40.404668+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-i-h100-20260926/remote/run-01/source/protocol.json",
+              "results/session-i-h100-20260926/remote/source/experiments/session_i/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          },
+          {
+            "record": "results/session-i-rtx4090-20260926/remote/job.json",
+            "started_utc": "2026-09-26T04:30:46.575747+00:00",
+            "finished_utc": "2026-09-26T04:36:49.278550+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-i-rtx4090-20260926/remote/run-01/source/protocol.json",
+              "results/session-i-rtx4090-20260926/remote/source/experiments/session_i/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H15",
+      "type": "hypothesis",
+      "session": "J",
+      "question": "H15: on the RTX 4090, do dense8, modal8 and modal8_muladd each run at >= 70 % of FP64 pipe peak (sm__pipe_fp64_cycles_active, pct of peak sustained active), and do issued FP64 thread instructions (DADD+DMUL+DFMA) scale 78:52:34 within 5 % (ratios dense8/modal8_muladd and modal8/modal8_muladd)?",
+      "primary_cases": [],
+      "endpoint_and_threshold": "pipe utilization >= 70 % for dense8, modal8 and modal8_muladd, and |measured/static - 1| <= 0.05 for dense8/modal8_muladd (static 78/34) and modal8/modal8_muladd (static 52/34), using issued FP64 thread instructions",
+      "outcome": "failed count criterion; utilization part passed",
+      "recorded_decision": {
+        "utilization_part": true,
+        "count_deviation": {
+          "dense8": 0.08974358974358987,
+          "modal8": 0.04615384615384621
+        },
+        "count_part": false,
+        "passed": false
+      },
+      "chronology": {
+        "protocol": "experiments/session_j/protocol.json",
+        "sha256": "e347a7ed08c009a8a34aea55ca01d83d5dfc14f79a900783f903e1f346844b0b",
+        "declared_utc": "2026-09-26T05:25:58.623894+00:00",
+        "execution_records": [
+          {
+            "record": "results/session-j-rtx4090vm-20260926/remote/job.json",
+            "started_utc": "2026-09-26T04:35:56.815520+00:00",
+            "finished_utc": "2026-09-26T04:35:57.683968+00:00",
+            "matching_protocol_identity_records": [],
+            "chronology": "different amendment or no byte-identity link in inspected records; not used to prove final-protocol priority"
+          },
+          {
+            "record": "results/session-j-rtx4090vm-20260926-attempt04/remote/job.json",
+            "started_utc": "2026-09-26T05:10:11.521887+00:00",
+            "finished_utc": "2026-09-26T05:10:11.522221+00:00",
+            "matching_protocol_identity_records": [],
+            "chronology": "different amendment or no byte-identity link in inspected records; not used to prove final-protocol priority"
+          },
+          {
+            "record": "results/session-j-rtx4090vm-20260926-attempt05/remote/job.json",
+            "started_utc": "2026-09-26T05:18:57.720965+00:00",
+            "finished_utc": "2026-09-26T05:19:07.270912+00:00",
+            "matching_protocol_identity_records": [],
+            "chronology": "different amendment or no byte-identity link in inspected records; not used to prove final-protocol priority"
+          },
+          {
+            "record": "results/session-j-rtx4090vm-20260926-attempt06/remote/job.json",
+            "started_utc": "2026-09-26T05:23:47.809289+00:00",
+            "finished_utc": "2026-09-26T05:23:56.702160+00:00",
+            "matching_protocol_identity_records": [],
+            "chronology": "different amendment or no byte-identity link in inspected records; not used to prove final-protocol priority"
+          },
+          {
+            "record": "results/session-j-rtx4090vm-20260926-attempt07/remote/job.json",
+            "started_utc": "2026-09-26T06:04:06.814457+00:00",
+            "finished_utc": "2026-09-26T06:04:25.169413+00:00",
+            "matching_protocol_identity_records": [
+              "results/session-j-rtx4090vm-20260926-attempt07/remote/source/experiments/session_j/protocol.json"
+            ],
+            "chronology": "declared timestamp precedes execution; self-recorded clock evidence"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "record": "https://zenodo.org/records/23001863",
+  "doi": "10.5281/zenodo.23001863",
+  "title": "Matrix-free voxel elasticity on GPUs: artifact repository",
+  "version": "v1.0",
+  "publication_date": "2026-09-27",
+  "creators": [
+    {
+      "name": "Nejeoui, Abderrazzak",
+      "affiliation": "National School of Applied Sciences, Cadi Ayyad University, Marrakesh, Morocco",
+      "orcid": "0009-0000-6004-1777"
+    },
+    {
+      "name": "Bekkari, Aissam",
+      "affiliation": "National School of Applied Sciences, Cadi Ayyad University, Marrakesh, Morocco",
+      "orcid": "0009-0000-1400-6962"
+    }
+  ]
+}

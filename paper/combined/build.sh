@@ -12,6 +12,10 @@ $PY ../../analysis/session_h_tables.py ../../results/session-h-host1-20260926 ..
 $PY ../../analysis/session_i_tables.py ../../results/session-i-rtx4090-20260926 ../../results/session-i-a100-20260926 ../../results/session-i-h100-20260926 > /dev/null
 $PY ../../analysis/session_j_counters.py > /dev/null
 $PY ../../analysis/repro_numbers.py > /dev/null
+$PY ../../analysis/revision_algebra.py > /dev/null
+$PY ../../analysis/revision_accuracy.py > /dev/null
+$PY ../../analysis/revision_outcomes.py > /dev/null
+$PY ../../analysis/revision_registry.py > /dev/null
 $PY make_numbers.py > /dev/null
 # The manuscript text (main.tex, abstract.tex, body.tex) is published after the paper is accepted.
 # Until then the build stops here: every number, table and figure above has been regenerated.

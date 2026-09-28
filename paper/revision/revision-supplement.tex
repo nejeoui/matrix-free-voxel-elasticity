@@ -1,0 +1,2890 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  10pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[a4paper,landscape,margin=18mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[BoldFont=texgyreheros-bold.otf,ItalicFont=texgyreheros-italic.otf,BoldItalicFont=texgyreheros-bolditalic.otf]{texgyreheros-regular.otf}
+  \setmonofont[]{lmmono10-regular.otf}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{caption}
+\captionsetup[table]{skip=6pt}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{longtable,booktabs,array,seqsplit}
+\usepackage{xurl}
+\emergencystretch=3em
+\hfuzz=0.2pt % Ignore subpixel longtable column-rounding differences.
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{6pt}
+\AtBeginEnvironment{longtable}{\small}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  pdftitle={Supporting Information: matrix-free voxel elasticity},
+  pdfauthor={Abderrazzak Nejeoui and Aissam Bekkari},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Supporting Information: matrix-free voxel elasticity}
+\author{Abderrazzak Nejeoui and Aissam Bekkari}
+\date{27 September 2026}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+This supporting document accompanies the matrix-free voxel elasticity
+study. It contains operator construction, methods, accuracy, outcome,
+capacity, comparator, audit and hypothesis evidence. Numerical
+regeneration and selected CPU checks use retained records; no new GPU
+performance experiment is represented. Source paths are relative to the
+accompanying artifact. CSV/JSON files retain exact per-observation
+values and references where PDF tables use rounded summaries.
+
+\section{Algebra, quadrature and counter
+methods}\label{algebra-quadrature-and-counter-methods}
+
+This supplement specifies the operator construction and measurement
+definitions. Its numerical work consists of CPU algebra and reanalysis
+of retained counters; it contains no fresh GPU measurements.
+
+\subsection{Explicit parity permutation and coefficient
+convention}\label{explicit-parity-permutation-and-coefficient-convention}
+
+Let the native Hex8 node order be
+\texttt{\seqsplit{(000,100,110,010,001,101,111,011)}}, and encode a
+binary node as \texttt{n\ =\ nx\ +\ 2\ ny\ +\ 4\ nz}. Let
+\texttt{p=0,...,7} label coordinate modes and \texttt{c=0,1,2} label the
+x, y and z displacement components. Define
+
+\[
+H_{pn}=(-1)^{\operatorname{popcount}(p\mathbin{\&}n)},\qquad
+T_{3p+c,3i+d}=H_{p,n_i}\delta_{cd},\qquad TT^\top=8I.
+\]
+
+Thus \texttt{T} includes the native-to-binary node-column permutation
+and its output uses \texttt{(p,c)} order, with flat index \texttt{3p+c}.
+The block order is \texttt{(g,c)}, with \texttt{g\ =\ p\ xor\ 2\^{}c}
+and flat index \texttt{3g+c}. The permutation matrix is
+
+\[
+P_{3g+c,\;3(g\oplus2^c)+c}=1
+\]
+
+with all other entries zero. Write \texttt{A\ =\ T\ K0\ T\^{}T}. Each
+block is completely specified by
+
+\[
+(C_g)_{cd}=A_{3(g\oplus2^c)+c,\;3(g\oplus2^d)+d},
+\quad c,d\in\{0,1,2\}.
+\]
+
+For the stated element class,
+
+\[
+C=PTK_0T^\top P^\top=\operatorname{diag}(C_0,\ldots,C_7),\qquad
+K_0u=\frac1{64}T^\top P^\top CPTu.
+\]
+
+The factor \texttt{1/64} arises because \texttt{T\^{}(-1)=T\^{}T/8}
+appears on both sides of the transformed matrix. The implementation
+stores \texttt{C\_g/64}, not \texttt{C\_g}:
+\texttt{\seqsplit{code/hex\_modal/modal.py}} first forms
+\texttt{full=T@K0@T.T/64}, then selects
+\texttt{\seqsplit{GROUPS[g,c]=3*(g} \seqsplit{xor} \seqsplit{(1<<c))+c}}.
+Consequently its two unnormalised butterflies need no final division. In
+the eight-lane CUDA implementation, a lane owns mode \texttt{p} for all
+three components; the x/y/z coefficient blocks have group indices
+\texttt{p\ xor\ 1}, \texttt{p\ xor\ 2} and \texttt{p\ xor\ 4}. The
+required partner for component \texttt{d} in output component \texttt{c}
+is mode \texttt{p\ xor\ 2\^{}c\ xor\ 2\^{}d}. This implements \texttt{P}
+and \texttt{P\^{}T} through indexing/shuffles without materialising a
+permutation array.
+
+The exactness class is axis-aligned rectangular trilinear Hex8 elements,
+with an isotropic elasticity tensor constant within each element.
+Density multiplies the element tensor by a scalar modulus; it does not
+alter this symmetry. Under reflection of coordinate \texttt{a}, the
+scalar coordinate mode has character \texttt{(-1)\^{}p\_a}, while
+component \texttt{c} receives the additional vector sign
+\texttt{(-1)\^{}{[}a=c{]}}. The vector-mode character is therefore
+\texttt{(-1)\^{}(p\_a+{[}a=c{]})}. The elastic energy bilinear form is
+invariant under each reflection. For two modes with different
+characters, applying that reflection changes the sign of their coupling
+while preserving its value, so their coupling must vanish. Equality of
+all three characters is precisely equality of \texttt{g=p\ xor\ 2\^{}c}.
+Each of the eight characters has three component-mode pairs. All 24
+modes are retained. This argument does not extend the exactness claim to
+distorted or sheared cells, arbitrary rotations with untransformed
+material/components, anisotropy or material variation within the cell.
+
+The fresh check uses \texttt{E=1}, \texttt{nu=0.3}, exact \texttt{2×2×2}
+Gauss integration and FP64. Reconstruction means
+\texttt{\seqsplit{||K0-Kreconstructed||F/||K0||F}}; off-block means
+\texttt{\seqsplit{||C-blockdiag(C)||F/||C||F}}. Eigenvalues with
+absolute value at most
+\texttt{1e-10\ \textbar{}\textbar{}K0\textbar{}\textbar{}2} are counted
+as zero. The six analytic translations/rotations are separately checked
+as a null basis, and 24 coordinate vectors plus 32 seeded normal vectors
+check the implemented product.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1579}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Cell side lengths
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Reconstruction relative Frobenius error
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Off-block relative Frobenius norm
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Near-zero / positive / negative eigenvalues
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Smallest positive eigenvalue
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1×1×1 & 2.3077393e-16 & 1.6064287e-16 & 6 / 18 / 0 & 0.06410256 \\
+1×2×3 & 1.7818459e-16 & 1.3207403e-16 & 6 / 18 / 0 & 0.02548896 \\
+\end{longtable}
+}
+
+The reconstruction errors are approximately \texttt{2.31e-16} and
+\texttt{1.78e-16}, respectively. All blocks, eigenvalues, actual
+thresholds and additional residuals are generated in
+\url{algebra-checks.json}; the compact manuscript table is
+\url{algebra-invariants.tex}.
+
+The local plain, sign-bit and signed-multiply-add butterflies agree
+bitwise on the tested CPU FP64 corpus under the tested round-to-nearest
+arithmetic assumptions, including signed-zero and subnormal inputs.
+Multiplication by \texttt{±1} is exact in this scope, which explains the
+local identity. The CPU emulation is not a universal
+compiler/rounding/NaN guarantee. Complete assembled GPU products include
+floating-point atomic scatter, whose order may differ, and are described
+as numerically equivalent within the declared tolerances. They are not
+claimed bitwise identical.
+
+The source comparison must identify its scope. In
+\texttt{\seqsplit{experiments/session\_e/dependencies/cuda.py}},
+\texttt{modal8\_muladd} and \texttt{modal8\_signbit} are generated from
+\texttt{modal8} by changing the transform body and names; the layout,
+block product, modulus scaling and atomic scatter remain the same source
+text. The existing source-equality test checks precisely this. These
+variants deliberately change floating-point instruction selection. The
+\texttt{dense8} control in the same file uses the same eight-lane
+mapping but a dense local matrix product, and therefore does not differ
+from parity only in index arithmetic. The frozen
+\texttt{\seqsplit{code/hex\_modal\_cuda/cuda.py}} is the earlier
+plain/dense prototype.
+
+\subsection{Composite midpoint quadrature in the pinned
+release}\label{composite-midpoint-quadrature-in-the-pinned-release}
+
+The retained source observation identifies \texttt{getKEsubspace} in the
+pinned OpenMP GPU release (\texttt{b46ed453}) as using ten midpoint
+samples per fine-subcell axis. At the fine level this is
+\textbf{composite 10×10×10 midpoint quadrature per fine element}, namely
+1000 samples. The coarse-level construction integrates its fine subcells
+with the same per-subcell resolution. It is not single-point reduced
+integration of an entire Hex8 element.
+
+For the unit cell at \texttt{E=1}, the independent CPU tensor-rule
+calculation gives:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2727}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Poisson ratio
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\texttt{\seqsplit{||Kcomposite-KGauss||F/||KGauss||F}} (\%)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Composite near-zero / positive modes
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0.20 & 0.548361476 & 6 / 18 \\
+0.30 & 0.516454157 & 6 / 18 \\
+0.45 & 0.416469489 & 6 / 18 \\
+\end{longtable}
+}
+
+Here \texttt{KGauss} is the exact \texttt{2×2×2} Gauss matrix and the
+eigenvalue tolerance is again
+\texttt{1e-10\ \textbar{}\textbar{}K\textbar{}\textbar{}2}. These
+differences agree with the retained source replay within \texttt{1e-12}
+in relative Frobenius discrepancy. A literal one-point negative control
+has eighteen near-zero eigenvalues, but that pathology is not attributed
+to the pinned composite-rule release. The finding is a mismatch with
+this study's exact-Gauss operator contract. It does not by itself
+invalidate the audited mechanics or the conclusions of the original
+paper. The pinned Futhark constants (\texttt{c3cd2b00}) match exact
+Gauss to the recorded roundoff tolerance.
+
+Sources:
+\href{../../evidence/companion/results/rescope/hex-modal-priorart-20260923/cpu-protocol-02.json}{protocol
+and pre-execution source observation}
+(\texttt{\seqsplit{midpoint\_points\_per\_subcell\_axis=10}}),
+\href{../../evidence/companion/results/rescope/hex-modal-priorart-20260923/cpu-02/results.json}{retained
+CPU source replay} and \href{../../analysis/revision_algebra.py}{new
+independent calculation}. The legacy protocol and raw replay remain
+unchanged. The generated compact table is \url{quadrature-checks.tex}.
+
+\subsection{Exact counter quantities and profiling
+boundary}\label{exact-counter-quantities-and-profiling-boundary}
+
+Session J attempt 07 profiled the third launch after skipping two
+matching launches for each of five FP64 kernels on one RTX 4090 VM and a
+\texttt{128×64×64} grid (\texttt{524288} elements). This is one selected
+launch per kernel; each selected launch was replayed in twelve profiler
+passes, not twelve independent observations. The input vector is seeded
+normal (\texttt{numpy.default\_rng(7)}), and element moduli are
+\texttt{1e-9+(1-1e-9)*rho³} for seeded uniform \texttt{rho} in
+\texttt{{[}0,1)}.
+
+The three counted metrics are:
+
+\begin{verbatim}
+smsp__sass_thread_inst_executed_op_dadd_pred_on.sum
+smsp__sass_thread_inst_executed_op_dfma_pred_on.sum
+smsp__sass_thread_inst_executed_op_dmul_pred_on.sum
+\end{verbatim}
+
+Their sum counts \textbf{executed, predicate-enabled FP64 thread
+instructions}. Each DFMA contributes one instruction here; this is not
+the roofline's FLOP count, where an FMA contributes two operations.
+Static SASS instruction sites describe compiled code positions and are a
+separate quantity. Launched threads, active lanes and element count are
+also distinct.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1304}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Kernel
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Executed FP64 thread-instruction total
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Per element
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+FP64 pipe active-cycle peak (\%)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+DRAM elapsed-cycle peak (\%)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Profiled kernel duration (ns)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+dense8 & 314572800 & 600 & 93.48 & 5.19 & 594688 \\
+plain modal8 & 201326592 & 384 & 83.00 & 7.21 & 429152 \\
+mul-add modal8 & 125829120 & 240 & 88.01 & 12.14 & 254304 \\
+fused-ai & 314572800 & 600 & 97.47 & 5.42 & 569888 \\
+node & 402653184 & 768 & 94.74 & 2.26 & 769568 \\
+\end{longtable}
+}
+
+All totals are divided by \texttt{524288} elements. Eight threads per
+element applies to dense8 and the two modal variants, but fused-ai
+launches one thread per element and node owns output nodes (including
+boundary work). Dividing every total by \texttt{8*524288} would impose a
+fictitious shared thread layout. The corrected dense8/mul-add and
+fused-ai/mul-add count ratios both remain \texttt{2.5}.
+
+The utilization and time metrics are exactly:
+
+\begin{verbatim}
+sm__pipe_fp64_cycles_active.avg.pct_of_peak_sustained_active
+dram__throughput.avg.pct_of_peak_sustained_elapsed
+gpu__time_duration.sum
+\end{verbatim}
+
+The FP64 percentage normalizes to the unit's active cycles; the DRAM
+percentage normalizes to elapsed cycles. Their percentages therefore
+have different denominators, and the FP64 value is not an elapsed-time
+occupancy fraction. The duration is that of the selected profiled
+kernel, with the raw CSV unit \texttt{nsecond}. It excludes wrapper
+output zeroing, separate mask/projection kernels, host overhead,
+allocations, transfers and compilation. It must not be substituted for
+the ordinary complete constrained-product times that include their
+separate zeroing and projection operations.
+
+The recorded profiler is NVIDIA Nsight Compute CLI \textbf{2023.2.2.0,
+build 33188574}, from \texttt{\seqsplit{/usr/local/cuda-12.2/bin/ncu}}.
+The commands selected \texttt{SpeedOfLight},
+\texttt{\seqsplit{ComputeWorkloadAnalysis}},
+\texttt{\seqsplit{MemoryWorkloadAnalysis}}, \texttt{Occupancy} and
+\texttt{InstructionStats}, together with the requested exact metrics. No
+clock-control, cache-control or replay-mode override was supplied. The
+\href{https://archive.docs.nvidia.com/nsight-compute/2023.2/NsightComputeCli/index.html}{version-specific
+CLI documentation} specifies defaults \texttt{clock-control=base},
+\texttt{cache-control=all} and \texttt{replay-mode=kernel}: base-clock
+control is attempted, caches are flushed for replay, and kernel memory
+is saved/restored as required. This is a statement of the recorded
+command and documented defaults. The retained run does not independently
+establish successful clock locking, thermal/power stability or a
+profiler configuration/environment override audit. We do not invent that
+metadata.
+
+Source:
+\href{../../results/session-j-rtx4090vm-20260926-attempt07/remote/job.json}{job/version/command
+receipt}, \href{../../experiments/session_j/ncu_target.py}{target}, the
+five raw CSVs in
+\texttt{\seqsplit{results/session-j-rtx4090vm-20260926-attempt07/remote/ncu/}},
+and \href{../../analysis/session_j_counters.py}{regenerator}.
+\texttt{\seqsplit{paper/session\_j\_numbers.json}} schema 2 identifies
+the exact metrics and units, keeps per-metric totals, and records actual
+launch-thread and replay counts.
+
+\subsection{Post-hoc accounting and bounded
+interpretation}\label{post-hoc-accounting-and-bounded-interpretation}
+
+For kernel \texttt{k}, define \texttt{N\_k} as the count above and
+\texttt{U\_k} as the active-cycle FP64 pipe fraction. The descriptive
+ratio is \texttt{\seqsplit{(N\_k/U\_k)/(N\_muladd/U\_muladd)}}. Its
+maximum relative discrepancy from the same-launch profiled-duration
+ratio is \texttt{1.768\%} (approximately \texttt{1.8\%}). Because the
+utilization denominator already contains active execution-cycle
+information from that launch, dividing counts by utilization partly
+recovers cycle accounting. This is a post-hoc consistency result, not an
+independent prediction of runtime, a held-out validation or an
+explanation of every timing component.
+
+H15's utilization subcondition passes. Its static-count-ratio
+subcondition fails: the dense8/mul-add executed ratio \texttt{2.5}
+differs from \texttt{78/34} by \texttt{8.974\%}, beyond the declared 5\%
+threshold. This failed declaration remains visible. The smaller
+plain/mul-add discrepancy (\texttt{4.615\%}) does not rescue the joint
+hypothesis.
+
+High FP64 pipe activity, low DRAM throughput and fewer executed FP64
+instructions support FP64 throughput as a dominant constraint for these
+profiled workloads. They do not independently exclude cache behavior,
+latency or atomic costs, nor establish a bottleneck on the unprofiled
+A100, H100 or RTX 3090. Recommendations outside this RTX 4090 workload
+must instead be bounded by their own measured product and solver
+endpoints.
+
+\subsection{Hardware basis and idealized traffic of the
+roofline}\label{hardware-basis-and-idealized-traffic-of-the-roofline}
+
+The original declared roofline used the A100 80 GB \textbf{SXM}
+specification: 9.7 non-tensor FP64 TFLOP/s and 2039 GB/s. Its original
+FP64 ridge \texttt{4.7572\ FLOP/B} is retained and labeled. For the
+measured A100 80 GB \textbf{PCIe}, the SKU-specific calculation uses 9.7
+FP64 TFLOP/s, 19.5 FP32 TFLOP/s and 1935 GB/s from
+\href{https://www.nvidia.com/en-us/data-center/a100/}{NVIDIA's A100
+specification table}. The corresponding ridges are
+\texttt{5.0129\ FLOP/B} (FP64) and \texttt{10.0775\ FLOP/B} (FP32). The
+ideal dense/parity ratio remains \texttt{1.0} in both precisions. The
+added row is a revised SKU calculation; it is not relabeled as a
+prospective prediction. Both hardware bases and their status are emitted
+by \href{../../analysis/roofline.py}{roofline.py} to
+\href{../roofline.json}{roofline.json} and
+\href{../roofline.md}{roofline.md}.
+
+The 48 values per element count one gather of 24 displacement values and
+one scatter of 24 results. This is idealized traffic accounting, not
+measured DRAM bytes or a universal traffic lower bound. Shared-node
+reuse and cache hits can reduce DRAM loads; atomic read/modify/write
+transactions, modulus reads and constraint masks add traffic. The model
+excludes these effects and cannot establish their measured share of
+runtime.
+
+\subsection{Regeneration and verification
+record}\label{regeneration-and-verification-record}
+
+Executed on the local CPU on 2026-09-27:
+
+\begin{verbatim}
+.venv/bin/python analysis/revision_algebra.py
+.venv/bin/python analysis/session_j_counters.py
+.venv/bin/python analysis/roofline.py
+.venv/bin/python -m pytest tests/test_kernels_cpu.py experiments/session_e/test_session_e.py -q
+\end{verbatim}
+
+The algebra generator passed both geometry checks and all three
+quadrature cases. The existing tests passed \textbf{16/16}. The
+butterfly hard corpus emits six expected overflow/invalid-operation
+warnings while testing extreme inputs; all comparisons pass. The tests
+include FP64/FP32 lane emulation against assembled products, shuffle
+negative control, source equality for the butterfly variants, and the
+local bitwise corpus. This does not replace GPU execution or GPU
+accuracy replay. Counter totals were read directly from all five
+retained CSVs, then normalized by the protocol element count; H15's
+failed count condition remains failed. The parser additionally checks
+one data row per selected kernel and the raw units \texttt{inst},
+\texttt{\%} and \texttt{nsecond}. Direct checks of the generated JSON
+against the five raw totals passed; both dense8/mul-add and
+fused-ai/mul-add ratios equal \texttt{2.5}. Both original and
+reconstructed stiffness matrices have six near-zero and eighteen
+positive eigenvalues under the stated tolerance. The revised PCIe and
+original SXM roofline records retain their distinct bandwidths and both
+give ratio \texttt{1.0}.
+
+\section{Physical problems and solver
+accuracy}\label{physical-problems-and-solver-accuracy}
+
+This supplement specifies the implemented problems, including
+differences between experiment families. Paths refer to the accompanying
+artifact.
+
+\subsection{Constitutive and discretization
+contract}\label{constitutive-and-discretization-contract}
+
+Small-strain isotropic elasticity uses
+\texttt{\seqsplit{sigma} \seqsplit{=} \seqsplit{2} \seqsplit{mu} \seqsplit{epsilon} \seqsplit{+} \seqsplit{lambda} \seqsplit{tr(epsilon)} \seqsplit{I}},
+with \texttt{mu\ =\ E/{[}2(1+nu){]}} and
+\texttt{\seqsplit{lambda} \seqsplit{=} \seqsplit{E} \seqsplit{nu/[(1+nu)(1-2nu)]}}.
+The reference element uses \texttt{E=1}, \texttt{nu=0.3}, trilinear Hex8
+interpolation and exact tensor 2×2×2 Gauss integration. Each element has
+a spatially constant scalar modulus
+\texttt{\seqsplit{E\_e} \seqsplit{=} \seqsplit{Emin} \seqsplit{+} \seqsplit{(1-Emin)} \seqsplit{rho\_e\textasciicircum{}3}};
+this scalar multiplies its reference stiffness. The parity exactness
+claim does not cover distorted cells, anisotropic constitutive laws, or
+a tensor varying within an element.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Family
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Element geometry/material
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Densities and boundary/loading contract
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Sessions A--E, base cantilevers & Cubes of side \texttt{1/q}, grid
+\texttt{2q\ ×\ q\ ×\ q}; \texttt{Emin=1e-6}, except explicitly labeled
+Session C contrast cases \texttt{1e-9} & Clamp all displacement
+components on \texttt{x=0}. On the index line \texttt{x=nx,z=0}
+(physical x=2,z=0), apply negative z load with interior nodal weights
+\texttt{1/ny} and endpoint weights \texttt{1/(2ny)}, total force −1.
+Retained optimized fields at q=64/96; uniform control rho=0.12; smoke
+control q=4 and rho=0.12. \\
+Session I rediscretized scale & \texttt{make\_inputs.upsample} repeats
+each density and preserves the base \texttt{ke} byte for byte; the
+effective fine-element stiffness scale remains that of the q=64 or q=96
+base, with coarse matrices scaled by \texttt{2\^{}level};
+\texttt{Emin=1e-6} & Same clamp and total unit line-load rule on the
+enlarged grid. These are repeated coefficient fields, not new optimized
+designs. In particular, no extra \texttt{1/factor} stiffness scaling is
+applied during upsampling. \\
+Sessions F, G, H and I Galerkin branch & Donor \texttt{KE\_UNIT\_3D},
+the unit-cube matrix (not rescaled using the preset's domain
+coordinates); \texttt{Emin=1e-9}, penalty 3, nu=0.3 & Preset coordinates
+select supports/load nodes; force vectors and dimensions follow the
+pinned donor presets below. F integration: rho=0.5 or uniform random rho
+in {[}0.3,1{]}, NumPy seed 20260926. F sizing and I Galerkin: rho=0.5.
+G/H start from the preset volume fraction and use a density filter of
+radius 1.5 element spacings, move 0.15, top88 update without
+continuation/projection. \\
+Session J profiling & Unit-cube \texttt{ke\_unit\_3d.npy};
+\texttt{Emin=1e-9}, penalty 3 & NumPy \texttt{default\_rng(7)}:
+standard-normal displacement vector followed by uniform {[}0,1{]}
+densities. This is a product workload; no physical solve or load case is
+inferred from it. \\
+\end{longtable}
+}
+
+The base force/mask are reconstructed by
+\texttt{\seqsplit{experiments/session\_i/make\_inputs.py:regenerate}};
+factor-one equality is checked in \texttt{test\_session\_i.py}. The
+uniform density is read directly from
+\texttt{\seqsplit{experiments/session\_e/inputs/uniform-q64.npz}}.
+Material and stopping parameters are in each frozen protocol.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+G/H case (preset)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Grid
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Preset domain
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Initial/target volume
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Supports and force
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+cantilever-216k (\texttt{cantilever\_gpu\_large}) & 120×60×30 & 2×1×0.5
+& 0.30 & Clamp left face; \texttt{(0,-1,0)} point force nearest
+\texttt{(2,0.5,0.25)} \\
+cantilever-512k (\texttt{\seqsplit{cantilever\_gpu\_xlarge}}) &
+160×80×40 & 2×1×0.5 & 0.30 & Same normalized location and unit force \\
+mbb-514k (\texttt{mbb\_gpu\_xlarge}) & 210×70×35 & 3×1×0.5 & 0.50 &
+Left-face \texttt{pin\_x} fixes only ux; point \texttt{pin\_y} fixes
+only uy nearest \texttt{(3,0,0.25)}; \texttt{(0,-1,0)} force nearest
+\texttt{(0,1,0.25)}. No uz constraint is added by this preset. \\
+torsion-499k (\texttt{torsion\_gpu\_500k}) & 165×55×55 & 3×1×1 & 0.25 &
+Clamp left face; forces \texttt{(0,-0.5,+0.5)} at \texttt{(3,1,0.5)} and
+\texttt{(0,+0.5,-0.5)} at \texttt{(3,0,0.5)} \\
+\end{longtable}
+}
+
+These are the exact pinned \texttt{presets.py} and
+\texttt{bc\_generator.py} conventions, including nearest-node snapping
+via \texttt{argmin} and removal of loads on constrained DOFs. Domain
+coordinates specify that snapping; the unit-element stiffness in the
+donor runner is a separate convention and is not silently replaced by
+physical-domain-scaled stiffness.
+
+F integration uses the same cantilever domain/support/load convention,
+with the 80×40×20 \texttt{\seqsplit{cantilever\_gpu\_medium}} grid and
+an overridden 37×23×17 odd grid. F sizing uses 252×126×63 (2M) and
+342×171×86 (5M) first, with later declared sizes 432×216×108,
+544×272×136 and 640×320×160 subject to the stop-on-failure ladder. I's
+Galerkin branch uses 200×100×50 and 252×126×63. All of these retain the
+same unit-cube stiffness convention and point force; they do not use the
+rediscretized family's line load. These are actual implementation
+conventions, not a claim that the dimensioned preset boxes set each
+stiffness length scale.
+
+\subsection{Residual and energy
+definitions}\label{residual-and-energy-definitions}
+
+Let \texttt{M} be the diagonal free-DOF mask and
+\texttt{A=M\ K\ M+(I-M)}. The full-vector residual is
+\texttt{\textbar{}\textbar{}A\ u-f\textbar{}\textbar{}\_2/\textbar{}\textbar{}f\textbar{}\textbar{}\_2}.
+Saved states must be finite and exactly zero at constrained DOFs;
+\texttt{f} is also zero there, so this equals the free-space norm. For
+the rediscretized CPU/C-reference gate, energy--work discrepancy is
+\texttt{\seqsplit{|sum\_e} \seqsplit{E\_e} \seqsplit{u\_e\textasciicircum{}T} \seqsplit{K0} \seqsplit{u\_e/(f\textasciicircum{}T} \seqsplit{u)-1|}};
+the numerator is twice the strain energy, with no extra 1/2. These
+checks compare the same physical units.
+\texttt{\seqsplit{analysis/revision\_accuracy.py}} regenerates maxima,
+counts and source paths in \texttt{accuracy.json} and
+\texttt{accuracy.md}. Their E/I maxima cover all retained in-run
+independent checks, not just saved-state replay: 440 states for Session
+E across two hosts, 36 for RTX scale and 96 for A100/H100 scale.
+Separate retained local Session E replay covers the first repetition for
+each case/arm (44 states per host, 88 total); its largest residual is
+4.35296445e-9. Session I retains in-run CPU/C-reference checks and
+solution hashes, without a separate saved-state replay being claimed
+here.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Experiment/endpoint
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Requested stop
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Independent acceptance
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Coverage/exception
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A--C solves to tolerance; D/E rediscretized multigrid & true relative
+residual 1e-8 & CPU reference residual \textless=1e-7; energy--work
+\textless=1e-6; finite state and exact fixed zeros & Accuracy gates are
+separate from timing; fixed-work runs intentionally do not stop by
+tolerance. \\
+I rediscretized multigrid & true relative residual 1e-8 & C-reference
+residual \textless=1e-7; energy--work \textless=1e-6; exact fixed zeros
+& Checks executed during retained GPU runs; reported maxima are from
+those records. \\
+F Galerkin integration & 1e-10, max 300 iterations & stock-operator true
+residual \textless=1e-10 and solution relative L2 agreement
+\textless=1e-8 & Product agreement \textless=1e-12. Mixed random-density
+cases on A100/H100 hit cap; integration gate failed. \\
+F Galerkin sizing & 1e-8, max 40 iterations & native convergence
+flag/iteration count only in sizing records; no separate stock residual
+replay & A successful allocation/sizing run is not proof that the capped
+solve met tolerance. \\
+G/H Galerkin optimization & donor default CG tolerance 1e-5, max 1000,
+warm starts; automatic method resolves to PCG for these FP64/FP32
+smoother schedules & Recorded linear-solve gate uses the iteration-cap
+proxy
+(\texttt{\seqsplit{last\_cg\_iters} \seqsplit{<} \seqsplit{cg\_maxiter}});
+final compliance relative difference \textless=1e-3 against stock on
+repetition 1, final physical volume within 1e-3 of target on all fixed
+trajectories & Donor PCG tests recursive residuals (plus its initial
+true residual), rather than recomputing true residual every iteration.
+G/H outputs do not carry the E/I independent C-reference residual/energy
+check. Capped designs are not converged optimizations. \\
+I Galerkin branch & 1e-8, max 1000 for preliminary solves & retained
+donor convergence records; fixed-work endpoint uses 50 iterations & Do
+not infer the rediscretized branch's independent accuracy gate for this
+branch. \\
+J product counters & no iterative stop & no solver residual endpoint &
+One profiled kernel launch, not a solve. \\
+\end{longtable}
+}
+
+A--C test the Jacobi/iterative-refinement outer solution's true residual
+at their declared checks (every 50 PCG iterations); they are not
+instances of the D/E/I flexible-CG recurrence below. The donor G/H
+solver also retries failed warm-start solves from zero. Its cap proxy
+and compliance/volume comparisons are reported as those checks, without
+converting them into a broader independently verified residual claim.
+
+\subsection{Flexible CG and product
+accounting}\label{flexible-cg-and-product-accounting}
+
+The rediscretized hierarchy halves all three extents while
+\texttt{nx\textgreater{}16} and every extent is even. It stops early if
+another halving would be nonintegral: the largest q96x3 hierarchy ends
+at 18×9×9, for example. Noncoarsest operators are matrix-free, with
+averaged child moduli and
+\texttt{\seqsplit{K0\_coarse=2\textasciicircum{}level} \seqsplit{K0\_fine}};
+the coarsest constrained matrix is assembled and factored by dense
+Cholesky.
+
+\texttt{src/voxel\_mg.py:fcg} implements FP64 Polak--Ribière flexible
+CG, including when the preconditioner computes its V-cycle in FP32.
+Start with \texttt{x=0,\ r=b},
+\texttt{\seqsplit{z=B(r),} \seqsplit{p=z,} \seqsplit{delta=r\textasciicircum{}T} \seqsplit{z}}.
+Each iteration computes:
+
+\begin{verbatim}
+q = A p
+alpha = delta / (p^T q)
+x = x + alpha p
+r_new = r - alpha q
+if a requested true-residual check is due:
+    r_new = b - A x
+    stop if ||r_new|| / ||b|| <= tolerance
+z_new = B(r_new)
+beta = r_new^T (z_new-z) / delta
+p = z_new + beta p
+delta = r_new^T z_new
+r, z = r_new, z_new
+\end{verbatim}
+
+The checked residual replaces the recursive residual. The routine
+defaults to \texttt{check\_every=5}, but D/E/I frozen protocols pass
+\texttt{check\_every=1}: a successful to-tolerance iteration therefore
+costs two outer products (search direction and true residual).
+Fixed-work mode skips intermediate replacement and uses K direction
+products plus one final true-residual product, K+1 total. A capped
+to-tolerance exit executes the final check as well: with
+\texttt{check\_every=1}, a cap of K iterations costs \texttt{2K+1} outer
+products if no early return succeeds. This recurrence describes the
+rediscretized solver; G/H retain the separate donor solver and its
+tolerance.
+
+\subsection{Damping estimator and
+limits}\label{damping-estimator-and-limits}
+
+\texttt{spectral\_omegas} estimates the spectral radius of
+constrained/free-space \texttt{D\^{}-1\ A} on each noncoarsest level. It
+initializes a NumPy standard-normal vector, masks fixed DOFs and
+normalizes it. For 30 iterations it computes \texttt{w=D\^{}-1\ A\ v},
+masks fixed DOFs, sets
+\texttt{lambda=\textbar{}\textbar{}w\textbar{}\textbar{}\_2} and
+\texttt{v=w/lambda}. Then \texttt{omega=4/(3\ lambda)}. The random
+generator is restarted on each level with the same seed, not advanced
+continuously across levels. Default seed is 20260923; runners pass their
+protocol \texttt{order\_seed} (D/E: 2026092320; I: 2026092621). The
+reference FP64 hierarchy uses node-owned products; every arm shares its
+estimated weights and the same host-computed coarsest factor, with that
+factor cast to the arm's preconditioner precision on construction.
+
+Thirty power steps are an estimate, not a certified upper eigenvalue
+bound. Empirical evidence consists of CPU smoother/transfer tests and
+the retained successful residual/energy checks for the tested
+coefficient fields. A fixed 0.6 damping failed heterogeneous CPU cases.
+Neither the estimator nor those tests establish universal smoother
+stability or mixed-precision convergence. The exact rational
+factorization certificates in the separate pinned-release audit concern
+different ideal operators and must not be attributed to this power
+estimate.
+
+Verification on 2026-09-27:
+\texttt{\seqsplit{.venv/bin/python} \seqsplit{-m} \seqsplit{pytest} \seqsplit{tests/test\_mg\_cpu.py} \seqsplit{-q}}
+passed all 10 existing CPU checks, including transpose transfers,
+uniform-modulus Galerkin equality, tested V-cycle symmetry,
+FP32-preconditioned convergence and fixed-work product accounting. The
+five existing Session I checks also passed
+(\texttt{\seqsplit{.venv/bin/python} \seqsplit{-m} \seqsplit{pytest} \seqsplit{experiments/session\_i/test\_session\_i.py} \seqsplit{-q}}),
+including input regeneration and the CPU dry-run scale path. Input
+inspection independently confirmed base \texttt{ke} against exact Gauss
+cells of side \texttt{1/q} to about 3.1e-16 relative Frobenius error,
+and exactly reproduced every base mask and force using
+\texttt{regenerate}. These are CPU checks and source/record inspection,
+not new GPU validation.
+
+\section{Retained accuracy results}\label{retained-accuracy-results}
+
+Generated by
+\texttt{\seqsplit{python} \seqsplit{analysis/revision\_accuracy.py}}.
+This inspects retained independent-check records; it is not a new GPU
+experiment or fresh state replay.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1304}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Experiment
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+In-run checked states
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Requested
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Independent acceptance
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Observed residual maximum
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Energy--work maximum (limit 1e-6)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Session E, two RTX 4090 hosts & 440 & 1e-08 & 1e-07 & 4.35301436e-09 &
+7.94719845e-12 \\
+Session I, RTX 4090 & 36 & 1e-08 & 1e-07 & 4.43192315e-09 &
+3.06175085e-11 \\
+Session I, A100 and H100 & 96 & 1e-08 & 1e-07 & 7.44563488e-09 &
+6.84184931e-11 \\
+\end{longtable}
+}
+
+Source records:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{\seqsplit{results/session-e-host1-20260925/remote/run-01/result.json}}
+\item
+  \texttt{\seqsplit{results/session-e-host2-20260925/remote/run-01/result.json}}
+\item
+  \texttt{\seqsplit{results/session-i-rtx4090-20260926/remote/run-01/result.json}}
+\item
+  \texttt{\seqsplit{results/session-i-a100-20260926/remote/run-01/result.json}}
+\item
+  \texttt{\seqsplit{results/session-i-h100-20260926/remote/run-01/result.json}}
+\end{itemize}
+
+Separate retained local CPU replay of saved Session E states (first
+repetition only):
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{\seqsplit{results/session-e-host1-20260925/local-verification.json}}:
+  44 states, maximum residual 4.35290392e-09; all passed.
+\item
+  \texttt{\seqsplit{results/session-e-host2-20260925/local-verification.json}}:
+  44 states, maximum residual 4.35296445e-09; all passed.
+\end{itemize}
+
+Session I records CPU/C-reference checks during each GPU run and
+solution hashes; this summary does not claim a separate saved-state
+replay for that family.
+
+\section{Timing, optimization outcomes and measured
+scale}\label{timing-optimization-outcomes-and-measured-scale}
+
+This supplement documents optimization outcomes, solver performance and
+measured capacity. Its \href{outcomes-scale-tables.md}{generated
+tables}, \href{outcomes-scale.json}{exact JSON} and CSV files are
+regenerated from retained evidence by
+\texttt{\seqsplit{python3} \seqsplit{analysis/revision\_outcomes.py}}.
+This is numerical regeneration on the CPU, not fresh GPU execution.
+Every optimization, scale-solve and Galerkin record includes its raw
+file and JSON pointer; input hashes are in the JSON. Historical fields
+named \texttt{complete} or \texttt{\seqsplit{complete\_optimization}}
+are retained as evidence identifiers and do not establish design
+convergence.
+
+\subsection{Experiment manifest and timing
+boundaries}\label{experiment-manifest-and-timing-boundaries}
+
+The \href{experiment-manifest.csv}{manifest CSV} and generated hardware
+table list GPU SKU/capacity, CPU, driver, CUDA runtime, CuPy, compiler,
+host/allocation count, cases, arms, repetitions, warmup and endpoints
+for 20 measured allocations across A--J, synthetic replication and
+libCEED. An unavailable entry is NR/null. NVRTC is the CUDA just-in-time
+compiler; a Python build's GCC version does not identify the C++
+reference compiler. The native libCEED harness retained nvcc/GCC version
+commands; reference-compiler versions were not separately retained in
+the CuPy session records. CUDA driver capability, locally installed
+runtime and CuPy-linked runtime are different fields. Where the
+installation record distinguishes them, its full value is preserved.
+Clock telemetry is a snapshot; no common fixed-clock policy is claimed.
+Manifest rows identify the metadata files examined. The only missing CPU
+model is Session A: its manual rental/preflight records 32 CPUs and 188
+GB RAM, but no CPU model; the retained installation and result records
+do not supply one.
+
+The synthetic FP64 product study directly measured one RTX 4090 and an
+independent RTX 3090, with plain parity, dense8 and the three donor
+products. It used five warmup calls, eleven paired rounds and twenty
+products per timed batch. Session A used one RTX 4090 for physical-state
+products/Jacobi-PCG/refinement, B one \textbf{A100 80GB PCIe}, and C
+another RTX 4090 for refinement and modulus-floor sensitivity. A/B had
+three tolerance repetitions; C had two. Their product measurements used
+eleven rounds of twenty products, and fixed-work solves ten paired
+rounds. Session D used one RTX 4090 for rediscretized multigrid, five
+tolerance repetitions and ten fixed-work rounds. Session E used two RTX
+4090 hosts, eleven product rounds of twenty products, five tolerance
+repetitions and ten fixed-work rounds. Full cases and kernel variants
+are preserved in the manifest's structured columns and the named
+protocols.
+
+Session F's feasibility cards were RTX 4090, A100 80GB PCIe and
+\textbf{H100 NVL (95830 MiB reported physical memory)}. The Session I
+scale H100 was \textbf{H100 80GB HBM3 (81559 MiB)}. They are different
+hardware. No measured A100 PCIe result is relabeled as an A100 SXM
+measurement; the historical SXM specification used in the roofline
+calculation is a separate model input.
+
+Session G ran three paired 30-step trajectories per case/schedule on
+each of two RTX 4090 hosts. H ran three paired \textbf{100-step}
+trajectories on each of two other RTX 4090 hosts. Each warmed one step
+per case/schedule/arm. Each also retained one additional trajectory per
+arm/schedule for the 216k cantilever, stopping on design change or the
+150-step cap. There are three arms (stock gather/DGEMM/scatter, fused-ai
+FP64, parity mul-add) and two four-level Galerkin schedules (FP64 and
+mixed). Session I used one allocation per GPU type: RTX 4090, A100 80GB
+PCIe and H100 80GB HBM3. It used five rounds of ten products, two
+tolerance solves per arm and three paired fixed-work rounds, plus one
+instrumented profile per selected arm/case. Its W2a Galerkin check used
+two blocks with three fixed 50-iteration solves per block/arm/schedule
+and one separate tolerance attempt in block zero.
+
+Session J used one RTX 4090 VM for the successful counter collection,
+five FP64 kernels at 128×64×64 elements, and one selected launch per
+kernel after skipping two matching launches. Nsight Compute 2023.2.2.0
+replayed the selected launch in twelve metric passes; these are not
+twelve independent timing samples. Profiler kernel duration excludes
+wrapper zeroing/projection and host overhead. The installation logs
+identify cudart/NVRTC 12.2.140; no separate loaded-runtime version query
+is retained. \href{algebra-counters.md}{Counter methods} retain
+clock/cache/replay policy and distinguish unavailable achieved-clock
+metadata. The libCEED native CUDA/C harness used one RTX 4090
+allocation, FP64, six timed shape/pattern combinations from 64×32×32 to
+192×96×96, five seconds of warmup and twelve randomized blocks of 256
+actions. Each action zeroes output, applies the operator and identity
+rows, then synchronizes; host steady-clock time is primary. Setup,
+allocations, conversion, transfers and compilation are excluded.
+Byte-verified metadata extracted from the deposited files archive
+records the Ryzen 5 5600X CPU, driver 595.58.03, 24564 MiB GPU memory,
+nvcc 12.6.85, GCC 11.4.0 and CUDA 12.6 SDK probe. Extraction member
+names and hashes are in
+\texttt{\seqsplit{provenance/revision/manifest-metadata/extractions.json}};
+the two original synthetic product hosts' rental/CuPy metadata was
+recovered by the same method. See \href{provenance-audit.md}{comparator
+provenance}.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Endpoint
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Included in its timer
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Excluded or separately recorded
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Synthetic and A--C complete constrained product & Output zeroing where
+needed, mask/projection, launch, assembly/atomic scatter and constrained
+identity restoration & Input generation, host/device transfer,
+setup/JIT, validation; resident buffers reused \\
+E/I isolated raw product & Output zeroing and operator action;
+CUDA-event elapsed time & Mask/projection is outside the raw product
+call; constrained entries of the probe were zeroed;
+transfers/setup/JIT/replay excluded \\
+D/E/I fixed-work solve & Synchronized solver wall time, vector
+allocations performed by the solver, prescribed Krylov iterations, all
+V-cycle/outer actions, vector operations and reductions & Hierarchy
+construction, coarse factorization, spectral estimate, compilation
+warmup, host transfer and independent physical check \\
+D/E/I solve to tolerance & Same solver boundary, including each
+true-residual recomputation/replacement and stopping test & Same
+setup/replay exclusions; not the same product count as a fixed-work
+run \\
+G/H total optimization wall & Solver construction, initial
+allocations/transfers, every solve, density-dependent hierarchy setup,
+filtering, sensitivities, OC update and synchronization & One-step
+compilation warmup precedes timed trajectories; state saving and final
+cleanup occur after timer stops \\
+F capacity probe & Cold constructor/setup and a separately timed capped
+solve; initial compilation may occur & It is not a warm solve to
+tolerance \\
+I W2a & \texttt{setup\_seconds} times \texttt{gmg.setup(E)}; fixed-work
+time brackets PCG and its synchronized allocations/actions & BC
+generation, operator/GMG construction precede setup timer; setup is not
+the full construction cost; GPU memory sample is after setup \\
+\end{longtable}
+}
+
+The G/H \texttt{gmg\_setup\_ms} sum is the repeated density-dependent
+setup time. Initial solver/hierarchy construction is in the total wall
+time but not isolated by a retained timer; it cannot be recovered by
+subtracting CG/setup/sensitivity totals because the remainder also
+includes filtering, OC, transfers and other work. Thus the table reports
+that construction component as NR instead of inventing a split. For H,
+density filtering and OC are GPU resident; G performs these on the CPU
+and includes associated transfers. Warmup removes many JIT costs but
+does not prove that every later call is compilation-free.
+
+Session I shared setup includes transfers, construction of reference
+hierarchy, host dense coarsest assembly/Cholesky and 30-step spectral
+estimation. Per-arm setup is the recorded incremental construction time
+with possible reuse of compilation/cache state, not six independent cold
+costs. All six arms are resident in the measured harness before solves.
+Its reported fitting size and OOM are therefore implementation/harness
+capacity observations, not isolated per-arm optimal capacity limits.
+
+\subsection{Uncertainty and decisions}\label{uncertainty-and-decisions}
+
+Session E computes a paired ratio for each \textbf{round}: numerator
+time divided by candidate time. The statistic is the median of these
+ratios, not the ratio of medians. Its one-sided 95\% lower bound is the
+5th percentile of 10,000 bootstrap sample medians, resampling the round
+ratios with replacement using NumPy
+\texttt{\seqsplit{default\_rng(order\_seed)}} (\texttt{2026092320});
+sample size equals the number of paired rounds. Twenty products within
+one round are repeated work in a batch, not twenty independent
+observations. See
+\texttt{\seqsplit{experiments/session\_e/analysis.py:bootstrap\_lower}}
+and the frozen protocol's H8/H9 rules. H8 requires median ≥1.05 and
+lower bound ≥1.02 against the fastest declared donor on both primary
+cases, with all rounds and checks present. H9 requires its separately
+declared all-FP64 fixed-work thresholds. The synthetic study uses its
+own bootstrap seed (\texttt{20260924}) and declared thresholds; A--D use
+their frozen analysis/protocol rules.
+
+A narrow interval such as 1.259 with lower bound 1.258 describes
+within-session round variability conditional on the measured
+host/configuration. It does not quantify uncertainty over rental hosts,
+GPU populations, arbitrary designs or the choice of implementation. The
+two-host E replication is a separate outcome, not a bootstrap population
+sample.
+
+G/H use \textbf{median-threshold decisions}, not one-sided bootstrap
+tests. For each primary all-FP64 case on a host, H11/H11b requires
+median paired wall ratio ≥1.10, at least two completed repetitions,
+total Krylov counts matched within 3\% in every pair, and the
+compliance/volume/solve gate. Replication requires both hosts to pass.
+The generated paired table prints all three observations, including
+variability and unfavorable results. Mixed-schedule H12/H12b comparisons
+are descriptive medians with a declared expectation below 1.10; they are
+not confidence-bound decisions. Single capped trajectories have no
+repeated-sampling uncertainty estimate. Session I H13/H14 also use
+declared median thresholds on three fixed-work rounds; two tolerance
+times support a descriptive ordering among the tested routes, not a
+statistical universal winner.
+
+\subsection{Optimization outcomes and validation
+coverage}\label{optimization-outcomes-and-validation-coverage}
+
+The \href{optimization-outcomes.csv}{outcome CSV} contains all 288
+fixed-length trajectories (four hosts × four cases × two schedules ×
+three arms × three repetitions), 24 capped trajectories and two Session
+G auxiliary diagnostics. No diagnostic, cap or unfavorable ratio is
+discarded. It records step count, exit reason, total Krylov count, wall
+time, CG time, hierarchy re-setup, sensitivity/diagonal times, final
+logged compliance, volume and design change. The readable table gives
+separately computed medians per host/case/schedule/arm, with n=3 for
+fixed runs and n=1 for capped runs. Exact per-repetition values and
+sources remain in CSV/JSON.
+
+The donor log's final compliance is evaluated at the density
+\textbf{before the last OC update}. Its final volume and design change
+refer to the physical density/new design after that update. These are
+the retained endpoint conventions, not a new equilibrium solve on the
+saved final density. Design change is the infinity norm of the
+unfiltered design-variable update \texttt{max(abs(x\_new-x))}; the cap
+criterion implemented in the frozen runner is
+\texttt{change\ \textless{}=\ 0.01}. All 150-step trajectories exited at
+the iteration cap. For example, H host 2 FP64 parity ends at change
+\textbf{0.1484386706} (G host 1: \textbf{0.1484407262}), far above 0.01.
+Successful linear solves and matching compliance do not imply that the
+design has converged. These are capped end-to-end trajectories; no
+time-to-converged-design claim is made.
+
+The fixed-run agreement gate compares each nonstock arm's repetition-1
+final logged compliance to stock, using
+\texttt{\seqsplit{abs(C\_arm-C\_stock)/abs(C\_stock)} \seqsplit{<=} \seqsplit{1e-3}}.
+Every fixed run is checked for final physical volume within absolute
+\texttt{1e-3} of the preset volume fraction and no solve whose iteration
+count reaches the 1000-iteration cap. This is compliance/volume
+agreement under that coverage; it is not density-field equivalence. The
+current analysis does not compute a density-field norm, maximum per-step
+compliance difference, or a same-state independent residual for every
+optimization solve. Stored design arrays cover repetition 1 and the
+capped trajectories; repetitions 2/3 have scalar histories, not stored
+fields. The frozen protocol's intention to report field norms must not
+be confused with completed verification. The exposed
+\texttt{equivalence} compatibility field has precisely this narrower
+meaning.
+
+For H's \textbf{three primary 100-step all-FP64 cases}, median
+fused-ai/parity wall ratios span \textbf{1.080900--1.181485} over both
+hosts. Adding the 216k cantilever gives \textbf{1.023073--1.181485}. The
+fourth-case ratios are \textbf{1.025590 / 1.023073} on hosts 1/2. Its
+single capped FP64 trajectory gives \textbf{1.020899 / 1.021647}. Mixed
+runs and G's CPU-optimizer pipeline are separate populations: see the
+complete paired table, which includes H host 1's capped mixed ratio
+\textbf{0.850511}. None of these selected ranges describes every case,
+schedule and trajectory length.
+
+The earlier ``about 25 s instead of 66 s'' values are the medians of the
+six capped runs across three arms and two schedules, \textbf{H host 2:
+24.939278861 s; G host 1: 66.342864434 s}. They illustrate different
+pipelines on different rental hosts. They are not paired observations
+and do not isolate the causal effect of moving the optimizer to the GPU.
+Within-host, within-schedule arm comparisons remain the controlled
+performance evidence.
+
+\subsection{Practical kernel map and
+scope}\label{practical-kernel-map-and-scope}
+
+``Fastest'' below means fastest among the retained tested
+implementations, sizes, precision schedules and endpoint definitions.
+All statements are limited to axis-aligned isotropic Hex8 with the
+tested scalar SIMP modulus fields; enlarged coefficients are
+nearest-neighbor copies of the q64/q96 design family. This is neither
+arbitrary-contrast validation nor a general mixed-precision convergence
+result.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Hardware/evidence
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Isolated FP64 product
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Finest/outer choice in all-FP64 rediscretized solve
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fastest observed mixed tolerance route
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+RTX 3090 synthetic replication; 0.52/1.77 M elements & Plain parity
+directly measured & Mul-add/multigrid unmeasured; any suggestion is an
+extrapolation from 4090 & Unmeasured \\
+RTX 4090 E, two hosts; 0.52/1.77 M elements, and I, one host;
+1.77--14.16 M & Mul-add directly measured, including comparison with
+plain parity & Mul-add, fixed work; I 43.0 M total DOFs gives
+fused-ai/parity \textbf{1.352031}, all-FP64 & FP32 node V-cycle + FP64
+parity mul-add outer, directly measured \\
+A100 80GB PCIe B/I; up to 47.78 M elements in I & Node fastest among
+tested I FP64 products; fused-ai is not the fastest A100 product
+comparator & Node; I parity/node fixed-work ratio
+\textbf{1.189658--1.200122} & At q96x1, fused-ai outer
+\textbf{0.316095714 s}, node outer \textbf{0.319631294 s}; node outer
+wins enlarged cases \\
+H100 80GB HBM3 I; 1.77--47.78 M elements & Node in tested I product
+timings & Node; parity/node \textbf{1.179589} at q96x1 and
+\textbf{1.091656--1.104500} in enlarged primary cases & FP32 node
+V-cycle + FP64 node outer in tested cases \\
+\end{longtable}
+}
+
+The A100 q96x1 difference is about 1.1\% and uses only two tolerance
+repetitions per route on one host. It is a small observed advantage for
+fused-ai outer, not evidence that node always wins, nor proof of
+statistical equality. Product, all-FP64 fixed-work and mixed
+time-to-tolerance rankings must not be substituted for one another. The
+H100 1.09--1.10 range applies only to the enlarged primary cases; the
+continuity case is about 1.18.
+
+\subsection{Measured capacity and allocation
+semantics}\label{measured-capacity-and-allocation-semantics}
+
+The \href{outcomes-scale-tables.md}{scale table} reports every
+successful hardware/case/arm pair: exact elements, total/free DOFs,
+hierarchy depth, iteration counts, two warm solve times in the CSV,
+median in the readable table, shared and incremental setup.
+Rediscretized multigrid means matrix-free rediscretization on
+\textbf{noncoarsest} levels and a small assembled/factored coarsest
+operator solved by dense Cholesky. It does not mean no coarse operator
+is stored.
+
+The largest successful RTX 4090 case was q96x2: \textbf{14,155,776
+elements; 43,022,595 total DOFs; 42,910,848 free DOFs}. Its fastest
+observed warm tolerance route was FP32 node V-cycle / FP64 parity outer,
+median \textbf{2.116005612 s}. This endpoint differs from the
+approximately 1.35× \textbf{fixed-work all-FP64} speed ratio above. The
+q96x3 construction failed with OOM in the six-arm resident
+configuration. A100 and H100 completed q96x3: \textbf{47,775,744
+elements; 144,574,851 total DOFs; 144,324,288 free DOFs}, with fastest
+mixed medians \textbf{4.536915969 s} and \textbf{3.977970041 s},
+respectively. Counts are calculated from retained grid dimensions, not
+rounded protocol descriptions.
+
+Nearest-neighbor upsampling of the retained design fields demonstrates
+capacity and solver behavior for those fields. There is no independently
+optimized design at each resolution, general mesh-independent
+convergence result, or parallel strong/weak-scaling experiment.
+Different q64/q96 base fields also preclude treating the entire ladder
+as one identical-coefficient refinement sequence.
+
+Session F's pinned Galerkin implementation allocated about \textbf{46.3
+GiB device-used / 46.3 GiB pool-reserved} for its successful 2.000376
+M-element setup on A100/H100 NVL, or about \textbf{23 GiB per million
+elements}. This is a property of that implementation, construction
+arrays and allocator behavior, not an intrinsic requirement of all
+Galerkin methods. Device-used is total-minus-free CUDA memory;
+pool-reserved includes cached blocks and does not equal live arrays.
+Separate live-array totals and transient construction peaks were not
+measured. The allocation-failure message identifies a requested
+temporary allocation, not a successfully measured peak. The 2 M setup
+and 40-iteration solve succeeded as operations but did \textbf{not}
+reach tolerance. The 5.029452 M setup failed on both large cards; RTX
+4090 failed already at 2 M. Approximately 3 M on an 80 GB card is only
+an estimate between observed trials, not a measured maximum.
+
+W2a records every 1 M/2 M arm/schedule/block, including setup,
+device-used memory, 50-step fixed-work timing and the first tolerance
+attempt. The 1000-iteration cap failures remain labeled failures to
+converge; capacity or fixed-work timing is not converted into time to
+tolerance. The tables explicitly distinguish the feasibility H100 NVL
+from scale H100 HBM3 and the different setup timing boundaries.
+
+\subsection{Comparator denominators and session-specific
+ratios}\label{comparator-denominators-and-session-specific-ratios}
+
+The product comparison reports \textbf{fused-ai time / plain-parity
+time}. The practical kernel-map figure uses speed relative to the
+fastest tested donor product, which is node on A100; these denominators
+differ and are labeled. The RTX 4090 Nsight Compute examination in
+\href{algebra-counters.md}{counter methods} provides the retained
+hardware-counter evidence for the throughput interpretation.
+
+For Session E host 1 q96, the approximately
+\texttt{0.752\ /\ 0.326\ =\ 2.31} gain combines an FP32 node V-cycle
+\textbf{and} replacement of fused-ai outer by parity mul-add. Keeping
+fused-ai outer, \texttt{0.752\ /\ 0.369\ =\ 2.04} is the corresponding
+V-cycle precision/configuration change. The generator now supplies
+\texttt{\seqsplit{FpThirtyTwoVcycleGainQnineSix}} as well as the
+combined macro.
+
+The FP64 parity-PCG \textbf{20.3401218606 s} value belongs to Session C
+q96/Emin=1e-6 (median of two repetitions); \textbf{19.9638886160 s}
+belongs to Session A q96 (median of three repetitions). Different RTX
+4090 allocations and session statistics explain the two values; they are
+not two representations of one measurement.
+
+\subsection{Regeneration}\label{regeneration}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{.venv/bin/python}\NormalTok{ analysis/session\_g\_tables.py results/session{-}g{-}host1{-}20260926 results/session{-}g{-}host2{-}20260926}
+\ExtensionTok{.venv/bin/python}\NormalTok{ analysis/session\_h\_tables.py results/session{-}h{-}host1{-}20260926 results/session{-}h{-}host2{-}20260926}
+\ExtensionTok{.venv/bin/python}\NormalTok{ analysis/session\_i\_tables.py }\DataTypeTok{\textbackslash{}}
+\NormalTok{  results/session{-}i{-}rtx4090{-}20260926 results/session{-}i{-}a100{-}20260926 results/session{-}i{-}h100{-}20260926}
+\ExtensionTok{.venv/bin/python}\NormalTok{ analysis/revision\_outcomes.py}
+\ExtensionTok{.venv/bin/python}\NormalTok{ paper/manuscript/make\_figures.py}
+\end{Highlighting}
+\end{Shaded}
+
+These commands preserve all raw results, saved states, frozen code and
+protocols. Generated summaries retain every case and expose capped
+exits, setup components and statistical coverage rather than silently
+strengthening the original observations.
+
+\section{Comparator provenance, release audit and claim
+evidence}\label{comparator-provenance-release-audit-and-claim-evidence}
+
+Evidence check date: 2026-09-27. This supplement documents comparator
+provenance, pinned-release audits and claim evidence. Paths are relative
+to the artifact repository unless explicitly described as members of a
+deposited archive. Historical protocols and results remain unchanged.
+Numerical values are summarized from retained records, not from new GPU
+runs.
+
+\subsection{Contribution and closest
+comparisons}\label{contribution-and-closest-comparisons}
+
+The engineering contribution is an exact low-order Hex8 parity
+implementation, comparison of its floating-point butterfly forms, and
+controlled measurement of where its product advantage survives in solver
+and optimization contexts. The tensor sign basis, reflection
+decomposition and Hadamard butterfly are established mathematics. The
+signed multiply-add implementation is an FP64 adaptation of Tri Dao's
+\texttt{\seqsplit{fast-hadamard-transform}}, commit
+\texttt{\seqsplit{e7706faf8d1c3b9f241e36860640ad1dac644ede}},
+\texttt{\seqsplit{csrc/fast\_hadamard\_transform\_common.h}};
+attribution and BSD notice are retained in
+\texttt{\seqsplit{experiments/session\_e/dependencies/ATTRIBUTION.md}}
+and \texttt{DAO-LICENSE}. No claim that all earlier Q1 methods lack a
+basis change is needed.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Implementation / closest work
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Element and operator
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Integration / coefficient
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Layout and accumulation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Precision and reduction
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+This parity product & Axis-aligned rectangular Hex8, isotropic
+elasticity, constant tensor per cell times scalar modulus & Exact 2×2×2
+Gauss law; per-cell scalar SIMP modulus & Eight lanes per element,
+analytic indices, shared-node atomic scatter & FP64 local parity blocks;
+three butterflies tested; FP32 counterpart tested separately \\
+Kiran, Gautam and Sharma (2020) & \textbf{Four-node quadrilaterals};
+elasticity and scalar heat examples & Supplied element stiffness; the
+selected method screen did not establish the integration rule &
+Unstructured mesh data; element submatrices, warp communication,
+coloring to prevent conflicting updates & Double precision; triangular
+symmetry/storage reduction, rather than this Hex8 reflection-block
+construction \\
+Yang fused release, \texttt{fused\_fp64} / \texttt{fused\_ai\_fp64} &
+Cartesian Hex8 elasticity, dense 24×24 element action & Same
+caller-supplied exact-Gauss matrix and per-element modulus in this
+comparison & One thread per element; explicit edof / analytic indexing;
+atomic scatter & Supplied FP64 code paths; no parity basis reduction \\
+Same release, \texttt{node\_fp64} & Same physical operator & Same matrix
+and modulus & One thread per output node, incident-element gather, no
+scatter atomics & Supplied FP64 instantiation; duplicated
+incident-element reads and fixed accumulation order \\
+Yang Galerkin stock FP64 & Same low-order elasticity family &
+Caller-supplied fine matrix; assembled Galerkin coarse levels & CuPy
+gather, DGEMM, \texttt{bincount} scatter in \texttt{MatrixFreeKff} &
+FP64 stock fine action; donor FP32/BF16 fused paths are different
+schedules \\
+Tested libCEED configuration & Unit-cube Q1 vector elasticity & Tensor
+2×2×2 Gauss; scalar density per cell & Natural interleaved node layout
+and element restrictions; CUDA restriction transpose performs assembly &
+FP64 \texttt{/gpu/cuda/gen}, with \texttt{/ref} and \texttt{/shared}
+controls; tensor basis action, not an implementation-wide library
+ranking \\
+\end{longtable}
+}
+
+The Kiran element class, double precision and colored element assembly
+are documented in the
+\href{https://fac.iitg.ac.in/dsharma/papers/journal/2020_EBE_SYM_FEA.pdf}{author-hosted
+manuscript}, selected methods and test-problem sections. The table
+explicitly leaves unverified details unidentified instead of inferring
+them from the element name.
+
+\subsection{Exact Yang source identities and
+adaptations}\label{exact-yang-source-identities-and-adaptations}
+
+The cited versions are
+\href{https://arxiv.org/abs/2604.18020v1}{arXiv:2604.18020v1} and
+\href{https://arxiv.org/abs/2604.26441v1}{arXiv:2604.26441v1}, both
+preprints. The first paper emphasizes an FP32 fused framework. That
+paper's FP32 performance claims do not establish the FP64 performance
+measured here.
+
+The retained fused donor matches
+\href{https://github.com/nbbllxx0/Fused-Gather-GEMM-Scatter-Kernels/tree/3a6e37af137c3f8ba65ef1d298602a6390da6466}{release
+commit \texttt{\seqsplit{3a6e37af137c3f8ba65ef1d298602a6390da6466}}}. A
+read-only source comparison found the following exact byte identities
+(retained in
+\texttt{\seqsplit{provenance/revision/comparator-identity.json}}):
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Retained file under
+\texttt{\seqsplit{experiments/session\_e/donor/src/gpu\_fem/}}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+SHA-256
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Symbols / status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{cuda\_operators.py} &
+\texttt{\seqsplit{d36cc55cf762e6f701056aeecc18977f8f4e0914be278c6971162fca0db7dc6f}}
+& \texttt{fused\_matvec\_fp64}, \texttt{fused\_matvec\_ai\_fp64},
+\texttt{node\_matvec\_fp64} are supplied in this release.
+\texttt{\_instantiate} generates the latter two from release-owned
+\texttt{\_\_T\_\_} templates with \texttt{double}; this substitution is
+upstream code, not a new investigator adaptation. \\
+\texttt{cuda\_fused\_matvec.py} &
+\texttt{\seqsplit{7e9f7002451b1b118243410ad62a3a6f19e9fc5c099ad2e68ca6af0575f2aa0f}}
+& Supplied FP32/BF16 fused kernels; the FP64 baseline should be
+attributed to \texttt{cuda\_operators.py}. \\
+\end{longtable}
+}
+
+The Galerkin donor is pinned to
+\texttt{\seqsplit{fd9ddecda039fdfb7ffb8cf49c58f602318ed2ef}} in
+\texttt{\seqsplit{experiments/combined/donor\_yang\_gmg/PINNED.txt}}.
+Its \texttt{\seqsplit{src/gpu\_fem/solver\_v2.py:MatrixFreeKff.matvec}}
+implements the stock FP64 gather/DGEMM/\texttt{bincount} path.
+\texttt{\seqsplit{experiments/combined/kff\_adapters.py:ArmKff}}
+replaces the FP64 fine core, including the fine smoother's FP64 calls;
+it preserves the donor free/full expansion and restriction. Non-FP64
+products and diagonal extraction remain donor calls. Thus ``unchanged''
+describes the imported source files, not the complete adapted
+experiment. The common path-discovery workaround, optimizer/filter
+changes and schedule choices are separately declared in Sessions F--H.
+
+\subsection{Resident libCEED
+experiment}\label{resident-libceed-experiment}
+
+The tested library is v0.12.0, commit
+\texttt{\seqsplit{4018a20a98d451fac24765d3ddb936861647ce8d}}, archive
+SHA-256
+\texttt{\seqsplit{4c642ae1563e0363aa48f5d794832ad6e9716789405e33511213b837d1528a23}}.
+\texttt{\seqsplit{evidence/companion/results/rescope/hex-modal-libceed-resident-20260924/protocol.json}}
+pins the source and configuration; no current-library or unreleased-main
+claim is made.
+
+The extracted bridge and QFunction are retained as
+\texttt{\seqsplit{provenance/revision/libceed-bridge.c}} and
+\texttt{libceed-elasticity.h}, with archive/member hashes in
+\texttt{\seqsplit{provenance/revision/extractions.json}}. The bridge
+creates a 3D, three-component Q1 basis with two Gauss points per axis. A
+discontinuous constant scalar basis stores one density per cell; the
+QFunction evaluates \texttt{E=1e-6+(1-1e-6)rho\^{}3}, with unit modulus,
+Poisson ratio 0.3 and exact unit-cube geometry scaling. It does not
+store eight replicated density coefficients per cell. Library nodes are
+\texttt{(z,y,x,component)} while the custom padded layout is
+\texttt{(x,z,y,component)}; a reflected-y restriction maps the same
+physical nodes. Constraints are exact identity rows imposed by a GPU
+kernel after the library action.
+
+The requested backends are \texttt{/gpu/cuda/ref},
+\texttt{/gpu/cuda/shared} and \texttt{/gpu/cuda/gen}, with device-memory
+preference checked. One action includes output clearing/assembly, the
+density-scaled elastic law, identity rows and
+\texttt{\seqsplit{cudaDeviceSynchronize}}. Host steady-clock batched
+time is primary; CUDA-event time is secondary. Setup, conversion,
+allocation, transfers, compilation, JIT warmup and numerical output are
+excluded. Input/material vectors remain resident. There are 12
+randomized blocks of 256 calls, five seconds of warmup, and a minimum
+five-millisecond batch criterion. Six primary cases are 64×32×32,
+128×64×64 and 192×96×96, each with two coefficient patterns; 18 total
+shapes/patterns and separate sanitizer runs receive correctness checks.
+
+The 2.5768--3.0083 ratio is generated-backend time divided by
+signed-multiply-add time for those six cases
+(\texttt{figures/ratios.csv}; regenerate via
+\texttt{\seqsplit{analysis/session\_e\_tables.py}}). It comes from one
+RTX 4090 allocation and a different harness from the main CuPy study. It
+does not establish superiority over libCEED as a whole, other backend
+choices, or tensor implementations in general. The declared
+sign-test/Holm rule covers all 30 case/control comparisons and must not
+be replaced with Session E's paired-bootstrap rule.
+
+\subsection{Pinned release audit}\label{pinned-release-audit}
+
+The detailed finding table is
+\href{../combined/reproducibility_record.md}{the reproducibility
+record}. \texttt{companion/NAME} there abbreviates
+\textbf{\texttt{\seqsplit{evidence/companion/results/rescope/NAME}}}.
+The OpenMP pin is
+\texttt{\seqsplit{b46ed453ad5a05818b563e540ce176c9d85c6fe2}}; the
+Futhark pin is
+\texttt{\seqsplit{c3cd2b00632ad57cd3d8917246552b2fb4e99e01}}. Their
+repository URLs, commits and per-file hashes are retained in
+\texttt{\seqsplit{provenance/revision/traff-source-provenance.json}}.
+These are pinned GitHub trees; the original source-provenance record
+does not establish byte identity with the authors' separate Zenodo
+version archive. The source pins and any adapted-source hashes are in
+each row's frozen protocol.
+
+\textbf{The 12.17\% value is an initial candidate integration error.}
+The archived \texttt{diagnosis.json} identifies published
+\texttt{\seqsplit{stencil\_methods.c:426}} as copying input on fixed
+rows, while the first candidate's \texttt{interpose.c} set those rows to
+zero. Free-DOF probes could not distinguish them. The initial CPU
+experiment has 18 rejected state gates, including small nonzero fixed
+displacements from the source and much larger candidate errors. Its
+result must not be presented as a 12.17\% error in the unmodified
+published solver, or as the result of a candidate that already honored
+identity rows. The next CPU experiment restored candidate identity rows
+and added shared exact projection of returned fixed values; its 18/18
+passing states concern that declared adaptation.
+
+The diagnosis has been copied byte-for-byte to
+\texttt{\seqsplit{provenance/revision/host-diagnosis.json}} from the
+deposited
+\texttt{\seqsplit{companion--hex-modal-mg-host-20260923--files.tar.gz}},
+whose SHA-256 is recorded in the extraction manifest. No original
+evidence file has been overwritten.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Quantity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Definition, denominator and units
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Input and interpretation
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+12.170770009\% state error &
+\texttt{\seqsplit{100*norm(u-u\_ref,2)/norm(u\_ref,2)}}, full DOFs;
+dimensionless percentage; direct constrained source-matched reference &
+Initial modal candidate, 24×12×8, step 1. Rescaling a linear right-hand
+side scales both numerator and denominator; conditioning and rounding
+can still change observed relative error. \\
+1.139422914e-5 bilinear defect &
+\texttt{\seqsplit{abs(a\textasciicircum{}TB(b)-b\textasciicircum{}TB(a))/(norm(a)*norm(B(b))+norm(b)*norm(B(a)))}};
+dimensionless & CPU source-transfer V-cycle, 16×8×8, uniform density,
+pair 2. A sampled reciprocity error, sensitive to finite-precision
+summation and cancellation; not a displacement error or a universal SPD
+proof. \\
+66.593264989 fixed-DOF leakage &
+\texttt{\seqsplit{max(abs(B(a)[fixed]),} \seqsplit{abs(B(b)[fixed]))}};
+no denominator; absolute correction/displacement units of this benchmark
+& 24×12×8, uniform density, pair 0, zero fixed entries in both input
+residuals. Magnitude scales with input amplitude and material/force
+units. Nonzero output contradicts the exact free-space-preservation
+contract; it cannot be compared numerically with the two relative
+quantities. \\
+\end{longtable}
+}
+
+\texttt{\seqsplit{python3} \seqsplit{analysis/revision\_registry.py}}
+verifies the extracted member hashes and recomputes all three reported
+maxima from their saved vectors, producing \texttt{audit-units.json}.
+The selected residual probes are bounded by about 0.5 in magnitude; no
+normalization to unit residual norm was applied. The source-transfer
+defect and leakage are distinct diagnostics. Projection after
+restriction/prolongation gives 24/24 passing sampled tests and a maximum
+defect about 1.19e-17; it does not certify arbitrary coefficient fields
+or alone establish the cause of an earlier GPU failure.
+
+The auxiliary E3 OC diagnosis is confined to
+\texttt{\seqsplit{experiments/paper4/run\_experiments\_e1\_e10.py:\_oc\_update}}
+at the Galerkin pin: its arithmetic midpoint bisection starts at
+\texttt{{[}1e-40,1e40{]}} and takes 100 steps. Even repeated upper-bound
+halving leaves
+\texttt{\seqsplit{1e40/2\textasciicircum{}100} \seqsplit{\textasciitilde{}=} \seqsplit{7.888609e9}},
+preventing the needed small multiplier. The original preprint already
+identifies E3 divergence and excludes it from its main acceleration
+evidence. The new contribution is this source-level localization and
+full-size reproduction, not discovery that the authors' entire optimizer
+fails. The separate full \texttt{run\_simp} OC update is unaffected.
+Session G uses the explicitly declared filtered top88 update.
+
+\subsection{Hypothesis convention and
+chronology}\label{hypothesis-convention-and-chronology}
+
+\href{hypothesis-registry.md}{The generated registry} and
+\href{hypothesis-registry.json}{full JSON} enumerate endpoints, primary
+cases, thresholds, declaration timestamps, byte-linked execution records
+and outcomes for Sessions A--J. H3 was not confirmed; H5 was not
+supported; H11, H11b and H15 failed their recorded decisions. H11b
+changes the optimizer and step count and remains a separate hypothesis.
+Packaging and integration gates are separate; H12/H12b are descriptive
+expectations with work-match qualifications. Therefore ``three failed
+hypotheses'' is not a complete whole-study count.
+
+Protocol hashes establish identity. The registry checks the recorded
+declaration time against the start of the job that used the same
+protocol bytes (or a verifier's matching protocol hash). These are
+retained author/system clock records, not independent timestamp
+certification or proof against retrospective authorship. Session J's
+final declaration must only be paired with attempt 07; earlier attempts
+used their separately preserved amendments. Historical release tags
+identify artifact versions, not proof of prospective declaration. This
+chronology assessment uses the retained records rather than a
+reconstruction of Git history.
+
+\subsection{Principal-claim evidence
+map}\label{principal-claim-evidence-map}
+
+The initial software release is
+\href{https://doi.org/10.5281/zenodo.23001863}{Zenodo 23001863}; raw
+evidence is \href{https://doi.org/10.5281/zenodo.22998404}{Zenodo
+22998404}. Tags below are historical release locators listed in the
+artifact README. The inspected source baseline is
+\texttt{\seqsplit{a60700fe9df55d4b2e597e4a4014cee189ac5e43}}. This
+supplement records subsequent evidence checks and regenerated summaries;
+the historical tags identify the original experiment snapshots.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Claim / retained failure
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Historical tag
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Protocol and raw/summarized evidence
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Exact analysis command (repository root)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Exact parity operator and local lane equivalence &
+\texttt{exp01-parity-algebra}, \texttt{base} &
+\texttt{\seqsplit{code/hex\_modal/protocol.json}};
+\texttt{\seqsplit{code/hex\_modal/modal.py}}; CPU tests; algebra
+supplement &
+\texttt{\seqsplit{python3} \seqsplit{-m} \seqsplit{pytest} \seqsplit{-q} \seqsplit{tests}} \\
+Plain FP64 product on RTX 4090 and independent RTX 3090 &
+\texttt{\seqsplit{exp02-products-rtx4090}},
+\texttt{\seqsplit{exp03-products-rtx3090}} &
+\texttt{\seqsplit{code/hex\_modal\_cuda/protocol.json}};
+\texttt{\seqsplit{evidence/kernel-rtx4090/}},
+\texttt{\seqsplit{evidence/kernel-rtx3090-replication/}};
+\texttt{paper/numbers.json} &
+\texttt{\seqsplit{python3} \seqsplit{analysis/paper\_numbers.py}} \\
+Fixed-work PCG and no useful FP32 parity gain; failed A100 dense-control
+prediction & \texttt{exp07-session-a}, \texttt{exp08-session-b} &
+\texttt{\seqsplit{experiments/session\_\{a,b\}/protocol.json}};
+\texttt{\seqsplit{results/session-\{a,b\}-20260923/local-verification.json}};
+\texttt{\seqsplit{paper/session\_\{a,b\}\_numbers.json}} &
+\texttt{\seqsplit{python3} \seqsplit{analysis/session\_a\_tables.py} \seqsplit{results/session-a-20260923}};
+\texttt{\seqsplit{python3} \seqsplit{analysis/session\_a\_tables.py} \seqsplit{results/session-b-20260923} \seqsplit{session\_b}} \\
+Tested high-contrast FP64-only niche unsupported (H5) &
+\texttt{exp09-session-c} &
+\texttt{\seqsplit{experiments/session\_c/protocol.json}};
+\texttt{\seqsplit{results/session-c-20260923/local-verification.json}} &
+\texttt{\seqsplit{python3} \seqsplit{analysis/session\_a\_tables.py} \seqsplit{results/session-c-20260923} \seqsplit{session\_c}} \\
+Rediscretized multigrid route comparison & \texttt{exp10-session-d} &
+\texttt{\seqsplit{experiments/session\_d/protocol.json}};
+\texttt{\seqsplit{results/session-d-20260923/local-verification.json}} &
+\texttt{\seqsplit{python3} \seqsplit{analysis/session\_d\_tables.py} \seqsplit{results/session-d-20260923}} \\
+Two-host FP64 product ratio 2.17--2.25 and solver effects; narrow
+libCEED result & \texttt{exp11-session-e} &
+\texttt{\seqsplit{experiments/session\_e/protocol.json}};
+\texttt{\seqsplit{results/session-e-host\{1,2\}-20260925/local-verification.json}};
+companion libCEED protocol/ratios above &
+\texttt{\seqsplit{python3} \seqsplit{analysis/session\_e\_tables.py}} \\
+Packaging failure, integration gate failure, Galerkin capacity &
+\texttt{exp12-session-f} &
+\texttt{\seqsplit{experiments/session\_f/protocol.json}};
+\texttt{\seqsplit{results/session-f-*/remote/\{job.json,run-01/result.json\}}};
+\texttt{\seqsplit{paper/session\_f\_summary.json}} &
+\texttt{\seqsplit{python3} \seqsplit{analysis/session\_f\_summary.py}} \\
+30-step and capped 150-step trajectories; failed H11 &
+\texttt{exp13-session-g} &
+\texttt{\seqsplit{experiments/session\_g/protocol.json}};
+\texttt{\seqsplit{results/session-g-host\{1,2\}-20260926/remote/run-01/result.json}}
+&
+\texttt{\seqsplit{python3} \seqsplit{analysis/session\_g\_tables.py} \seqsplit{results/session-g-host1-20260926} \seqsplit{results/session-g-host2-20260926}} \\
+All four 100-step cases and capped 150-step outcomes; failed H11b &
+\texttt{exp14-session-h} &
+\texttt{\seqsplit{experiments/session\_h/protocol.json}};
+\texttt{\seqsplit{results/session-h-host\{1,2\}-20260926/remote/run-01/result.json}}
+&
+\texttt{\seqsplit{python3} \seqsplit{analysis/session\_h\_tables.py} \seqsplit{results/session-h-host1-20260926} \seqsplit{results/session-h-host2-20260926}} \\
+Measured capacity and kernel-map exceptions; RTX fixed-work FP64 gain
+\textasciitilde1.35 at 43 M DOFs & \texttt{exp15-session-i} &
+\texttt{\seqsplit{experiments/session\_i/protocol.json}};
+\texttt{\seqsplit{results/session-i-*/remote/run-01/result.json}};
+\texttt{\seqsplit{paper/session\_i\_numbers.json}} &
+\texttt{\seqsplit{python3} \seqsplit{analysis/session\_i\_tables.py} \seqsplit{results/session-i-rtx4090-20260926} \seqsplit{results/session-i-a100-20260926} \seqsplit{results/session-i-h100-20260926}} \\
+Executed counter ratio 2.5; H15 count failure; post-hoc timing agreement
+& \texttt{exp16-session-j} &
+\texttt{\seqsplit{experiments/session\_j/protocol.json}}; attempt-07
+\texttt{remote/ncu/ncu-*.csv}; all failed attempts retained &
+\texttt{\seqsplit{python3} \seqsplit{analysis/session\_j\_counters.py}} \\
+Pinned quadrature, boundary, transfer and damping audit &
+\texttt{exp17-traff-audit} &
+\texttt{\seqsplit{evidence/companion/results/rescope/hex-modal-*/protocol*.json}}
+and result/replay files in reproducibility record; selected deposited
+inputs in \texttt{provenance/revision/} &
+\texttt{\seqsplit{python3} \seqsplit{analysis/repro\_numbers.py}};
+\texttt{\seqsplit{python3} \seqsplit{analysis/revision\_registry.py}} \\
+\end{longtable}
+}
+
+Brace and wildcard paths above denote families, not literal filenames.
+The registry generator reads the freshly regenerated summaries; run the
+combined numerical build before it when other analysis sources have
+changed.
+
+\subsection{Reproducibility levels and bibliography
+metadata}\label{reproducibility-levels-and-bibliography-metadata}
+
+\textbf{Numerical regeneration} reads retained results and recomputes
+summaries, tables, macros and figures on a CPU. \textbf{Saved-state
+replay} reloads recorded coefficient/displacement arrays and checks a
+reference operator or acceptance decision; it is not a fresh performance
+measurement. \textbf{Fresh execution} recreates the declared GPU
+software/hardware environment, runs the frozen workload and collects new
+timings. The public repository supports numerical regeneration; larger
+saved-state and raw-source members are accessible in the existing
+deposits through their manifests. Complete manuscript prose and the full
+public manuscript build are withheld until acceptance.
+
+The
+\href{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240813}{PLOS
+publisher record} confirms volume \textbf{15(10)} and DOI
+\texttt{\seqsplit{10.1371/journal.pone.0240813}}. The
+\href{https://link.springer.com/article/10.1007/s00158-026-04280-3}{Springer
+publisher record} gives \textbf{Long Hu, Tianyuan Qi, Junpeng Zhao and
+Chunjie Wang}, volume 69, article 90 and DOI
+\texttt{\seqsplit{10.1007/s00158-026-04280-3}}. These fields are
+recorded in \texttt{\seqsplit{paper/manuscript/refs.bib}}; the records
+were checked on 2026-09-27. The linked September 2026 Hu correction
+concerns interchanged ellipse semi-axes in Fig. 25 and does not change
+these bibliography fields.
+
+\section{Hypothesis and gate
+registry}\label{hypothesis-and-gate-registry}
+
+Five named hypotheses lack support: H3, H5, H11, H11b, H15. H5 retains
+its original not-supported label; H11b is a separate changed-pipeline
+hypothesis. Descriptive H12/H12b expectations and packaging/integration
+gates are separate. This count is for Sessions A-J, not every
+exploratory companion study.
+
+Hashes identify content, not temporal priority. These dates are
+author/system recorded timestamps, checked against byte-linked execution
+records where available, not independent preregistration timestamps. No
+local git history is present in this revision workspace.
+
+Frozen Session B h3.rule writes modal8/dense8, but the question and
+recorded analysis concern advantage dense8 time / modal8 time. The
+retained failed decision uses that latter ratio (about 2.24), not the
+literal reversed label. The historical protocol is preserved.
+
+The JSON companion preserves the exact primary cases, decision rules,
+hashes and every inspected execution record. The table abbreviates these
+fields.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Type
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Cases / endpoint and decision
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Declaration UTC
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Executed UTC (byte-linked final protocol)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Outcome
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+H2 & hypothesis & optimized q64/q96; fixed Jacobi-PCG work, median ≥1.08
+and one-sided 95\% lower ≥1.05 & 2026-09-23 17:15:38 & 2026-09-23
+17:26:40 & supported \\
+H3 & hypothesis & optimized q64/q96; FP64 dense8/parity product gain
+\textless1.10 expected & 2026-09-23 18:05:36 & 2026-09-23 18:41:35 & not
+confirmed \\
+H4 & hypothesis & optimized q64/q96; FP32 gain over fastest baseline
+\textless1.10 expected & 2026-09-23 17:15:38 & 2026-09-23 17:26:40 &
+supported \\
+H5 & hypothesis & optimized q64/q96 at Emin=1e-9; at least one
+refinement failure while all FP64 PCG repetitions pass & 2026-09-23
+18:38:14 & 2026-09-23 18:39:47 & not supported \\
+H6 & hypothesis & optimized q64/q96; fixed MG work, median ≥1.05, lower
+≥1.02 & 2026-09-23 19:35:12 & 2026-09-23 19:38:27 & supported \\
+H7 & descriptive question & fastest physically accepted solve to
+tolerance; descriptive & 2026-09-23 19:35:12 & 2026-09-23 19:38:27 &
+descriptive \\
+H8 & hypothesis & optimized q64/q96 on both hosts; product median ≥1.05,
+lower ≥1.02 & 2026-09-25 10:54:43 & 2026-09-25 10:58:45, 2026-09-25
+11:09:30 & supported on two hosts \\
+H9 & hypothesis & same cases; fixed MG work median ≥1.05, lower ≥1.02 &
+2026-09-25 10:54:43 & 2026-09-25 10:58:45, 2026-09-25 11:09:30 &
+supported on two hosts \\
+H10 & descriptive question & same cases; fastest solve and mixed
+outer-product effect, descriptive & 2026-09-25 10:54:43 & 2026-09-25
+10:58:45, 2026-09-25 11:09:30 & descriptive \\
+F-stack & packaging gate & three GPUs; unchanged donor smoke-test exit
+code 0 & 2026-09-26 00:42:40 & 2026-09-26 00:59:35, 2026-09-26 01:18:10,
+2026-09-26 00:44:22 & failed as released; directory workaround passes \\
+F-integration & integration gate & all grids, densities, schedules and
+arms; product ≤1e-12, convergence, residual ≤1e-10, cross-state ≤1e-8 &
+2026-09-26 00:42:40 & 2026-09-26 00:59:35, 2026-09-26 01:18:10,
+2026-09-26 00:44:22 & not passed \\
+H11 & hypothesis & three primary cases, FP64 30-step trajectories; all
+medians ≥1.10, ≥2 repetitions, work/agreement gates & 2026-09-26
+01:41:32 & 2026-09-26 01:44:43, 2026-09-26 02:44:46 & failed on two
+hosts \\
+H12 & descriptive expectation & same primary cases, mixed trajectories;
+descriptive expectation \textless1.10 & 2026-09-26 01:41:32 & 2026-09-26
+01:44:43, 2026-09-26 02:44:46 & not uniformly below 1.10; work-match
+qualification required \\
+H11b & new hypothesis on changed pipeline & same three primary cases,
+GPU optimizer, 100 steps; same ≥1.10 and qualification rules &
+2026-09-26 04:15:46 & 2026-09-26 04:17:38, 2026-09-26 04:18:54 & failed
+on two hosts \\
+H12b & descriptive expectation & GPU optimizer mixed trajectories;
+descriptive expectation \textless1.10 & 2026-09-26 04:15:46 & 2026-09-26
+04:17:38, 2026-09-26 04:18:54 & not uniformly below 1.10; work-match
+qualification required \\
+H13 & hypothesis & fitting primary enlarged cases on each 80 GB card;
+parity/node fixed-work time ≥1/1.05 & 2026-09-26 04:22:52 & 2026-09-26
+04:40:45, 2026-09-26 05:27:10, 2026-09-26 04:30:46 & supported on
+fitting primary cases \\
+H14 & hypothesis & largest fitting primary RTX case; fused/parity
+fixed-work median ≥1.18 & 2026-09-26 04:22:52 & 2026-09-26 04:40:45,
+2026-09-26 05:27:10, 2026-09-26 04:30:46 & supported at largest fitting
+primary case \\
+H15 & hypothesis & 128×64×64 RTX4090 VM; FP64 active utilization ≥70\%;
+executed count ratios within 5\% of static 78:52:34 & 2026-09-26
+05:25:58 & 2026-09-26 06:04:06 & failed count criterion; utilization
+part passed \\
+\end{longtable}
+}
+
+\section{Reproducibility record for the combined
+paper}\label{reproducibility-record-for-the-combined-paper}
+
+Consolidates the audit findings on the published codes used as baselines
+and hosts. Each row gives the finding, how it was established, what
+repaired it (if anything), and the sealed evidence. Every evidence entry
+is a path in this repository: the Träff et al.~audit files under
+\texttt{evidence/companion/} (abbreviated \texttt{companion/} below
+means \texttt{\seqsplit{evidence/companion/results/rescope/}}; their
+protocols and results keep their original layout) and the session
+folders under \texttt{results/}. Declared protocols and dated execution
+records are linked in \href{hypothesis-registry.md}{the hypothesis
+registry}. Hashes establish content identity; the recorded timestamps
+support chronology without constituting independent preregistration.
+Failures are kept.
+
+These findings are about specific pinned releases and paths. They are
+not claims about other versions, and they do not say whether the
+published papers' conclusions hold.
+
+\subsection{A. Träff et al.~topology-optimization codes (OpenMP GPU and
+Futhark
+releases)}\label{a.-truxe4ff-et-al.-topology-optimization-codes-openmp-gpu-and-futhark-releases}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\#
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Finding
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Established by
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Repair / consequence
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Evidence
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A1 & The OpenMP release uses \textbf{composite 10×10×10 midpoint
+quadrature per fine element}: \texttt{getKEsubspace} samples ten points
+per fine-subcell axis. Relative Frobenius differences from exact 2×2×2
+Gauss Q1 are \textbf{0.548361\% / 0.516454\% / 0.416469\%} at ν =
+\textbf{0.20 / 0.30 / 0.45}. The tested composite matrices retain six
+rigid modes; this is not the eighteen-mode pathology of literal
+single-point Hex8. The pinned Futhark matrix matches exact Q1. &
+Independent exact-Q1/source-matched composite integration replay on
+pinned sources (OpenMP \texttt{b46ed453}, Futhark \texttt{c3cd2b00});
+fresh CPU quadrature and eigenvalue checks in
+\texttt{\seqsplit{paper/revision/algebra-checks.json}} use null
+tolerance \texttt{1e-10\ \textbar{}\textbar{}K\textbar{}\textbar{}\_2}.
+& This is a mismatch with this study's exact-Gauss operator contract,
+not evidence by itself that the audited mechanics or original
+conclusions are invalid. Baselines in this study use exact Gauss Q1;
+composite-rule comparisons are labeled source-matched. &
+\texttt{\seqsplit{companion/hex-modal-priorart-20260923/}}
+(\texttt{cpu-protocol-02.json}, \texttt{cpu-02/results.json});
+\href{algebra-counters.md\#composite-midpoint-quadrature-in-the-pinned-release}{quadrature
+definitions and check} \\
+A2 & Both releases run mixed precision (FP32 vectors, correction or CG
+in parts), not all-FP64. The pinned trees contain no licence file. &
+Source trace & All-FP64 claims use separately declared adaptations. No
+redistribution permission is inferred. & pinned sources (commits
+above) \\
+A3 & \textbf{Initial candidate boundary mismatch:} the candidate zeroed
+fixed rows instead of copying the input as the published operator does;
+its state error reached \textbf{12.17 \%}. Separately, source runs leave
+constrained displacement up to \textbf{5.27e-7}, violating this audit's
+exact-zero acceptance gate. Free-input probes cannot distinguish zero
+from identity fixed rows. & Serial CPU execution of source C with OpenMP
+pragmas ignored; 18 captured solves on 16×8×8, 24×12×8 and 16×8×12 over
+three steps; all 36 source/candidate free-product probes pass, all 18
+state gates fail & Candidate identity rows are restored, and a common
+returned-state projection is declared for both arms. The adapted CPU
+experiment passes 18/18 states, 9/9 paired and 3/3 endpoint comparisons.
+\textbf{12.17 \% is not an unmodified-source solver error.} &
+\texttt{\seqsplit{companion/hex-modal-mg-host-20260923/\{protocol.json,run-01/result.json\}}};
+archived diagnosis now at
+\texttt{\seqsplit{provenance/revision/host-diagnosis.json}};
+\texttt{\seqsplit{companion/hex-modal-mg-host-v2-20260923/}} \\
+A4 & \textbf{Source transfer boundary contract:} unprojected
+restriction/prolongation in the declared adapted host fail 24/24 sampled
+free-space/symmetry probes (dimensionless bilinear defect up to 1.14e-5;
+absolute fixed correction leakage 66.6). & CPU execution of C
+\texttt{VcyclePreconditioner}, not an original GPU rerun; three meshes,
+uniform/random density, four residual pairs each & Zero fixed outputs
+after each restriction and prolongation: 24/24 pass, dimensionless
+defect ≤1.19e-17. This tests necessary properties, not universal SPD or
+causation of an earlier GPU failure. &
+\texttt{\seqsplit{companion/hex-modal-mg-bc-audit-20260923/\{protocol.json,run-01/verification.json\}}};
+exact normalization and saved-array replay in
+\texttt{\seqsplit{paper/revision/provenance-audit.md}} \\
+A5 & \textbf{Damping:} fixed weighted-Jacobi ω=0.6 admits unstable modes
+at level two on retained designs under this study's exact-Q1 operator
+contract. & CPU independent spectral diagnostic: 9/9 converged
+eigen-estimates; exact local bounds on 73 subcell matrices; subsequently
+a separately declared GPU replay & Weights {[}0.3,0.25,0.2{]} have exact
+rational \(LDL^T\) local certification for ideal Q1. The matched GPU
+replay accepts 9/9 saved states versus 3/9 with ω=0.6. This is not a
+universal mixed-precision convergence proof. &
+\texttt{\seqsplit{companion/hex-modal-mg-smoother-audit-20260923/}};
+\texttt{\seqsplit{companion/hex-modal-mg-damping-control-20260923/run-03/exact-summary.json}};
+\texttt{\seqsplit{companion/hex-modal-mg-damping-gpu-20260923/rental-01/local-verification.json}} \\
+\end{longtable}
+}
+
+\subsection{B. Yang et al.~Galerkin GMG release
+(nbbllxx0/Mixed-Precision-GMG-SIMP,
+fd9ddecd)}\label{b.-yang-et-al.-galerkin-gmg-release-nbbllxx0mixed-precision-gmg-simp-fd9ddecd}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\#
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Finding
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Established by
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Repair / consequence
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Evidence
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+B1 & \textbf{Package/path-discovery failure:} \texttt{paths.py} requires
+a \texttt{scripts/} directory beside \texttt{src/}, absent from the
+pinned public tree. & Original \texttt{ci/smoke\_test.py} attempted on
+RTX 4090, A100 PCIe 80 GB and H100 NVL; nonzero exit before numerical
+smoke solve & Creating an empty directory allows smoke tests to run and
+pass. This is a packaging workaround, not repair of a numerical
+algorithm. RTX smoke: 25 iterations, residual 5.95e-11. &
+\texttt{\seqsplit{experiments/combined/donor\_yang\_gmg/src/gpu\_fem/paths.py}};
+\texttt{\seqsplit{results/session-f-*/remote/job.json}};
+\texttt{\seqsplit{paper/session\_f\_summary.json}} \\
+B2 & \textbf{The auxiliary E3 loop's OC update collapses the design}
+(confirmed at full size on two RTX 4090 hosts, session G: volume 0.30 →
+0.15 → 0.001, compliance → 6.9e8). E3's own \texttt{\_oc\_update}
+bisects the multiplier arithmetically over {[}1e-40, 1e40{]} for 100
+iterations, so it cannot fall below ≈ 7.9e9. Volume went 0.30 → 0.15 →
+0.001 and compliance 140 → 1.9e9 on a CPU replica of their cantilever.
+The paper already treats E3 as auxiliary: ``not used as main
+acceleration evidence because the design trajectories diverge'' (§4.4,
+App. A). It attributes the divergence to capped Jacobi solves, and its
+E3 compliance plots are at \(10^8\)--\(10^9\). Their full SIMP driver
+(\texttt{run\_simp}) uses a correct OC (bisection on {[}0, 1e9{]} to
+1e-9, volume on filtered/projected densities) and is not affected. & CPU
+replica; paper full text read; full-size diagnostic in session G & Only
+the auxiliary E3 schedule is affected; the paper's headline claims do
+not rest on it. Session G uses a top88 OC with a density filter. &
+session G (\texttt{results/session-g-*}); arXiv 2604.26441 §4.4, App.
+A \\
+B3 & \textbf{FP64 comparator provenance:} the Galerkin stock core is
+CuPy gather + DGEMM + \texttt{bincount}; its fused kernels are
+FP32/BF16. & Pinned
+\texttt{\seqsplit{solver\_v2.py:MatrixFreeKff.matvec}} and
+\texttt{cuda\_fused\_matvec.py} source & The supplied FP64 fused and
+node paths come from the separate fused-kernel release at
+\texttt{\seqsplit{3a6e37af137c3f8ba65ef1d298602a6390da6466}}. The FP64
+core substitution is an explicit adapter; it does not make the complete
+solver unmodified. &
+\texttt{\seqsplit{experiments/combined/kff\_adapters.py}};
+\texttt{\seqsplit{experiments/session\_f/protocol.json}}; comparator
+symbol/hash table in
+\texttt{\seqsplit{paper/revision/provenance-audit.md}} \\
+B4 & \textbf{Measured allocation footprint:} about 23 GiB per million
+elements for this pinned Galerkin implementation. 2 M fits, whereas 5 M
+fails on A100 PCIe 80 GB and H100 NVL 94 GB. & Session F sizing ladder,
+per schedule/arm, including out-of-memory outcomes & About 3 M is an
+extrapolated ceiling, not a tested maximum. These records do not fully
+separate live arrays, transient construction allocations and cached pool
+memory. Larger studies use the separately specified rediscretized
+hierarchy. & \texttt{\seqsplit{experiments/session\_f/protocol.json}};
+\texttt{\seqsplit{results/session-f-*/remote/run-01/result.json}};
+\texttt{\seqsplit{paper/session\_f\_summary.json}} \\
+B5 & \textbf{Mixed-schedule integration gate:} the stock FP32
+fine-smoother schedule reaches 300 iterations on random-density 64 k
+cantilever states on A100/H100; stock takes 246 on RTX 4090. Other
+adapted arms also fail parts of the compound gate. & Original and
+adapted GPU solver execution in Session F; product agreement,
+convergence, residual and cross-state requirements recorded separately &
+The gate remains failed on every host despite FP64 core product
+agreement \textasciitilde2.2e-16. The donor paper already discloses
+difficult heterogeneous convergence; this audit localizes failure in its
+own declared workload, not a new universal defect. Session G changes to
+SIMP-generated trajectories and records non-converged solves. &
+\texttt{\seqsplit{experiments/session\_f/protocol.json}};
+\texttt{\seqsplit{results/session-f-*/remote/run-01/result.json}};
+\texttt{\seqsplit{paper/session\_f\_summary.json}} \\
+\end{longtable}
+}
+
+\subsection{C. Process and units}\label{c.-process-and-units}
+
+\href{provenance-audit.md}{The revision supplement} defines the
+state-error denominator, normalized bilinear defect and absolute
+correction leakage, and reproduces their selected maxima from
+hash-verified saved arrays. The three quantities have different units
+and cannot be compared as percentages. In particular, the magnitude of
+absolute fixed-DOF leakage scales with the residual input; preservation
+of the free space is the violated invariant.
+
+The \href{hypothesis-registry.md}{registry} distinguishes named
+hypotheses from descriptive expectations, packaging failures,
+integration gates and operational attempts. H3 was not confirmed, H5 was
+not supported, and H11/H11b/H15 failed their recorded decisions. H11b
+concerns a changed pipeline; it does not erase H11. No global count of
+three failures is claimed.
+
+GPU operational failures (upload timeouts, rate limits, SSH, startup,
+counter permission and tooling) remain separate attempts, including
+Session J's seven attempts. Each final protocol is linked to matching
+execution records; earlier failed attempts use their own amendments.
+Hashes alone do not prove temporal priority. Historical thresholds and
+outcomes remain preserved. New adaptations are explicitly labeled,
+including the boundary projection, corrected OC and GPU optimizer.
+
+\subsection{D. Source, input and contract
+locator}\label{d.-source-input-and-contract-locator}
+
+This table supplements the observed-error/adaptation/outcome columns
+above. Source paths are relative to each pinned upstream tree unless
+identified as an audit script. The Träff host/transfer entries are CPU
+source execution; the damping follow-up and Yang sessions explicitly
+executed GPUs.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Finding
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pinned source / location
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Exercised input and mathematical contract
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Evidence type / result locator
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A1 quadrature & OpenMP \texttt{b46ed453…},
+\texttt{\seqsplit{local\_matrix.c:getKEsubspace}}; Futhark
+\texttt{c3cd2b00…}, \texttt{src/keConstants.fut} & Three Poisson ratios,
+levels/subcells in \texttt{cpu-protocol-02.json}; exact-Gauss Q1
+comparison, not whole-element reduced integration & CPU matrix
+comparison;
+\texttt{\seqsplit{hex-modal-priorart-20260923/cpu-02/results.json}} \\
+A2 precision & Same pins; OpenMP \texttt{definitions.h}, solver vectors;
+Futhark \texttt{src/solvers.fut} & Source scalar/vector types versus
+this study's FP64-throughout contract & Source trace, not a speed claim;
+source hashes in A1 protocol \\
+A3 boundary & OpenMP \texttt{b46ed453…},
+\texttt{\seqsplit{stencil\_methods.c:426}}; initial audit
+\texttt{interpose.c} & Three meshes × three steps × source/candidate;
+source identity rows versus candidate zero rows; full-state norm and
+exact fixed values & CPU source execution; diagnosis and raw/saved state
+checks above \\
+A4 transfer & Same base, declared adapted-02 source hashes;
+\texttt{\seqsplit{stencil\_solvers.c:VcyclePreconditioner}},
+restriction/prolongation wrappers & 16×8×8, 24×12×8 (3 levels), 32×16×16
+(4); uniform 0.2/random void patterns; free-space preservation and
+reciprocity & CPU C source transfers;
+\texttt{\seqsplit{hex-modal-mg-bc-audit-20260923}} protocol and
+verification \\
+A5 damping & Same base; fixed-Jacobi source semantics, independent
+\texttt{spectrum.py} audit & Retained 128×64×64 states 8/9 and 64×32×32
+state 21; Jacobi stability and subsequently true-residual/state gates &
+CPU spectral and rational certification, then separately adapted GPU
+replay; three audit folders above \\
+B1 path discovery & Galerkin \texttt{fd9ddecd…},
+\texttt{src/gpu\_fem/paths.py}, \texttt{ci/smoke\_test.py} & Three GPU
+hosts; package root discovery and zero-exit smoke gate & Original
+GPU-host launch failure, then directory-only workaround \\
+B2 auxiliary OC & Same pin,
+\texttt{\seqsplit{experiments/paper4/run\_experiments\_e1\_e10.py:\_oc\_update}}
+& Auxiliary E3 216k cantilever, mixed stock schedule; multiplier
+bisection must span volume-preserving update & CPU arithmetic diagnosis;
+Session G full-size GPU diagnostic on two hosts; full \texttt{run\_simp}
+unaffected \\
+B3 FP64 core & Galerkin \texttt{\seqsplit{fd9ddecd…:solver\_v2.py}};
+fused \texttt{\seqsplit{3a6e37af…:cuda\_operators.py}} & Same
+caller-supplied Ke, modulus and constraints, stock versus substituted
+fine actions & Supplied-code identity plus explicit adapter and GPU
+product checks \\
+B4 memory & Galerkin \texttt{fd9ddecd…}, \texttt{multigrid\_v4.py} & 2
+M/5 M element ladder; allocation feasibility by schedule/arm & GPU
+sizing, not exact capacity limit or universal Galerkin-memory bound \\
+B5 integration & Same pin, \texttt{solver\_v4.py} / mixed fine smoother
+& Small/medium uniform and seeded random fields; product ≤1e-12,
+residual ≤1e-10, convergence and cross-state ≤1e-8 & Original/adapted
+GPU runs; failed compound gate retained \\
+\end{longtable}
+}
+
+% Generated by analysis/revision_outcomes.py; do not edit.
+\section{Optimization outcomes and scale tables}
+\label{sec:outcomes-scale-tables}
+The tables regenerate from retained raw records. NR means not recorded, not zero. Exact per-repetition records, source paths and JSON pointers are in \texttt{optimization-outcomes.csv}, \texttt{scale-solves.csv} and \texttt{outcomes-scale.json}. No new GPU experiment is represented here.
+Host keys G1/G2 and H1/H2 identify the two RTX 4090 hosts in Sessions G/H. IA/IH/IR identify Session I A100 PCIe, H100 80GB HBM3 and RTX 4090; FA/FH/FR identify Session F A100 PCIe, H100 NVL and RTX 4090. C216/C512 are cantilevers, M514 the MBB case and T499 torsion. S = stock gather/DGEMM/scatter, F = fused-ai FP64, P = parity mul-add, N = node FP64. Schedule 64 = all FP64; 32 = mixed. Scale arms 64F/64N/64P use FP64 throughout; 32F/32N/32P use a node FP32 V-cycle with the named FP64 outer product.
+\subsection{Every optimization case, schedule and arm}
+Each fixed-length row aggregates three repetitions by separate column medians. Capped rows and auxiliary diagnostics have n=1. Exit L = prescribed fixed length; C = 150-step iteration cap; D = auxiliary OC diagnostic. K is total Krylov iterations. An L exit is not a convergence test. Every C exit missed design change 0.01. O IDs match across the two tables.
+\begingroup\small\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}lllllllllll@{}}
+\caption{Optimization identity, stopping outcome and wall time. Failed-solve count is summed over repetitions.}\\
+\toprule
+ID & Host & Case & Sch. & Arm & n & Steps & Exit & K & Wall s & Failed\\
+\midrule\endfirsthead
+\toprule
+ID & Host & Case & Sch. & Arm & n & Steps & Exit & K & Wall s & Failed\\
+\midrule\endhead
+\bottomrule\endfoot
+O1 & G1 & C216 & 64 & S & 3 & 30 & L & 790 & 20.263 & 0\\
+O2 & G1 & C216 & 64 & F & 3 & 30 & L & 790 & 16.742 & 0\\
+O3 & G1 & C216 & 64 & P & 3 & 30 & L & 790 & 16.561 & 0\\
+O4 & G1 & C216 & 32 & S & 3 & 30 & L & 842 & 18.259 & 0\\
+O5 & G1 & C216 & 32 & P & 3 & 30 & L & 847 & 17.063 & 0\\
+O6 & G1 & C216 & 32 & F & 3 & 30 & L & 846 & 17.029 & 0\\
+O7 & G1 & C512 & 64 & P & 3 & 30 & L & 404 & 34.927 & 0\\
+O8 & G1 & C512 & 64 & F & 3 & 30 & L & 401 & 35.794 & 0\\
+O9 & G1 & C512 & 64 & S & 3 & 30 & L & 401 & 40.001 & 0\\
+O10 & G1 & C512 & 32 & P & 3 & 30 & L & 411 & 34.882 & 0\\
+O11 & G1 & C512 & 32 & F & 3 & 30 & L & 413 & 35.119 & 0\\
+O12 & G1 & C512 & 32 & S & 3 & 30 & L & 419 & 36.693 & 0\\
+O13 & G1 & M514 & 64 & S & 3 & 30 & L & 1829 & 63.588 & 0\\
+O14 & G1 & M514 & 64 & F & 3 & 30 & L & 1848 & 45.832 & 0\\
+O15 & G1 & M514 & 64 & P & 3 & 30 & L & 1836 & 42.925 & 0\\
+O16 & G1 & M514 & 32 & F & 3 & 30 & L & 3510 & 63.561 & 2\\
+O17 & G1 & M514 & 32 & P & 3 & 30 & L & 3378 & 54.234 & 0\\
+O18 & G1 & M514 & 32 & S & 3 & 30 & L & 3589 & 64.722 & 2\\
+O19 & G1 & T499 & 64 & F & 3 & 30 & L & 1047 & 37.838 & 0\\
+O20 & G1 & T499 & 64 & S & 3 & 30 & L & 1038 & 47.701 & 0\\
+O21 & G1 & T499 & 64 & P & 3 & 30 & L & 1020 & 36.198 & 0\\
+O22 & G1 & T499 & 32 & P & 3 & 30 & L & 1170 & 36.555 & 0\\
+O23 & G1 & T499 & 32 & S & 3 & 30 & L & 1157 & 40.798 & 0\\
+O24 & G1 & T499 & 32 & F & 3 & 30 & L & 1166 & 37.093 & 0\\
+O25 & G1 & C216 & 64 & S & 1 & 150 & C & 3416 & 80.809 & 0\\
+O26 & G1 & C216 & 64 & F & 1 & 150 & C & 3376 & 65.638 & 0\\
+O27 & G1 & C216 & 64 & P & 1 & 150 & C & 3397 & 65.169 & 0\\
+O28 & G1 & C216 & 32 & S & 1 & 150 & C & 3467 & 71.677 & 0\\
+O29 & G1 & C216 & 32 & F & 1 & 150 & C & 3539 & 66.762 & 0\\
+O30 & G1 & C216 & 32 & P & 1 & 150 & C & 3478 & 65.924 & 0\\
+O31 & G1 & C216 & 32 & S & 1 & 30 & D & 339 & 11.811 & 0\\
+O32 & G2 & C216 & 64 & S & 3 & 30 & L & 790 & 21.939 & 0\\
+O33 & G2 & C216 & 64 & F & 3 & 30 & L & 790 & 17.981 & 0\\
+O34 & G2 & C216 & 64 & P & 3 & 30 & L & 790 & 18.037 & 0\\
+O35 & G2 & C216 & 32 & S & 3 & 30 & L & 836 & 19.534 & 0\\
+O36 & G2 & C216 & 32 & P & 3 & 30 & L & 844 & 18.390 & 0\\
+O37 & G2 & C216 & 32 & F & 3 & 30 & L & 840 & 18.028 & 0\\
+O38 & G2 & C512 & 64 & P & 3 & 30 & L & 404 & 37.917 & 0\\
+O39 & G2 & C512 & 64 & F & 3 & 30 & L & 403 & 39.110 & 0\\
+O40 & G2 & C512 & 64 & S & 3 & 30 & L & 404 & 43.051 & 0\\
+O41 & G2 & C512 & 32 & P & 3 & 30 & L & 413 & 37.768 & 0\\
+O42 & G2 & C512 & 32 & F & 3 & 30 & L & 415 & 38.151 & 0\\
+O43 & G2 & C512 & 32 & S & 3 & 30 & L & 410 & 40.037 & 0\\
+O44 & G2 & M514 & 64 & S & 3 & 30 & L & 1843 & 67.523 & 0\\
+O45 & G2 & M514 & 64 & F & 3 & 30 & L & 1827 & 48.714 & 0\\
+O46 & G2 & M514 & 64 & P & 3 & 30 & L & 1820 & 45.753 & 0\\
+O47 & G2 & M514 & 32 & F & 3 & 30 & L & 3801 & 74.386 & 2\\
+O48 & G2 & M514 & 32 & P & 3 & 30 & L & 2905 & 56.535 & 0\\
+O49 & G2 & M514 & 32 & S & 3 & 30 & L & 2949 & 71.794 & 0\\
+O50 & G2 & T499 & 64 & F & 3 & 30 & L & 1034 & 41.367 & 0\\
+O51 & G2 & T499 & 64 & S & 3 & 30 & L & 1029 & 51.287 & 0\\
+O52 & G2 & T499 & 64 & P & 3 & 30 & L & 1025 & 39.579 & 0\\
+O53 & G2 & T499 & 32 & P & 3 & 30 & L & 1153 & 40.045 & 0\\
+O54 & G2 & T499 & 32 & S & 3 & 30 & L & 1162 & 43.891 & 0\\
+O55 & G2 & T499 & 32 & F & 3 & 30 & L & 1171 & 40.225 & 0\\
+O56 & G2 & C216 & 64 & S & 1 & 150 & C & 3395 & 84.020 & 0\\
+O57 & G2 & C216 & 64 & F & 1 & 150 & C & 3396 & 69.404 & 0\\
+O58 & G2 & C216 & 64 & P & 1 & 150 & C & 3402 & 68.641 & 0\\
+O59 & G2 & C216 & 32 & S & 1 & 150 & C & 3585 & 75.701 & 0\\
+O60 & G2 & C216 & 32 & F & 1 & 150 & C & 3495 & 71.565 & 0\\
+O61 & G2 & C216 & 32 & P & 1 & 150 & C & 3463 & 74.958 & 0\\
+O62 & G2 & C216 & 32 & S & 1 & 30 & D & 341 & 12.437 & 0\\
+O63 & H1 & C216 & 64 & S & 3 & 100 & L & 2257 & 27.661 & 0\\
+O64 & H1 & C216 & 64 & F & 3 & 100 & L & 2252 & 17.540 & 0\\
+O65 & H1 & C216 & 64 & P & 3 & 100 & L & 2244 & 17.048 & 0\\
+O66 & H1 & C216 & 32 & S & 3 & 100 & L & 2316 & 21.346 & 0\\
+O67 & H1 & C216 & 32 & P & 3 & 100 & L & 2323 & 17.674 & 0\\
+O68 & H1 & C216 & 32 & F & 3 & 100 & L & 2354 & 17.932 & 0\\
+O69 & H1 & C512 & 64 & P & 3 & 100 & L & 1244 & 26.272 & 0\\
+O70 & H1 & C512 & 64 & F & 3 & 100 & L & 1253 & 28.593 & 0\\
+O71 & H1 & C512 & 64 & S & 3 & 100 & L & 1251 & 41.354 & 0\\
+O72 & H1 & C512 & 32 & P & 3 & 100 & L & 1263 & 26.062 & 0\\
+O73 & H1 & C512 & 32 & F & 3 & 100 & L & 1260 & 26.665 & 0\\
+O74 & H1 & C512 & 32 & S & 3 & 100 & L & 1262 & 31.278 & 0\\
+O75 & H1 & M514 & 64 & S & 3 & 100 & L & 5298 & 109.817 & 0\\
+O76 & H1 & M514 & 64 & F & 3 & 100 & L & 5305 & 58.233 & 0\\
+O77 & H1 & M514 & 64 & P & 3 & 100 & L & 5246 & 49.298 & 0\\
+O78 & H1 & M514 & 32 & F & 3 & 100 & L & 8469 & 79.077 & 2\\
+O79 & H1 & M514 & 32 & P & 3 & 100 & L & 9044 & 74.400 & 2\\
+O80 & H1 & M514 & 32 & S & 3 & 100 & L & 8194 & 119.997 & 3\\
+O81 & H1 & T499 & 64 & F & 3 & 100 & L & 1890 & 29.155 & 0\\
+O82 & H1 & T499 & 64 & S & 3 & 100 & L & 1890 & 47.322 & 0\\
+O83 & H1 & T499 & 64 & P & 3 & 100 & L & 1889 & 25.766 & 0\\
+O84 & H1 & T499 & 32 & P & 3 & 100 & L & 2064 & 26.172 & 0\\
+O85 & H1 & T499 & 32 & S & 3 & 100 & L & 2078 & 34.564 & 0\\
+O86 & H1 & T499 & 32 & F & 3 & 100 & L & 2070 & 27.353 & 0\\
+O87 & H1 & C216 & 64 & S & 1 & 150 & C & 3398 & 39.744 & 0\\
+O88 & H1 & C216 & 64 & F & 1 & 150 & C & 3387 & 24.184 & 0\\
+O89 & H1 & C216 & 64 & P & 1 & 150 & C & 3388 & 23.689 & 0\\
+O90 & H1 & C216 & 32 & S & 1 & 150 & C & 3502 & 29.985 & 0\\
+O91 & H1 & C216 & 32 & F & 1 & 150 & C & 3443 & 24.592 & 0\\
+O92 & H1 & C216 & 32 & P & 1 & 150 & C & 3689 & 28.915 & 0\\
+O93 & H2 & C216 & 64 & S & 3 & 100 & L & 2247 & 27.828 & 0\\
+O94 & H2 & C216 & 64 & F & 3 & 100 & L & 2251 & 17.762 & 0\\
+O95 & H2 & C216 & 64 & P & 3 & 100 & L & 2258 & 17.345 & 0\\
+O96 & H2 & C216 & 32 & S & 3 & 100 & L & 2355 & 21.816 & 0\\
+O97 & H2 & C216 & 32 & P & 3 & 100 & L & 2319 & 18.153 & 0\\
+O98 & H2 & C216 & 32 & F & 3 & 100 & L & 2303 & 18.438 & 0\\
+O99 & H2 & C512 & 64 & P & 3 & 100 & L & 1249 & 26.217 & 0\\
+O100 & H2 & C512 & 64 & F & 3 & 100 & L & 1252 & 28.376 & 0\\
+O101 & H2 & C512 & 64 & S & 3 & 100 & L & 1251 & 41.178 & 0\\
+O102 & H2 & C512 & 32 & P & 3 & 100 & L & 1252 & 25.912 & 0\\
+O103 & H2 & C512 & 32 & F & 3 & 100 & L & 1258 & 26.652 & 0\\
+O104 & H2 & C512 & 32 & S & 3 & 100 & L & 1257 & 31.149 & 0\\
+O105 & H2 & M514 & 64 & S & 3 & 100 & L & 5335 & 109.297 & 0\\
+O106 & H2 & M514 & 64 & F & 3 & 100 & L & 5275 & 57.495 & 0\\
+O107 & H2 & M514 & 64 & P & 3 & 100 & L & 5288 & 49.275 & 0\\
+O108 & H2 & M514 & 32 & F & 3 & 100 & L & 8746 & 88.197 & 2\\
+O109 & H2 & M514 & 32 & P & 3 & 100 & L & 8493 & 73.942 & 2\\
+O110 & H2 & M514 & 32 & S & 3 & 100 & L & 8208 & 110.312 & 2\\
+O111 & H2 & T499 & 64 & F & 3 & 100 & L & 1891 & 28.776 & 0\\
+O112 & H2 & T499 & 64 & S & 3 & 100 & L & 1873 & 47.041 & 0\\
+O113 & H2 & T499 & 64 & P & 3 & 100 & L & 1889 & 25.805 & 0\\
+O114 & H2 & T499 & 32 & P & 3 & 100 & L & 2051 & 25.990 & 0\\
+O115 & H2 & T499 & 32 & S & 3 & 100 & L & 2106 & 34.248 & 0\\
+O116 & H2 & T499 & 32 & F & 3 & 100 & L & 2079 & 27.208 & 0\\
+O117 & H2 & C216 & 64 & S & 1 & 150 & C & 3373 & 39.403 & 0\\
+O118 & H2 & C216 & 64 & F & 1 & 150 & C & 3385 & 24.448 & 0\\
+O119 & H2 & C216 & 64 & P & 1 & 150 & C & 3373 & 23.930 & 0\\
+O120 & H2 & C216 & 32 & S & 1 & 150 & C & 3747 & 31.718 & 0\\
+O121 & H2 & C216 & 32 & F & 1 & 150 & C & 3469 & 25.064 & 0\\
+O122 & H2 & C216 & 32 & P & 1 & 150 & C & 3477 & 24.815 & 0\\
+\end{longtable}
+CG and re-setup are sums of per-step timers, then medians across repetitions. Initial hierarchy construction is included in wall time but separately NR for every row. Logged compliance precedes the final OC update; volume and change follow it. Change is the maximum absolute unfiltered design-variable update. Density-field agreement was not computed.
+\begin{longtable}{@{}llllll@{}}
+\caption{Optimization solve/setup and final logged quantities (O IDs as above).}\\
+\toprule
+ID & CG s & Re-setup s & Compliance & Volume & Change\\
+\midrule\endfirsthead
+\toprule
+ID & CG s & Re-setup s & Compliance & Volume & Change\\
+\midrule\endhead
+\bottomrule\endfoot
+O1 & 6.634 & 0.852 & 2.407936 & 0.299996 & 0.150000\\
+O2 & 3.150 & 0.774 & 2.407936 & 0.299996 & 0.150000\\
+O3 & 3.021 & 0.775 & 2.407936 & 0.299996 & 0.150000\\
+O4 & 4.630 & 0.853 & 2.407936 & 0.299996 & 0.150000\\
+O5 & 3.372 & 0.777 & 2.407936 & 0.299996 & 0.150000\\
+O6 & 3.444 & 0.782 & 2.407936 & 0.299996 & 0.150000\\
+O7 & 2.406 & 1.986 & 1.966316 & 0.300003 & 0.150000\\
+O8 & 3.056 & 2.017 & 1.966316 & 0.300003 & 0.150000\\
+O9 & 7.097 & 2.206 & 1.966316 & 0.300003 & 0.150000\\
+O10 & 2.307 & 1.986 & 1.966316 & 0.300003 & 0.150000\\
+O11 & 2.547 & 2.017 & 1.966316 & 0.300003 & 0.150000\\
+O12 & 3.999 & 2.207 & 1.966316 & 0.300003 & 0.150000\\
+O13 & 30.342 & 2.842 & 5.796278 & 0.500000 & 0.150000\\
+O14 & 12.831 & 2.681 & 5.796278 & 0.500000 & 0.150000\\
+O15 & 9.844 & 2.655 & 5.796278 & 0.500000 & 0.150000\\
+O16 & 30.407 & 2.684 & 5.796276 & 0.500000 & 0.150000\\
+O17 & 21.133 & 2.656 & 5.796276 & 0.500000 & 0.150000\\
+O18 & 31.401 & 2.844 & 5.796282 & 0.499999 & 0.150000\\
+O19 & 6.758 & 1.508 & 2.084699 & 0.250001 & 0.150000\\
+O20 & 16.480 & 1.692 & 2.084698 & 0.250001 & 0.150000\\
+O21 & 5.008 & 1.478 & 2.084697 & 0.250001 & 0.150000\\
+O22 & 5.455 & 1.477 & 2.084698 & 0.250001 & 0.150000\\
+O23 & 9.606 & 1.692 & 2.084695 & 0.250001 & 0.150000\\
+O24 & 5.959 & 1.508 & 2.084699 & 0.250001 & 0.150000\\
+O25 & 28.839 & 3.218 & 2.370205 & 0.300000 & 0.148441\\
+O26 & 13.670 & 3.195 & 2.370205 & 0.300000 & 0.148433\\
+O27 & 13.068 & 3.255 & 2.370205 & 0.300000 & 0.148441\\
+O28 & 19.360 & 3.233 & 2.370206 & 0.300000 & 0.148455\\
+O29 & 14.601 & 3.244 & 2.370205 & 0.300000 & 0.148402\\
+O30 & 13.938 & 3.256 & 2.370207 & 0.300000 & 0.148475\\
+O31 & 2.005 & 1.202 & 405316117.939373 & 0.001000 & 0.000001\\
+O32 & 6.894 & 0.895 & 2.407936 & 0.299996 & 0.150000\\
+O33 & 3.224 & 0.813 & 2.407936 & 0.299996 & 0.150000\\
+O34 & 3.140 & 0.810 & 2.407936 & 0.299996 & 0.150000\\
+O35 & 4.743 & 0.889 & 2.407936 & 0.299996 & 0.150000\\
+O36 & 3.471 & 0.810 & 2.407936 & 0.299996 & 0.150000\\
+O37 & 3.418 & 0.808 & 2.407936 & 0.299996 & 0.150000\\
+O38 & 2.499 & 2.079 & 1.966316 & 0.300003 & 0.150000\\
+O39 & 3.193 & 2.114 & 1.966316 & 0.300003 & 0.150000\\
+O40 & 7.379 & 2.305 & 1.966316 & 0.300003 & 0.150000\\
+O41 & 2.392 & 2.072 & 1.966316 & 0.300003 & 0.150000\\
+O42 & 2.637 & 2.107 & 1.966316 & 0.300003 & 0.150000\\
+O43 & 4.072 & 2.307 & 1.966316 & 0.300003 & 0.150000\\
+O44 & 31.493 & 2.955 & 5.796278 & 0.500000 & 0.150000\\
+O45 & 13.088 & 2.780 & 5.796278 & 0.500000 & 0.150000\\
+O46 & 10.066 & 2.760 & 5.796278 & 0.500000 & 0.150000\\
+O47 & 38.494 & 2.786 & 5.796276 & 0.500000 & 0.150000\\
+O48 & 20.103 & 2.750 & 5.796279 & 0.500000 & 0.150000\\
+O49 & 35.397 & 2.945 & 5.796277 & 0.500000 & 0.150000\\
+O50 & 6.890 & 1.576 & 2.084697 & 0.250002 & 0.150000\\
+O51 & 16.846 & 1.765 & 2.084697 & 0.250002 & 0.150000\\
+O52 & 5.221 & 1.549 & 2.084698 & 0.250001 & 0.150000\\
+O53 & 5.577 & 1.547 & 2.084699 & 0.250001 & 0.150000\\
+O54 & 9.874 & 1.767 & 2.084696 & 0.250002 & 0.150000\\
+O55 & 6.128 & 1.573 & 2.084697 & 0.250002 & 0.150000\\
+O56 & 29.224 & 3.324 & 2.370205 & 0.300000 & 0.148439\\
+O57 & 13.806 & 3.259 & 2.370205 & 0.300000 & 0.148437\\
+O58 & 13.298 & 3.295 & 2.370205 & 0.300000 & 0.148443\\
+O59 & 20.122 & 3.344 & 2.370205 & 0.300000 & 0.148415\\
+O60 & 14.987 & 3.343 & 2.370206 & 0.300000 & 0.148368\\
+O61 & 14.164 & 3.319 & 2.370205 & 0.300000 & 0.148403\\
+O62 & 2.037 & 1.259 & 405316068.966563 & 0.001000 & 0.000001\\
+O63 & 18.892 & 2.252 & 2.375136 & 0.300000 & 0.150000\\
+O64 & 8.838 & 2.172 & 2.375136 & 0.300000 & 0.150000\\
+O65 & 8.383 & 2.169 & 2.375136 & 0.300000 & 0.150000\\
+O66 & 12.575 & 2.257 & 2.375137 & 0.300000 & 0.150000\\
+O67 & 9.018 & 2.160 & 2.375137 & 0.300000 & 0.150000\\
+O68 & 9.322 & 2.186 & 2.375137 & 0.300000 & 0.150000\\
+O69 & 7.516 & 6.245 & 1.942433 & 0.299999 & 0.150000\\
+O70 & 9.678 & 6.283 & 1.942433 & 0.299999 & 0.150000\\
+O71 & 22.392 & 6.476 & 1.942433 & 0.299999 & 0.150000\\
+O72 & 7.159 & 6.258 & 1.942433 & 0.299999 & 0.150000\\
+O73 & 7.880 & 6.272 & 1.942433 & 0.299999 & 0.150000\\
+O74 & 12.264 & 6.470 & 1.942433 & 0.299999 & 0.150000\\
+O75 & 88.539 & 8.763 & 5.774663 & 0.500001 & 0.150000\\
+O76 & 37.156 & 8.592 & 5.774663 & 0.500001 & 0.150000\\
+O77 & 28.391 & 8.577 & 5.774663 & 0.500001 & 0.150000\\
+O78 & 58.140 & 8.608 & 5.774660 & 0.499999 & 0.150000\\
+O79 & 53.487 & 8.578 & 5.774660 & 0.499999 & 0.150000\\
+O80 & 98.228 & 8.766 & 5.774661 & 0.499999 & 0.150000\\
+O81 & 12.606 & 4.577 & 2.083160 & 0.250000 & 0.150000\\
+O82 & 30.818 & 4.758 & 2.083158 & 0.250000 & 0.150000\\
+O83 & 9.560 & 4.541 & 2.083153 & 0.250000 & 0.150000\\
+O84 & 9.839 & 4.537 & 2.083158 & 0.250000 & 0.150000\\
+O85 & 18.021 & 4.753 & 2.083156 & 0.250000 & 0.150000\\
+O86 & 10.922 & 4.575 & 2.083161 & 0.250000 & 0.150000\\
+O87 & 28.524 & 3.265 & 2.370205 & 0.300000 & 0.148439\\
+O88 & 13.261 & 3.180 & 2.370205 & 0.300000 & 0.148440\\
+O89 & 12.628 & 3.158 & 2.370205 & 0.300000 & 0.148435\\
+O90 & 18.986 & 3.250 & 2.370205 & 0.300000 & 0.148246\\
+O91 & 13.677 & 3.167 & 2.370205 & 0.300000 & 0.148449\\
+O92 & 17.990 & 3.165 & 2.370205 & 0.300000 & 0.148433\\
+O93 & 18.972 & 2.250 & 2.375136 & 0.300000 & 0.150000\\
+O94 & 8.998 & 2.167 & 2.375136 & 0.300000 & 0.150000\\
+O95 & 8.635 & 2.146 & 2.375136 & 0.300000 & 0.150000\\
+O96 & 12.988 & 2.247 & 2.375136 & 0.300000 & 0.150000\\
+O97 & 9.270 & 2.160 & 2.375137 & 0.300000 & 0.150000\\
+O98 & 9.435 & 2.174 & 2.375137 & 0.300000 & 0.150000\\
+O99 & 7.447 & 6.174 & 1.942433 & 0.299999 & 0.150000\\
+O100 & 9.530 & 6.208 & 1.942433 & 0.299999 & 0.150000\\
+O101 & 22.182 & 6.392 & 1.942433 & 0.299999 & 0.150000\\
+O102 & 7.066 & 6.176 & 1.942433 & 0.299999 & 0.150000\\
+O103 & 7.795 & 6.196 & 1.942433 & 0.299999 & 0.150000\\
+O104 & 12.044 & 6.394 & 1.942433 & 0.299999 & 0.150000\\
+O105 & 88.194 & 8.628 & 5.774663 & 0.500001 & 0.150000\\
+O106 & 36.427 & 8.461 & 5.774663 & 0.500001 & 0.150000\\
+O107 & 28.297 & 8.447 & 5.774663 & 0.500001 & 0.150000\\
+O108 & 67.335 & 8.459 & 5.774660 & 0.499999 & 0.150000\\
+O109 & 53.178 & 8.436 & 5.774661 & 0.499999 & 0.150000\\
+O110 & 88.926 & 8.634 & 5.774663 & 0.500000 & 0.150000\\
+O111 & 12.403 & 4.518 & 2.083153 & 0.250000 & 0.150000\\
+O112 & 30.396 & 4.711 & 2.083154 & 0.250000 & 0.150000\\
+O113 & 9.456 & 4.497 & 2.083157 & 0.250000 & 0.150000\\
+O114 & 9.757 & 4.493 & 2.083158 & 0.250000 & 0.150000\\
+O115 & 17.767 & 4.710 & 2.083157 & 0.250000 & 0.150000\\
+O116 & 10.832 & 4.524 & 2.083154 & 0.250000 & 0.150000\\
+O117 & 28.355 & 3.229 & 2.370205 & 0.300000 & 0.148440\\
+O118 & 13.447 & 3.147 & 2.370205 & 0.300000 & 0.148439\\
+O119 & 12.929 & 3.133 & 2.370205 & 0.300000 & 0.148439\\
+O120 & 20.604 & 3.227 & 2.370205 & 0.300000 & 0.148403\\
+O121 & 14.123 & 3.136 & 2.370205 & 0.300000 & 0.148416\\
+O122 & 13.867 & 3.124 & 2.370205 & 0.300000 & 0.148421\\
+\end{longtable}
+The following paired ratios divide fused-ai wall time by parity wall time within a repetition. L rows have three ratios; C rows have one. Work=yes requires total Krylov counts within 3\% in every pair. Work=no rows remain descriptive and are not qualified fixed-work speedup claims. Median-threshold decisions additionally require the stated compliance/volume/solve gates; these ranges are not bootstrap intervals.
+\begin{longtable}{@{}lllllllll@{}}
+\caption{All paired wall-time ratios, their observed ranges and Krylov work qualification.}\\
+\toprule
+Host & Case & Sch. & Kind & n & Median & Min & Max & Work\\
+\midrule\endfirsthead
+\toprule
+Host & Case & Sch. & Kind & n & Median & Min & Max & Work\\
+\midrule\endhead
+\bottomrule\endfoot
+G1 & C216 & 64 & L & 3 & 1.0096 & 1.0051 & 1.0109 & yes\\
+G1 & C216 & 32 & L & 3 & 0.9989 & 0.8134 & 1.0113 & no\\
+G1 & C512 & 64 & L & 3 & 1.0169 & 1.0137 & 1.0265 & yes\\
+G1 & C512 & 32 & L & 3 & 1.0018 & 0.9928 & 1.0129 & no\\
+G1 & M514 & 64 & L & 3 & 1.0677 & 1.0668 & 1.0760 & yes\\
+G1 & M514 & 32 & L & 3 & 1.2545 & 0.9962 & 1.2743 & no\\
+G1 & T499 & 64 & L & 3 & 1.0491 & 1.0435 & 1.0493 & no\\
+G1 & T499 & 32 & L & 3 & 1.0157 & 1.0121 & 1.0200 & yes\\
+G1 & C216 & 64 & C & 1 & 1.0072 & 1.0072 & 1.0072 & yes\\
+G1 & C216 & 32 & C & 1 & 1.0127 & 1.0127 & 1.0127 & yes\\
+G2 & C216 & 64 & L & 3 & 0.9989 & 0.9929 & 1.0145 & yes\\
+G2 & C216 & 32 & L & 3 & 0.9877 & 0.9803 & 1.2157 & no\\
+G2 & C512 & 64 & L & 3 & 1.0116 & 1.0040 & 1.0490 & yes\\
+G2 & C512 & 32 & L & 3 & 1.0253 & 0.9761 & 1.0338 & yes\\
+G2 & M514 & 64 & L & 3 & 1.0711 & 1.0388 & 1.0756 & yes\\
+G2 & M514 & 32 & L & 3 & 1.4902 & 1.2104 & 3.9698 & no\\
+G2 & T499 & 64 & L & 3 & 1.0336 & 1.0217 & 2.1808 & yes\\
+G2 & T499 & 32 & L & 3 & 1.0051 & 0.2940 & 1.0141 & no\\
+G2 & C216 & 64 & C & 1 & 1.0111 & 1.0111 & 1.0111 & yes\\
+G2 & C216 & 32 & C & 1 & 0.9547 & 0.9547 & 0.9547 & yes\\
+H1 & C216 & 64 & L & 3 & 1.0256 & 1.0228 & 1.0289 & yes\\
+H1 & C216 & 32 & L & 3 & 1.0157 & 1.0117 & 1.1832 & no\\
+H1 & C512 & 64 & L & 3 & 1.0883 & 1.0870 & 1.0900 & yes\\
+H1 & C512 & 32 & L & 3 & 1.0231 & 1.0207 & 1.0326 & yes\\
+H1 & M514 & 64 & L & 3 & 1.1815 & 1.1694 & 1.1833 & yes\\
+H1 & M514 & 32 & L & 3 & 1.1050 & 0.9158 & 1.3073 & no\\
+H1 & T499 & 64 & L & 3 & 1.1187 & 1.1141 & 1.1330 & yes\\
+H1 & T499 & 32 & L & 3 & 1.0402 & 1.0335 & 1.0464 & yes\\
+H1 & C216 & 64 & C & 1 & 1.0209 & 1.0209 & 1.0209 & yes\\
+H1 & C216 & 32 & C & 1 & 0.8505 & 0.8505 & 0.8505 & no\\
+H2 & C216 & 64 & L & 3 & 1.0231 & 1.0211 & 1.0292 & yes\\
+H2 & C216 & 32 & L & 3 & 1.0151 & 1.0109 & 1.0489 & no\\
+H2 & C512 & 64 & L & 3 & 1.0809 & 1.0800 & 1.0857 & yes\\
+H2 & C512 & 32 & L & 3 & 1.0252 & 1.0237 & 1.0285 & yes\\
+H2 & M514 & 64 & L & 3 & 1.1666 & 1.1645 & 1.1668 & yes\\
+H2 & M514 & 32 & L & 3 & 1.1583 & 1.0959 & 1.2019 & no\\
+H2 & T499 & 64 & L & 3 & 1.1151 & 1.0999 & 1.1348 & yes\\
+H2 & T499 & 32 & L & 3 & 1.0469 & 1.0277 & 1.0570 & no\\
+H2 & C216 & 64 & C & 1 & 1.0216 & 1.0216 & 1.0216 & yes\\
+H2 & C216 & 32 & C & 1 & 1.0101 & 1.0101 & 1.0101 & yes\\
+\end{longtable}
+\endgroup
+\subsection{Scale: every rediscretized solver configuration}
+n=2 warm tolerance solves per row; all passed the independent physical check. Elements and total/free DOFs follow the recorded grid and x=0 clamp. Both repetition times remain in CSV. The table median is not a total setup-plus-solve time. All six arms were resident in the measured harness. Live-array and transient peak memory are NR for every row. R IDs match the timing split below.
+\begingroup\small\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}llllllllll@{}}
+\caption{Rediscretized scale dimensions and warm time to the requested residual tolerance.}\\
+\toprule
+ID & Host & Case & Arm & Elements & DOFs & Free DOFs & Lvls & K & Warm s\\
+\midrule\endfirsthead
+\toprule
+ID & Host & Case & Arm & Elements & DOFs & Free DOFs & Lvls & K & Warm s\\
+\midrule\endhead
+\bottomrule\endfoot
+R1 & IA & q96x1 & 32P & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.3283\\
+R2 & IA & q96x1 & 64N & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.3626\\
+R3 & IA & q96x1 & 64F & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.3947\\
+R4 & IA & q96x1 & 32N & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.3196\\
+R5 & IA & q96x1 & 64P & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.4345\\
+R6 & IA & q96x1 & 32F & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.3161\\
+R7 & IA & q64x2 & 32F & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.3153\\
+R8 & IA & q64x2 & 64F & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.5253\\
+R9 & IA & q64x2 & 64N & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.4910\\
+R10 & IA & q64x2 & 32P & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.3323\\
+R11 & IA & q64x2 & 32N & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.3101\\
+R12 & IA & q64x2 & 64P & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.5816\\
+R13 & IA & q96x2 & 64N & 14155776 & 43022595 & 42910848 & 6 & 24 & 2.6556\\
+R14 & IA & q96x2 & 64P & 14155776 & 43022595 & 42910848 & 6 & 24 & 3.1684\\
+R15 & IA & q96x2 & 64F & 14155776 & 43022595 & 42910848 & 6 & 24 & 2.8056\\
+R16 & IA & q96x2 & 32P & 14155776 & 43022595 & 42910848 & 6 & 24 & 1.7375\\
+R17 & IA & q96x2 & 32F & 14155776 & 43022595 & 42910848 & 6 & 24 & 1.6675\\
+R18 & IA & q96x2 & 32N & 14155776 & 43022595 & 42910848 & 6 & 24 & 1.6241\\
+R19 & IA & q96x3 & 64F & 47775744 & 144574851 & 144324288 & 6 & 20 & 7.8558\\
+R20 & IA & q96x3 & 64N & 47775744 & 144574851 & 144324288 & 6 & 20 & 7.4140\\
+R21 & IA & q96x3 & 32N & 47775744 & 144574851 & 144324288 & 6 & 20 & 4.5369\\
+R22 & IA & q96x3 & 32P & 47775744 & 144574851 & 144324288 & 6 & 20 & 4.8427\\
+R23 & IA & q96x3 & 32F & 47775744 & 144574851 & 144324288 & 6 & 20 & 4.6118\\
+R24 & IA & q96x3 & 64P & 47775744 & 144574851 & 144324288 & 6 & 20 & 8.9015\\
+R25 & IH & q96x1 & 32P & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.1952\\
+R26 & IH & q96x1 & 64N & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.2579\\
+R27 & IH & q96x1 & 64F & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.2756\\
+R28 & IH & q96x1 & 32N & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.1872\\
+R29 & IH & q96x1 & 64P & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.3001\\
+R30 & IH & q96x1 & 32F & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.1903\\
+R31 & IH & q64x2 & 32F & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.2457\\
+R32 & IH & q64x2 & 64F & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.3614\\
+R33 & IH & q64x2 & 64N & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.3401\\
+R34 & IH & q64x2 & 32P & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.2452\\
+R35 & IH & q64x2 & 32N & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.2360\\
+R36 & IH & q64x2 & 64P & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.3932\\
+R37 & IH & q96x2 & 64N & 14155776 & 43022595 & 42910848 & 6 & 24 & 2.1996\\
+R38 & IH & q96x2 & 64P & 14155776 & 43022595 & 42910848 & 6 & 24 & 2.4101\\
+R39 & IH & q96x2 & 64F & 14155776 & 43022595 & 42910848 & 6 & 24 & 2.2341\\
+R40 & IH & q96x2 & 32P & 14155776 & 43022595 & 42910848 & 6 & 24 & 1.4375\\
+R41 & IH & q96x2 & 32F & 14155776 & 43022595 & 42910848 & 6 & 24 & 1.4042\\
+R42 & IH & q96x2 & 32N & 14155776 & 43022595 & 42910848 & 6 & 24 & 1.3919\\
+R43 & IH & q96x3 & 64F & 47775744 & 144574851 & 144324288 & 6 & 20 & 6.3951\\
+R44 & IH & q96x3 & 64N & 47775744 & 144574851 & 144324288 & 6 & 20 & 6.1909\\
+R45 & IH & q96x3 & 32N & 47775744 & 144574851 & 144324288 & 6 & 20 & 3.9780\\
+R46 & IH & q96x3 & 32P & 47775744 & 144574851 & 144324288 & 6 & 20 & 4.0944\\
+R47 & IH & q96x3 & 32F & 47775744 & 144574851 & 144324288 & 6 & 20 & 4.0011\\
+R48 & IH & q96x3 & 64P & 47775744 & 144574851 & 144324288 & 6 & 20 & 6.8738\\
+R49 & IR & q96x1 & 32P & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.3096\\
+R50 & IR & q96x1 & 64N & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.8753\\
+R51 & IR & q96x1 & 64F & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.7545\\
+R52 & IR & q96x1 & 32N & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.3764\\
+R53 & IR & q96x1 & 64P & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.5447\\
+R54 & IR & q96x1 & 32F & 1769472 & 5447811 & 5419584 & 5 & 24 & 0.3524\\
+R55 & IR & q64x2 & 32F & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.4283\\
+R56 & IR & q64x2 & 64F & 4194304 & 12830211 & 12780288 & 5 & 14 & 1.0823\\
+R57 & IR & q64x2 & 64N & 4194304 & 12830211 & 12780288 & 5 & 14 & 1.2460\\
+R58 & IR & q64x2 & 32P & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.3713\\
+R59 & IR & q64x2 & 32N & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.4623\\
+R60 & IR & q64x2 & 64P & 4194304 & 12830211 & 12780288 & 5 & 14 & 0.7927\\
+R61 & IR & q96x2 & 64N & 14155776 & 43022595 & 42910848 & 6 & 24 & 7.1734\\
+R62 & IR & q96x2 & 64P & 14155776 & 43022595 & 42910848 & 6 & 24 & 4.5936\\
+R63 & IR & q96x2 & 64F & 14155776 & 43022595 & 42910848 & 6 & 24 & 6.2614\\
+R64 & IR & q96x2 & 32P & 14155776 & 43022595 & 42910848 & 6 & 24 & 2.1160\\
+R65 & IR & q96x2 & 32F & 14155776 & 43022595 & 42910848 & 6 & 24 & 2.4510\\
+R66 & IR & q96x2 & 32N & 14155776 & 43022595 & 42910848 & 6 & 24 & 2.6349\\
+\end{longtable}
+Shared setup is once per case: reference hierarchy, host coarsest assembly/Cholesky, transfers and spectral estimation. Arm setup is the incremental recorded construction with cached compilation possible. Shared values are repeated for lookup, not additive across arms. Noncoarsest levels are matrix-free; the coarsest operator is assembled and factored.
+\begin{longtable}{@{}llllll@{}}
+\caption{Scale setup and observed independent residual (R IDs as above).}\\
+\toprule
+ID & Shared setup s & Arm setup s & Max. residual & Live bytes & Peak bytes\\
+\midrule\endfirsthead
+\toprule
+ID & Shared setup s & Arm setup s & Max. residual & Live bytes & Peak bytes\\
+\midrule\endhead
+\bottomrule\endfoot
+R1 & 4.6366 & 0.0030 & 4.37e-09 & NR & NR\\
+R2 & 4.6366 & 0.0038 & 4.37e-09 & NR & NR\\
+R3 & 4.6366 & 0.0023 & 4.37e-09 & NR & NR\\
+R4 & 4.6366 & 0.5481 & 4.37e-09 & NR & NR\\
+R5 & 4.6366 & 0.0032 & 4.37e-09 & NR & NR\\
+R6 & 4.6366 & 0.0032 & 4.37e-09 & NR & NR\\
+R7 & 2.1373 & 0.0036 & 2.06e-09 & NR & NR\\
+R8 & 2.1373 & 0.0031 & 2.06e-09 & NR & NR\\
+R9 & 2.1373 & 0.0034 & 2.06e-09 & NR & NR\\
+R10 & 2.1373 & 0.0034 & 2.06e-09 & NR & NR\\
+R11 & 2.1373 & 0.0034 & 2.06e-09 & NR & NR\\
+R12 & 2.1373 & 0.0034 & 2.06e-09 & NR & NR\\
+R13 & 3.4164 & 0.0053 & 4.43e-09 & NR & NR\\
+R14 & 3.4164 & 0.0057 & 4.43e-09 & NR & NR\\
+R15 & 3.4164 & 0.0053 & 4.43e-09 & NR & NR\\
+R16 & 3.4164 & 0.0041 & 4.43e-09 & NR & NR\\
+R17 & 3.4164 & 0.0041 & 4.43e-09 & NR & NR\\
+R18 & 3.4164 & 0.0041 & 4.43e-09 & NR & NR\\
+R19 & 13.6777 & 0.0173 & 7.45e-09 & NR & NR\\
+R20 & 13.6777 & 0.0173 & 7.45e-09 & NR & NR\\
+R21 & 13.6777 & 0.0132 & 7.45e-09 & NR & NR\\
+R22 & 13.6777 & 0.0132 & 7.45e-09 & NR & NR\\
+R23 & 13.6777 & 0.0132 & 7.45e-09 & NR & NR\\
+R24 & 13.6777 & 0.0173 & 7.45e-09 & NR & NR\\
+R25 & 3.3143 & 0.0016 & 4.37e-09 & NR & NR\\
+R26 & 3.3143 & 0.0020 & 4.37e-09 & NR & NR\\
+R27 & 3.3143 & 0.0013 & 4.37e-09 & NR & NR\\
+R28 & 3.3143 & 0.3885 & 4.37e-09 & NR & NR\\
+R29 & 3.3143 & 0.0017 & 4.37e-09 & NR & NR\\
+R30 & 3.3143 & 0.0017 & 4.37e-09 & NR & NR\\
+R31 & 1.5209 & 0.0018 & 2.06e-09 & NR & NR\\
+R32 & 1.5209 & 0.0016 & 2.06e-09 & NR & NR\\
+R33 & 1.5209 & 0.0019 & 2.06e-09 & NR & NR\\
+R34 & 1.5209 & 0.0019 & 2.06e-09 & NR & NR\\
+R35 & 1.5209 & 0.0017 & 2.06e-09 & NR & NR\\
+R36 & 1.5209 & 0.0018 & 2.06e-09 & NR & NR\\
+R37 & 2.2360 & 0.0035 & 4.43e-09 & NR & NR\\
+R38 & 2.2360 & 0.0035 & 4.43e-09 & NR & NR\\
+R39 & 2.2360 & 0.0035 & 4.43e-09 & NR & NR\\
+R40 & 2.2360 & 0.0031 & 4.43e-09 & NR & NR\\
+R41 & 2.2360 & 0.0031 & 4.43e-09 & NR & NR\\
+R42 & 2.2360 & 0.0031 & 4.43e-09 & NR & NR\\
+R43 & 9.5709 & 0.0112 & 7.45e-09 & NR & NR\\
+R44 & 9.5709 & 0.0112 & 7.45e-09 & NR & NR\\
+R45 & 9.5709 & 0.0109 & 7.45e-09 & NR & NR\\
+R46 & 9.5709 & 0.0108 & 7.45e-09 & NR & NR\\
+R47 & 9.5709 & 0.0108 & 7.45e-09 & NR & NR\\
+R48 & 9.5709 & 0.0114 & 7.45e-09 & NR & NR\\
+R49 & 5.1525 & 0.0024 & 4.37e-09 & NR & NR\\
+R50 & 5.1525 & 0.0035 & 4.37e-09 & NR & NR\\
+R51 & 5.1525 & 0.0023 & 4.37e-09 & NR & NR\\
+R52 & 5.1525 & 0.5727 & 4.37e-09 & NR & NR\\
+R53 & 5.1525 & 0.0026 & 4.37e-09 & NR & NR\\
+R54 & 5.1525 & 0.0027 & 4.37e-09 & NR & NR\\
+R55 & 3.3784 & 0.0029 & 2.06e-09 & NR & NR\\
+R56 & 3.3784 & 0.0026 & 2.06e-09 & NR & NR\\
+R57 & 3.3784 & 0.0029 & 2.06e-09 & NR & NR\\
+R58 & 3.3784 & 0.0029 & 2.06e-09 & NR & NR\\
+R59 & 3.3784 & 0.0027 & 2.06e-09 & NR & NR\\
+R60 & 3.3784 & 0.0029 & 2.06e-09 & NR & NR\\
+R61 & 7.4763 & 0.0080 & 4.43e-09 & NR & NR\\
+R62 & 7.4763 & 0.0081 & 4.43e-09 & NR & NR\\
+R63 & 7.4763 & 0.0080 & 4.43e-09 & NR & NR\\
+R64 & 7.4763 & 0.0051 & 4.43e-09 & NR & NR\\
+R65 & 7.4763 & 0.0052 & 4.43e-09 & NR & NR\\
+R66 & 7.4763 & 0.0052 & 4.43e-09 & NR & NR\\
+\end{longtable}
+\endgroup
+\subsection{Galerkin capacity and capped solves}
+Session F uses four-level Galerkin with the arms/schedules shown. An OK row denotes allocation/execution success, not convergence: each retained 40-iteration solve was capped. Device used is CUDA total-minus-free; pool reserved includes allocator caches. Live arrays and construction peaks are NR. The 2 M success and 5 M failure are observations; 3 M is only an estimate. The 2 M grid is 2,000,376 elements / 6,169,152 total DOFs / 6,144,768 free DOFs. The 5 M grid is 5,029,452 / 15,397,956 / 15,353,064.
+\begingroup\small\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}llllllllll@{}}
+\caption{Cold feasibility setup and capped solve; all successful rows have K=40 and did not converge.}\\
+\toprule
+Host & Arm & Sch. & Size & Status & K & Setup s & Solve s & Used GiB & Pool GiB\\
+\midrule\endfirsthead
+\toprule
+Host & Arm & Sch. & Size & Status & K & Setup s & Solve s & Used GiB & Pool GiB\\
+\midrule\endhead
+\bottomrule\endfoot
+FA & S & 64 & 2M & OK & 40 & 24.240 & 2.391 & 46.326 & 46.267\\
+FA & S & 64 & 5M & OOM & NR & NR & NR & NR & NR\\
+FA & P & 64 & 2M & OK & 40 & 23.083 & 1.359 & 45.555 & 45.507\\
+FA & P & 64 & 5M & OOM & NR & NR & NR & NR & NR\\
+FA & S & 32 & 2M & OK & 40 & 23.852 & 1.659 & 46.373 & 46.313\\
+FA & S & 32 & 5M & OOM & NR & NR & NR & NR & NR\\
+FH & S & 64 & 2M & OK & 40 & 37.495 & 1.532 & 46.383 & 46.266\\
+FH & S & 64 & 5M & OOM & NR & NR & NR & NR & NR\\
+FH & P & 64 & 2M & OK & 40 & 36.674 & 0.869 & 45.557 & 45.506\\
+FH & P & 64 & 5M & OOM & NR & NR & NR & NR & NR\\
+FH & S & 32 & 2M & OK & 40 & 36.519 & 1.058 & 46.430 & 46.312\\
+FH & S & 32 & 5M & OOM & NR & NR & NR & NR & NR\\
+FR & S & 64 & 2M & OOM & NR & NR & NR & NR & NR\\
+FR & P & 64 & 2M & OOM & NR & NR & NR & NR & NR\\
+FR & S & 32 & 2M & OOM & NR & NR & NR & NR & NR\\
+\end{longtable}
+W2a below records every block and arm. Each block has three fixed 50-iteration solves; the table shows their median. The separate tolerance attempt occurs only in block 0; NR in block 1 is not a failure. The 1 M grid has 1,000,000 elements / 3,106,053 total DOFs / 3,090,600 free DOFs; the 2 M grid has 2,000,376 / 6,169,152 / 6,144,768. Both use four levels. Setup brackets density-dependent setup only; construction before it is excluded.
+\begin{longtable}{@{}lllllllllll@{}}
+\caption{Galerkin W2a fixed-work and tolerance-attempt outcomes; used memory is a post-setup sample, not peak.}\\
+\toprule
+Host & Size & Sch. & Arm & Block & Setup s & 50 iter. s & Tol. K & Conv. & Tol. s & Used GiB\\
+\midrule\endfirsthead
+\toprule
+Host & Size & Sch. & Arm & Block & Setup s & 50 iter. s & Tol. K & Conv. & Tol. s & Used GiB\\
+\midrule\endhead
+\bottomrule\endfoot
+IA & 1M & 64 & F & 0 & 6.483 & 2.161 & 1000 & no & 44.298 & 23.499\\
+IA & 1M & 64 & P & 0 & 0.090 & 2.263 & 1000 & no & 44.108 & 23.524\\
+IA & 1M & 64 & N & 0 & 0.087 & 2.137 & 1000 & no & 43.328 & 23.501\\
+IA & 1M & 64 & S & 0 & 0.264 & 2.767 & 1000 & no & 54.062 & 23.915\\
+IA & 1M & 64 & P & 1 & 0.099 & 2.189 & NR & NR & NR & 23.532\\
+IA & 1M & 64 & F & 1 & 0.104 & 2.173 & NR & NR & NR & 23.509\\
+IA & 1M & 64 & S & 1 & 0.131 & 2.686 & NR & NR & NR & 23.915\\
+IA & 1M & 64 & N & 1 & 0.094 & 2.152 & NR & NR & NR & 23.509\\
+IA & 1M & 32 & N & 0 & 0.093 & 2.145 & 1000 & no & 44.243 & 23.532\\
+IA & 1M & 32 & P & 0 & 0.096 & 2.152 & 1000 & no & 43.970 & 23.556\\
+IA & 1M & 32 & F & 0 & 0.091 & 2.196 & 1000 & no & 43.456 & 23.532\\
+IA & 1M & 32 & S & 0 & 0.126 & 2.336 & 1000 & no & 47.000 & 23.938\\
+IA & 1M & 32 & P & 1 & 0.093 & 2.156 & NR & NR & NR & 23.556\\
+IA & 1M & 32 & N & 1 & 0.089 & 2.200 & NR & NR & NR & 23.532\\
+IA & 1M & 32 & S & 1 & 0.127 & 2.477 & NR & NR & NR & 23.938\\
+IA & 1M & 32 & F & 1 & 0.091 & 2.144 & NR & NR & NR & 23.532\\
+IA & 2M & 64 & P & 0 & 0.151 & 2.287 & 1000 & no & 46.096 & 45.974\\
+IA & 2M & 64 & F & 0 & 0.152 & 2.284 & 1000 & no & 46.732 & 45.927\\
+IA & 2M & 64 & S & 0 & 0.212 & 3.363 & 1000 & no & 67.533 & 46.737\\
+IA & 2M & 64 & N & 0 & 0.144 & 2.234 & 1000 & no & 45.302 & 45.927\\
+IA & 2M & 64 & P & 1 & 0.151 & 2.346 & NR & NR & NR & 45.974\\
+IA & 2M & 64 & S & 1 & 0.209 & 3.323 & NR & NR & NR & 46.737\\
+IA & 2M & 64 & F & 1 & 0.152 & 2.311 & NR & NR & NR & 45.927\\
+IA & 2M & 64 & N & 1 & 0.149 & 2.279 & NR & NR & NR & 45.927\\
+IA & 2M & 32 & P & 0 & 0.158 & 2.329 & 1000 & no & 45.701 & 46.020\\
+IA & 2M & 32 & F & 0 & 0.148 & 2.231 & 1000 & no & 45.129 & 45.974\\
+IA & 2M & 32 & N & 0 & 0.150 & 2.265 & 1000 & no & 45.514 & 45.974\\
+IA & 2M & 32 & S & 0 & 0.212 & 2.669 & 1000 & no & 54.222 & 46.784\\
+IA & 2M & 32 & F & 1 & 0.149 & 2.289 & NR & NR & NR & 45.974\\
+IA & 2M & 32 & N & 1 & 0.145 & 2.233 & NR & NR & NR & 45.974\\
+IA & 2M & 32 & S & 1 & 0.212 & 2.727 & NR & NR & NR & 46.784\\
+IA & 2M & 32 & P & 1 & 0.151 & 2.308 & NR & NR & NR & 46.020\\
+IH & 1M & 64 & F & 0 & 4.450 & 1.260 & 1000 & no & 25.382 & 23.600\\
+IH & 1M & 64 & P & 0 & 0.072 & 1.254 & 1000 & no & 25.181 & 23.624\\
+IH & 1M & 64 & N & 0 & 0.071 & 1.243 & 1000 & no & 24.893 & 23.600\\
+IH & 1M & 64 & S & 0 & 0.181 & 1.618 & 1000 & no & 32.356 & 24.069\\
+IH & 1M & 64 & P & 1 & 0.072 & 1.260 & NR & NR & NR & 23.686\\
+IH & 1M & 64 & F & 1 & 0.072 & 1.254 & NR & NR & NR & 23.663\\
+IH & 1M & 64 & S & 1 & 0.095 & 1.616 & NR & NR & NR & 24.069\\
+IH & 1M & 64 & N & 1 & 0.071 & 1.248 & NR & NR & NR & 23.663\\
+IH & 1M & 32 & N & 0 & 0.069 & 1.265 & 1000 & no & 25.465 & 23.686\\
+IH & 1M & 32 & P & 0 & 0.071 & 1.253 & 1000 & no & 25.559 & 23.710\\
+IH & 1M & 32 & F & 0 & 0.070 & 1.255 & 1000 & no & 25.165 & 23.686\\
+IH & 1M & 32 & S & 0 & 0.096 & 1.387 & 1000 & no & 27.772 & 24.093\\
+IH & 1M & 32 & P & 1 & 0.072 & 1.255 & NR & NR & NR & 23.710\\
+IH & 1M & 32 & N & 1 & 0.071 & 1.248 & NR & NR & NR & 23.686\\
+IH & 1M & 32 & S & 1 & 0.097 & 1.378 & NR & NR & NR & 24.093\\
+IH & 1M & 32 & F & 1 & 0.071 & 1.250 & NR & NR & NR & 23.686\\
+IH & 2M & 64 & P & 0 & 0.129 & 1.361 & 1000 & no & 27.593 & 46.126\\
+IH & 2M & 64 & F & 0 & 0.126 & 1.362 & 1000 & no & 27.139 & 46.079\\
+IH & 2M & 64 & S & 0 & 0.175 & 2.156 & 1000 & no & 42.246 & 46.889\\
+IH & 2M & 64 & N & 0 & 0.124 & 1.346 & 1000 & no & 27.031 & 46.079\\
+IH & 2M & 64 & P & 1 & 0.127 & 1.361 & NR & NR & NR & 46.126\\
+IH & 2M & 64 & S & 1 & 0.175 & 2.105 & NR & NR & NR & 46.889\\
+IH & 2M & 64 & F & 1 & 0.130 & 1.359 & NR & NR & NR & 46.079\\
+IH & 2M & 64 & N & 1 & 0.127 & 1.347 & NR & NR & NR & 46.079\\
+IH & 2M & 32 & P & 0 & 0.130 & 1.345 & 1000 & no & 26.789 & 46.173\\
+IH & 2M & 32 & F & 0 & 0.126 & 1.373 & 1000 & no & 27.031 & 46.126\\
+IH & 2M & 32 & N & 0 & 0.125 & 1.331 & 1000 & no & 26.659 & 46.126\\
+IH & 2M & 32 & S & 0 & 0.175 & 1.620 & 1000 & no & 32.364 & 46.936\\
+IH & 2M & 32 & F & 1 & 0.128 & 1.339 & NR & NR & NR & 46.126\\
+IH & 2M & 32 & N & 1 & 0.123 & 1.334 & NR & NR & NR & 46.126\\
+IH & 2M & 32 & S & 1 & 0.176 & 1.623 & NR & NR & NR & 46.936\\
+IH & 2M & 32 & P & 1 & 0.129 & 1.339 & NR & NR & NR & 46.173\\
+\end{longtable}
+\endgroup
+\subsection{Hardware/software and experiment manifest}
+The synthetic rows S4090/S3090 precede Sessions A--I and directly measured only plain parity. H100 NVL (FH) and H100 80GB HBM3 (IH) are distinct. Every A100 measured here is PCIe; the historical A100 SXM roofline specification is not measured hardware. CPU NR means the record did not retain a model name. Every row is one allocation.
+\begingroup\small\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}lp{40mm}p{20mm}p{70mm}@{}}
+\caption{Measured allocation identities; complete filenames and machine identifiers are in experiment-manifest.csv.}\\
+\toprule
+Key & GPU & Capacity & CPU\\
+\midrule\endfirsthead
+\toprule
+Key & GPU & Capacity & CPU\\
+\midrule\endhead
+\bottomrule\endfoot
+A & NVIDIA GeForce RTX 4090 & 24564 MiB & NR\\
+B & NVIDIA A100 80GB PCIe & 81920 MiB & Xeon® Gold 5218R \\
+C & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD EPYC 7B13 64-Core Processor\\
+D & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD EPYC 9684X 96-Core Processor\\
+E1 & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD EPYC 7742 64-Core Processor\\
+E2 & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD Ryzen Threadripper 2950X 16-Core Processor\\
+FA & NVIDIA A100 80GB PCIe & 81920 MiB & AMD Ryzen Threadripper PRO 5955WX 16-Cores\\
+FH & NVIDIA H100 NVL & 95830 MiB & XEON® PLATINUM 8558\\
+FR & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD EPYC 7R13 48-Core Processor\\
+G1 & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD EPYC 7282 16-Core Processor\\
+G2 & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD EPYC 7702 64-Core Processor\\
+H1 & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD EPYC 7502 32-Core Processor\\
+H2 & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD EPYC 7502 32-Core Processor\\
+IA & NVIDIA A100 80GB PCIe & 81920 MiB & AMD EPYC 7713 64-Core Processor\\
+IH & NVIDIA H100 80GB HBM3 & 81559 MiB & AMD EPYC 9454 48-Core Processor\\
+IR & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD EPYC 7702 64-Core Processor\\
+S4090 & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD EPYC 7B13 64-Core Processor\\
+S3090 & NVIDIA GeForce RTX 3090 & 24576 MiB & AMD EPYC 7532 32-Core Processor\\
+J & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD EPYC 7K62 48-Core Processor\\
+CEED & NVIDIA GeForce RTX 4090 & 24564 MiB & AMD Ryzen 5 5600X 6-Core Processor\\
+\end{longtable}
+\begin{longtable}{@{}llp{56mm}lp{35mm}@{}}
+\caption{Software from installation records. Installed and loaded-version queries are distinguished. Native libCEED nvcc/GCC versions come from retained version-command output.}\\
+\toprule
+Key & Driver & CUDA runtime & CuPy & CUDA/host compiler\\
+\midrule\endfirsthead
+\toprule
+Key & Driver & CUDA runtime & CuPy & CUDA/host compiler\\
+\midrule\endhead
+\bottomrule\endfoot
+A & 580.173.02 & 12090 (linked to CuPy) / 12080 (locally installed) & 13.6.0 & NVRTC (12, 8)\\
+B & 595.84 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+C & 590.48.01 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+D & 580.119.02 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+E1 & 580.95.05 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+E2 & 595.71.05 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+FA & 580.126.09 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+FH & 570.211.01 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+FR & 595.84 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+G1 & 570.133.07 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+G2 & 580.95.05 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+H1 & 560.35.03 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+H2 & 570.211.01 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+IA & 595.71.05 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+IH & 595.71.05 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+IR & 560.35.03 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+S4090 & 595.84 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+S3090 & 595.84 & 12090 (linked to CuPy) / 12060 (locally installed) & 13.6.0 & NVRTC (12, 6)\\
+J & 535.183.01 & 12.2.140 installed cudart; linked version NR & 13.6.0 & NVRTC 12.2.140\\
+CEED & 595.58.03 & CUDA 12.6 SDK/header probe & native harness & nvcc 12.6.85; GCC 11.4.0\\
+\end{longtable}
+\endgroup
+Precision, kernels, sizes, repeated work and timing-boundary definitions are explicit in the Timing, optimization outcomes and measured scale narrative and in the structured manifest CSV. In particular: synthetic products use five warmups and 11 rounds of 20 calls; A--C use 11 product rounds, 10 fixed-work rounds, and 3/3/2 tolerance repetitions; D/E use 5 tolerance and 10 fixed-work repetitions (E has 11 product rounds); G/H use 3 paired trajectories plus one capped trajectory per arm/schedule; I uses 5 product rounds of 10 calls, 2 tolerance repetitions and 3 fixed-work rounds. G/H warm one full step per arm; A--C warm one FP64 PCG iteration or FP32 action; D/E/I warm two solver iterations per arm. Setup, transfers, masks and zeroing depend on the endpoint as specified in the narrative, not on a universal timer boundary.
+
+\end{document}

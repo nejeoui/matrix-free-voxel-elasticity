@@ -1,0 +1,344 @@
+host,family,size,schedule,arm,status,utc,dims,n_elem,ndof,n_free,bc_seconds,gpu_total_bytes,setup_seconds,solve_seconds,iterations,converged,fp64_operator_calls,gpu_used_after_bytes,pool_total_bytes,seconds_per_iteration,stderr_tail,wall_seconds,live_array_bytes,peak_bytes,hierarchy_levels,raw_source,raw_pointer,error,traceback,block,gpu_used_bytes,to_tolerance,fixed_work,elements,free_dofs
+session-f-a100-20260926,Galerkin feasibility,2M,fp64,stock,ok,2026-09-26T01:00:12.093289+00:00,"[252, 126, 63]",2000376,6169152,6144768,0.20328859286382794,85093777408,24.24019984807819,2.390507308766246,40,False,0,49742348288,49678382080,0.05976268271915615,,29.651960166171193,,,4,results/session-f-a100-20260926/remote/run-01/result.json,/stages/sizing/rows/0,,,,,,,,
+session-f-a100-20260926,Galerkin feasibility,5M,fp64,stock,out_of_memory,2026-09-26T01:00:41.750976+00:00,"[342, 171, 86]",5029452,15397956,15353064,0.508524514734745,85093777408,,,,,,,,,,688.521899451036,,,4,results/session-f-a100-20260926/remote/run-01/result.json,/stages/sizing/rows/1,"OutOfMemoryError('Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,290,732,032 bytes).')","Traceback (most recent call last):
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 166, in size_case
+    _, info = solve(problem, op, schedule, E, s[""tol""], s[""maxiter""])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 98, in solve
+    gmg.setup(E)
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 725, in setup
+    K1, diag1 = assemble_level1_galerkin(self._level1_struct, self._E_e_fp64)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 256, in assemble_level1_galerkin
+    raw = (E_e_gpu[level.fine_elem_stack] * level.Q_stu_stack).sum(axis=0)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""cupy/_core/core.pyx"", line 1627, in cupy._core.core._ndarray_base.__getitem__
+  File ""cupy/_core/_routines_indexing.pyx"", line 43, in cupy._core._routines_indexing._ndarray_getitem
+  File ""cupy/_core/core.pyx"", line 935, in cupy._core.core._ndarray_base.take
+  File ""cupy/_core/_routines_indexing.pyx"", line 132, in cupy._core._routines_indexing._ndarray_take
+  File ""cupy/_core/_routines_indexing.pyx"", line 816, in cupy._core._routines_indexing._take
+  File ""cupy/_core/core.pyx"", line 167, in cupy._core.core.ndarray.__new__
+  File ""cupy/_core/core.pyx"", line 254, in cupy._core.core._ndarray_base._init
+  File ""cupy/cuda/memory.pyx"", line 875, in cupy.cuda.memory.alloc
+  File ""cupy/cuda/memory.pyx"", line 1579, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1600, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File ""cupy/cuda/memory.pyx"", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+  File ""cupy/cuda/memory.pyx"", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,290,732,032 bytes).
+",,,,,,
+session-f-a100-20260926,Galerkin feasibility,2M,fp64,modal8_muladd,ok,2026-09-26T01:12:10.322533+00:00,"[252, 126, 63]",2000376,6169152,6144768,0.21577955782413483,85093777408,23.082556006032974,1.3594225249253213,40,False,260,48913973248,48862234112,0.033985563123133035,,27.593954768031836,,,4,results/session-f-a100-20260926/remote/run-01/result.json,/stages/sizing/rows/2,,,,,,,,
+session-f-a100-20260926,Galerkin feasibility,5M,fp64,modal8_muladd,out_of_memory,2026-09-26T01:12:37.866370+00:00,"[342, 171, 86]",5029452,15397956,15353064,0.5036510708741844,85093777408,,,,,,,,,,67.73445793660358,,,4,results/session-f-a100-20260926/remote/run-01/result.json,/stages/sizing/rows/3,"OutOfMemoryError('Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,413,921,792 bytes).')","Traceback (most recent call last):
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 166, in size_case
+    _, info = solve(problem, op, schedule, E, s[""tol""], s[""maxiter""])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 98, in solve
+    gmg.setup(E)
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 725, in setup
+    K1, diag1 = assemble_level1_galerkin(self._level1_struct, self._E_e_fp64)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 256, in assemble_level1_galerkin
+    raw = (E_e_gpu[level.fine_elem_stack] * level.Q_stu_stack).sum(axis=0)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""cupy/_core/core.pyx"", line 1627, in cupy._core.core._ndarray_base.__getitem__
+  File ""cupy/_core/_routines_indexing.pyx"", line 43, in cupy._core._routines_indexing._ndarray_getitem
+  File ""cupy/_core/core.pyx"", line 935, in cupy._core.core._ndarray_base.take
+  File ""cupy/_core/_routines_indexing.pyx"", line 132, in cupy._core._routines_indexing._ndarray_take
+  File ""cupy/_core/_routines_indexing.pyx"", line 816, in cupy._core._routines_indexing._take
+  File ""cupy/_core/core.pyx"", line 167, in cupy._core.core.ndarray.__new__
+  File ""cupy/_core/core.pyx"", line 254, in cupy._core.core._ndarray_base._init
+  File ""cupy/cuda/memory.pyx"", line 875, in cupy.cuda.memory.alloc
+  File ""cupy/cuda/memory.pyx"", line 1579, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1600, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File ""cupy/cuda/memory.pyx"", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+  File ""cupy/cuda/memory.pyx"", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,413,921,792 bytes).
+",,,,,,
+session-f-a100-20260926,Galerkin feasibility,2M,mixed,stock,ok,2026-09-26T01:13:45.599931+00:00,"[252, 126, 63]",2000376,6169152,6144768,0.20468691177666187,85093777408,23.852151568047702,1.6588978110812604,40,False,0,49792679936,49727735808,0.04147244527703151,,28.595592447090894,,,4,results/session-f-a100-20260926/remote/run-01/result.json,/stages/sizing/rows/4,,,,,,,,
+session-f-a100-20260926,Galerkin feasibility,5M,mixed,stock,out_of_memory,2026-09-26T01:14:14.197543+00:00,"[342, 171, 86]",5029452,15397956,15353064,0.5014212280511856,85093777408,,,,,,,,,,68.89010197576135,,,4,results/session-f-a100-20260926/remote/run-01/result.json,/stages/sizing/rows/5,"OutOfMemoryError('Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,413,916,160 bytes).')","Traceback (most recent call last):
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 166, in size_case
+    _, info = solve(problem, op, schedule, E, s[""tol""], s[""maxiter""])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 98, in solve
+    gmg.setup(E)
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 725, in setup
+    K1, diag1 = assemble_level1_galerkin(self._level1_struct, self._E_e_fp64)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 256, in assemble_level1_galerkin
+    raw = (E_e_gpu[level.fine_elem_stack] * level.Q_stu_stack).sum(axis=0)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""cupy/_core/core.pyx"", line 1627, in cupy._core.core._ndarray_base.__getitem__
+  File ""cupy/_core/_routines_indexing.pyx"", line 43, in cupy._core._routines_indexing._ndarray_getitem
+  File ""cupy/_core/core.pyx"", line 935, in cupy._core.core._ndarray_base.take
+  File ""cupy/_core/_routines_indexing.pyx"", line 132, in cupy._core._routines_indexing._ndarray_take
+  File ""cupy/_core/_routines_indexing.pyx"", line 816, in cupy._core._routines_indexing._take
+  File ""cupy/_core/core.pyx"", line 167, in cupy._core.core.ndarray.__new__
+  File ""cupy/_core/core.pyx"", line 254, in cupy._core.core._ndarray_base._init
+  File ""cupy/cuda/memory.pyx"", line 875, in cupy.cuda.memory.alloc
+  File ""cupy/cuda/memory.pyx"", line 1579, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1600, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File ""cupy/cuda/memory.pyx"", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+  File ""cupy/cuda/memory.pyx"", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,413,916,160 bytes).
+",,,,,,
+session-f-h100-20260926-attempt02,Galerkin feasibility,2M,fp64,stock,ok,2026-09-26T01:18:48.519088+00:00,"[252, 126, 63]",2000376,6169152,6144768,0.21680690720677376,99960487936,37.494933849200606,1.5319542400538921,40,False,0,49803165696,49678156800,0.0382988560013473,,41.08765020035207,,,4,results/session-f-h100-20260926-attempt02/remote/run-01/result.json,/stages/sizing/rows/0,,,,,,,,
+session-f-h100-20260926-attempt02,Galerkin feasibility,5M,fp64,stock,out_of_memory,2026-09-26T01:19:29.604234+00:00,"[342, 171, 86]",5029452,15397956,15353064,0.5919481925666332,99960487936,,,,,,,,,,102.5080595947802,,,4,results/session-f-h100-20260926-attempt02/remote/run-01/result.json,/stages/sizing/rows/1,"OutOfMemoryError('Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,290,165,760 bytes).')","Traceback (most recent call last):
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 166, in size_case
+    _, info = solve(problem, op, schedule, E, s[""tol""], s[""maxiter""])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 98, in solve
+    gmg.setup(E)
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 725, in setup
+    K1, diag1 = assemble_level1_galerkin(self._level1_struct, self._E_e_fp64)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 256, in assemble_level1_galerkin
+    raw = (E_e_gpu[level.fine_elem_stack] * level.Q_stu_stack).sum(axis=0)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""cupy/_core/core.pyx"", line 1627, in cupy._core.core._ndarray_base.__getitem__
+  File ""cupy/_core/_routines_indexing.pyx"", line 43, in cupy._core._routines_indexing._ndarray_getitem
+  File ""cupy/_core/core.pyx"", line 935, in cupy._core.core._ndarray_base.take
+  File ""cupy/_core/_routines_indexing.pyx"", line 132, in cupy._core._routines_indexing._ndarray_take
+  File ""cupy/_core/_routines_indexing.pyx"", line 816, in cupy._core._routines_indexing._take
+  File ""cupy/_core/core.pyx"", line 167, in cupy._core.core.ndarray.__new__
+  File ""cupy/_core/core.pyx"", line 254, in cupy._core.core._ndarray_base._init
+  File ""cupy/cuda/memory.pyx"", line 875, in cupy.cuda.memory.alloc
+  File ""cupy/cuda/memory.pyx"", line 1579, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1600, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File ""cupy/cuda/memory.pyx"", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+  File ""cupy/cuda/memory.pyx"", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,290,165,760 bytes).
+",,,,,,
+session-f-h100-20260926-attempt02,Galerkin feasibility,2M,fp64,modal8_muladd,ok,2026-09-26T01:21:12.112644+00:00,"[252, 126, 63]",2000376,6169152,6144768,0.21658765524625778,99960487936,36.67434890754521,0.8689873535186052,40,False,260,48916070400,48862008832,0.02172468383796513,,39.602170903235674,,,4,results/session-f-h100-20260926-attempt02/remote/run-01/result.json,/stages/sizing/rows/2,,,,,,,,
+session-f-h100-20260926-attempt02,Galerkin feasibility,5M,fp64,modal8_muladd,out_of_memory,2026-09-26T01:21:51.713947+00:00,"[342, 171, 86]",5029452,15397956,15353064,0.5939230639487505,99960487936,,,,,,,,,,99.0013458840549,,,4,results/session-f-h100-20260926-attempt02/remote/run-01/result.json,/stages/sizing/rows/3,"OutOfMemoryError('Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,413,355,520 bytes).')","Traceback (most recent call last):
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 166, in size_case
+    _, info = solve(problem, op, schedule, E, s[""tol""], s[""maxiter""])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 98, in solve
+    gmg.setup(E)
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 725, in setup
+    K1, diag1 = assemble_level1_galerkin(self._level1_struct, self._E_e_fp64)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 256, in assemble_level1_galerkin
+    raw = (E_e_gpu[level.fine_elem_stack] * level.Q_stu_stack).sum(axis=0)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""cupy/_core/core.pyx"", line 1627, in cupy._core.core._ndarray_base.__getitem__
+  File ""cupy/_core/_routines_indexing.pyx"", line 43, in cupy._core._routines_indexing._ndarray_getitem
+  File ""cupy/_core/core.pyx"", line 935, in cupy._core.core._ndarray_base.take
+  File ""cupy/_core/_routines_indexing.pyx"", line 132, in cupy._core._routines_indexing._ndarray_take
+  File ""cupy/_core/_routines_indexing.pyx"", line 816, in cupy._core._routines_indexing._take
+  File ""cupy/_core/core.pyx"", line 167, in cupy._core.core.ndarray.__new__
+  File ""cupy/_core/core.pyx"", line 254, in cupy._core.core._ndarray_base._init
+  File ""cupy/cuda/memory.pyx"", line 875, in cupy.cuda.memory.alloc
+  File ""cupy/cuda/memory.pyx"", line 1579, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1600, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File ""cupy/cuda/memory.pyx"", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+  File ""cupy/cuda/memory.pyx"", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,413,355,520 bytes).
+",,,,,,
+session-f-h100-20260926-attempt02,Galerkin feasibility,2M,mixed,stock,ok,2026-09-26T01:23:30.715940+00:00,"[252, 126, 63]",2000376,6169152,6144768,0.21464086510241032,99960487936,36.51917262002826,1.0577180292457342,40,False,0,49853497344,49727510528,0.026442950731143354,,39.62555950880051,,,4,results/session-f-h100-20260926-attempt02/remote/run-01/result.json,/stages/sizing/rows/4,,,,,,,,
+session-f-h100-20260926-attempt02,Galerkin feasibility,5M,mixed,stock,out_of_memory,2026-09-26T01:24:10.342059+00:00,"[342, 171, 86]",5029452,15397956,15353064,0.5863855164498091,99960487936,,,,,,,,,,97.56965932063758,,,4,results/session-f-h100-20260926-attempt02/remote/run-01/result.json,/stages/sizing/rows/5,"OutOfMemoryError('Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,413,349,888 bytes).')","Traceback (most recent call last):
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 166, in size_case
+    _, info = solve(problem, op, schedule, E, s[""tol""], s[""maxiter""])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 98, in solve
+    gmg.setup(E)
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 725, in setup
+    K1, diag1 = assemble_level1_galerkin(self._level1_struct, self._E_e_fp64)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 256, in assemble_level1_galerkin
+    raw = (E_e_gpu[level.fine_elem_stack] * level.Q_stu_stack).sum(axis=0)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""cupy/_core/core.pyx"", line 1627, in cupy._core.core._ndarray_base.__getitem__
+  File ""cupy/_core/_routines_indexing.pyx"", line 43, in cupy._core._routines_indexing._ndarray_getitem
+  File ""cupy/_core/core.pyx"", line 935, in cupy._core.core._ndarray_base.take
+  File ""cupy/_core/_routines_indexing.pyx"", line 132, in cupy._core._routines_indexing._ndarray_take
+  File ""cupy/_core/_routines_indexing.pyx"", line 816, in cupy._core._routines_indexing._take
+  File ""cupy/_core/core.pyx"", line 167, in cupy._core.core.ndarray.__new__
+  File ""cupy/_core/core.pyx"", line 254, in cupy._core.core._ndarray_base._init
+  File ""cupy/cuda/memory.pyx"", line 875, in cupy.cuda.memory.alloc
+  File ""cupy/cuda/memory.pyx"", line 1579, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1600, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File ""cupy/cuda/memory.pyx"", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+  File ""cupy/cuda/memory.pyx"", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 22,939,130,880 bytes (allocated so far: 76,413,349,888 bytes).
+",,,,,,
+session-f-rtx4090-20260926,Galerkin feasibility,2M,fp64,stock,out_of_memory,2026-09-26T00:45:06.961794+00:00,"[252, 126, 63]",2000376,6169152,6144768,0.24713452602736652,25252724736,,,,,,,,,,31.31288429396227,,,4,results/session-f-rtx4090-20260926/remote/run-01/result.json,/stages/sizing/rows/0,"OutOfMemoryError('Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,836,067,840 bytes).')","Traceback (most recent call last):
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 166, in size_case
+    _, info = solve(problem, op, schedule, E, s[""tol""], s[""maxiter""])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 97, in solve
+    gmg = problem.gmg(op, schedule)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 87, in gmg
+    return GalerkinMatFreeGMG(mf_op=op, free=self.free, free_gpu=self.free_gpu, nelx=nelx, nely=nely,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 565, in __init__
+    self._level1_struct = _build_level1_galerkin_struct(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 240, in _build_level1_galerkin_struct
+    level.fine_elem_stack = cp.stack(level.fine_elem_sorted_stu)  # (8, nnz_raw) int32
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py"", line 151, in stack
+    return concatenate([cupy.expand_dims(x, axis) for x in tup], axis, out,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py"", line 60, in concatenate
+    return _core.concatenate_method(tup, axis, out, dtype, casting)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""cupy/_core/_routines_manipulation.pyx"", line 586, in cupy._core._routines_manipulation.concatenate_method
+  File ""cupy/_core/_routines_manipulation.pyx"", line 658, in cupy._core._routines_manipulation.concatenate_method
+  File ""cupy/_core/core.pyx"", line 167, in cupy._core.core.ndarray.__new__
+  File ""cupy/_core/core.pyx"", line 254, in cupy._core.core._ndarray_base._init
+  File ""cupy/cuda/memory.pyx"", line 875, in cupy.cuda.memory.alloc
+  File ""cupy/cuda/memory.pyx"", line 1579, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1600, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File ""cupy/cuda/memory.pyx"", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+  File ""cupy/cuda/memory.pyx"", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,836,067,840 bytes).
+",,,,,,
+session-f-rtx4090-20260926,Galerkin feasibility,2M,fp64,modal8_muladd,out_of_memory,2026-09-26T00:45:38.278025+00:00,"[252, 126, 63]",2000376,6169152,6144768,0.2509822598658502,25252724736,,,,,,,,,,30.60984403290786,,,4,results/session-f-rtx4090-20260926/remote/run-01/result.json,/stages/sizing/rows/1,"OutOfMemoryError('Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,885,426,688 bytes).')","Traceback (most recent call last):
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 166, in size_case
+    _, info = solve(problem, op, schedule, E, s[""tol""], s[""maxiter""])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 97, in solve
+    gmg = problem.gmg(op, schedule)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 87, in gmg
+    return GalerkinMatFreeGMG(mf_op=op, free=self.free, free_gpu=self.free_gpu, nelx=nelx, nely=nely,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 565, in __init__
+    self._level1_struct = _build_level1_galerkin_struct(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 240, in _build_level1_galerkin_struct
+    level.fine_elem_stack = cp.stack(level.fine_elem_sorted_stu)  # (8, nnz_raw) int32
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py"", line 151, in stack
+    return concatenate([cupy.expand_dims(x, axis) for x in tup], axis, out,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py"", line 60, in concatenate
+    return _core.concatenate_method(tup, axis, out, dtype, casting)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""cupy/_core/_routines_manipulation.pyx"", line 586, in cupy._core._routines_manipulation.concatenate_method
+  File ""cupy/_core/_routines_manipulation.pyx"", line 658, in cupy._core._routines_manipulation.concatenate_method
+  File ""cupy/_core/core.pyx"", line 167, in cupy._core.core.ndarray.__new__
+  File ""cupy/_core/core.pyx"", line 254, in cupy._core.core._ndarray_base._init
+  File ""cupy/cuda/memory.pyx"", line 875, in cupy.cuda.memory.alloc
+  File ""cupy/cuda/memory.pyx"", line 1579, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1600, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File ""cupy/cuda/memory.pyx"", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+  File ""cupy/cuda/memory.pyx"", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,885,426,688 bytes).
+",,,,,,
+session-f-rtx4090-20260926,Galerkin feasibility,2M,mixed,stock,out_of_memory,2026-09-26T00:46:08.880901+00:00,"[252, 126, 63]",2000376,6169152,6144768,0.25215683691203594,25252724736,,,,,,,,,,31.424539672210813,,,4,results/session-f-rtx4090-20260926/remote/run-01/result.json,/stages/sizing/rows/2,"OutOfMemoryError('Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,885,421,568 bytes).')","Traceback (most recent call last):
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 166, in size_case
+    _, info = solve(problem, op, schedule, E, s[""tol""], s[""maxiter""])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 97, in solve
+    gmg = problem.gmg(op, schedule)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/session_f/run_probe.py"", line 87, in gmg
+    return GalerkinMatFreeGMG(mf_op=op, free=self.free, free_gpu=self.free_gpu, nelx=nelx, nely=nely,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 565, in __init__
+    self._level1_struct = _build_level1_galerkin_struct(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/root/voxel-session_f/source/experiments/combined/donor_yang_gmg/src/gpu_fem/multigrid_v4.py"", line 240, in _build_level1_galerkin_struct
+    level.fine_elem_stack = cp.stack(level.fine_elem_sorted_stu)  # (8, nnz_raw) int32
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py"", line 151, in stack
+    return concatenate([cupy.expand_dims(x, axis) for x in tup], axis, out,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/voxel-session_f-venv/lib/python3.12/site-packages/cupy/_manipulation/join.py"", line 60, in concatenate
+    return _core.concatenate_method(tup, axis, out, dtype, casting)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""cupy/_core/_routines_manipulation.pyx"", line 586, in cupy._core._routines_manipulation.concatenate_method
+  File ""cupy/_core/_routines_manipulation.pyx"", line 658, in cupy._core._routines_manipulation.concatenate_method
+  File ""cupy/_core/core.pyx"", line 167, in cupy._core.core.ndarray.__new__
+  File ""cupy/_core/core.pyx"", line 254, in cupy._core.core._ndarray_base._init
+  File ""cupy/cuda/memory.pyx"", line 875, in cupy.cuda.memory.alloc
+  File ""cupy/cuda/memory.pyx"", line 1579, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1600, in cupy.cuda.memory.MemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1271, in cupy.cuda.memory.SingleDeviceMemoryPool.malloc
+  File ""cupy/cuda/memory.pyx"", line 1292, in cupy.cuda.memory.SingleDeviceMemoryPool._malloc
+  File ""cupy/cuda/memory.pyx"", line 1537, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+  File ""cupy/cuda/memory.pyx"", line 1540, in cupy.cuda.memory.SingleDeviceMemoryPool._try_malloc
+cupy.cuda.memory.OutOfMemoryError: Out of memory allocating 4,508,711,424 bytes (allocated so far: 23,885,421,568 bytes).
+",,,,,,
+session-i-a100-20260926,Galerkin fixed-work,1M,fp64,fused_ai_fp64,,,"[200, 100, 50]",,3106053,,,,6.4829169400036335,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/0,,,0,25231753216,"{""converged"": false, ""iterations"": 1000, ""seconds"": 44.297868916764855}","[{""iterations"": 50, ""seconds"": 2.160872094333172}, {""iterations"": 50, ""seconds"": 2.1610043477267027}, {""iterations"": 50, ""seconds"": 2.1564901024103165}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,fp64,modal8_muladd,,,"[200, 100, 50]",,3106053,,,,0.09046665206551552,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/1,,,0,25259016192,"{""converged"": false, ""iterations"": 1000, ""seconds"": 44.108219819143414}","[{""iterations"": 50, ""seconds"": 2.290975535288453}, {""iterations"": 50, ""seconds"": 2.263252468779683}, {""iterations"": 50, ""seconds"": 2.1560985669493675}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,fp64,node_fp64,,,"[200, 100, 50]",,3106053,,,,0.08746564015746117,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/2,,,0,25233850368,"{""converged"": false, ""iterations"": 1000, ""seconds"": 43.32833529636264}","[{""iterations"": 50, ""seconds"": 2.1388712506741285}, {""iterations"": 50, ""seconds"": 2.137365762144327}, {""iterations"": 50, ""seconds"": 2.137179922312498}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,fp64,stock,,,"[200, 100, 50]",,3106053,,,,0.264022883027792,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/3,,,0,25678446592,"{""converged"": false, ""iterations"": 1000, ""seconds"": 54.06226800940931}","[{""iterations"": 50, ""seconds"": 2.6886449176818132}, {""iterations"": 50, ""seconds"": 2.7812120877206326}, {""iterations"": 50, ""seconds"": 2.767056407406926}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,fp64,modal8_muladd,,,"[200, 100, 50]",,3106053,,,,0.09875609911978245,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/4,,,1,25267404800,,"[{""iterations"": 50, ""seconds"": 2.1873078420758247}, {""iterations"": 50, ""seconds"": 2.189129935577512}, {""iterations"": 50, ""seconds"": 2.2109775077551603}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,fp64,fused_ai_fp64,,,"[200, 100, 50]",,3106053,,,,0.10410065576434135,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/5,,,1,25242238976,,"[{""iterations"": 50, ""seconds"": 2.1535793244838715}, {""iterations"": 50, ""seconds"": 2.1731007304042578}, {""iterations"": 50, ""seconds"": 2.179441627115011}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,fp64,stock,,,"[200, 100, 50]",,3106053,,,,0.13130336813628674,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/6,,,1,25678446592,,"[{""iterations"": 50, ""seconds"": 2.6860068179666996}, {""iterations"": 50, ""seconds"": 2.7015448417514563}, {""iterations"": 50, ""seconds"": 2.6561324670910835}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,fp64,node_fp64,,,"[200, 100, 50]",,3106053,,,,0.09393355436623096,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/7,,,1,25242238976,,"[{""iterations"": 50, ""seconds"": 2.135059969499707}, {""iterations"": 50, ""seconds"": 2.152419460937381}, {""iterations"": 50, ""seconds"": 2.1532653756439686}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,mixed,node_fp64,,,"[200, 100, 50]",,3106053,,,,0.0934037696570158,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/8,,,0,25267404800,"{""converged"": false, ""iterations"": 1000, ""seconds"": 44.243244048208}","[{""iterations"": 50, ""seconds"": 2.144793201237917}, {""iterations"": 50, ""seconds"": 2.1363666001707315}, {""iterations"": 50, ""seconds"": 2.2343764416873455}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,mixed,modal8_muladd,,,"[200, 100, 50]",,3106053,,,,0.09558591432869434,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/9,,,0,25292570624,"{""converged"": false, ""iterations"": 1000, ""seconds"": 43.970035288482904}","[{""iterations"": 50, ""seconds"": 2.1521066911518574}, {""iterations"": 50, ""seconds"": 2.1459521632641554}, {""iterations"": 50, ""seconds"": 2.2307642195373774}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,mixed,fused_ai_fp64,,,"[200, 100, 50]",,3106053,,,,0.09109517931938171,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/10,,,0,25267404800,"{""converged"": false, ""iterations"": 1000, ""seconds"": 43.45589472539723}","[{""iterations"": 50, ""seconds"": 2.1638996936380863}, {""iterations"": 50, ""seconds"": 2.1959272511303425}, {""iterations"": 50, ""seconds"": 2.3082193545997143}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,mixed,stock,,,"[200, 100, 50]",,3106053,,,,0.12625707872211933,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/11,,,0,25703612416,"{""converged"": false, ""iterations"": 1000, ""seconds"": 46.999523827806115}","[{""iterations"": 50, ""seconds"": 2.33555475063622}, {""iterations"": 50, ""seconds"": 2.3207835275679827}, {""iterations"": 50, ""seconds"": 2.415726536884904}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,mixed,modal8_muladd,,,"[200, 100, 50]",,3106053,,,,0.09313049912452698,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/12,,,1,25292570624,,"[{""iterations"": 50, ""seconds"": 2.15019815787673}, {""iterations"": 50, ""seconds"": 2.1555069237947464}, {""iterations"": 50, ""seconds"": 2.1647817213088274}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,mixed,node_fp64,,,"[200, 100, 50]",,3106053,,,,0.08938988111913204,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/13,,,1,25267404800,,"[{""iterations"": 50, ""seconds"": 2.266877604648471}, {""iterations"": 50, ""seconds"": 2.1966340634971857}, {""iterations"": 50, ""seconds"": 2.200348710641265}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,mixed,stock,,,"[200, 100, 50]",,3106053,,,,0.12726537138223648,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/14,,,1,25703612416,,"[{""iterations"": 50, ""seconds"": 2.476691147312522}, {""iterations"": 50, ""seconds"": 2.420440386980772}, {""iterations"": 50, ""seconds"": 2.5122793409973383}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,1M,mixed,fused_ai_fp64,,,"[200, 100, 50]",,3106053,,,,0.09055115655064583,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/15,,,1,25267404800,,"[{""iterations"": 50, ""seconds"": 2.1360500380396843}, {""iterations"": 50, ""seconds"": 2.143917463719845}, {""iterations"": 50, ""seconds"": 2.204914018511772}]",1000000,3090600
+session-i-a100-20260926,Galerkin fixed-work,2M,fp64,modal8_muladd,,,"[252, 126, 63]",,6169152,,,,0.15104685351252556,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/16,,,0,49363681280,"{""converged"": false, ""iterations"": 1000, ""seconds"": 46.09577579796314}","[{""iterations"": 50, ""seconds"": 2.283873712643981}, {""iterations"": 50, ""seconds"": 2.286546666175127}, {""iterations"": 50, ""seconds"": 2.2892258279025555}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,fp64,fused_ai_fp64,,,"[252, 126, 63]",,6169152,,,,0.15248431451618671,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/17,,,0,49313349632,"{""converged"": false, ""iterations"": 1000, ""seconds"": 46.731941958889365}","[{""iterations"": 50, ""seconds"": 2.356505136936903}, {""iterations"": 50, ""seconds"": 2.2837247904390097}, {""iterations"": 50, ""seconds"": 2.2791279144585133}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,fp64,stock,,,"[252, 126, 63]",,6169152,,,,0.21162794530391693,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/18,,,0,50183667712,"{""converged"": false, ""iterations"": 1000, ""seconds"": 67.53315310366452}","[{""iterations"": 50, ""seconds"": 3.3630094565451145}, {""iterations"": 50, ""seconds"": 3.456939758732915}, {""iterations"": 50, ""seconds"": 3.3296108338981867}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,fp64,node_fp64,,,"[252, 126, 63]",,6169152,,,,0.14447361417114735,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/19,,,0,49313349632,"{""converged"": false, ""iterations"": 1000, ""seconds"": 45.30215608142316}","[{""iterations"": 50, ""seconds"": 2.2351265009492636}, {""iterations"": 50, ""seconds"": 2.2336791194975376}, {""iterations"": 50, ""seconds"": 2.233655296266079}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,fp64,modal8_muladd,,,"[252, 126, 63]",,6169152,,,,0.1513958927243948,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/20,,,1,49363681280,,"[{""iterations"": 50, ""seconds"": 2.3456161450594664}, {""iterations"": 50, ""seconds"": 2.4051813762634993}, {""iterations"": 50, ""seconds"": 2.2929204553365707}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,fp64,stock,,,"[252, 126, 63]",,6169152,,,,0.2091332171112299,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/21,,,1,50183667712,,"[{""iterations"": 50, ""seconds"": 3.3221691511571407}, {""iterations"": 50, ""seconds"": 3.3354156743735075}, {""iterations"": 50, ""seconds"": 3.3234921600669622}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,fp64,fused_ai_fp64,,,"[252, 126, 63]",,6169152,,,,0.15188752114772797,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/22,,,1,49313349632,,"[{""iterations"": 50, ""seconds"": 2.3109721429646015}, {""iterations"": 50, ""seconds"": 2.3000407461076975}, {""iterations"": 50, ""seconds"": 2.388163721188903}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,fp64,node_fp64,,,"[252, 126, 63]",,6169152,,,,0.14900554902851582,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/23,,,1,49313349632,,"[{""iterations"": 50, ""seconds"": 2.2786223962903023}, {""iterations"": 50, ""seconds"": 2.2746403720229864}, {""iterations"": 50, ""seconds"": 2.28534241206944}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,mixed,modal8_muladd,,,"[252, 126, 63]",,6169152,,,,0.15784001164138317,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/24,,,0,49414012928,"{""converged"": false, ""iterations"": 1000, ""seconds"": 45.7009430360049}","[{""iterations"": 50, ""seconds"": 2.3003341499716043}, {""iterations"": 50, ""seconds"": 2.3522546235471964}, {""iterations"": 50, ""seconds"": 2.3292510583996773}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,mixed,fused_ai_fp64,,,"[252, 126, 63]",,6169152,,,,0.14817015267908573,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/25,,,0,49363681280,"{""converged"": false, ""iterations"": 1000, ""seconds"": 45.128602784127}","[{""iterations"": 50, ""seconds"": 2.225718120113015}, {""iterations"": 50, ""seconds"": 2.2312123645097017}, {""iterations"": 50, ""seconds"": 2.232781169936061}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,mixed,node_fp64,,,"[252, 126, 63]",,6169152,,,,0.14956270158290863,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/26,,,0,49363681280,"{""converged"": false, ""iterations"": 1000, ""seconds"": 45.51431215554476}","[{""iterations"": 50, ""seconds"": 2.3538146167993546}, {""iterations"": 50, ""seconds"": 2.2648359034210443}, {""iterations"": 50, ""seconds"": 2.2612973880022764}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,mixed,stock,,,"[252, 126, 63]",,6169152,,,,0.21239818073809147,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/27,,,0,50233999360,"{""converged"": false, ""iterations"": 1000, ""seconds"": 54.22243149206042}","[{""iterations"": 50, ""seconds"": 2.770094107836485}, {""iterations"": 50, ""seconds"": 2.6690308060497046}, {""iterations"": 50, ""seconds"": 2.666939552873373}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,mixed,fused_ai_fp64,,,"[252, 126, 63]",,6169152,,,,0.1490737609565258,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/28,,,1,49363681280,,"[{""iterations"": 50, ""seconds"": 2.2887697517871857}, {""iterations"": 50, ""seconds"": 2.3474444951862097}, {""iterations"": 50, ""seconds"": 2.2843179870396852}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,mixed,node_fp64,,,"[252, 126, 63]",,6169152,,,,0.14472719095647335,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/29,,,1,49363681280,,"[{""iterations"": 50, ""seconds"": 2.2295313756912947}, {""iterations"": 50, ""seconds"": 2.2369691357016563}, {""iterations"": 50, ""seconds"": 2.2329434640705585}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,mixed,stock,,,"[252, 126, 63]",,6169152,,,,0.212043734267354,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/30,,,1,50233999360,,"[{""iterations"": 50, ""seconds"": 2.74644866399467}, {""iterations"": 50, ""seconds"": 2.727006919682026}, {""iterations"": 50, ""seconds"": 2.65190109051764}]",2000376,6144768
+session-i-a100-20260926,Galerkin fixed-work,2M,mixed,modal8_muladd,,,"[252, 126, 63]",,6169152,,,,0.1511469129472971,,,,,,,,,,,,4,results/session-i-a100-20260926/remote/w2a-01/result.json,/records/31,,,1,49414012928,,"[{""iterations"": 50, ""seconds"": 2.253818728029728}, {""iterations"": 50, ""seconds"": 2.321340061724186}, {""iterations"": 50, ""seconds"": 2.30762455239892}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,1M,fp64,fused_ai_fp64,,,"[200, 100, 50]",,3106053,,,,4.449581422144547,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/0,,,0,25340739584,"{""converged"": false, ""iterations"": 1000, ""seconds"": 25.381616934901103}","[{""iterations"": 50, ""seconds"": 1.260755280032754}, {""iterations"": 50, ""seconds"": 1.2603902600239962}, {""iterations"": 50, ""seconds"": 1.259432703955099}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,fp64,modal8_muladd,,,"[200, 100, 50]",,3106053,,,,0.07240879395976663,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/1,,,0,25365905408,"{""converged"": false, ""iterations"": 1000, ""seconds"": 25.18051244900562}","[{""iterations"": 50, ""seconds"": 1.255506777903065}, {""iterations"": 50, ""seconds"": 1.2539350548759103}, {""iterations"": 50, ""seconds"": 1.2464287099428475}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,fp64,node_fp64,,,"[200, 100, 50]",,3106053,,,,0.0706671120133251,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/2,,,0,25340739584,"{""converged"": false, ""iterations"": 1000, ""seconds"": 24.89341879216954}","[{""iterations"": 50, ""seconds"": 1.242971477098763}, {""iterations"": 50, ""seconds"": 1.2430970310233533}, {""iterations"": 50, ""seconds"": 1.239607809111476}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,fp64,stock,,,"[200, 100, 50]",,3106053,,,,0.18060301896184683,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/3,,,0,25844056064,"{""converged"": false, ""iterations"": 1000, ""seconds"": 32.355556366965175}","[{""iterations"": 50, ""seconds"": 1.618262352887541}, {""iterations"": 50, ""seconds"": 1.6131586849223822}, {""iterations"": 50, ""seconds"": 1.6389219691045582}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,fp64,modal8_muladd,,,"[200, 100, 50]",,3106053,,,,0.07244889601133764,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/4,,,1,25433014272,,"[{""iterations"": 50, ""seconds"": 1.2596169549506158}, {""iterations"": 50, ""seconds"": 1.2631611828692257}, {""iterations"": 50, ""seconds"": 1.2548190711531788}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,fp64,fused_ai_fp64,,,"[200, 100, 50]",,3106053,,,,0.07171035907231271,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/5,,,1,25407848448,,"[{""iterations"": 50, ""seconds"": 1.2612258489243686}, {""iterations"": 50, ""seconds"": 1.2512897939886898}, {""iterations"": 50, ""seconds"": 1.253785515902564}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,fp64,stock,,,"[200, 100, 50]",,3106053,,,,0.09517326601780951,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/6,,,1,25844056064,,"[{""iterations"": 50, ""seconds"": 1.6125871108379215}, {""iterations"": 50, ""seconds"": 1.6212982661090791}, {""iterations"": 50, ""seconds"": 1.6155044159386307}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,fp64,node_fp64,,,"[200, 100, 50]",,3106053,,,,0.07124527008272707,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/7,,,1,25407848448,,"[{""iterations"": 50, ""seconds"": 1.2461275120731443}, {""iterations"": 50, ""seconds"": 1.2484969948418438}, {""iterations"": 50, ""seconds"": 1.2661234380211681}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,mixed,node_fp64,,,"[200, 100, 50]",,3106053,,,,0.06870118295773864,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/8,,,0,25433014272,"{""converged"": false, ""iterations"": 1000, ""seconds"": 25.46541129401885}","[{""iterations"": 50, ""seconds"": 1.2648161419201642}, {""iterations"": 50, ""seconds"": 1.2629341529682279}, {""iterations"": 50, ""seconds"": 1.2684470880776644}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,mixed,modal8_muladd,,,"[200, 100, 50]",,3106053,,,,0.07141957501880825,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/9,,,0,25458180096,"{""converged"": false, ""iterations"": 1000, ""seconds"": 25.558572426903993}","[{""iterations"": 50, ""seconds"": 1.2503801081329584}, {""iterations"": 50, ""seconds"": 1.253310017986223}, {""iterations"": 50, ""seconds"": 1.2561638548504561}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,mixed,fused_ai_fp64,,,"[200, 100, 50]",,3106053,,,,0.07045014202594757,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/10,,,0,25433014272,"{""converged"": false, ""iterations"": 1000, ""seconds"": 25.164734072983265}","[{""iterations"": 50, ""seconds"": 1.2512618121691048}, {""iterations"": 50, ""seconds"": 1.255027421982959}, {""iterations"": 50, ""seconds"": 1.2746588019654155}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,mixed,stock,,,"[200, 100, 50]",,3106053,,,,0.09563113912008703,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/11,,,0,25869221888,"{""converged"": false, ""iterations"": 1000, ""seconds"": 27.771528081037104}","[{""iterations"": 50, ""seconds"": 1.3806249850895256}, {""iterations"": 50, ""seconds"": 1.3871901619713753}, {""iterations"": 50, ""seconds"": 1.3881244668737054}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,mixed,modal8_muladd,,,"[200, 100, 50]",,3106053,,,,0.07151054008863866,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/12,,,1,25458180096,,"[{""iterations"": 50, ""seconds"": 1.2507092729210854}, {""iterations"": 50, ""seconds"": 1.2546456181444228}, {""iterations"": 50, ""seconds"": 1.2918750350363553}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,mixed,node_fp64,,,"[200, 100, 50]",,3106053,,,,0.07064282102510333,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/13,,,1,25433014272,,"[{""iterations"": 50, ""seconds"": 1.2499885149300098}, {""iterations"": 50, ""seconds"": 1.245353799778968}, {""iterations"": 50, ""seconds"": 1.2475372951012105}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,mixed,stock,,,"[200, 100, 50]",,3106053,,,,0.09678267315030098,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/14,,,1,25869221888,,"[{""iterations"": 50, ""seconds"": 1.3779739348683506}, {""iterations"": 50, ""seconds"": 1.3844749741256237}, {""iterations"": 50, ""seconds"": 1.3748453510925174}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,1M,mixed,fused_ai_fp64,,,"[200, 100, 50]",,3106053,,,,0.07057033106684685,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/15,,,1,25433014272,,"[{""iterations"": 50, ""seconds"": 1.2474949769675732}, {""iterations"": 50, ""seconds"": 1.2522025059442967}, {""iterations"": 50, ""seconds"": 1.2503344900906086}]",1000000,3090600
+session-i-h100-20260926,Galerkin fixed-work,2M,fp64,modal8_muladd,,,"[252, 126, 63]",,6169152,,,,0.12888225400820374,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/16,,,0,49527193600,"{""converged"": false, ""iterations"": 1000, ""seconds"": 27.59346915804781}","[{""iterations"": 50, ""seconds"": 1.3636609760578722}, {""iterations"": 50, ""seconds"": 1.3608411659952253}, {""iterations"": 50, ""seconds"": 1.36043921392411}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,fp64,fused_ai_fp64,,,"[252, 126, 63]",,6169152,,,,0.12571627390570939,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/17,,,0,49476861952,"{""converged"": false, ""iterations"": 1000, ""seconds"": 27.13924345304258}","[{""iterations"": 50, ""seconds"": 1.3632486457936466}, {""iterations"": 50, ""seconds"": 1.361412970116362}, {""iterations"": 50, ""seconds"": 1.362259283894673}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,fp64,stock,,,"[252, 126, 63]",,6169152,,,,0.17497290601022542,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/18,,,0,50347180032,"{""converged"": false, ""iterations"": 1000, ""seconds"": 42.24622253281996}","[{""iterations"": 50, ""seconds"": 2.156162377912551}, {""iterations"": 50, ""seconds"": 2.1610146518796682}, {""iterations"": 50, ""seconds"": 2.120336038991809}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,fp64,node_fp64,,,"[252, 126, 63]",,6169152,,,,0.12415697984397411,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/19,,,0,49476861952,"{""converged"": false, ""iterations"": 1000, ""seconds"": 27.031038667075336}","[{""iterations"": 50, ""seconds"": 1.3436830369755626}, {""iterations"": 50, ""seconds"": 1.3458836358040571}, {""iterations"": 50, ""seconds"": 1.3617643718607724}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,fp64,modal8_muladd,,,"[252, 126, 63]",,6169152,,,,0.12735284492373466,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/20,,,1,49527193600,,"[{""iterations"": 50, ""seconds"": 1.367652458138764}, {""iterations"": 50, ""seconds"": 1.3592979940585792}, {""iterations"": 50, ""seconds"": 1.361091905971989}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,fp64,stock,,,"[252, 126, 63]",,6169152,,,,0.174807091942057,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/21,,,1,50347180032,,"[{""iterations"": 50, ""seconds"": 2.0973359558265656}, {""iterations"": 50, ""seconds"": 2.106534407939762}, {""iterations"": 50, ""seconds"": 2.104615656193346}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,fp64,fused_ai_fp64,,,"[252, 126, 63]",,6169152,,,,0.13018045900389552,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/22,,,1,49476861952,,"[{""iterations"": 50, ""seconds"": 1.3535639189649373}, {""iterations"": 50, ""seconds"": 1.3593351780436933}, {""iterations"": 50, ""seconds"": 1.372621223097667}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,fp64,node_fp64,,,"[252, 126, 63]",,6169152,,,,0.12738327495753765,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/23,,,1,49476861952,,"[{""iterations"": 50, ""seconds"": 1.3473929830361158}, {""iterations"": 50, ""seconds"": 1.3488677081186324}, {""iterations"": 50, ""seconds"": 1.3418513340875506}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,mixed,modal8_muladd,,,"[252, 126, 63]",,6169152,,,,0.12955219694413245,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/24,,,0,49577525248,"{""converged"": false, ""iterations"": 1000, ""seconds"": 26.78923256904818}","[{""iterations"": 50, ""seconds"": 1.3430989179760218}, {""iterations"": 50, ""seconds"": 1.3453775129746646}, {""iterations"": 50, ""seconds"": 1.3495092201046646}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,mixed,fused_ai_fp64,,,"[252, 126, 63]",,6169152,,,,0.12569563696160913,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/25,,,0,49527193600,"{""converged"": false, ""iterations"": 1000, ""seconds"": 27.031329405959696}","[{""iterations"": 50, ""seconds"": 1.3523383298888803}, {""iterations"": 50, ""seconds"": 1.3766507022082806}, {""iterations"": 50, ""seconds"": 1.3734077119734138}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,mixed,node_fp64,,,"[252, 126, 63]",,6169152,,,,0.12472148798406124,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/26,,,0,49527193600,"{""converged"": false, ""iterations"": 1000, ""seconds"": 26.658945051953197}","[{""iterations"": 50, ""seconds"": 1.3348800169769675}, {""iterations"": 50, ""seconds"": 1.331388855818659}, {""iterations"": 50, ""seconds"": 1.3266897988505661}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,mixed,stock,,,"[252, 126, 63]",,6169152,,,,0.1748919291421771,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/27,,,0,50397511680,"{""converged"": false, ""iterations"": 1000, ""seconds"": 32.36353483307175}","[{""iterations"": 50, ""seconds"": 1.6218800409696996}, {""iterations"": 50, ""seconds"": 1.6204673468600959}, {""iterations"": 50, ""seconds"": 1.6161531859543175}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,mixed,fused_ai_fp64,,,"[252, 126, 63]",,6169152,,,,0.1276757181622088,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/28,,,1,49527193600,,"[{""iterations"": 50, ""seconds"": 1.3393679799046367}, {""iterations"": 50, ""seconds"": 1.3388847750611603}, {""iterations"": 50, ""seconds"": 1.3459742239210755}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,mixed,node_fp64,,,"[252, 126, 63]",,6169152,,,,0.12300368095748127,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/29,,,1,49527193600,,"[{""iterations"": 50, ""seconds"": 1.3338464950211346}, {""iterations"": 50, ""seconds"": 1.3307621451094747}, {""iterations"": 50, ""seconds"": 1.3342406109441072}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,mixed,stock,,,"[252, 126, 63]",,6169152,,,,0.1762244540732354,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/30,,,1,50397511680,,"[{""iterations"": 50, ""seconds"": 1.6161472278181463}, {""iterations"": 50, ""seconds"": 1.6232052859850228}, {""iterations"": 50, ""seconds"": 1.6275362810119987}]",2000376,6144768
+session-i-h100-20260926,Galerkin fixed-work,2M,mixed,modal8_muladd,,,"[252, 126, 63]",,6169152,,,,0.12893757200799882,,,,,,,,,,,,4,results/session-i-h100-20260926/remote/w2a-01/result.json,/records/31,,,1,49577525248,,"[{""iterations"": 50, ""seconds"": 1.3335754049476236}, {""iterations"": 50, ""seconds"": 1.3611708560492843}, {""iterations"": 50, ""seconds"": 1.3388715910259634}]",2000376,6144768

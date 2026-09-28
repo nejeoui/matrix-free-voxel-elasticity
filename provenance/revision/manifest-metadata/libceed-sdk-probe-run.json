@@ -1,0 +1,11 @@
+{
+  "returncode": 0,
+  "stdout": "{\"cudart_header_version\":12060,\"cublas_header_major\":12,\"cublas_runtime_version\":120604}\n",
+  "stderr": "",
+  "utc": "2026-09-24T14:08:12.359037+00:00",
+  "argv": [
+    "/root/jpdc-hex-libceed-resident-20260924/run-01/sdk_probe"
+  ],
+  "cwd": "/root/jpdc-hex-libceed-resident-20260924/run-01",
+  "seconds_budgeting_only": 0.3159890639999503
+}

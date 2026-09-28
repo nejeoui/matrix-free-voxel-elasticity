@@ -8,6 +8,8 @@ import json
 import statistics
 import sys
 from pathlib import Path
+from preset_metadata import preset_volume_fractions
+from revision_outcomes import outcome_run
 
 ROOT = Path(__file__).resolve().parents[1]
 PROTOCOL = json.loads((ROOT / "experiments/session_g/protocol.json").read_text())
@@ -34,6 +36,7 @@ def analyze(result):
         for schedule in PROTOCOL["schedules"]:
             key = f"{case}/{schedule}"
             row = {"primary": case in primary}
+            row["agreement_coverage"] = {"compliance_repetitions": [1], "volume_and_linear_iteration_cap": "all fixed-length repetitions", "density_fields_compared": False}
             first = {a: by.get((1, case, schedule, a)) for a in PROTOCOL["arms"]}
             stock = first["stock"]
             if stock:
@@ -81,24 +84,23 @@ def analyze(result):
     diag = result.get("their_e3_diagnostic", {}).get("history", [])
     out["their_e3_diagnostic"]["volume_trajectory"] = [round(h["volume"], 4) for h in diag[:6]]
     out["their_e3_diagnostic"]["compliance_trajectory"] = [h["compliance"] for h in diag[:6]]
-    out["complete"] = [{k: c.get(k) for k in ("schedule", "arm", "steps", "final_compliance", "wall_seconds",
-                                               "total_outer_iterations", "not_converged_solves", "skipped")}
+    out["fixed_length_outcomes"] = [outcome_run(r, "fixed_length") for r in runs]
+    # Keep the historical key for consumers; these are capped trajectories, not converged designs.
+    out["complete"] = [outcome_run(c, "capped", PROTOCOL["complete_optimization"]["stop_change"])
                        for c in result.get("complete", [])]
+    out["complete_key_semantics"] = "historical raw key: one capped trajectory per schedule/arm, not a design-convergence claim"
+    out["population_ranges"] = {schedule: {"all_cases": [min(out["cases"][f"{c}/{schedule}"]["median_ratio"] for c in cases), max(out["cases"][f"{c}/{schedule}"]["median_ratio"] for c in cases)],
+                                          "primary_cases": [min(out["cases"][f"{c}/{schedule}"]["median_ratio"] for c in primary), max(out["cases"][f"{c}/{schedule}"]["median_ratio"] for c in primary)]}
+                                for schedule in PROTOCOL["schedules"]}
     out["errors"] = result.get("errors", [])
     return out
 
 
 def _volfracs():
-    sys.path.insert(0, str(ROOT / "experiments/combined/donor_yang_gmg/src"))
-    scripts = ROOT / "experiments/combined/donor_yang_gmg/scripts"
-    made = not scripts.exists()
-    scripts.mkdir(exist_ok=True)
-    try:
-        from gpu_fem.presets import get_preset
-        return {c["id"]: get_preset(c["preset"]).volfrac for c in PROTOCOL["cases"]}
-    finally:
-        if made:
-            scripts.rmdir()
+    presets = preset_volume_fractions(
+        ROOT / "experiments/combined/donor_yang_gmg/src/gpu_fem/presets.py"
+    )
+    return {c["id"]: presets[c["preset"]] for c in PROTOCOL["cases"]}
 
 
 PROTOCOL_VOLFRAC = _volfracs()
