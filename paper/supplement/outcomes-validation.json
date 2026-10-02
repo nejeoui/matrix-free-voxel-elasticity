@@ -1,0 +1,29 @@
+{
+  "check": "CPU regeneration audit; no GPU rerun",
+  "optimization_exact_raw_record_coverage": 314,
+  "capped_runs_all_iteration_cap": 24,
+  "scale_tolerance_records_all_physical_passed": 132,
+  "source_hashes_verified": 122,
+  "manifest_allocations": 20,
+  "verified_archive_metadata_members": 10,
+  "missing_core_manifest_fields": {
+    "session-a-20260923": [
+      "cpu"
+    ]
+  },
+  "byte_identical_regeneration": true,
+  "H216_host1_fp64_median": 1.0255897474712885,
+  "render_check": "standalone longtable PDF compiled with Tectonic; no overflow/underfull warnings; 9-point table text",
+  "outputs_sha256": {
+    "paper/supplement/scale-solves.csv": "eb7a7118a3b37f98134a36b9034f1b07274b9792c2234194d65286ea1b80f228",
+    "paper/supplement/scale-products.csv": "140ff1b4b28601ffee1dd2fb829cd3a5fcf2ba4f5cb7f4f95d4f825385ca4786",
+    "paper/supplement/optimization-outcomes.csv": "32a240ee0832b294e52d78e31da8ca979c95bd32cc37643608750a7466e36fe9",
+    "paper/supplement/scale-fixed-work.csv": "a9a18ac13ea0cbe8fc9d4874794420b409dd11187fdb17fbb18e63bb511ce18f",
+    "paper/supplement/experiment-manifest.csv": "cab0ae18f91ced8f4e8d3288da9a78e1df01ab3bd31dc8a0326e1f967c0454df",
+    "paper/supplement/galerkin-capacity.csv": "ddd0fbe684b55d0928719d7b6f6527d9adbdd97776166cd8e4b16e81cf1fb12f",
+    "paper/supplement/optimization-paired.csv": "8a3b8f2e37863134e3da48108aea494c31c74299fd618073963d08e64f565bb1",
+    "paper/supplement/outcomes-scale.json": "87f0293e0e9eef923ae4cc9937bca2465e21db570c7d9a845964655098cd850e",
+    "paper/supplement/outcomes-scale-tables.md": "8e6be1eab7ee14d3f0153741c166c207eab30a77d46e9231c9b4ae13d6345000",
+    "paper/supplement/outcomes-scale-tables.tex": "53ea7fb9fb6bbf4599fc61c34515c93b351db459c51037c26111a4ec4de2aa04"
+  }
+}

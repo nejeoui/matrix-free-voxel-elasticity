@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.2 — Supporting-information reorganization
+
+- Rename the supplement generators to `analysis/supplement_*.py` and move their
+  sources and outputs to `paper/supplement/` and `provenance/supplement/`; the
+  supplement PDF is now `paper/supplement/supporting-information.pdf`.
+- Regenerate the supplement, registry and roofline summaries with the renamed
+  paths and clarified wording. Numerical results are unchanged.
+- Clarify in the README that `JPDC` in historical paths and protocol notes names
+  the original local research workspace.
+
+No new GPU experiments were performed. Raw measurements, frozen protocols and
+experimental source snapshots are unchanged.
+
 ## v1.1 — Corrections and expanded reproducibility documentation
 
 This version corrects numerical reporting and expands the evidence supporting
@@ -21,7 +34,7 @@ across precisions and hardware*.
 - Read G/H preset metadata without importing the GPU solver or changing donor
   directories, so numerical regeneration can run alongside package tests.
 - Update numerical generators, figures, tables, bibliography and reproduction
-  instructions. See `paper/revision/release-validation.md` for checks.
+  instructions. See `paper/supplement/release-validation.md` for checks.
 
 No new GPU experiments were performed. Raw measurements, frozen protocols and
 experimental source snapshots are unchanged. The existing raw-evidence deposit,

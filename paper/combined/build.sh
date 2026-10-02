@@ -12,13 +12,13 @@ $PY ../../analysis/session_h_tables.py ../../results/session-h-host1-20260926 ..
 $PY ../../analysis/session_i_tables.py ../../results/session-i-rtx4090-20260926 ../../results/session-i-a100-20260926 ../../results/session-i-h100-20260926 > /dev/null
 $PY ../../analysis/session_j_counters.py > /dev/null
 $PY ../../analysis/repro_numbers.py > /dev/null
-$PY ../../analysis/revision_algebra.py > /dev/null
-$PY ../../analysis/revision_accuracy.py > /dev/null
-$PY ../../analysis/revision_outcomes.py > /dev/null
-$PY ../../analysis/revision_registry.py > /dev/null
+$PY ../../analysis/supplement_algebra.py > /dev/null
+$PY ../../analysis/supplement_accuracy.py > /dev/null
+$PY ../../analysis/supplement_outcomes.py > /dev/null
+$PY ../../analysis/supplement_registry.py > /dev/null
 $PY make_numbers.py > /dev/null
-# The manuscript text (main.tex, abstract.tex, body.tex) is published after the paper is accepted.
-# Until then the build stops here: every number, table and figure above has been regenerated.
+# The manuscript text (main.tex, abstract.tex, body.tex) is not distributed in this repository.
+# Without it the build stops here: every number, table and figure above has been regenerated.
 if [ -f main.tex ]; then
   tectonic -X compile main.tex
   if grep -q '\\pending{' main.tex abstract.tex body.tex; then echo "WARNING: pending items remain:"; grep -ho '\\pending{[^}]*}' main.tex abstract.tex body.tex; fi
@@ -27,5 +27,5 @@ if [ -f main.tex ]; then
 else
   echo "Regenerated: paper/combined/combined_numbers.tex, paper/combined/repro_numbers.tex,"
   echo "paper/manuscript/numbers.tex, paper/manuscript/tab_*.tex and paper/manuscript/fig_*.pdf."
-  echo "The manuscript text will be added after acceptance."
+  echo "The manuscript text is not included in this repository."
 fi

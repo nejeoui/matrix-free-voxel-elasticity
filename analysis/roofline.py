@@ -11,7 +11,7 @@ README). Device peaks are vendor specification values. Real kernels carry extra 
 indices, atomics) and non-flop instructions, so measured ratios are expected to be smaller than
 these ideal ratios; the point is WHERE a ratio > 1 is possible at all.
 The original A100 80GB SXM declaration is retained and identified separately from the
-2026-09-27 revision calculation for the measured A100 80GB PCIe SKU.
+2026-09-27 added calculation for the measured A100 80GB PCIe SKU.
 """
 import json
 from pathlib import Path
@@ -36,7 +36,7 @@ for dev, (f64, f32, bw) in DEV.items():
         td = per_element_ns(WORK["dense"], traffic, peak, bw)
         tp = per_element_ns(WORK["parity"], traffic, peak, bw)
         rows.append({"device": dev, "precision": prec,
-                     "calculation_status": "revision for measured SKU (2026-09-27)" if dev == "A100 80GB PCIe" else "original declared model",
+                     "calculation_status": "added for measured SKU (2026-09-27)" if dev == "A100 80GB PCIe" else "original declared model",
                      "peak_tflops_non_tensor": peak, "dram_bandwidth_gb_s": bw,
                      "specification_source": "https://www.nvidia.com/en-us/data-center/a100/" if dev.startswith("A100") else "original declared vendor specification",
                      "traffic_model_bytes_per_element": traffic,
@@ -48,7 +48,7 @@ for dev, (f64, f32, bw) in DEV.items():
 out = Path(__file__).resolve().parents[1] / "paper"
 (out / "roofline.json").write_text(json.dumps(rows, indent=1))
 L = ["Idealized 48-value traffic accounting; these are specification-based predictions, not measurements.",
-     "The original A100 SXM declaration is preserved. The PCIe row is a revision calculation for the measured SKU,",
+     "The original A100 SXM declaration is preserved. The PCIe row is an added calculation for the measured SKU,",
      "using [NVIDIA's specifications](https://www.nvidia.com/en-us/data-center/a100/) (9.7 FP64 TFLOP/s, 19.5 FP32 TFLOP/s, 1935 GB/s).",
      "Shared-node reuse, caches, atomics, moduli and masks prevent identifying this traffic with measured DRAM bytes.", "",
      "| device | precision | model status | ridge (FLOP/B) | dense intensity | dense bound | parity bound | ideal dense/parity |",

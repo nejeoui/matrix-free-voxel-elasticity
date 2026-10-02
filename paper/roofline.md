@@ -1,5 +1,5 @@
 Idealized 48-value traffic accounting; these are specification-based predictions, not measurements.
-The original A100 SXM declaration is preserved. The PCIe row is a revision calculation for the measured SKU,
+The original A100 SXM declaration is preserved. The PCIe row is an added calculation for the measured SKU,
 using [NVIDIA's specifications](https://www.nvidia.com/en-us/data-center/a100/) (9.7 FP64 TFLOP/s, 19.5 FP32 TFLOP/s, 1935 GB/s).
 Shared-node reuse, caches, atomics, moduli and masks prevent identifying this traffic with measured DRAM bytes.
 
@@ -13,5 +13,5 @@ Shared-node reuse, caches, atomics, moduli and masks prevent identifying this tr
 | A100 80GB SXM | FP32 | original declared model | 9.56 | 6.0 | bandwidth | bandwidth | 1.00 |
 | H100 SXM | FP64 | original declared model | 10.15 | 3.0 | bandwidth | bandwidth | 1.00 |
 | H100 SXM | FP32 | original declared model | 20.00 | 6.0 | bandwidth | bandwidth | 1.00 |
-| A100 80GB PCIe | FP64 | revision for measured SKU (2026-09-27) | 5.01 | 3.0 | bandwidth | bandwidth | 1.00 |
-| A100 80GB PCIe | FP32 | revision for measured SKU (2026-09-27) | 10.08 | 6.0 | bandwidth | bandwidth | 1.00 |
+| A100 80GB PCIe | FP64 | added for measured SKU (2026-09-27) | 5.01 | 3.0 | bandwidth | bandwidth | 1.00 |
+| A100 80GB PCIe | FP32 | added for measured SKU (2026-09-27) | 10.08 | 6.0 | bandwidth | bandwidth | 1.00 |

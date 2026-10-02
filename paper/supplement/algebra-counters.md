@@ -125,7 +125,7 @@ mechanics or the conclusions of the original paper. The pinned Futhark constants
 
 Sources: [protocol and pre-execution source observation](../../evidence/companion/results/rescope/hex-modal-priorart-20260923/cpu-protocol-02.json)
 (`midpoint_points_per_subcell_axis=10`), [retained CPU source replay](../../evidence/companion/results/rescope/hex-modal-priorart-20260923/cpu-02/results.json)
-and [new independent calculation](../../analysis/revision_algebra.py).
+and [new independent calculation](../../analysis/supplement_algebra.py).
 The legacy protocol and raw replay remain unchanged. The generated compact table
 is [quadrature-checks.tex](quadrature-checks.tex).
 
@@ -236,7 +236,7 @@ the SKU-specific calculation uses 9.7 FP64 TFLOP/s, 19.5 FP32 TFLOP/s and 1935 G
 from [NVIDIA's A100 specification table](https://www.nvidia.com/en-us/data-center/a100/).
 The corresponding ridges are `5.0129 FLOP/B` (FP64) and `10.0775 FLOP/B` (FP32).
 The ideal dense/parity ratio remains `1.0` in both precisions. The added row is
-a revised SKU calculation; it is not relabeled as a prospective prediction.
+an added SKU calculation; it is not relabeled as a prospective prediction.
 Both hardware bases and their status are emitted by [roofline.py](../../analysis/roofline.py)
 to [roofline.json](../roofline.json) and [roofline.md](../roofline.md).
 
@@ -252,7 +252,7 @@ establish their measured share of runtime.
 Executed on the local CPU on 2026-09-27:
 
 ```
-.venv/bin/python analysis/revision_algebra.py
+.venv/bin/python analysis/supplement_algebra.py
 .venv/bin/python analysis/session_j_counters.py
 .venv/bin/python analysis/roofline.py
 .venv/bin/python -m pytest tests/test_kernels_cpu.py experiments/session_e/test_session_e.py -q
@@ -270,5 +270,5 @@ The parser additionally checks one data row per selected kernel and the raw unit
 `inst`, `%` and `nsecond`. Direct checks of the generated JSON against the five
 raw totals passed; both dense8/mul-add and fused-ai/mul-add ratios equal `2.5`.
 Both original and reconstructed stiffness matrices have six near-zero and eighteen
-positive eigenvalues under the stated tolerance. The revised PCIe and original SXM
+positive eigenvalues under the stated tolerance. The added PCIe and original SXM
 roofline records retain their distinct bandwidths and both give ratio `1.0`.

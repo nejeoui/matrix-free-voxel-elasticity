@@ -1,7 +1,7 @@
 {
   "title": "Matrix-free voxel elasticity on GPUs: artifact repository",
   "upload_type": "software",
-  "description": "<p>Artifact repository for \"Matrix-free voxel elasticity on GPUs: a reproducible kernel and multigrid study across precisions and hardware\" by Abderrazzak Nejeoui and Aissam Bekkari. Version v1.1 corrects numerical reporting and expands reproducibility documentation before journal submission. It contains code, retained experimental protocols and records, corrected analysis scripts, generated results, and an evidence supplement.</p><p>The documented CPU build regenerates numerical results, tables and figures from retained records. Saved-state verification coverage is session-specific; fresh GPU execution is a separate workflow. Historical experiment tags identify the original snapshots. The hypothesis registry documents declaration/execution chronology and its limits. No new GPU experiments were performed for v1.1, and raw measurements and frozen protocols are unchanged. Full manuscript prose and its build remain withheld until acceptance.</p><p>Large raw-evidence archives remain available at https://doi.org/10.5281/zenodo.22998404. Code is MIT-licensed; data and documentation are CC BY 4.0. Third-party material retains its own terms.</p>",
+  "description": "<p>Artifact repository for \"Matrix-free voxel elasticity on GPUs: a reproducible kernel and multigrid study across precisions and hardware\" by Abderrazzak Nejeoui and Aissam Bekkari. Version v1.2 reorganizes the supporting-information sources (analysis/supplement_*.py, paper/supplement/, provenance/supplement/) and regenerates the supplement; numerical results are unchanged. It contains code, retained experimental protocols and records, analysis scripts, generated results, and the supporting-information supplement.</p><p>The documented CPU build regenerates numerical results, tables and figures from retained records. Saved-state verification coverage is session-specific; fresh GPU execution is a separate workflow. Historical experiment tags identify the original snapshots. The hypothesis registry documents declaration/execution chronology and its limits. No new GPU experiments were performed, and raw measurements and frozen protocols are unchanged. The manuscript text is not part of this repository.</p><p>Large raw-evidence archives remain available at https://doi.org/10.5281/zenodo.22998404. Code is MIT-licensed; data and documentation are CC BY 4.0. Third-party material retains its own terms.</p>",
   "creators": [
     {
       "name": "Nejeoui, Abderrazzak",
@@ -33,5 +33,5 @@
       "scheme": "doi"
     }
   ],
-  "version": "v1.1"
+  "version": "v1.2"
 }

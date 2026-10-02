@@ -2,7 +2,7 @@
 
 Five named hypotheses lack support: H3, H5, H11, H11b, H15. H5 retains its original not-supported label; H11b is a separate changed-pipeline hypothesis. Descriptive H12/H12b expectations and packaging/integration gates are separate. This count is for Sessions A-J, not every exploratory companion study.
 
-Hashes identify content, not temporal priority. These dates are author/system recorded timestamps, checked against byte-linked execution records where available, not independent preregistration timestamps. No local git history is present in this revision workspace.
+Hashes identify content, not temporal priority. These dates are author/system recorded timestamps, checked against byte-linked execution records where available, not independent preregistration timestamps. No local git history is present in this workspace.
 
 Frozen Session B h3.rule writes modal8/dense8, but the question and recorded analysis concern advantage dense8 time / modal8 time. The retained failed decision uses that latter ratio (about 2.24), not the literal reversed label. The historical protocol is preserved.
 

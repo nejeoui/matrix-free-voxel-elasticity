@@ -56,7 +56,7 @@ at constrained DOFs; `f` is also zero there, so this equals the free-space norm.
 For the rediscretized CPU/C-reference gate, energy–work discrepancy is
 `|sum_e E_e u_e^T K0 u_e/(f^T u)-1|`; the numerator
 is twice the strain energy, with no extra 1/2. These checks compare the same
-physical units. `analysis/revision_accuracy.py` regenerates maxima, counts and
+physical units. `analysis/supplement_accuracy.py` regenerates maxima, counts and
 source paths in `accuracy.json` and `accuracy.md`. Their E/I maxima cover all
 retained in-run independent checks, not just saved-state replay: 440 states for
 Session E across two hosts, 36 for RTX scale and 96 for A100/H100 scale.

@@ -21942,8 +21942,8 @@
       "timing_boundary": "Complete constrained product call, including required output zeroing, masking, kernel launches, assembly and constraint restoration. CPU data generation, transfers, setup/JIT and validation are outside steady-state time and reported separately; no whole-application claim.",
       "metadata_sources_checked": [
         "evidence/kernel-rtx4090/result.json",
-        "provenance/revision/manifest-metadata/synthetic-4090-rental.json",
-        "provenance/revision/manifest-metadata/synthetic-4090-cupy-config.txt"
+        "provenance/supplement/manifest-metadata/synthetic-4090-rental.json",
+        "provenance/supplement/manifest-metadata/synthetic-4090-cupy-config.txt"
       ]
     },
     {
@@ -22052,8 +22052,8 @@
       "timing_boundary": "Complete constrained product call, including required output zeroing, masking, kernel launches, assembly and constraint restoration. CPU data generation, transfers, setup/JIT and validation are outside steady-state time and reported separately; no whole-application claim.",
       "metadata_sources_checked": [
         "evidence/kernel-rtx3090-replication/result.json",
-        "provenance/revision/manifest-metadata/synthetic-3090-rental.json",
-        "provenance/revision/manifest-metadata/synthetic-3090-cupy-config.txt"
+        "provenance/supplement/manifest-metadata/synthetic-3090-rental.json",
+        "provenance/supplement/manifest-metadata/synthetic-3090-cupy-config.txt"
       ]
     },
     {
@@ -22187,12 +22187,12 @@
       "timing_boundary": "Every action clears reused output, assembles the same density-scaled element law, applies exact identity rows on the GPU and ends with cudaDeviceSynchronize. Host steady-clock batch time is primary; CUDA event time is secondary. Setup, input conversion, allocation, transfers, compilation, JIT warmup and numerical output are excluded uniformly. Fault-only context updates occur outside every timed block. Library arrays remain device resident during timing.",
       "missing_metadata": "NVRTC loaded-version query not recorded separately; native nvcc/GCC compiler versions retained.",
       "metadata_sources_checked": [
-        "provenance/revision/manifest-metadata/libceed-compiler.json",
-        "provenance/revision/manifest-metadata/libceed-cpu.json",
-        "provenance/revision/manifest-metadata/libceed-gpu-before.json",
-        "provenance/revision/manifest-metadata/libceed-host-compiler.json",
-        "provenance/revision/manifest-metadata/libceed-sdk-layout.json",
-        "provenance/revision/manifest-metadata/libceed-sdk-probe-run.json"
+        "provenance/supplement/manifest-metadata/libceed-compiler.json",
+        "provenance/supplement/manifest-metadata/libceed-cpu.json",
+        "provenance/supplement/manifest-metadata/libceed-gpu-before.json",
+        "provenance/supplement/manifest-metadata/libceed-host-compiler.json",
+        "provenance/supplement/manifest-metadata/libceed-sdk-layout.json",
+        "provenance/supplement/manifest-metadata/libceed-sdk-probe-run.json"
       ]
     }
   ],
@@ -22212,16 +22212,16 @@
     "experiments/session_h/protocol.json": "86206f7dab3c289b5b94eb9ead8af92234d7b383093b84da4d536e739d88a529",
     "experiments/session_i/protocol.json": "19dce31c95d42a9b17c4ccb06d4c2912c1a9de369007cf3333b8e100cc813c3f",
     "experiments/session_j/protocol.json": "e347a7ed08c009a8a34aea55ca01d83d5dfc14f79a900783f903e1f346844b0b",
-    "provenance/revision/manifest-metadata/libceed-compiler.json": "b0d170f00b41180e183e5d41c3c1bbcb47da175f12fcf3ccf9bc832364fa252d",
-    "provenance/revision/manifest-metadata/libceed-cpu.json": "8680c0961f4ad5477c8e244918071d141d464290355b0895a3f3538e7ae30029",
-    "provenance/revision/manifest-metadata/libceed-gpu-before.json": "ce1455faff9374262b31109ae4dddd1a7f45050153b5890b879e478298c580fa",
-    "provenance/revision/manifest-metadata/libceed-host-compiler.json": "2e0211f091a25729a8a6e806bf2db0c00679af2ed3a1b6e5298b82964c3dd07a",
-    "provenance/revision/manifest-metadata/libceed-sdk-layout.json": "8f3e4ec8d18021d3643ffdde51fd7e6990fbc40e1d9ac8fe86476c18c3087643",
-    "provenance/revision/manifest-metadata/libceed-sdk-probe-run.json": "c50cfce143c0410117e991a45b1d87bb31e16c5a448ee3b15bf967f2c0c3ff6a",
-    "provenance/revision/manifest-metadata/synthetic-3090-cupy-config.txt": "714e6e9bac19844d0669a146b1d31c3d0e7b0643783e5c99d30b0a8150db2033",
-    "provenance/revision/manifest-metadata/synthetic-3090-rental.json": "40aeb1c03ab7a782ba969a203f7d8c5625ff80ca94f4ddc7396b948f79434ff9",
-    "provenance/revision/manifest-metadata/synthetic-4090-cupy-config.txt": "3e3717c7962f4af6d7d3d3f8f44f50648be0b77abeb23314abca6777da43e314",
-    "provenance/revision/manifest-metadata/synthetic-4090-rental.json": "0ed5e1a69a65a171f9d08b673441fc980e50098d5f3426bb7c42e8b6d1ada3f3",
+    "provenance/supplement/manifest-metadata/libceed-compiler.json": "b0d170f00b41180e183e5d41c3c1bbcb47da175f12fcf3ccf9bc832364fa252d",
+    "provenance/supplement/manifest-metadata/libceed-cpu.json": "8680c0961f4ad5477c8e244918071d141d464290355b0895a3f3538e7ae30029",
+    "provenance/supplement/manifest-metadata/libceed-gpu-before.json": "ce1455faff9374262b31109ae4dddd1a7f45050153b5890b879e478298c580fa",
+    "provenance/supplement/manifest-metadata/libceed-host-compiler.json": "2e0211f091a25729a8a6e806bf2db0c00679af2ed3a1b6e5298b82964c3dd07a",
+    "provenance/supplement/manifest-metadata/libceed-sdk-layout.json": "8f3e4ec8d18021d3643ffdde51fd7e6990fbc40e1d9ac8fe86476c18c3087643",
+    "provenance/supplement/manifest-metadata/libceed-sdk-probe-run.json": "c50cfce143c0410117e991a45b1d87bb31e16c5a448ee3b15bf967f2c0c3ff6a",
+    "provenance/supplement/manifest-metadata/synthetic-3090-cupy-config.txt": "714e6e9bac19844d0669a146b1d31c3d0e7b0643783e5c99d30b0a8150db2033",
+    "provenance/supplement/manifest-metadata/synthetic-3090-rental.json": "40aeb1c03ab7a782ba969a203f7d8c5625ff80ca94f4ddc7396b948f79434ff9",
+    "provenance/supplement/manifest-metadata/synthetic-4090-cupy-config.txt": "3e3717c7962f4af6d7d3d3f8f44f50648be0b77abeb23314abca6777da43e314",
+    "provenance/supplement/manifest-metadata/synthetic-4090-rental.json": "0ed5e1a69a65a171f9d08b673441fc980e50098d5f3426bb7c42e8b6d1ada3f3",
     "results/session-a-20260923/remote/installation/cupy-config.txt": "11f2a009be3aded2348d105f2f9ea9205098a1a2ba504c45b12e6b78e3a1c134",
     "results/session-a-20260923/remote/installation/uname.txt": "ca935ee4366bd365745bcaa4ab05251bcf54db7da016b6c2904e5d269999c879",
     "results/session-a-20260923/remote/run-01/result.json": "6ae4a713a2f91db8df6ab0069a8cfb029fff132460bc7eace5aaa04dc8590847",

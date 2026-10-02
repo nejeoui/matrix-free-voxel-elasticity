@@ -1,7 +1,7 @@
-"""CPU revision checks of explicit parity permutation and composite quadrature.
+"""CPU checks of explicit parity permutation and composite quadrature.
 
-Run: python3 analysis/revision_algebra.py
-Writes paper/revision/algebra-checks.json, algebra-invariants.tex and quadrature-checks.tex.
+Run: python3 analysis/supplement_algebra.py
+Writes paper/supplement/algebra-checks.json, algebra-invariants.tex and quadrature-checks.tex.
 Uses the retained Modal implementation without modifying the imported code snapshot.
 This is an algebra/quadrature calculation, not GPU validation or fresh performance data.
 """
@@ -128,7 +128,7 @@ def main():
                         "off_block": "||C-blockdiag(C)||_F/||C||_F", "eigenvalue_tolerance": "1e-10 * ||K||_2"},
               "invariants": invariant_rows, "quadrature": quadrature_rows,
               "source_sha256": {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in source_files}}
-    out = ROOT / "paper/revision"
+    out = ROOT / "paper/supplement"
     out.mkdir(exist_ok=True)
     (out / "algebra-checks.json").write_text(json.dumps(result, indent=2) + "\n")
     tex = [r"\begin{tabular}{lrrrr}", r"\hline", r"Cell & Reconstruction & Off-block & Nullity & Min. positive $\lambda$\\", r"\hline"]

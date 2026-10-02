@@ -1,6 +1,6 @@
-"""Regenerate revision provenance, audit units and hypothesis chronology from retained records.
+"""Regenerate provenance, audit units and hypothesis chronology from retained records.
 
-python3 analysis/revision_registry.py
+python3 analysis/supplement_registry.py
 No GPU execution. No historical protocol or evidence is modified.
 """
 import hashlib
@@ -9,7 +9,7 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'paper/revision'
+OUT = ROOT / 'paper/supplement'
 
 def read(path):
     return json.loads((ROOT / path).read_text())
@@ -21,10 +21,10 @@ def decision(session):
     return read(f'results/session-{session}-20260923/local-verification.json')['decision']
 
 def audit_units():
-    manifest = read('provenance/revision/extractions.json')
+    manifest = read('provenance/supplement/extractions.json')
     for row in manifest['files']:
         assert digest(ROOT / row['path']) == row['sha256'], row['path']
-    inputs = ROOT / 'provenance/revision/audit-inputs'
+    inputs = ROOT / 'provenance/supplement/audit-inputs'
     state = np.load(inputs / 'maximum-state-error.npz')
     relative = float(np.linalg.norm(state['u'] - state['reference']) / np.linalg.norm(state['reference']))
     def vectors(prefix):
@@ -46,7 +46,7 @@ def audit_units():
     assert leakage == recorded_leakage
     return {
         'kind': 'CPU recomputation of selected saved array norms, not fresh operator/GPU execution',
-        'source_manifest': 'provenance/revision/extractions.json',
+        'source_manifest': 'provenance/supplement/extractions.json',
         'state': {'case': '24x12x8/modal/step-001', 'formula': 'norm(u-reference,2)/norm(reference,2), full DOFs', 'unit': 'dimensionless', 'relative': relative, 'percent': relative * 100, 'attribution': 'initial candidate used zero fixed rows instead of published identity rows; see host-diagnosis.json'},
         'bilinear': {'case': '16x8x8-l3/pattern-0/variant-0/pair-2', 'formula': 'abs(a.T@B(b)-b.T@B(a))/(norm(a)*norm(B(b))+norm(b)*norm(B(a)))', 'unit': 'dimensionless', 'numerator': numerator, 'denominator': denominator, 'value': numerator / denominator},
         'leakage': {'case': '24x12x8-l3/pattern-0/variant-0/pair-0', 'formula': 'max(abs(B(a)[fixed]),abs(B(b)[fixed]))', 'unit': 'absolute correction/displacement in benchmark units; no denominator', 'maximum': leakage, 'fixed_count': len(fixed), 'maximum_abs_probe': float(max(np.max(abs(a)), np.max(abs(b))))},
@@ -104,7 +104,7 @@ def main():
         keys = [ident, ident.lower(), 'H11' if ident == 'H11b' else ident, 'H12' if ident == 'H12b' else ident, 'stack_ok' if ident == 'F-stack' else ident, 'integration_ok' if ident == 'F-integration' else ident]
         rule = next((rules[k] for k in keys if k in rules), rules)
         rows.append({'id': ident, 'type': typ, 'session': session.upper(), 'question': question, 'primary_cases': primary or p.get('cases', []), 'endpoint_and_threshold': rule, 'outcome': status, 'recorded_decision': outcome, 'chronology': chronologies[session]})
-    data = {'convention': 'Five named hypotheses lack support: H3, H5, H11, H11b, H15. H5 retains its original not-supported label; H11b is a separate changed-pipeline hypothesis. Descriptive H12/H12b expectations and packaging/integration gates are separate. This count is for Sessions A-J, not every exploratory companion study.', 'failed_or_unsupported_ids': ['H3','H5','H11','H11b','H15'], 'chronology_limit': 'Hashes identify content, not temporal priority. These dates are author/system recorded timestamps, checked against byte-linked execution records where available, not independent preregistration timestamps. No local git history is present in this revision workspace.', 'H3_ratio_label_note': 'Frozen Session B h3.rule writes modal8/dense8, but the question and recorded analysis concern advantage dense8 time / modal8 time. The retained failed decision uses that latter ratio (about 2.24), not the literal reversed label. The historical protocol is preserved.', 'rows': rows}
+    data = {'convention': 'Five named hypotheses lack support: H3, H5, H11, H11b, H15. H5 retains its original not-supported label; H11b is a separate changed-pipeline hypothesis. Descriptive H12/H12b expectations and packaging/integration gates are separate. This count is for Sessions A-J, not every exploratory companion study.', 'failed_or_unsupported_ids': ['H3','H5','H11','H11b','H15'], 'chronology_limit': 'Hashes identify content, not temporal priority. These dates are author/system recorded timestamps, checked against byte-linked execution records where available, not independent preregistration timestamps. No local git history is present in this workspace.', 'H3_ratio_label_note': 'Frozen Session B h3.rule writes modal8/dense8, but the question and recorded analysis concern advantage dense8 time / modal8 time. The retained failed decision uses that latter ratio (about 2.24), not the literal reversed label. The historical protocol is preserved.', 'rows': rows}
     (OUT / 'hypothesis-registry.json').write_text(json.dumps(data, indent=2) + '\n')
     lines = ['# Hypothesis and gate registry', '', data['convention'], '', data['chronology_limit'], '', data['H3_ratio_label_note'], '', 'The JSON companion preserves the exact primary cases, decision rules, hashes and every inspected execution record. The table abbreviates these fields.', '', '| ID | Type | Cases / endpoint and decision | Declaration UTC | Executed UTC (byte-linked final protocol) | Outcome |', '|---|---|---|---|---|---|']
     brief = {

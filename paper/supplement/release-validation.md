@@ -1,4 +1,18 @@
-# v1.1 validation
+# Release validation
+
+## v1.2 validation
+
+Validation date: 2026-10-02. A copy of the v1.2 working tree (without Git
+metadata) was checked in a fresh virtual environment created from
+`requirements.txt` (Python 3.14.3). `PY=python sh paper/combined/build.sh`
+completed, and every regenerated file was byte-identical to the committed
+version. `python -m pytest tests -q` passed 22 tests, and the nine Session A–I
+suites listed below passed 57 tests in separate invocations (79 in total; six
+expected overflow/invalid-value warnings in Session E).
+`python paper/supplement/build_supplement.py` regenerated the supporting PDF.
+v1.2 changes paths, file names and wording only; numerical results are unchanged.
+
+## v1.1 validation
 
 Validation date: 2026-09-28. The changed-file release package was applied to a
 fresh public-repository export at commit
@@ -21,7 +35,7 @@ A–I CPU suites. The commands below run from the repository root with
 | `python -m pytest experiments/session_h/test_session_h.py -q` | 5 passed |
 | `python -m pytest experiments/session_i/test_session_i.py -q` | 5 passed |
 | `PY=python sh paper/combined/build.sh` | Numerical regeneration passed |
-| `python paper/revision/build_supplement.py` | Supporting PDF regenerated with Pandoc and Tectonic; text bounds and missing glyphs checked |
+| `python paper/supplement/build_supplement.py` | Supporting PDF regenerated with Pandoc and Tectonic; text bounds and missing glyphs checked |
 
 All 79 current CPU tests pass. Session test modules reuse names such as `analysis` and `build_package`; run
 each suite in a separate pytest invocation, as above. Combining those suites

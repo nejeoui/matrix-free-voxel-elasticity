@@ -11,7 +11,7 @@ and source snapshots are mapped to the existing raw-evidence deposit below.
 ## Historical release tags
 
 The artifact organizes experiments with the tags below, in paper order. These tags
-identify the retained experimental snapshots. The v1.1 corrections and supporting
+identify the retained experimental snapshots. Release corrections and supporting
 documentation are described in [CHANGELOG.md](CHANGELOG.md); the original v1.0
 software archive remains available at
 [doi:10.5281/zenodo.23001863](https://doi.org/10.5281/zenodo.23001863).
@@ -43,7 +43,7 @@ Use the release-specific citation for the version you use.
 Each experiment retains its declared protocol (`experiments/session_*/protocol.json` or `evidence/*/protocol.json`),
 executed code, collected results (`results/`) and lifecycle records. Independent saved-state CPU replays,
 where performed, are recorded in `local-verification.json`; verification coverage is session-specific
-and documented in [the accuracy supplement](paper/revision/methods-accuracy.md).
+and documented in [the accuracy supplement](paper/supplement/methods-accuracy.md).
 Failed and unexecuted attempts are kept beside successful ones.
 
 ## Reproduce the paper
@@ -53,24 +53,24 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt                 # NumPy, SciPy, Matplotlib, pytest
 python -m pytest -q tests                       # CPU checks of the kernel source and lane algebra
 PY=python paper/combined/build.sh               # regenerate numerical results, tables and figures
-python analysis/revision_registry.py            # audit units, hypothesis outcomes and dated provenance
+python analysis/supplement_registry.py            # audit units, hypothesis outcomes and dated provenance
 ```
 
 The build writes result values as LaTeX macros (`paper/combined/combined_numbers.tex`,
 `paper/combined/repro_numbers.tex`, `paper/manuscript/numbers.tex`), plus the tables (`paper/manuscript/tab_*.tex`)
-and figures (`paper/manuscript/fig_*.pdf`). The [evidence supplement](paper/revision/revision-supplement.pdf) and
-[provenance and claim-evidence map](paper/revision/provenance-audit.md) document these outputs. They include source identities,
+and figures (`paper/manuscript/fig_*.pdf`). The [evidence supplement](paper/supplement/supporting-information.pdf) and
+[provenance and claim-evidence map](paper/supplement/provenance-audit.md) document these outputs. They include source identities,
 audit contracts and units, measured claims and retained failed outcomes, with exact analysis commands.
 The numerical build requires only the Python packages in `requirements.txt`.
 To rebuild the optional evidence-supplement PDF, additionally install Pandoc and
-Tectonic and run `python paper/revision/build_supplement.py`. This uses the bundled
+Tectonic and run `python paper/supplement/build_supplement.py`. This uses the bundled
 TeX Gyre Heros and Latin Modern Mono fonts by default; `--main-font` and
 `--mono-font` select alternatives.
 Validation commands and scope are recorded in
-[release-validation.md](paper/revision/release-validation.md).
+[release-validation.md](paper/supplement/release-validation.md).
 
-The manuscript prose and full manuscript build will be added after acceptance. The public numerical
-build currently succeeds without the withheld prose and does not create the complete manuscript PDF.
+The manuscript text is not part of this repository. The public numerical build regenerates every
+reported number, table and figure; it does not create the manuscript PDF.
 
 These are three different reproducibility levels:
 
@@ -79,13 +79,15 @@ These are three different reproducibility levels:
 * **Saved-state replay** reloads saved densities/displacements and applies independent reference
   checks. Session verifier scripts and `local-verification.json` identify the checked states and
   tolerances. Larger inputs can be restored from the deposited archives and checked against the
-  manifests. The revision registry also recomputes selected audit norms from small extracted arrays.
+  manifests. The supplement registry also recomputes selected audit norms from small extracted arrays.
 * **Fresh GPU execution** runs the frozen workload again on identified hardware with its declared
   environment, warmup, timing boundary and accuracy gates. It needs a suitable GPU/CUDA environment
   and any source/large-input restoration specified by that session. Historical launcher paths are
-  provenance, not a claim that the CPU build provisions fresh GPU experiments.
+  provenance, not a claim that the CPU build provisions fresh GPU experiments. In historical paths,
+  labels and protocol notes, `JPDC` names the original local research workspace (`~/JPDC`) from which
+  these experiments were prepared and launched.
 
-The [hypothesis registry](paper/revision/hypothesis-registry.md) links protocol hashes to dated
+The [hypothesis registry](paper/supplement/hypothesis-registry.md) links protocol hashes to dated
 execution records when their identities match. Hashes prove content identity, not temporal priority;
 self-recorded timestamps are distinguished from independently timestamped preregistration.
 

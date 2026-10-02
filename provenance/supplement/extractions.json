@@ -1,12 +1,12 @@
 {
   "source_record": "https://doi.org/10.5281/zenodo.22998404",
-  "extracted_for": "2026-09-27 revision audit; original archives unchanged",
+  "extracted_for": "2026-09-27 audit; original archives unchanged",
   "files": [
     {
       "archive": "companion--hex-modal-mg-host-20260923--files.tar.gz",
       "archive_sha256": "c6b1de44a55e27ae10abba0a64438c164b28f8da311aa393aabde51964e06649",
       "member": "hex-modal-mg-host-20260923/diagnosis.json",
-      "path": "provenance/revision/host-diagnosis.json",
+      "path": "provenance/supplement/host-diagnosis.json",
       "sha256": "93044707189b3990b95f2d0635a730d06170d0a9df5db954d6639f93c39e5978",
       "bytes": 1246
     },
@@ -14,7 +14,7 @@
       "archive": "companion--hex-modal-mg-host-20260923--files.tar.gz",
       "archive_sha256": "c6b1de44a55e27ae10abba0a64438c164b28f8da311aa393aabde51964e06649",
       "member": "hex-modal-mg-host-20260923/run-01/24x12x8-modal/step-001-independent.npz",
-      "path": "provenance/revision/audit-inputs/maximum-state-error.npz",
+      "path": "provenance/supplement/audit-inputs/maximum-state-error.npz",
       "sha256": "c6be650a995daf565c22591a5d56904513dbb95cceeeb337018c86fa8a98f165",
       "bytes": 227624
     },
@@ -22,7 +22,7 @@
       "archive": "companion--hex-modal-mg-bc-audit-20260923--files.tar.gz",
       "archive_sha256": "3a10ae86203300df86721ffed7f9ab587a9d27a30c8cd40fa86dd665b3b229f2",
       "member": "hex-modal-mg-bc-audit-20260923/run-01/16x8x8-l3-p0-v0/pair-2-a-r.f64",
-      "path": "provenance/revision/audit-inputs/bilinear-a-r.f64",
+      "path": "provenance/supplement/audit-inputs/bilinear-a-r.f64",
       "sha256": "043e89ce21cb476d59db7c4383ddfb6fa5e4150ea693d42cc43c94cb7dc43bf3",
       "bytes": 33048
     },
@@ -30,7 +30,7 @@
       "archive": "companion--hex-modal-mg-bc-audit-20260923--files.tar.gz",
       "archive_sha256": "3a10ae86203300df86721ffed7f9ab587a9d27a30c8cd40fa86dd665b3b229f2",
       "member": "hex-modal-mg-bc-audit-20260923/run-01/16x8x8-l3-p0-v0/pair-2-a-Br.f64",
-      "path": "provenance/revision/audit-inputs/bilinear-a-Br.f64",
+      "path": "provenance/supplement/audit-inputs/bilinear-a-Br.f64",
       "sha256": "c0c8c805e478d0918c25bd49e197142eceae28829bd3e29378a9efe0dd59dc44",
       "bytes": 33048
     },
@@ -38,7 +38,7 @@
       "archive": "companion--hex-modal-mg-bc-audit-20260923--files.tar.gz",
       "archive_sha256": "3a10ae86203300df86721ffed7f9ab587a9d27a30c8cd40fa86dd665b3b229f2",
       "member": "hex-modal-mg-bc-audit-20260923/run-01/16x8x8-l3-p0-v0/pair-2-b-r.f64",
-      "path": "provenance/revision/audit-inputs/bilinear-b-r.f64",
+      "path": "provenance/supplement/audit-inputs/bilinear-b-r.f64",
       "sha256": "b7da595663d264db85a57f49aaefe3f05e5ea4ebc1dd15315a5985c487e07e30",
       "bytes": 33048
     },
@@ -46,7 +46,7 @@
       "archive": "companion--hex-modal-mg-bc-audit-20260923--files.tar.gz",
       "archive_sha256": "3a10ae86203300df86721ffed7f9ab587a9d27a30c8cd40fa86dd665b3b229f2",
       "member": "hex-modal-mg-bc-audit-20260923/run-01/16x8x8-l3-p0-v0/pair-2-b-Br.f64",
-      "path": "provenance/revision/audit-inputs/bilinear-b-Br.f64",
+      "path": "provenance/supplement/audit-inputs/bilinear-b-Br.f64",
       "sha256": "83594b2507113fc0a9d5fa4d7e669dc613a5b9b63cd4d37e9a82faadf9058185",
       "bytes": 33048
     },
@@ -54,7 +54,7 @@
       "archive": "companion--hex-modal-mg-bc-audit-20260923--files.tar.gz",
       "archive_sha256": "3a10ae86203300df86721ffed7f9ab587a9d27a30c8cd40fa86dd665b3b229f2",
       "member": "hex-modal-mg-bc-audit-20260923/run-01/24x12x8-l3-p0-v0/pair-0-a-r.f64",
-      "path": "provenance/revision/audit-inputs/leakage-a-r.f64",
+      "path": "provenance/supplement/audit-inputs/leakage-a-r.f64",
       "sha256": "abb7e21710b2bc18be672565f8d12d11d876e14ac7ec9c9c8ee6d1442056efb1",
       "bytes": 70200
     },
@@ -62,7 +62,7 @@
       "archive": "companion--hex-modal-mg-bc-audit-20260923--files.tar.gz",
       "archive_sha256": "3a10ae86203300df86721ffed7f9ab587a9d27a30c8cd40fa86dd665b3b229f2",
       "member": "hex-modal-mg-bc-audit-20260923/run-01/24x12x8-l3-p0-v0/pair-0-a-Br.f64",
-      "path": "provenance/revision/audit-inputs/leakage-a-Br.f64",
+      "path": "provenance/supplement/audit-inputs/leakage-a-Br.f64",
       "sha256": "19184a38a30459658cb727bdf9ae0dbc0918be574db16b2c3e7a0b0da31bdc39",
       "bytes": 70200
     },
@@ -70,7 +70,7 @@
       "archive": "companion--hex-modal-mg-bc-audit-20260923--files.tar.gz",
       "archive_sha256": "3a10ae86203300df86721ffed7f9ab587a9d27a30c8cd40fa86dd665b3b229f2",
       "member": "hex-modal-mg-bc-audit-20260923/run-01/24x12x8-l3-p0-v0/pair-0-b-r.f64",
-      "path": "provenance/revision/audit-inputs/leakage-b-r.f64",
+      "path": "provenance/supplement/audit-inputs/leakage-b-r.f64",
       "sha256": "29de0a616815f3f0948f69a3283d0de2b52a3f779fd797fb0cb83ddc2f0db2ce",
       "bytes": 70200
     },
@@ -78,7 +78,7 @@
       "archive": "companion--hex-modal-mg-bc-audit-20260923--files.tar.gz",
       "archive_sha256": "3a10ae86203300df86721ffed7f9ab587a9d27a30c8cd40fa86dd665b3b229f2",
       "member": "hex-modal-mg-bc-audit-20260923/run-01/24x12x8-l3-p0-v0/pair-0-b-Br.f64",
-      "path": "provenance/revision/audit-inputs/leakage-b-Br.f64",
+      "path": "provenance/supplement/audit-inputs/leakage-b-Br.f64",
       "sha256": "9723be1895d7084c7072f4b2a4199a66fce8d0bf4b4f05b64895ccf4863a73bf",
       "bytes": 70200
     },
@@ -86,7 +86,7 @@
       "archive": "companion--hex-modal-libceed-resident-20260924--files.tar.gz",
       "archive_sha256": "16467148605184e553e1285002ff1b5ef7ce9a739cacb92d2c0a84649184aa8e",
       "member": "hex-modal-libceed-resident-20260924/package/source/bridge.c",
-      "path": "provenance/revision/libceed-bridge.c",
+      "path": "provenance/supplement/libceed-bridge.c",
       "sha256": "2405c253e7ebb6f8664e343f49a63e622b95d2815d3a4b22fbade1176fdee305",
       "bytes": 6569
     },
@@ -94,7 +94,7 @@
       "archive": "companion--hex-modal-libceed-resident-20260924--files.tar.gz",
       "archive_sha256": "16467148605184e553e1285002ff1b5ef7ce9a739cacb92d2c0a84649184aa8e",
       "member": "hex-modal-libceed-resident-20260924/package/source/elasticity.h",
-      "path": "provenance/revision/libceed-elasticity.h",
+      "path": "provenance/supplement/libceed-elasticity.h",
       "sha256": "fbdd55ae5204ad1ce03866d1107fb2050bc1ad7c6fe804ce663d6b9b4948411a",
       "bytes": 1306
     },
@@ -102,7 +102,7 @@
       "archive": "companion--hex-modal-priorart-20260923--files.tar.gz",
       "archive_sha256": "3ba429b8760a42f767b64aa573d8f4a563b635c02d7943e1fd46fe29a116ce9a",
       "member": "hex-modal-priorart-20260923/source-provenance.json",
-      "path": "provenance/revision/traff-source-provenance.json",
+      "path": "provenance/supplement/traff-source-provenance.json",
       "sha256": "e8f9bd6ca9d286cf83222e6edd14f07fcd18bf974cfbe2612e9aad5c6cd2aa05",
       "bytes": 13498
     }

@@ -1,6 +1,6 @@
 # Generated outcome and capacity tables
 
-Regenerate with `python3 analysis/revision_outcomes.py`. See [methods and interpretation](outcomes-scale.md). NR = not recorded, not zero. CSV/JSON files retain every repetition and exact source record; medians below are descriptive.
+Regenerate with `python3 analysis/supplement_outcomes.py`. See [methods and interpretation](outcomes-scale.md). NR = not recorded, not zero. CSV/JSON files retain every repetition and exact source record; medians below are descriptive.
 
 ## Optimization outcomes
 

@@ -143,7 +143,7 @@ def main():
     session_h(m)
     session_i(m)
     session_j(m)
-    algebra = load(V / "paper/revision/algebra-checks.json")
+    algebra = load(V / "paper/supplement/algebra-checks.json")
     for r, key in zip(algebra["quadrature"], ("Two", "Three", "FourFive")):
         m[f"CompositeDiscrepancy{key}"] = fmt(100 * r["relative_frobenius_difference_from_exact_gauss"], 6)
     out = HERE / "combined_numbers.tex"

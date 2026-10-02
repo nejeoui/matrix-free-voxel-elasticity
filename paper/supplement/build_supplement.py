@@ -4,7 +4,7 @@ Requires pandoc and tectonic in PATH. Numerical regeneration is a separate step:
 PY=/absolute/path/to/python sh paper/combined/build.sh
 
 Portable fonts are used by default. To use installed system fonts, for example:
-python3 paper/revision/build_supplement.py --main-font Arial --mono-font Menlo
+python3 paper/supplement/build_supplement.py --main-font Arial --mono-font Menlo
 """
 import argparse
 import json
@@ -55,15 +55,15 @@ per-observation values and references where PDF tables use rounded summaries.
     parts += [(HERE.parent / "combined/reproducibility_record.md").read_text()]
     joined = "\n\n".join(parts)
     # Companion record lives one directory deeper in the assembled supplement.
-    joined = joined.replace("../revision/", "")
+    joined = joined.replace("../supplement/", "")
     joined = joined.replace("10⁸–10⁹", "$10^8$–$10^9$")
     joined = joined.replace("LDLᵀ", "$LDL^T$")
-    (HERE / "revision-supplement.md").write_text(joined)
-    cmd = ["pandoc", "revision-supplement.md", "--from=markdown+tex_math_single_backslash",
+    (HERE / "supporting-information.md").write_text(joined)
+    cmd = ["pandoc", "supporting-information.md", "--from=markdown+tex_math_single_backslash",
            "--standalone", "--lua-filter=wrap-code.lua", "--include-in-header=supplement-header.tex",
-           "--include-after-body=outcomes-scale-tables.tex", "-o", "revision-supplement.tex"]
+           "--include-after-body=outcomes-scale-tables.tex", "-o", "supporting-information.tex"]
     subprocess.run(cmd, cwd=HERE, check=True)
-    subprocess.run(["tectonic", "-X", "compile", "revision-supplement.tex", "--keep-logs"], cwd=HERE, check=True)
+    subprocess.run(["tectonic", "-X", "compile", "supporting-information.tex", "--keep-logs"], cwd=HERE, check=True)
 
 
 if __name__ == "__main__":

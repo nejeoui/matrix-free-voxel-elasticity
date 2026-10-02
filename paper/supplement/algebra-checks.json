@@ -2,7 +2,7 @@
   "scope": "Fresh CPU algebra/quadrature checks; no fresh GPU execution",
   "passed": true,
   "environment": {
-    "python": "3.14.7",
+    "python": "3.14.3",
     "numpy": "2.5.3",
     "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O"
   },
@@ -688,7 +688,7 @@
     }
   ],
   "source_sha256": {
-    "analysis/revision_algebra.py": "074f0d3a734e2b1dddabc21e8f4ab9ea8c8ba42db9db7adabec5d81fbcb93a20",
+    "analysis/supplement_algebra.py": "4d4f449e35f933b7b600d933248cf17924d2d5484fe3d78c755ccb5f9476f499",
     "code/hex_modal/modal.py": "63a18941f6390d2dd1f54520d6589bf7c4118deda52ab8d6cefd460f2e90f4b8",
     "evidence/companion/results/rescope/hex-modal-priorart-20260923/cpu-02/results.json": "a39a991016530d514e65440e922e65ae8df3c58946173f4f24d144e72b43865d",
     "evidence/companion/results/rescope/hex-modal-priorart-20260923/cpu-protocol-02.json": "c196a8dcf9c8bfe172379e6597afa338a329b63e5419563a826b2ff20a559872"

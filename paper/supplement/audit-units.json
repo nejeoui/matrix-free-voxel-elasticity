@@ -1,6 +1,6 @@
 {
   "kind": "CPU recomputation of selected saved array norms, not fresh operator/GPU execution",
-  "source_manifest": "provenance/revision/extractions.json",
+  "source_manifest": "provenance/supplement/extractions.json",
   "state": {
     "case": "24x12x8/modal/step-001",
     "formula": "norm(u-reference,2)/norm(reference,2), full DOFs",

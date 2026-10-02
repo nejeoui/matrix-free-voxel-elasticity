@@ -9,7 +9,7 @@ import statistics
 import sys
 from pathlib import Path
 from preset_metadata import preset_volume_fractions
-from revision_outcomes import outcome_run
+from supplement_outcomes import outcome_run
 
 ROOT = Path(__file__).resolve().parents[1]
 PROTOCOL = json.loads((ROOT / "experiments/session_g/protocol.json").read_text())

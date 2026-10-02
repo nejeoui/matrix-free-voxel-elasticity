@@ -114,7 +114,7 @@
  {
   "device": "A100 80GB PCIe",
   "precision": "FP64",
-  "calculation_status": "revision for measured SKU (2026-09-27)",
+  "calculation_status": "added for measured SKU (2026-09-27)",
   "peak_tflops_non_tensor": 9.7,
   "dram_bandwidth_gb_s": 1935,
   "specification_source": "https://www.nvidia.com/en-us/data-center/a100/",
@@ -128,7 +128,7 @@
  {
   "device": "A100 80GB PCIe",
   "precision": "FP32",
-  "calculation_status": "revision for measured SKU (2026-09-27)",
+  "calculation_status": "added for measured SKU (2026-09-27)",
   "peak_tflops_non_tensor": 19.5,
   "dram_bandwidth_gb_s": 1935,
   "specification_source": "https://www.nvidia.com/en-us/data-center/a100/",
